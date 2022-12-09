@@ -1,12 +1,20 @@
-lsi: false
+
+#lsi: false
 safe: true
 source: "https://github.com/mvtta/mvtta.github.io"
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
+#incremental: false
+#highlighter: rouge
+#gist:
+  #  noscript: false
+markdown: kramdown
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 theme: minima
+title: "mvtta, scientific developer log"
+---
+---
+Test _config iter from README
+
+{% assign date = '2022-12-9' %}
 

@@ -1,4 +1,3 @@
-
 #lsi: false
 safe: true
 source: "https://github.com/mvtta/mvtta.github.io"
@@ -17,4 +16,3 @@ title: "mvtta, scientific developer log"
 Test _config iter from README
 
 {% assign date = '2022-12-9' %}
-

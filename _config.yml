@@ -9,28 +9,13 @@ source: "https://github.com/mvtta/mvtta.github.io"
 # build settings
 theme: minima
 markdown: kramdown
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
-#incremental: false
-#highlighter: rouge
-#gist:
-  #  noscript: false
----
-layout: home
----
-
----
-# test
-example_key: example
----
-
 ---
 layout: post
 title: My First Jekyll Post
 tags: first markdown example
-categories: demo
----
+categories: demoZ
+# test
+example_key: example
 
 This is a paragraph in my first post.
 Show off your Markdown!
@@ -56,3 +41,4 @@ A numbered list is created using a number + `.`, like:
 2. two
 6. three
 2. four
+---

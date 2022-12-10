@@ -34,7 +34,14 @@ bundle exec jekyll serve
 # Now run bundle install again (hopefully no network errors)
 # still does not, aiaiai, another abandoned idea and script because im stupid...
 # current error: 
-Fetching source index from http://rubygems.org/
-Network error while fetching
-http://rubygems.org/quick/Marshal.4.8/jekyll-1.0.0.beta1.gemspec.rz (execution expired)
+# Fetching source index from http://rubygems.org/
+# Network error while fetching
+# http://rubygems.org/quick/Marshal.4.8/jekyll-1.0.0.beta1.gemspec.rz (execution expired)
 
+
+
+#FORGET ALL THIS NONSENSE >>>>>>>
+
+# create Gemfile 
+# add not secure source http:______
+# add -> gem "minima"

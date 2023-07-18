@@ -2,105 +2,60 @@
 title: "Resume"
 ---
 
-# A Resume
 ## Summary 
-
 ```
-
-Name: Valdetaro, M.
-
+Name: Valdetaro, Mariana
 Current role: Embedded Software Engineer in R&D | 
-
-          5G Physical Layer at Nokia 
-
+		      5G Physical Layer at Nokia 
 Previous role: Software Engineer Trainee in Applied R&D |
-
-         Cloud and Networks at Nokia
-
+			   Cloud and Networks at Nokia
 Looking for: A Software Engineer role in STEM R&D
-
 Why: looking for a new opportunity  to work:
-
-      í´¸with impressive humans,
-
-       í´¸on hard problems,
-
-       í´¸towards innovation and research.
-
+			ğŸ”¸with impressive humans, 
+	 		ğŸ”¸on hard problems,  
+	 		ğŸ”¸towards innovation.  
 Contacts
-
 Mobile: +351967409418
-
 E-mail: mvaldeta42@gmail.com
-
-Github: mvtta.github.io  
-
+Github: mvtta.github.io	
 ```
-
 -----------------------------------------------------------------
-
 #### Technical Skills
 
-
 |Languages|Tools, Environments & Frameworks|Standards|
-
 |-|-|-|
-
 |C <br>C++<br>shell<br>python|git<br>jira<br>docker<br>Unix/Linux|best practices oriented<br>documentation<br>clean code<br>Sw life-cycle focus |
-
 
 #### Experience
 
-
 Ten + years of working experience in different fields grant me:
-
-í´¸rapid adaptability to new methodologies,
-
-í´¸responsability and autonony
-
-í´¸intrinsic awareness of time management : delivery, team dynamics and workflow.
-
+ğŸ”¸rapid adaptability to new methodologies,  
+ğŸ”¸responsability and autonony  
+ğŸ”¸intrinsic awareness of time management :   delivery, team dynamics and workflow.  
 
 |Date|Job|Description|
-
 |-|-|-|
-
 |April 2023| Software Engineer in R&D 5G Physical Layer Embedded Systems | Without term |
-
 |May 1 2022/2023| Software Engineer Trainee in R&D Cloud and Networks | Fixed term |
-
 |2018/2022|Founder, manager and operator of R&D studio | Without term |
-
 |2008/2018|Sound Engineer & Music Producer | Freelance & short term |
-
 
 #### Education
 
-
-Self-taught independent degree, from books and free online resources to MOOCs from respected Universities. Some *highlights* bellow:
-
+Self-taught independent degree, from books and free online resources to MOOCs from respected Universities.  
+ Some *highlights* bellow:
 
 |Institution|Course|Syllabus|Status|
-
 |-----------|------|-------|------|
-
 |42Lisboa|Computer Science|C, Algorithms, Memory Management & Graphics| [Projects](https://github.com/mvtta/42Cursus/tree/main)|
-
 |Johns Hopkins<br>University|Neuroscience and <br> Neuroimaging Specialization | Neuroanatomy & Neuroimaging <br> â€¢ Experimental design <br> â€¢ Imaging techniques | 2/4 Completed <br>[Certificate 1](https://coursera.org/share/6bd2b93e78b77ce07101d9de16de85fe)<br>[Certificate 2](https://coursera.org/share/70e18a2cafdca8b3a381d59d346ea25c)|
-
 |Johns Hopkins University|Precalculus through Data and Modelling <br> Mathematics Specialization |â€¢ Function analysis <br> â€¢ Vectors, Vector Spaces and Operations <br> â€¢ Regression & Data Analysis <br>| [Certificate 1](https://coursera.org/share/d0971110f05e87781130c6342fd62b75)|
-
 |Korea Advanced<br>Institute of Science<br> and Technology(KAIST)|[Introduction to Quantum Information](https://www.coursera.org/learn/introduction-to-quantum-information)   | â€¢ Axioms of Quantum Theory <br> â€¢ Qubit Experiment <br> State Transformation VS. Probabilities <br> Quantum Computing & Quantum Communication  | In progressâš™ï¸ |
-
 |Icahn School<br>of Medicine at Mount Sinai|[Systems Biology and Biotechnology Specialization](https://www.coursera.org/specializations/systems-biology)||
-
 
 ##### For fun, I like to...
 
-
-Solve puzzlesí·©, study and readí³–, research on tangent topics í´¬, rock-climbingí·—â€â™€ï¸ and enjoy the company of theí°ˆ and í°¶ that leave with me.
-
+Solve puzzles ğŸ§©, study and read ğŸ“–, research on tangent topics ğŸ”¬, rock-climbing ğŸ§—â€â™€ï¸ and enjoy the company of the ğŸˆ and ğŸ¶ that leave with me.
 
 Thank you for your time,  
-
 ``` Sincerely Mariana  ```

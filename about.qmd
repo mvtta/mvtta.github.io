@@ -20,13 +20,13 @@ E-mail: mvaldeta42@gmail.com
 Github: mvtta.github.io	
 ```
 -----------------------------------------------------------------
-#### Technical Skills
+## Technical Skills
 
 |Languages|Tools, Environments & Frameworks|Standards|
 |-|-|-|
 |C <br>C++<br>shell<br>python|git<br>jira<br>docker<br>Unix/Linux|best practices oriented<br>documentation<br>clean code<br>Sw life-cycle focus |
 
-#### Experience
+## Experience
 
 Ten + years of working experience in different fields grant me:
 🔸rapid adaptability to new methodologies,  
@@ -40,7 +40,7 @@ Ten + years of working experience in different fields grant me:
 |2018/2022|Founder, manager and operator of R&D studio | Without term |
 |2008/2018|Sound Engineer & Music Producer | Freelance & short term |
 
-#### Education
+## Education
 
 Self-taught independent degree, from books and free online resources to MOOCs from respected Universities.  
  Some *highlights* bellow:
@@ -53,7 +53,7 @@ Self-taught independent degree, from books and free online resources to MOOCs fr
 |Korea Advanced<br>Institute of Science<br> and Technology(KAIST)|[Introduction to Quantum Information](https://www.coursera.org/learn/introduction-to-quantum-information)   | • Axioms of Quantum Theory <br> • Qubit Experiment <br> State Transformation VS. Probabilities <br> Quantum Computing & Quantum Communication  | In progress⚙️ |
 |Icahn School<br>of Medicine at Mount Sinai|[Systems Biology and Biotechnology Specialization](https://www.coursera.org/specializations/systems-biology)||
 
-##### For fun, I like to...
+## For fun, I like to...
 
 Solve puzzles 🧩, study and read 📖, research on tangent topics 🔬, rock-climbing 🧗‍♀️ and enjoy the company of the 🐈 and 🐶 that leave with me.
 

@@ -1,8 +1,9 @@
 ---
-title: "Welcome!"
+title: "home"
 ---
 
-<center>
-	<img src="https://64.media.tumblr.com/9db1800f23bd2b3eaaf071a8ce464b8c/13125e997c7c3e38-26/s1280x1920/fb877507cb4fe41f355e40c35f671c7b27d63e94.gifv" alt="minirt" />
-</center>
+![Aurelie Nemours, 4+3+9+16 b+t+6, (oil on canvas), 1987 [Galerie Denise René, Paris. © Aurélie Nemours]](https://64.media.tumblr.com/5b0ed83d2bf4df1886b5acc6bc8f827b/ce4426b99c90c6d0-8d/s640x960/c882cd7bae53bf071f26bd0385c35eb62bb35694.pnj)
 
+![https://www.tumblr.com/opendirectories](https://64.media.tumblr.com/ef817e11f814578772ef8ef1f9cda68f/55d22a790ab16504-55/s500x750/3871c9409e4b4cb7516b893e5b5c758bc1b072aa.jpg)
+
+![Engineers inspecting IBM System/360 Model 20 computers during the final testing phase at the manufacturing plant, San Jose, California (1966)](https://64.media.tumblr.com/b46bf940aa7708a0d38f0bbd012a8f9b/0d3d3f00851af7ed-b4/s640x960/5a8d803c0f913a542f276fee3266c5cc452a7001.jpg)

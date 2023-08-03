@@ -3,16 +3,16 @@ project:
   output-dir: docs
 
 website:
-  title: "."
-  navbar:
+  title: "mvtta"
+  navbar: 
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - resume.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: cyborg
     css: styles.css
     toc: true
 

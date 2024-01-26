@@ -1,0 +1,12 @@
+---
+title: "log"
+listing:
+  contents: posts/**/*.qmd
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  fields: [date, title, description, categories]
+---
+

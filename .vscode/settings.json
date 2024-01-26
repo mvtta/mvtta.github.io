@@ -1,0 +1,12 @@
+{
+    "cSpell.words": [
+        "mindex"
+    ],
+    "grammarly.selectors": [
+        {
+            "language": "quarto",
+            "scheme": "file",
+            "pattern": "posts/1/index.qmd"
+        }
+    ]
+}

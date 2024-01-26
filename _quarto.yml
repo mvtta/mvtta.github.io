@@ -1,19 +1,21 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: _output
 
 website:
-  title: "mvtta"
+  title: "mindex"
   navbar: 
+    background: black
+    search: true
     left:
-      - href: index.qmd
-        text: Home
-      - resume.qmd
-
+      - text: "context"
+        file: index.qmd
+      - text: "log"
+        file: log.qmd
 format:
   html:
     theme: cyborg
     css: styles.css
-    toc: true
+
 
 

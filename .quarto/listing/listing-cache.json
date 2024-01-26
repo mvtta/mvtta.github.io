@@ -1,0 +1,10 @@
+{
+  "listingMap": {
+    "index.qmd": [
+      "B3049D40"
+    ],
+    "log.qmd": [
+      "posts/**/*.qmd"
+    ]
+  }
+}

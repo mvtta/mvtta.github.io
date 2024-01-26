@@ -1,9 +1,170 @@
 ---
-title: "home"
+title: "index"
+listing:
+  categories: true
 ---
 
-![Aurelie Nemours, 4+3+9+16 b+t+6, (oil on canvas), 1987 [Galerie Denise René, Paris. © Aurélie Nemours]](https://64.media.tumblr.com/5b0ed83d2bf4df1886b5acc6bc8f827b/ce4426b99c90c6d0-8d/s640x960/c882cd7bae53bf071f26bd0385c35eb62bb35694.pnj)
+* [Poems, Thoughts, Loose Notes & Drawings](posts/0/poems-and-thoughts.qmd)
 
-![https://www.tumblr.com/opendirectories](https://64.media.tumblr.com/ef817e11f814578772ef8ef1f9cda68f/55d22a790ab16504-55/s500x750/3871c9409e4b4cb7516b893e5b5c758bc1b072aa.jpg)
+<details>
 
-![Engineers inspecting IBM System/360 Model 20 computers during the final testing phase at the manufacturing plant, San Jose, California (1966)](https://64.media.tumblr.com/b46bf940aa7708a0d38f0bbd012a8f9b/0d3d3f00851af7ed-b4/s640x960/5a8d803c0f913a542f276fee3266c5cc452a7001.jpg)
+<summary>Evolutionary Biochemistry</summary>
+
+1.  Evolutionary Biochemistry
+    -   Chemistry
+        -   Nigel Lane
+            -   [The electrical origins of life](https://www.youtube.com/watch?v=FLaTU-t1CQM "The electrical origin of life")
+            -   [Kreb Cycle](https://youtu.be/vBiIDwBOqQA?si=o8golhRao2R4NXIH "Kreb Cycle")
+    -   Digital Chemistry
+        -   Assembly Theory vs Co-elotution
+    -   Biology
+        -   Michael Levin
+        -   Theory for Mind Everywhere
+    -   Computational Biology
+        -   Von Neuman
+
+        -   Turin Biology Paper
+
+            </details>
+
+<details>
+
+<summary>Physics</summary>
+
+2.  Physics
+    -   Borrowing "The Pixel of Relity" from Quantum Gravity Theory
+
+        </details>
+
+<details>
+
+<summary>Philosophy</summary>
+
+3.  Philosophy
+    -   Cognition
+
+    -   Meaning & Goals
+
+    -   Meta-Crisis
+
+    -   Autopoesis, Homeostasis
+
+        </details>
+
+<details>
+
+<summary>Ecology</summary>
+
+4.  Ecology
+
+    </details>
+
+<details>
+
+<summary>Complex Systems</summary>
+
+5.  Complex Systems
+    -   Information
+
+    -   Graph Problems
+
+        </details>
+
+<details>
+
+<summary>Political Science & governance</summary>
+
+6.  Political Science & Governance
+    -   Democracy
+        -   Hongs Formula
+        -   Re-visiting the majority
+        -   Outliers value
+    -   Governance
+        -   Topology of governance
+
+        -   Spacial relationship
+
+            </details>
+
+<details>
+
+<summary>Problems Identifyed</summary>
+
+7.  Problems Identifyed
+    -   Identifyed Problems: A summary
+
+        </details>
+
+<details>
+
+<summary>Convergence, Juxta, Collision,</summary>
+
+8.  Convergence / Justaposition
+    -   Emergence
+
+    -   Scale and Abstraction
+
+    -   Continuum and growth rate
+
+    -   Outliers value
+
+    -   Graphing the intuitive relationship
+
+    -   Testing the relationship by formal logic
+
+        </details>
+
+<details>
+
+<summary>Solutions & Viability</summary>
+
+9.  Solutions and their viability
+    -   For global agreement
+
+        -   Common ground for mutual understanding
+        -   Party analogy
+        -   Human desires in ven diagram
+
+    -   Global agreement, local action.
+
+    -   Using Ramsey Numbers and graph of connections to predict hierarchical models for communities to self-organize / self Governance
+
+    -   Models and policies for truth
+
+    -   Peer-To-Peer Fact Validator
+
+    -   Artifical Resource
+
+        </details>
+
+<details>
+
+<summary>Civilization Design</summary>
+
+10. Civilization Design
+    -   Axioms
+
+    -   Bounderies
+
+    -   Agreements
+
+        </details>
+
+<details>
+
+<summary>Portugal</summary>
+
+11. Portugal
+    -   A letter
+
+    -   Modeling direct democracy in current context
+
+    -   Exposing polarizing incentives
+
+    -   Dismystifying / unblocking inductive bias holding back humanity
+
+        </details>
+
+------------------------------------------------------------------------
+
+[contact me](mailto:mvaldeta42@gmail.com)

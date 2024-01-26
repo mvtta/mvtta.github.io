@@ -3,7 +3,7 @@
     "listing": "/log.html",
     "items": [
       "/posts/0/poems-and-thoughts.html",
-      "/posts/resume.html",
+      "/posts/Resume/resume.html",
       "/posts/Education/index.html"
     ]
   },
@@ -12,7 +12,7 @@
     "items": [
       "/posts/Education/index.html",
       "/posts/0/poems-and-thoughts.html",
-      "/posts/resume.html",
+      "/posts/Resume/resume.html",
       "/log.html"
     ]
   }

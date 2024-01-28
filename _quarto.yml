@@ -3,7 +3,7 @@ project:
   output-dir: _output
 
 website:
-  title: "mindex"
+  title: "mvtta"
   navbar: 
     background: black
     search: true

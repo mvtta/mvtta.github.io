@@ -22,5 +22,11 @@
   },
   "posts/Education/index.qmd": {
     "index.html": "c48cc702"
+  },
+  "posts/resume.qmd": {
+    "resume.html": "165dfc22"
+  },
+  "posts/Resume/resume.qmd": {
+    "resume.html": "49ee97a3"
   }
 }

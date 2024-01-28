@@ -7,6 +7,11 @@
             "language": "quarto",
             "scheme": "file",
             "pattern": "posts/1/index.qmd"
+        },
+        {
+            "language": "quarto",
+            "scheme": "file",
+            "pattern": "posts/resume/resume.qmd"
         }
     ]
 }

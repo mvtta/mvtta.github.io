@@ -1,5 +1,5 @@
 ---
-title: "index"
+title: "mind index"
 listing:
   categories: true
 ---
@@ -12,7 +12,7 @@ listing:
 
 1.  Evolutionary Biochemistry
     -   Chemistry
-        -   Nigel Lane
+        -   Nick Lane
             -   [The electrical origins of life](https://www.youtube.com/watch?v=FLaTU-t1CQM "The electrical origin of life")
             -   [Kreb Cycle](https://youtu.be/vBiIDwBOqQA?si=o8golhRao2R4NXIH "Kreb Cycle")
     -   Digital Chemistry

@@ -15,7 +15,19 @@
       "/posts/Education/index.html",
       "/posts/Poems/poems-and-thoughts.html",
       "/posts/Resume/resume.html",
-      "/log.html"
+      "/log.html",
+      "/open-notes.html"
+    ]
+  },
+  {
+    "listing": "/open-notes.html",
+    "items": [
+      "/posts/Evolution/index.html",
+      "/posts/Education/index.html",
+      "/posts/Poems/poems-and-thoughts.html",
+      "/posts/Resume/resume.html",
+      "/log.html",
+      "/index.html"
     ]
   }
 ]

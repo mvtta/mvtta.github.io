@@ -10,8 +10,10 @@ website:
     left:
       - text: "context"
         file: index.qmd
-      - text: "log"
+      - text: "drafts"
         file: log.qmd
+      - text: "context references"
+        file: open-notes.qmd
 format:
   html:
     theme: cyborg

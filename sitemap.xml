@@ -2,22 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mvtta.github.io/log.html</loc>
-    <lastmod>2024-01-29T23:35:10.029Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mvtta.github.io/posts/0/poems-and-thoughts.html</loc>
-    <lastmod>2024-01-29T23:35:08.069Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mvtta.github.io/posts/Resume/resume.html</loc>
-    <lastmod>2024-01-29T23:35:06.246Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mvtta.github.io/posts/Education/index.html</loc>
-    <lastmod>2024-01-29T23:35:07.234Z</lastmod>
+    <lastmod>2024-02-04T22:44:06.293Z</lastmod>
   </url>
   <url>
     <loc>https://mvtta.github.io/index.html</loc>
-    <lastmod>2024-01-29T23:35:09.279Z</lastmod>
+    <lastmod>2024-02-04T22:44:05.003Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/posts/Evolution/index.html</loc>
+    <lastmod>2024-02-04T22:44:03.227Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/posts/Resume/resume.html</loc>
+    <lastmod>2024-02-04T22:43:56.508Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/posts/Education/index.html</loc>
+    <lastmod>2024-02-04T22:43:57.649Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/posts/Poems/poems-and-thoughts.html</loc>
+    <lastmod>2024-02-04T22:44:04.197Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/open-notes.html</loc>
+    <lastmod>2024-02-04T22:44:05.758Z</lastmod>
   </url>
 </urlset>

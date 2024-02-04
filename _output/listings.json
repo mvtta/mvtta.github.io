@@ -2,16 +2,18 @@
   {
     "listing": "/log.html",
     "items": [
-      "/posts/0/poems-and-thoughts.html",
+      "/posts/Poems/poems-and-thoughts.html",
       "/posts/Resume/resume.html",
-      "/posts/Education/index.html"
+      "/posts/Education/index.html",
+      "/posts/Evolution/index.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
+      "/posts/Evolution/index.html",
       "/posts/Education/index.html",
-      "/posts/0/poems-and-thoughts.html",
+      "/posts/Poems/poems-and-thoughts.html",
       "/posts/Resume/resume.html",
       "/log.html"
     ]

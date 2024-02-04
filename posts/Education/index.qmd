@@ -3,9 +3,15 @@ title: "Education"
 author: "Valdetaro, M"
 date: "2024-01-20"
 categories: [education]
+format:
+  html:
+    grid:
+        margin-width: 350px
+reference-location: margin
+citation-location: margin
 ---
 
-We experience education in sequential steps, closed and determined, and are given information and instructions within a perspective of the immutability of reality. "Always was, always will be", sets a stage from where social order re-establishes itself for yet another generation.
+We experience education in sequential steps, closed and determined, are given information and instructions within a perspective of the immutability of reality. "Always was, always will be", sets a stage from where social order re-establishes itself for yet another generation.
 
 Currently education is given a high degree of importance, addressing three major domains:
 
@@ -15,46 +21,52 @@ Currently education is given a high degree of importance, addressing three major
 
 3.  for an x% increase amount of life-**expectancy**
 
-Amongst the immutability illusion, the doctrine of stability hinders, dangerously close to actual permanent eliminating the core evolutionary device Humans have called learning ability.
+Amongst the immutability illusion, the doctrine of stability hinders and is dangerously close to the actual and permanent elimination of the core evolutionary device Humans have called learning ability.
 
-Of course, modernity and the Industrial Revolution required literate workers to read the manuals operate machines and assemble products ensuring the life expectancy of the growing assembly line.\
-But before that, old clerics required new ones, literate minds to perpetuate the dogmatic pillars of societies.
+Of course, modernity and the Industrial Revolution required literate workers to read the manuals, efficiently operate the machines, and to assemble products, ensuring the life expectancy of the growing assembly line.
+Before that, old clerics required new ones, creating literate minds to perpetuate the dogmatic pillars of societies.
 
-These devices worked irrefutably for a pair of decades, and after two generations into the Industrial era, two wars eradicated the contextual roots to fundament the newfound modernity within the space-time continuum of existence.
+These processes worked irrefutably then, and now, for a pair of decades, after two generations into the Industrial era, two wars eradicated the contextual roots that lead to the newfound modernity, within the space-time continuum of existence.
 
-So what we have is the life or death decision to no matter at what cost, participate in the system of preparation of static socio-economic devices.
+A beggining was forged, and the past obliviated.
 
-Given that formal education eradicates the why questions from the equations, and there is a hungry mob of militants enforcing procedures and methods as doctrines, and there is a life or death term in that equation, which legally would constitute an almost certain absolution for any crime, education institutions are the most effective weapons playing a crucial role leading to world destruction.
+So, what we have is the 'life or death' decision to, no matter at what cost, participate in the system that produces a panoply of static socio-economic engines.
 
-It's understandable if you disagree, but entertain the thought for a moment, what supports the argument won't take long to pass across, and does the reader have anything to lose:
+Given that formal education eradicates the **why** question from the equations, and there is a hungry mob of militants enforcing procedures and methods as doctrines, the addition of the **life or death** term, Educational institutions appear to be very effective at their crucial role in Humanity's self-destruction.
 
-We are information processing systems, not machines, but systems, of systems of several degrees of agency. There are fantastical and mesmerizing processes of intra-systemic communication, and collaboration that address all scales and allow us to breathe out of our conscious decision.
+It's understandable if you disagree, but entertain the thought for a moment, what supports the argument won't take long to pass across, and does the reader have anything to lose?
 
-"Ah, that is just physics", say all the institutions. But you probably don't know that the origin of life is still a mystery, closer and closer to being grasped, but that is another essay.
+### Argumment
+We are information processing systems, not machines, but systems, of systems of several degrees of agency. There are fantastical and mesmerizing processes of intra-systemic communication, and collaboration that address all scales and allow us to breathe out of our conscious decision stage.
 
-So far, the argument is made up of:
+"Ah, that is just physics", say most institutions. 
 
-Education is essential for
+![AltText](https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs10071-023-01780-3/MediaObjects/10071_2023_1780_Fig1_HTML.png)
+
+Levin, M. Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind. Anim Cogn 26, 1865–1891 (2023). https://doi.org/10.1007/s10071-023-01780-3
+
+
+So far, the argument is, "Education is essential for "
 
 1.  some **future** economic value
 
-2.  better **future** societies
+2.  somehow better **future** societies
 
 3.   x% increase amount of life-**expectancy**
 
 By:
 
-1\. Removing doubt, the why, from a very young age, ensuring social order and forging tacit agreements of fundamental truths
+1. Removing doubt, the **why** question, from a very young age, ensuring the replication of social order and forging the tacit agreements on fundamental truths for the next generation to come
 
-2. Teaching complex systems to repeat the same methods and processes on the dynamic and ever-changing nature of the universe
+2. Teaching complex systems to repeat the same static methods and externalizing processes, regardless of their dynamic nature
 
-3\. Promissing those who adhere with dedication and precision and hypothetical better future, based on static doctrines and inductive biases.
+3. Promissing those who adhere with dedication, and precision to the set of static methodologies, a vague idea of prosperity, health and wealth
 
-Of course, the argument is not fully complete, but is important to juxtapose the information and the principles laid out to re-check if it makes sense. It is important to say at this point that I do not argue that education is bad, nor am I defending illiteracy, child mortality and poverty. The argument is made upon the premise of which education was constituted in the first place., and of course the perversion of incentives pushing the institutionalization of that duty, turning it into a privilege.
+Of course, the argument is not fully complete, but is important to juxtapose the information and lay the concurrent principles. 
 
-But how was the incentive prevented in the first place?
+It is important to say at this point, that I do not argue that education is bad, nor am I defending illiteracy, child mortality and poverty. The argument defends Education at it's root, the **why** of which education itself exists, set's the tone for further analysis on the **meaning** propelling this perversion, leading to the institutionalization of what once was considered a duty, and is now turning it into a privilege, for the priviledge of being able to exercise it. 
 
-Passing the information down to new generations, to optimize the learning process across long periods, inter-generational learning one may call it, is a evolutionary mechanism developed to prevent extinction, as most life forms on our planet contain. Most species do it in ways we haven't been able to decode, as each system is limited by its perceptual range.
+Transferring the information gathered to new generations, to optimize the learning process across long periods, inter-generational learning one may call it, it seems to be an evolutionary mechanism developed to prevent extinction, as most life forms on our planet contain. Most species do it in ways we haven't been able to decode, as each system is limited by its perceptual range.
 
 Recapping, our education system:
 

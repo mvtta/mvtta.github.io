@@ -21,12 +21,19 @@
     "poems-and-thoughts.html": "52b535c3"
   },
   "posts/Education/index.qmd": {
-    "index.html": "c48cc702"
+    "index.html": "c48cc702",
+    "index.tex": "c262fb3d"
   },
   "posts/resume.qmd": {
     "resume.html": "165dfc22"
   },
   "posts/Resume/resume.qmd": {
     "resume.html": "49ee97a3"
+  },
+  "posts/Evolution/index.qmd": {
+    "index.html": "3feba1be"
+  },
+  "posts/Poems/poems-and-thoughts.qmd": {
+    "poems-and-thoughts.html": "3dcd045c"
   }
 }

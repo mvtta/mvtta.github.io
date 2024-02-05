@@ -5,13 +5,15 @@
       "/posts/Poems/poems-and-thoughts.html",
       "/posts/Resume/resume.html",
       "/posts/Education/index.html",
-      "/posts/Evolution/index.html"
+      "/posts/Evolution/index.html",
+      "/posts/Information/index.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
       "/posts/Evolution/index.html",
+      "/posts/Information/index.html",
       "/posts/Education/index.html",
       "/posts/Poems/poems-and-thoughts.html",
       "/posts/Resume/resume.html",
@@ -23,6 +25,7 @@
     "listing": "/open-notes.html",
     "items": [
       "/posts/Evolution/index.html",
+      "/posts/Information/index.html",
       "/posts/Education/index.html",
       "/posts/Poems/poems-and-thoughts.html",
       "/posts/Resume/resume.html",

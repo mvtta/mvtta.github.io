@@ -8,7 +8,7 @@ toc: true
 
 ## Information
 0. Theories
-    - [The experience of life is information process](https://arxiv.org/abs/1210.5908)
+    - [The experience of life is an information process](https://arxiv.org/abs/1210.5908)
 
 ## Evolution
 1.  Evolutionary Biochemistry
@@ -21,7 +21,7 @@ toc: true
             -   <https://www.nature.com/articles/s41570-019-0155-6>
     -   [Bio-Electricity](Bioelectricity:%20From%20Cognitive%20Glue%20to%20Regenerative%20Medicine%20with%20Special%20Focus%20on%20Microbiology/Immunology)
     -   Digital Chemistry
-        -   Assembly Theory vs Co-evotution
+        -   Assembly Theory vs Co-evolution
         -   [Assembly theory explains and quantifies selection and evolution](https://www.nature.com/articles/s41586-023-06600-9)
     -   Biology
         -   Michael Levin
@@ -31,20 +31,20 @@ toc: true
     -   Computational Biology
         -   Von Neuman
         -   Turin Biology Paper
-            -   Celular Automata
+            -   Cellular Automata
                 -   <https://slackermanz.com/explorations-of-cellular-automata-and-complex-systems/>
                 -   <https://softologyblog.wordpress.com/2018/03/31/more-explorations-with-multiple-neighborhood-cellular-automata/>
 
 ## Physics
 2.  Physics
-    -   Borrowing "The Pixel of Relity" from Quantum Gravity Theory
+    -   Borrowing "The Pixel of Reality" from Quantum Gravity Theory
 
 ## Philosophy
 3. Philosophy
     -   Cognition
     -   Meaning & Goals
     -   [Meta-Crisis](https://www.youtube.com/watch?v=4kBoLVvoqVY)
-    -   Autopoesis, Homeostasis
+    -   Autopoiesis, Homeostasis
 
 ## Ecology
 4.  Ecology
@@ -62,11 +62,11 @@ toc: true
         -   Outliers value
     -   Governance
         -   Topology of governance
-        -   Spacial relationship
+        -   Spatial relationship
 
-##  Problems Identifyed
-7.  Problems Identifyed
-    -   Identifyed Problems: A summary
+##  Problems Identified
+7.  Problems Identified
+    -   Identified Problems: A summary
 
 ## Interactions
 8.  Convergence / Justaposition
@@ -82,24 +82,24 @@ toc: true
     -   For global agreement
         -   Common ground for mutual understanding
         -   Party analogy
-        -   Human desires in ven diagram
+        -   Human desires in Ven diagram
     -   Global agreement, local action.
-    -   Using Ramsey Numbers and graph of connections to predict hierarchical models for communities to self-organize / self Governance
+    -   Using Ramsey Numbers and graphs of connections to predict hierarchical models for communities to self-organize / self Governance
     -   Models and policies for truth
     -   Peer-To-Peer Fact Validator
-    -   Artifical Resource
+    -   Artificial Resource
 
 ## Civilization
 10. Civilization Design
     -   Axioms
-    -   Bounderies
+    -   Boundaries
     -   Agreements
 
 ## Portugal
 11. Portugal
     -   A letter
-    -   Modeling direct democracy in current context
+    -   Modeling direct democracy in the current context
     -   Exposing polarizing incentives
-    -   Dismystifying / unblocking inductive bias holding back humanity
+    -   Demystifying / unblocking inductive bias holding back humanity
 
 Would you like to have a conversation on these topics? [Contact me @](mailto:mvaldeta42@gmail.com)

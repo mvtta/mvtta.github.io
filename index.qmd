@@ -5,4 +5,52 @@ listing:
   categories: true
 ---
 
-[contact](mailto:mvaldeta42@gmail.com)
+#### Open 
+adjective
+
+1\. allowing access, passage, or a view through an empty space; not closed or blocked.
+
+2\. exposed to the air or to view; not covered.
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+``` {.bash .py}
+####################################################
+# todo:
+#
+#    state of intent
+#    contact  section
+#    definitions of new words 
+#    entry point in context propeler
+#
+###################################################
+```
+
+## Lastest Entries

@@ -22,6 +22,22 @@
             "language": "quarto",
             "scheme": "file",
             "pattern": "essays/i.qmd"
+        },
+        {
+            "language": "quarto",
+            "scheme": "file",
+            "pattern": "context.qmd"
+        },
+        {
+            "language": "quarto",
+            "scheme": "file",
+            "pattern": "poems/poems-and-thoughts.qmd"
+        },
+        {
+            "language": "quarto",
+            "scheme": "file",
+            "pattern": "posts/Education/index.qmd"
         }
-    ]
+    ],
+    "cSpell.enabled": true
 }

@@ -11,4 +11,4 @@ reference-location: margin
 citation-location: margin
 ---
 
-![Model1](posts/Civilization-Design/Asset 1.png){fig-alt="m"}
+![first draft](Asset%201.png){fig-align="center"}

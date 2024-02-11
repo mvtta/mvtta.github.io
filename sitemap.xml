@@ -1,35 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mvtta.github.io/log.html</loc>
-    <lastmod>2024-02-05T21:07:39.457Z</lastmod>
+    <loc>https://mvtta.github.io/poems/poems-and-thoughts.html</loc>
+    <lastmod>2024-02-11T10:20:12.681Z</lastmod>
   </url>
   <url>
-    <loc>https://mvtta.github.io/index.html</loc>
-    <lastmod>2024-02-05T21:07:37.783Z</lastmod>
+    <loc>https://mvtta.github.io/log.html</loc>
+    <lastmod>2024-02-11T10:20:10.845Z</lastmod>
   </url>
   <url>
     <loc>https://mvtta.github.io/posts/Evolution/index.html</loc>
-    <lastmod>2024-02-05T21:07:35.930Z</lastmod>
+    <lastmod>2024-02-11T10:20:08.852Z</lastmod>
   </url>
   <url>
     <loc>https://mvtta.github.io/posts/Resume/resume.html</loc>
-    <lastmod>2024-02-05T21:07:28.744Z</lastmod>
+    <lastmod>2024-02-11T10:20:01.349Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/posts/Civilization-Design/paftf.html</loc>
+    <lastmod>2024-02-11T10:19:59.761Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/essays/index.html</loc>
+    <lastmod>2024-02-11T10:19:58.453Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/essays/i.html</loc>
+    <lastmod>2024-02-11T10:19:57.954Z</lastmod>
   </url>
   <url>
     <loc>https://mvtta.github.io/posts/Information/index.html</loc>
-    <lastmod>2024-02-05T21:07:26.899Z</lastmod>
+    <lastmod>2024-02-11T10:19:59.388Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/posts/Introduction/index.html</loc>
+    <lastmod>2024-02-11T10:20:00.714Z</lastmod>
   </url>
   <url>
     <loc>https://mvtta.github.io/posts/Education/index.html</loc>
-    <lastmod>2024-02-05T21:07:29.629Z</lastmod>
+    <lastmod>2024-02-11T10:20:02.646Z</lastmod>
   </url>
   <url>
-    <loc>https://mvtta.github.io/posts/Poems/poems-and-thoughts.html</loc>
-    <lastmod>2024-02-05T21:07:36.815Z</lastmod>
+    <loc>https://mvtta.github.io/index.html</loc>
+    <lastmod>2024-02-11T10:20:10.105Z</lastmod>
   </url>
   <url>
-    <loc>https://mvtta.github.io/open-notes.html</loc>
-    <lastmod>2024-02-05T21:07:38.754Z</lastmod>
+    <loc>https://mvtta.github.io/context.html</loc>
+    <lastmod>2024-02-11T10:20:11.896Z</lastmod>
   </url>
 </urlset>

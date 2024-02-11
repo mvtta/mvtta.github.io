@@ -1,13 +1,19 @@
 {
   "listingMap": {
-    "index.qmd": [
-      "B3049D40"
+    "essays/index.qmd": [
+      "*.qmd"
     ],
-    "open-notes.qmd": [
+    "posts/Introduction/index.qmd": [
+      "../*/*.qmd"
+    ],
+    "index.qmd": [
       "B3049D40"
     ],
     "log.qmd": [
       "posts/**/*.qmd"
+    ],
+    "context.qmd": [
+      "B3049D40"
     ]
   }
 }

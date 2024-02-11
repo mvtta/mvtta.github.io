@@ -1,0 +1,9 @@
+---
+title: "essays/"
+page-layout: article
+listing:
+  contents:
+    - text: "End of 2023, reflections"
+    - "*.qmd"
+---
+

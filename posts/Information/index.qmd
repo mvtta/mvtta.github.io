@@ -11,59 +11,90 @@ reference-location: margin
 citation-location: margin
 ---
 
-Information, depending on the field of study, takes different meanings or encompasses a different set of attributes. Is it possible to formulate a generalized definition for Information?
+Information, depending on the field of study, takes different meanings or encompasses a different set of attributes. 
 
-The question, although simple at first glance, has by design the term possibility, an open invitation to ask:
+Is it possible to formulate a generalized definition for Information?
+The question, although simple at first glance, has by design the term **possibility**, an open invitation to ask:
 
-Is information part of the origin of life equation?
-Is information part of the natural laws?
-Is information physical or philosophic?
-Is it possible to have one definition of Information, because it is part of the natural world and can be generalized or is it an artifact of language, is language and culture part of the natural world? 
+* Is information part of the origin of life equation?
+* Is information part of the natural laws?
+* Is information physical or philosophic?
+* Is it possible to have one definition of Information, because it is part of the natural world and can be generalized or is it an artifact of language, are language and culture part of the natural laws that govern the ? 
 
 What if it is not possible, because Information is just an axis on a dimensional space to which we don't have access?
 Is information metamorphic, does it have a continuum, or does it belong in a spectrum? 
 
 There is no ambition in my words to dissect all the lexicons and references to provide multiple transcripts of publications.
-This exploration of Information is a 
+This exploration of Information is an exercise in synergetic analysis, guided by a non formal intuition of an underlying broader symbolic relationship.  
 
 ----
 
-Why is it usefull to question something so robust as teh current Information Theroy and examine possible ways to further strech and attempt to re-write it? 
-If the discovery of information is ony day proved, how could it enlarge out understanding of reality?
+Why is it usefull to question something so robust as the current definitions and the distinction between Information Theories?
+
+Are there possibilities to further strech it and find new fittings? 
+
+If the discovery of information is proved, how could it change out understanding of reality?
 Could missinformation become a crime?
-If we are not the true destination of infomration, what else is in the realmm of a qualifiable observer?
-If nothing of meaninful significatins comes out of this, and future, explorations, the model will not suffer when questioned, it's robustness would only solidify.
+If we are not the true destination of infomration, what else is in the realm of and qualifies an observer?
+Even if nothing of value comes out of this, the model will not suffer when questioned, would only solidify it's significace. 
 
 In my day to day I'm constantly reminded of Shannon's Information Theory, and as starting point let's take the axioms of the Mathematical Theory of Communication:
 
 
+#### Building blocks of information
+Symbols, connection - relationship between them, symbolic relationship, infomation anssembly theory, distinction between man made symbols and building blocks of Nature, even further, from a non human prespective informmation generation / emergence. 
+
+For a Generalized Information Therory x Assembly Theory, is needed:
+
+* A generalized smallest unit of information
+    * Can it be / is it fundamental?
+* Does meaning emerge?
+* The abundance of symbols and their connections can be used for sampling regardless of context?
+* Measurement coherence across scpectrum?
+* Does the interconnectedness of context deffering information spaces reveal anything interesting? 
+* Synergetic Information, addition of mersurements vs emergency?
+
 #### Mathematical Theory of Communication
 The mathematical model of communication where the definition of the amounf of information is used in so many different fields that is tempting to intuit it's possible role in the natural world. The same can be said for most mathemmatical theorems and even mathematics itself.
-
-#### Entropy == The amount of not Noise
-It's funny how I beleive Shannon was missinterpreted. By the amount of information one means exceptions and disruptions to a pattern, not the pattern itself. 
-To quantify the amount of information in DNA by the is the same as saying that genetic mutations convey more information than the opposite. If that was so, any interference in the information would be the quantity of the information and not the initial message itself. 
-So, to solve this quarrel, Information is generally in the fields oc CS, Mathematics and now biology can be measured as long as the context is knownm, regardless of it's generalized formm, therefore not being a true generalization. 
-
-
-#### Known Context Dependency
-Spaces sets etc
-
-#### Observer Depenmdency 
-If there is no observer or destination, is Information still Information?
-How to qualify an observer or a destination?
-
-#### Patterns
-Randomness, noise, extra-ordiary.
 
 DNA is a sequence of amino acids, a long and monotonous of AGTC foldings, and its information is conveyed in the combination of the 4 symbols. 
 In this case, can we define:
 * The source of information
 * The destination 
 * The context 
-* The amount
+* The amount / quatity
 
+### Quantity
 #### Quantifying
 If the amount of information is tied to the probability of the event, is it logical to extrapolate that the amount of information is proportional to the part that is not noise?
 
+To quantify the amount of information in DNA by the is the same as saying that genetic mutations convey more information than the opposite. If that was so, any interference in the information would be the quantity of the information and not the initial message itself. 
+So, to solve this quarrel, Information is generally in the fields oc CS, Mathematics and now biology can be measured as long as the context is knownm, regardless of it's generalized formm, therefore not being a true generalization. 
+
+### Context
+#### Known Context Dependency
+Spaces sets etc
+Meaning, reductionism, categorization,assembly theory
+
+### Source and Destination
+#### Observer Dependency 
+If there is no observer or destination, is Information still Information?
+How to qualify an observer or a destination?
+
+### Patterns
+Randomness, noise, extra-ordiary.
+
+#### Entropy == The amount of not Noise
+Reconcile? the amount of information find roots in the exceptions and disruptions to a pattern, not the pattern itself?
+
+*   Contradiction Math vs Telecom
+
+## First Principles
+
+Information == Symbolic Object --> Made from symbolic units --> Symbols
+Symbolic Object == Class of Object?
+Object --> Physical
+Symbolic Object --> ? ethereal ? physical
+Meaning --> by Design --> Intrinsic Value?
+Objective Value --> Fundamental Value --> Fundamental Quality + Fundamental Quantity?
 

@@ -1,0 +1,8 @@
+---
+title: "preface/"
+page-layout: article
+toc: true
+listing:
+  contents:
+    - "../*/*.qmd"
+---

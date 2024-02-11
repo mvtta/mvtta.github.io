@@ -3,20 +3,24 @@ project:
   output-dir: _output
 
 website:
-  title: "mvtta"
+  title: "/"
   navbar: 
     background: black
     search: true
     left:
-      - text: "context"
-        file: index.qmd
-      - text: "drafts"
-        file: log.qmd
-      - text: "context references"
-        file: open-notes.qmd
+      - text: "Open Notes"
+        file: posts/Introduction/index.qmd
+      - text: "Essays"
+        file: essays/index.qmd
+      - text: "Poems"
+        file: poems/poems-and-thoughts.qmd
+      - text: "Infix"
+        file: context.qmd
+
 format:
   html:
     theme: cyborg
+    font: inter
     css: styles.css
 
 

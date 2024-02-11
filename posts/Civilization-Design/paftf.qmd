@@ -1,0 +1,14 @@
+---
+title: "Planetary Architecture, future comsiderations"
+author: "Valdetaro, M"
+date: "2024-02-8"
+categories: [civilization]
+format:
+  html:
+    grid:
+        margin-width: 350px
+reference-location: margin
+citation-location: margin
+---
+
+![Model1](posts/Civilization-Design/Asset 1.png){fig-alt="m"}

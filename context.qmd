@@ -1,23 +1,16 @@
 ---
-title: "open-notes index"
+title: "infix/"
 listing:
-  categories: true
+    categories: true
+categories: [references]
+toc: true
 ---
 
-0.  [Poems, Thoughts, Loose Notes & Drawings](posts/0/poems-and-thoughts.qmd)
+## Information
+0. Theories
+    - [The experience of life is information process](https://arxiv.org/abs/1210.5908)
 
-<details>
-
-<summary>Information</summary>
-
-[The experience of life an information process](https://arxiv.org/abs/1210.5908)
-
-</details>
-
-<details>
-
-<summary>Evolution</summary>
-
+## Evolution
 1.  Evolutionary Biochemistry
     -   Bio-Chemistry
         -   [Nick Lane](https://nick-lane.net/publications/)
@@ -26,7 +19,7 @@ listing:
             -   <https://nick-lane.net/publications/a-biophysical-basis-for-the-emergence-of-the-genetic-code-in-protocells/>
             -   <https://nick-lane.net/publications/origin-eukaryotic-cell/>
             -   <https://www.nature.com/articles/s41570-019-0155-6>
-    -   [Bio-Electricity](Bioelectricity: From Cognitive Glue to Regenerative Medicine with Special Focus on Microbiology/Immunology)
+    -   [Bio-Electricity](Bioelectricity:%20From%20Cognitive%20Glue%20to%20Regenerative%20Medicine%20with%20Special%20Focus%20on%20Microbiology/Immunology)
     -   Digital Chemistry
         -   Assembly Theory vs Co-evotution
         -   [Assembly theory explains and quantifies selection and evolution](https://www.nature.com/articles/s41586-023-06600-9)
@@ -37,64 +30,31 @@ listing:
         -   Theory for Mind Everywhere
     -   Computational Biology
         -   Von Neuman
-
         -   Turin Biology Paper
-
             -   Celular Automata
-
                 -   <https://slackermanz.com/explorations-of-cellular-automata-and-complex-systems/>
-
                 -   <https://softologyblog.wordpress.com/2018/03/31/more-explorations-with-multiple-neighborhood-cellular-automata/>
 
-                    </details>
-
-<details>
-
-<summary>Physics</summary>
-
+## Physics
 2.  Physics
     -   Borrowing "The Pixel of Relity" from Quantum Gravity Theory
 
-        </details>
-
-<details>
-
-<summary>Philosophy</summary>
-
-3.  Philosophy
+## Philosophy
+3. Philosophy
     -   Cognition
-
     -   Meaning & Goals
-
     -   [Meta-Crisis](https://www.youtube.com/watch?v=4kBoLVvoqVY)
-
     -   Autopoesis, Homeostasis
 
-        </details>
-
-<details>
-
-<summary>Ecology</summary>
-
+## Ecology
 4.  Ecology
 
-    </details>
-
-<details>
-
-<summary>Complex Systems</summary>
-
+## Complex Systems
 5.  Complex Systems
     -   Information
-
     -   Graph Problems
 
-        </details>
-
-<details>
-
-<summary>Political Science & governance</summary>
-
+##  Political Science & governance
 6.  Political Science & Governance
     -   Democracy
         -   Hongs Formula
@@ -102,90 +62,44 @@ listing:
         -   Outliers value
     -   Governance
         -   Topology of governance
-
         -   Spacial relationship
 
-            </details>
-
-<details>
-
-<summary>Problems Identifyed</summary>
-
+##  Problems Identifyed
 7.  Problems Identifyed
     -   Identifyed Problems: A summary
 
-        </details>
-
-<details>
-
-<summary>Interactions</summary>
-
+## Interactions
 8.  Convergence / Justaposition
     -   Emergence
-
     -   Scale and Abstraction
-
     -   Continuum and growth rate
-
     -   Outliers value
-
     -   Graphing the intuitive relationship
-
     -   Testing the relationship by formal logic
 
-        </details>
-
-<details>
-
-<summary>Solutions </summary>
-
+##  Solutions
 9.  Solutions and their viability
     -   For global agreement
-
         -   Common ground for mutual understanding
         -   Party analogy
         -   Human desires in ven diagram
-
     -   Global agreement, local action.
-
     -   Using Ramsey Numbers and graph of connections to predict hierarchical models for communities to self-organize / self Governance
-
     -   Models and policies for truth
-
     -   Peer-To-Peer Fact Validator
-
     -   Artifical Resource
 
-        </details>
-
-<details>
-
-<summary>Civilization</summary>
-
+## Civilization
 10. Civilization Design
     -   Axioms
-
     -   Bounderies
-
     -   Agreements
 
-        </details>
-
-<details>
-
-<summary>Portugal</summary>
-
+## Portugal
 11. Portugal
     -   A letter
-
     -   Modeling direct democracy in current context
-
     -   Exposing polarizing incentives
-
     -   Dismystifying / unblocking inductive bias holding back humanity
 
-        </details>
-
-------------------------------------------------------------------------
-
-[contact me](mailto:mvaldeta42@gmail.com)
+Would you like to have a conversation on these topics? [Contact me @](mailto:mvaldeta42@gmail.com)

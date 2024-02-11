@@ -17,6 +17,11 @@
             "language": "quarto",
             "scheme": "file",
             "pattern": "posts/Information/index.qmd"
+        },
+        {
+            "language": "quarto",
+            "scheme": "file",
+            "pattern": "essays/i.qmd"
         }
     ]
 }

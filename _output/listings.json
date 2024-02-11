@@ -2,31 +2,59 @@
   {
     "listing": "/log.html",
     "items": [
-      "/posts/Poems/poems-and-thoughts.html",
+      "/posts/Introduction/index.html",
       "/posts/Resume/resume.html",
+      "/posts/Civilization-Design/paftf.html",
       "/posts/Education/index.html",
-      "/posts/Evolution/index.html"
+      "/posts/Evolution/index.html",
+      "/posts/Information/index.html"
+    ]
+  },
+  {
+    "listing": "/essays/index.html",
+    "items": [
+      "/essays/i.html"
+    ]
+  },
+  {
+    "listing": "/posts/Introduction/index.html",
+    "items": [
+      "/posts/Evolution/index.html",
+      "/posts/Education/index.html",
+      "/posts/Information/index.html",
+      "/posts/Civilization-Design/paftf.html",
+      "/posts/Resume/resume.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
       "/posts/Evolution/index.html",
+      "/posts/Information/index.html",
       "/posts/Education/index.html",
-      "/posts/Poems/poems-and-thoughts.html",
+      "/essays/i.html",
+      "/posts/Civilization-Design/paftf.html",
       "/posts/Resume/resume.html",
+      "/essays/index.html",
+      "/context.html",
       "/log.html",
-      "/open-notes.html"
+      "/poems/poems-and-thoughts.html",
+      "/posts/Introduction/index.html"
     ]
   },
   {
-    "listing": "/open-notes.html",
+    "listing": "/context.html",
     "items": [
       "/posts/Evolution/index.html",
+      "/posts/Information/index.html",
       "/posts/Education/index.html",
-      "/posts/Poems/poems-and-thoughts.html",
+      "/essays/i.html",
+      "/posts/Civilization-Design/paftf.html",
       "/posts/Resume/resume.html",
+      "/essays/index.html",
       "/log.html",
+      "/poems/poems-and-thoughts.html",
+      "/posts/Introduction/index.html",
       "/index.html"
     ]
   }

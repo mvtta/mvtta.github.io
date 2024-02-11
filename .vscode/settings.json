@@ -37,6 +37,11 @@
             "language": "quarto",
             "scheme": "file",
             "pattern": "posts/Education/index.qmd"
+        },
+        {
+            "language": "quarto",
+            "scheme": "file",
+            "pattern": "staccato /staccato.qmd"
         }
     ],
     "cSpell.enabled": true

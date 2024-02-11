@@ -5,41 +5,16 @@ listing:
   categories: true
 ---
 
-#### Open 
-adjective
+| *part of a plant*
+| *zero of a function*
+| *node in a tree that has no parent*
+| *primary lexical unit of a word*
+| *fundamental tone of any chord; the tone from whose harmonics, or overtones, a chord is composed user account at the root of the directory structure*
+| *highest directory of a directory structure*
 
-1\. allowing access, passage, or a view through an empty space; not closed or blocked.
+https://en.wiktionary.org/wiki/root
 
-2\. exposed to the air or to view; not covered.
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> | <br> V <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
 ``` {.bash .py}
 ####################################################

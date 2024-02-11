@@ -10,6 +10,8 @@ website:
     left:
       - text: "Open Notes"
         file: posts/Introduction/index.qmd
+      - text: "Staccato"
+        file: posts/Introduction/index.qmd
       - text: "Essays"
         file: essays/index.qmd
       - text: "Poems"

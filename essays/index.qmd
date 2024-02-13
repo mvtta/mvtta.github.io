@@ -7,3 +7,5 @@ listing:
     - "*.qmd"
 ---
 
+ Notes that critically are (being) explored, hopefully, within reasonable and concise argumentation parameters. Can be tagged finished or work-in-progress.
+

@@ -22,7 +22,7 @@ The entries are sectioned into the following categories:
 
 * **Staccato**: Quick and unsorted daily notes. First transcribed from my physical notebooks. I may not fully transition to a digital-only format so the process analog  --> digital may still apply in the future.
 
-* **Open Notes**: Quick Notes developed/explored, or directly entries that assumed a longer format. They have no revision in argumentation, nor a formal structure. 
+* **Open Notes**: Notes developed/explored, or directly entries that assumed a longer format. They have no revision in argumentation, nor a formal structure. 
 
 * **Essays**: Notes that critically are (being) explored, hopefully, within reasonable and concise argumentation parameters. Can be tagged finished or work-in-progress. 
 

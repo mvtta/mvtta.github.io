@@ -5,14 +5,13 @@ listing:
   categories: true
 ---
 
-| *part of a plant*
+| *"part of a plant*
 | *zero of a function*
 | *node in a tree that has no parent*
 | *primary lexical unit of a word*
 | *fundamental tone of any chord; the tone from whose harmonics, or overtones, a chord is composed user account at the root of the directory structure*
-| *highest directory of a directory structure*
-
-https://en.wiktionary.org/wiki/root
+| *highest directory of a directory structure "* 
+Wikipedia extract for the search: [root](https://en.wiktionary.org/wiki/root)
 
 ###  Note of intent
 Contemplating my mortality pragmatically, I came to realize, regarding my physical notebooks, that the resistance to share my thoughts with others, was an act of selfishness and misalignment with the very core and reason of why am I, as Human, given the ability to express my self, communicate, learn and invent. 

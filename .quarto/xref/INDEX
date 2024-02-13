@@ -68,5 +68,11 @@
   },
   "poems/poems.qmd": {
     "poems.html": "5c464e31"
+  },
+  "staccato /index.qmd": {
+    "index.html": "3489f0f2"
+  },
+  "staccato/staccato.qmd": {
+    "staccato.html": "5cebe42d"
   }
 }

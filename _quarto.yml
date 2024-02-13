@@ -15,7 +15,7 @@ website:
       - text: "Essays"
         file: essays/index.qmd
       - text: "Poems"
-        file: poems/poems-and-thoughts.qmd
+        file: poems/poems.qmd
       - text: "Infix"
         file: context.qmd
 

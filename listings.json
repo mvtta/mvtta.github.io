@@ -11,22 +11,6 @@
     ]
   },
   {
-    "listing": "/essays/index.html",
-    "items": [
-      "/essays/i.html"
-    ]
-  },
-  {
-    "listing": "/posts/Introduction/index.html",
-    "items": [
-      "/posts/Evolution/index.html",
-      "/posts/Education/index.html",
-      "/posts/Information/index.html",
-      "/posts/Civilization-Design/paftf.html",
-      "/posts/Resume/resume.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/posts/Evolution/index.html",
@@ -40,7 +24,23 @@
       "/log.html",
       "/poems/poems.html",
       "/posts/Introduction/index.html",
-      "/staccato /staccato.html"
+      "/staccato/staccato.html"
+    ]
+  },
+  {
+    "listing": "/posts/Introduction/index.html",
+    "items": [
+      "/posts/Evolution/index.html",
+      "/posts/Education/index.html",
+      "/posts/Information/index.html",
+      "/posts/Civilization-Design/paftf.html",
+      "/posts/Resume/resume.html"
+    ]
+  },
+  {
+    "listing": "/essays/index.html",
+    "items": [
+      "/essays/i.html"
     ]
   },
   {
@@ -57,7 +57,7 @@
       "/poems/poems.html",
       "/posts/Introduction/index.html",
       "/index.html",
-      "/staccato /staccato.html"
+      "/staccato/staccato.html"
     ]
   }
 ]

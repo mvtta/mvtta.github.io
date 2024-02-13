@@ -11,7 +11,7 @@ website:
       - text: "Open Notes"
         file: posts/Introduction/index.qmd
       - text: "Staccato"
-        file: posts/Introduction/index.qmd
+        file: staccato/staccato.qmd
       - text: "Essays"
         file: essays/index.qmd
       - text: "Poems"

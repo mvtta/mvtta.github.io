@@ -14,13 +14,30 @@ listing:
 
 https://en.wiktionary.org/wiki/root
 
-<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> | <br> V <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+###  Note of intent
+Contemplating my mortality pragmatically, I came to realize, regarding my physical notebooks, that the resistance to share my thoughts with others, was an act of selfishness and misalignment with the very core and reason of why am I, as Human, given the ability to express my self, communicate, learn and invent. 
+
+Thus, as a consequence, from now on I'm forcing myself out of the self-centered shelter, and exposing a kaleidoscopeian reflection of the kind of thoughts I dared/am compelled to shape into symbolic meaning. 
+
+The entries are sectioned into the following categories:
+
+* **Staccato**: Quick and unsorted daily notes. First transcribed from my physical notebooks. I may not fully transition to a digital-only format so the process analog  --> digital may still apply in the future.
+
+* **Open Notes**: Quick Notes developed/explored, or directly entries that assumed a longer format. They have no revision in argumentation, nor a formal structure. 
+
+* **Essays**: Notes that critically are (being) explored, hopefully, within reasonable and concise argumentation parameters. Can be tagged finished or work-in-progress. 
+
+*  **Poems**: Self-explanatory. 
+
+* **Infix**: Pointers and pins, an index to my current mind map of ideas and references. The purpose is dynamic, as I use the tree of information and links to share as a conversation propeller and contextual mapping to enrich physical dialogs with other Humans. 
+
+If you wish to have a conversation with me, here is my preferred method of contact is [email](mailto:mvtta@proton.me)
 
 ``` {.bash .py}
 ####################################################
 # todo:
 #
-#    state of intent
+#    state of intent : check
 #    contact  section
 #    definitions of new words 
 #    entry point in context propeler

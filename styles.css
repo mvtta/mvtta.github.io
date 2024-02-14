@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
 a:hover {
     background-color: rgba(244, 128, 238, 0.553);
+
   }
 .navbar-title {
     color: rgb(255, 255, 255);
@@ -10,11 +11,43 @@ a:hover {
 * {
     font-family: Inter, sans-serif;
     font-weight: 400;
+    color:#fffafa;
+    background-color: black;
+    
 }
 .nav-item {
     font-size:30px;
-    color:white;
+    color:rgb(42, 38, 40) !important;
 }
 .nav-link {
-    color: #fffafa !important;
+    font-size: large;
+    font-family: Inter, sans-serif;
+    font-weight: 200;
+    color: #5c5c5c !important;
+    border-right: 0px;
+}
+h1.title{
+    text-align: center !important;
+    font-style: italic !important;
+    font-size: large !important;
+    font-weight: 100;
+    color: #5c5c5c !important;
+}
+.h2{
+    font-size: large;
+    font-style: italic !important;
+    font-weight: 20;
+}
+.anchored{
+    font-size: large;
+    font-weight: 100;
+    border-bottom: 0ch;
+}
+
+.quarto-categories{
+    font-style: italic;
+}
+
+.comment{
+    color: #5c5c5c  !important;
 }

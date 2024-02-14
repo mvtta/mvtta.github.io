@@ -3,18 +3,26 @@ title: "poems/"
 format:
   html:
     toc: true
+    toc-title: " "
     grid:
-      sidebar-width: 300px
+      sidebar-width: 0px
       body-width: 900px
       margin-width: 300px
-      gutter-width: 1.5rem
-author: "Valdetaro, M"
-date: "2024-01-23"
-categories: [poems]
+      gutter-width: 0rem
 ---
+::: {.grid}
+::: {.g-col-8}
+## lexical
+:::
+
+::: {.g-col-4}
+## visual
+:::
+
+
+:::
 
 ## Untitled
-
 I don't know what to do  
 Where to start?  
 To do for others  
@@ -24,7 +32,6 @@ to do for me
 body is made of iron   
 
 ## Untitled
-
 For years  
 All that was known   
 reality  
@@ -45,7 +52,6 @@ for the small cactus.   
 241120
 
 ## 𝓠
-
 There is a place that does not fully exist,   
 where you live.
 
@@ -65,7 +71,6 @@ Quintessence,
 inside the ether.   
 
 ## Wayword?
-
 Where is there to navigate?  
 Plans are mere distractions.  
 

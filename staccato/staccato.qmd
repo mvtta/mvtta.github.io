@@ -3,9 +3,10 @@ title: "staccato/"
 format:
   html:
     toc: true
+    toc-title: " "
     grid:
       sidebar-width: 300px
-      body-width: 900px
+      body-width: 400px
       margin-width: 300px
       gutter-width: 1.5rem
 author: "Valdetaro, M"
@@ -13,17 +14,16 @@ date: "2024-01-23"
 categories: [thoughts]
 ---
 
-Quick and unsorted daily notes. First transcribed from my physical notebooks. I may not fully transition to a digital-only format so the process analog  --> digital may still apply in the future.
+### Quick and unsorted daily notes. 
+  First transcribed from my physical notebooks. I may not fully transition to a digital-only format so the process analog  --> digital may still apply in the future.
 
-#### .
-
+#### date unknown
 Adjusting the power distribution in democratic exercise and functions through a revisited direct governance-by-peers framework?
 
-#### .
-
+#### date unknown
 Not suitable for becomes free of.
 
-#### .
+#### date unknown
 
 | All my notes from 2022 disappeared and vanished. The notebook got wet, and ink spread.
 | PS: investigate how to retrieve memories:
@@ -62,7 +62,7 @@ It's not possible to decapitate an infrastructure.
 
 It daunts me.
 
-####  .
+####  date unknown
 
 Any kind of self-inflicted suffering is a waste of time.
 
@@ -74,10 +74,9 @@ Agency → Consciousness → Primal
 
 My existence is nothing Intriguing nonetheless Why are we conscious? Cells aware of their surroundings == local consciousness?
 
-#### .
+#### date unknown
 
 | All (none) that is permanent and cannot be changed? 
 | Even stone is a metamorphic creation and messages carved will (must) erode. 
 | Exposing dogmatic beliefs that rotten Human Societies as a weakened act of (r)Evolution. 
 | Vēritās līberābit vōs
-|

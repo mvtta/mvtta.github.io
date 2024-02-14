@@ -5,7 +5,7 @@ format:
     toc: true
     toc-title: " "
     grid:
-      sidebar-width: 0px
+      sidebar-width: 100px
       body-width: 900px
       margin-width: 600px
       gutter-width: 0rem

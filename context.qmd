@@ -4,6 +4,8 @@ listing:
     categories: true
 categories: [references]
 toc: true
+href:
+    color: white
 ---
 
 ## Information

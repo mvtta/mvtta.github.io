@@ -5,181 +5,170 @@ format:
     toc: true
     toc-title: " "
     grid:
-      sidebar-width: 0px
+      sidebar-width: 300px
       body-width: 900px
-      margin-width: 300px
+      margin-width: 600px
       gutter-width: 0rem
 ---
-::: {.grid}
-::: {.g-col-8}
-## lexical
-:::
 
-::: {.g-col-4}
-## visual
-:::
-
-
-:::
+::: grid
+::: g-col-8
+## *lexical*
 
 ## Untitled
-I don't know what to do  
-Where to start?  
-To do for others  
-my body goes  
-my mind follows  
-to do for me  
-body is made of iron   
+
+I don't know what to do\
+Where to start?\
+To do for others my body goes\
+my mind follows\
+to do for me\
+body is made of iron  
 
 ## Untitled
-For years  
-All that was known   
-reality  
-was mainly pain and scarcity   
-lack of  
-being chased by   
-death.  
-One day  
-near the end  
-rain came  
-space was being shared  
-the weather changed  
-and the moons,   
-fertility  
-no more drought   
-no more loneliness  
-for the small cactus.   
-241120
+
+For years\
+All that was known \
+reality\
+was mainly pain and scarcity   lack of\
+being chased by death.\
+One day\
+near the end\
+rain came\
+space was being shared\
+the weather changed\
+and the moons, \
+fertility\
+no more drought   no more loneliness\
+for the small cactus.   241120
 
 ## 𝓠
-There is a place that does not fully exist,   
+
+There is a place that does not fully exist,\
 where you live.
 
-A place where thoughts  
-and guts get intertwined.  
+A place where thoughts\
+and guts get intertwined.
 
-A place where there's only room for parts,  
-mirrors.  
+A place where there's only room for parts,\
+mirrors.
 
-There is yet another place  
-where the grounding forces reside,  
-where one rests.  
+There is yet another place\
+where the grounding forces reside,\
+where one rests.
 
-In the soil,  
-intestines are roots.  
-Quintessence,   
-inside the ether.   
+In the soil,\
+intestines are roots.\
+Quintessence,\
+inside the ether.
 
 ## Wayword?
-Where is there to navigate?  
-Plans are mere distractions.  
 
-Contractions of freedom though,  
-with love I draft with you,  
-life.  
+Where is there to navigate?\
+Plans are mere distractions.
 
-Planing is dreaming,  
-a commitment to oneself,  
-an engagement,  
-between the now and the future.  
+Contractions of freedom though,\
+with love I draft with you,\
+life.
 
-Is signing on the Book of Life.  
+Planing is dreaming,\
+a commitment to oneself,\
+an engagement,\
+between the now and the future.
 
-Often,  
-also a whole strategy to survive in harsh environments,  
-previsions of hope,  
-Quixotean echos.  
+Is signing on the Book of Life.
 
-Giants?  
-or nothing at all...  
+Often,\
+also a whole strategy to survive in harsh environments,\
+previsions of hope,\
+Quixotean echos.
+
+Giants?\
+or nothing at all...
 
 ## Like walking under the rain
 
-I'd rather think than not.  
-Seems rather simple, but think about it.  
-  
-Do it for more than a minute, and no I did not ask your   opinion,
-only your thoughts.  
-  
-How quickly you ended the conversation,  
-I wish I had better skills to engage you in the discussion.  
-  
-I disagree with your premise, do you care to elaborate?  
-Wait, let's talk more.  
+I'd rather think than not.\
+Seems rather simple, but think about it.
+
+Do it for more than a minute, and no I did not ask your opinion, only your thoughts.
+
+How quickly you ended the conversation,\
+I wish I had better skills to engage you in the discussion.
+
+I disagree with your premise, do you care to elaborate?\
+Wait, let's talk more.
 
 ## Dona Rute
 
-Looking up at her against the blue sky  
-with her blue eyes skin glazed with time,  
-closeness, love.  
-  
-Fearless, within her world.  
-The weather was pleasant and soft.  
-  
-Experience transcends formulation,  
-there is no concept or framework to explain,  
-the emotion present in that moment.  
+Looking up at her against the blue sky\
+with her blue eyes skin glazed with time,\
+closeness, love.
+
+Fearless, within her world.\
+The weather was pleasant and soft.
+
+Experience transcends formulation,\
+there is no concept or framework to explain,\
+the emotion present in that moment.
 
 ## Venting
 
-Made of particles   
-glued with toxins,   
-   
-crumbs of all the crushing movement,   
-   
-inaction.   
-Silence decays alike   
-all residents,   
-disloyal exchange   
-wind feeding flames   
-and undeserving fools.   
+Made of particles\
+glued with toxins,
+
+crumbs of all the crushing movement,
+
+inaction.\
+Silence decays alike\
+all residents,\
+disloyal exchange\
+wind feeding flames\
+and undeserving fools.
 
 ## Finally, at home
 
-Do not know,  
-incomprehensible,  
-incapable,  
-unpredictable,  
-unchaste and unfolded auction  
-anductioning on trial,  
-vil unnatandace,  
-dancing the nothingness.  
-  
-The gift of further breaking  
-was humbled by some gracious voice  
-audible at a distance.  
+Do not know,\
+incomprehensible,\
+incapable,\
+unpredictable,\
+unchaste and unfolded auction\
+induction on trial,\
+veiled nonattendance,\
+dancing the nothingness.
 
-## The fall of a house of cards  
-  
-A line in  
-light, a longing.  
-Threading.  
-  
-Oscillating  
-oyster,  
-alluring luck,  
-ceases.  
-  
-Prickling,  
-titillating gimmick.  
-A resemblance?  
+The gift of further breaking\
+was humbled by some gracious voice\
+audible at a distance.
+
+## The fall of a house of cards
+
+A line in\
+light, a longing.\
+Threading.
+
+Oscillating\
+oyster,\
+alluring luck,\
+ceases.
+
+Prickling,\
+titillating gimmick.\
+A resemblance?
 
 ## Less
 
-To understand it, is a waste of time.  
-The process 
-of the process 
-of the process,  
-Any kind of self-inflicted suffering is a waste of time.  
-Albeit any or many attempts,  
-trying is also a waste of time.   
-So, what does matter? (As in relevant, essential)  
-  
-When wasting the same time,   
-pondering how different narrative scenarios impact the lost moments of one's existence,   
-does anything beyond this moment matter?  
-  
-What would be appropriate, as a trajectory, from here, to there?  
+To understand it, is a waste of time.\
+The process of the process of the process,\
+Any kind of self-inflicted suffering is a waste of time.\
+Albeit any or many attempts,\
+trying is also a waste of time.\
+So, what does matter? (As in relevant, essential)
+
+When wasting the same time,\
+pondering how different narrative scenarios impact the lost moments of one's existence,\
+does anything beyond this moment matter?
+
+What would be appropriate, as a trajectory, from here, to there?
 
 ## W8
 
@@ -209,28 +198,28 @@ gostava de conseguir abrir um buraco no diafragma e tirar com as minhas mãos o 
 
 ## Routine
 
-Um lugar comum, banal e até estupido, diria.   
-Claro, com uma grande carga julgativa sob o observado.   
-Mesmo assim, continuo sem pudor: São ondas, que é como quem diz,   
-Oscilações.   
-Como identificar as partes, das partes que compõem as ondas?   
-Que sem nome, o atrapalham coitado.   
-Mareado, enjoado, apresenta num quadro,   
-O que seria esperado não sai,   
-Era simples, a audiência está inquieta, jugo que julga também,   
-coitado.   
-Sai do mar apavorado, quase cai.   
-As ondas batem nas cadeiras do escritório,   
-todos tem os seus sapatos, bem engraxado, agora manchados agora de sal.   
-O sal queima.   
-A reunião da manhã descai sobre as horas não convencionadas.   
-A culpa é dele que não se preparou, para as vagas rotineiras.   
-Quem se surpreende com a rotina.   
-Será um raro distúrbio, ainda não diagnosticado,   
-   
-que aflige aqueles pobres coitados,   
-normais por fora mareados por dentro?   
-51223   
+Um lugar comum, banal e até estupido, diria.\
+Claro, com uma grande carga julgativa sob o observado.\
+Mesmo assim, continuo sem pudor: São ondas, que é como quem diz,\
+Oscilações.\
+Como identificar as partes, das partes que compõem as ondas?\
+Que sem nome, o atrapalham coitado.\
+Mareado, enjoado, apresenta num quadro,\
+O que seria esperado não sai,\
+Era simples, a audiência está inquieta, jugo que julga também,\
+coitado.\
+Sai do mar apavorado, quase cai.\
+As ondas batem nas cadeiras do escritório,\
+todos tem os seus sapatos, bem engraxado, agora manchados agora de sal.\
+O sal queima.\
+A reunião da manhã descai sobre as horas não convencionadas.\
+A culpa é dele que não se preparou, para as vagas rotineiras.\
+Quem se surpreende com a rotina.\
+Será um raro distúrbio, ainda não diagnosticado,
+
+que aflige aqueles pobres coitados,\
+normais por fora mareados por dentro?\
+51223
 
 ## $\pi$
 
@@ -262,7 +251,7 @@ Some die of exhaustion,
 
 And not risIk.
 
-## Bruits 
+## Bruits
 
 Reality collapsed
 
@@ -469,3 +458,11 @@ QUERO TE AQUI
 LAVO AS MÃO
 
 FOI O QUE PERDI
+:::
+
+::: g-col-4
+## *visual*
+
+![](images/Screen Shot 2022-05-17 at 16.15.48.png)
+:::
+:::

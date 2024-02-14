@@ -47,6 +47,11 @@
             "language": "quarto",
             "scheme": "file",
             "pattern": "posts/Introduction/index.qmd"
+        },
+        {
+            "language": "quarto",
+            "scheme": "file",
+            "pattern": "poems/poems.qmd"
         }
     ],
     "cSpell.enabled": true

@@ -5,7 +5,7 @@ format:
     toc: true
     toc-title: " "
     grid:
-      sidebar-width: 300px
+      sidebar-width: 0px
       body-width: 900px
       margin-width: 600px
       gutter-width: 0rem
@@ -14,6 +14,14 @@ format:
 ::: grid
 ::: g-col-8
 ## *lexical*
+:::
+
+::: g-col-4
+## *visual*
+
+![](images/Screen Shot 2022-05-17 at 16.15.48.png)
+:::
+:::
 
 ## Untitled
 
@@ -101,7 +109,8 @@ Wait, let's talk more.
 ## Dona Rute
 
 Looking up at her against the blue sky\
-with her blue eyes skin glazed with time,\
+with her blue eyes\
+skin glazed with time,\
 closeness, love.
 
 Fearless, within her world.\
@@ -157,7 +166,7 @@ A resemblance?
 
 ## Less
 
-To understand it, is a waste of time.\
+To understand it is a waste of time.\
 The process of the process of the process,\
 Any kind of self-inflicted suffering is a waste of time.\
 Albeit any or many attempts,\
@@ -225,7 +234,7 @@ normais por fora mareados por dentro?\
 
 Where you were doomed to be unhappy,
 
-It elapsed into a far away dimmed memory.
+It elapsed into a faraway dimmed memory.
 
 Perhaps time diluted itself in ancient cries as well
 
@@ -249,7 +258,7 @@ Climb.
 
 Some die of exhaustion,
 
-And not risIk.
+And not risk.
 
 ## Bruits
 
@@ -285,7 +294,7 @@ I mean less bad, but still in pain,
 
 within the walls of your house
 
-a dormant volcano .
+a dormant volcano.
 
 Outside life creates itself.
 
@@ -319,7 +328,7 @@ The journey of an ant.
 
 ## Untitled
 
-There is blood in the stairs,
+There is blood on the stairs,
 
 Is it mine?
 
@@ -327,7 +336,7 @@ I see blood on my desk,
 
 Is it mine?
 
-What difference does it make.
+What difference does it make?
 
 ## Untitled
 
@@ -387,7 +396,7 @@ My knees hurt, certainly from existence.
 
 ## Untitled
 
-Time, an almost measurable measurement.
+Time is an almost measurable measurement.
 
 Term of quasi-existence.
 
@@ -399,9 +408,9 @@ destructive and indifferent.
 
 Maybe we, the lonely buoy
 
-that in a life time of hostility
+that in a life-time of hostility
 
-live and die in the same crib, in the same day
+live and die in the same crib, on the same day
 
 a life-time of infancy.
 
@@ -409,7 +418,7 @@ a life-time of infancy.
 
 The human perspective of time seems irrelevant.
 
-It is not a measurement within Human domain,
+It is not a measurement within human domain,
 
 it’s unattainable data, the missing link.
 
@@ -458,11 +467,3 @@ QUERO TE AQUI
 LAVO AS MÃO
 
 FOI O QUE PERDI
-:::
-
-::: g-col-4
-## *visual*
-
-![](images/Screen Shot 2022-05-17 at 16.15.48.png)
-:::
-:::

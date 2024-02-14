@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "poems/poems.html",
-    "href": "poems/poems.html",
-    "title": "poems/",
-    "section": "",
-    "text": "visual\n\n\nlexical"
-  },
-  {
     "objectID": "poems/poems.html#untitled",
     "href": "poems/poems.html#untitled",
     "title": "poems/",
@@ -273,6 +266,13 @@
     "text": "Hopefully, within reasonable and concise argumentation parameters. Some are complete nonsense, in the process of sense-making. They can be tagged finished or work-in-progress, or have no tag at all. Proceed with caution."
   },
   {
+    "objectID": "essays/index.html#notes-under-exploration",
+    "href": "essays/index.html#notes-under-exploration",
+    "title": "essays/",
+    "section": "",
+    "text": "Hopefully, within reasonable and concise argumentation parameters. Some are complete nonsense, in the process of sense-making. They can be tagged finished or work-in-progress, or have no tag at all. Proceed with caution."
+  },
+  {
     "objectID": "posts/Civilization-Design/paftf.html",
     "href": "posts/Civilization-Design/paftf.html",
     "title": "Planetary Architecture, future comsiderations",
@@ -418,12 +418,5 @@
     "title": "infix/",
     "section": "Portugal",
     "text": "Portugal\n\nPortugal\n\nA letter\nModeling direct democracy in the current context\nExposing polarizing incentives\nDemystifying / unblocking inductive bias holding back humanity\n\n\nWould you like to have a conversation on these topics? Contact me @"
-  },
-  {
-    "objectID": "essays/index.html#notes-under-exploration",
-    "href": "essays/index.html#notes-under-exploration",
-    "title": "essays/",
-    "section": "",
-    "text": "Hopefully, within reasonable and concise argumentation parameters. Some are complete nonsense, in the process of sense-making. They can be tagged finished or work-in-progress, or have no tag at all. Proceed with caution."
   }
 ]

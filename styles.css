@@ -6,18 +6,10 @@
 a:link {
     color: rgb(145, 134, 134) !important;
   }
-  /* visited link */
-  a:visited {
-    color: rgb(255, 0, 21)!important;
-  }
   /* mouse over link */
   a:hover {
     background-color: rgba(251, 0, 255, 0.633) !important;
 }
-  /* selected link */
-  a:active {
-    color: blue!important;
-  }
   
 .navbar-title {
     color: rgb(255, 255, 255);

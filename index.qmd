@@ -6,24 +6,16 @@ listing:
 grid:
   sidebar-width: 300px
   body-width: 600px
-  margin-width: 300px
+  margin-width: 400px
   gutter-width: 0rem
 ---
 
-| *"part of a plant*
-| *zero of a function*
-| *node in a tree that has no parent*
-| *primary lexical unit of a word*
-| *fundamental tone of any chord; the tone from whose harmonics, or overtones, a chord is composed user account at the root of the directory structure*
-| *highest directory of a directory structure "* 
-Wikipedia extract for the search: [root](https://en.wiktionary.org/wiki/root)
-
 ###  Note of intent
-Contemplating my mortality pragmatically, I came to realize, regarding my physical notebooks, that the resistance to share my thoughts with others, was an act of selfishness and misalignment with the very core and reason of why am I, as Human, given the ability to express my self, communicate, learn and invent. 
+Contemplating mortality I came to realize, regarding my physical notebooks, that the resistance to share my thoughts with others was an act of selfishness and misalignment with the very core and reason of why am I, as Human, given the ability to convey meaning, communicate, learn and invent. 
 
-Thus, as a consequence, from now on I'm forcing myself out of the self-centered shelter, and exposing a kaleidoscopeian reflection of the kind of thoughts I dared/am compelled to shape into symbolic meaning. 
+Thus, as a consequence, from now on my notes are open, exposing a kaleidoscopeian reflection of the kind of thoughts get shaped into symbols.
 
-The entries are sectioned into the following categories:
+This Open-Notebook is organized into the following categories:
 
 * **Staccato**: Quick and unsorted daily notes. First transcribed from my physical notebooks. I may not fully transition to a digital-only format so the process analog  --> digital may still apply in the future.
 
@@ -36,17 +28,5 @@ The entries are sectioned into the following categories:
 * **Infix**: Pointers and pins, an index to my current mind map of ideas and references. The purpose is dynamic, as I use the tree of information and links to share as a conversation propeller and contextual mapping to enrich physical dialogs with other Humans. 
 
 If you wish to have a conversation with me, here is my preferred method of contact is [email](mailto:mvtta@proton.me)
-
-``` {.bash .py}
-####################################################
-# todo:
-#
-#    state of intent : check
-#    contact  section
-#    definitions of new words 
-#    entry point in context propeler
-#
-###################################################
-```
 
 ## Lastest Entries

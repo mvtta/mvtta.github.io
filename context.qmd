@@ -18,25 +18,22 @@ href:
         -   [Nick Lane](https://nick-lane.net/publications/)
             -   [The electrical origins of life](https://www.youtube.com/watch?v=FLaTU-t1CQM "The electrical origin of life")
             -   [Kreb Cycle](https://youtu.be/vBiIDwBOqQA?si=o8golhRao2R4NXIH "Kreb Cycle")
-            -   <https://nick-lane.net/publications/a-biophysical-basis-for-the-emergence-of-the-genetic-code-in-protocells/>
-            -   <https://nick-lane.net/publications/origin-eukaryotic-cell/>
-            -   <https://www.nature.com/articles/s41570-019-0155-6>
-    -   [Bio-Electricity](Bioelectricity:%20From%20Cognitive%20Glue%20to%20Regenerative%20Medicine%20with%20Special%20Focus%20on%20Microbiology/Immunology)
+                -   [Protocels](https://nick-lane.net/publications/a-biophysical-basis-for-the-emergence-of-the-genetic-code-in-protocells)
+                -   [origin-eukaryotic-cell](https://nick-lane.net/publications/origin-eukaryotic-cell/)
+                -   [article](https://www.nature.com/articles/s41570-019-0155-6)
+                -   Bio-Electricity
     -   Digital Chemistry
-        -   Assembly Theory vs Co-evolution
-        -   [Assembly theory explains and quantifies selection and evolution](https://www.nature.com/articles/s41586-023-06600-9)
+    -   Assembly Theory vs Co-evolution
+    -   [Assembly theory explains](https://www.nature.com/articles/s41586-023-06600-9)
     -   Biology
         -   Michael Levin
             -   [Papers](https://drmichaellevin.org/publications/)
             -   [Presentations](https://drmichaellevin.org/presentations/)
-        -   Theory for Mind Everywhere
+        -   Mind Everywhere
     -   Computational Biology
         -   Von Neuman
         -   Turin Biology Paper
             -   Cellular Automata
-                -   <https://slackermanz.com/explorations-of-cellular-automata-and-complex-systems/>
-                -   <https://softologyblog.wordpress.com/2018/03/31/more-explorations-with-multiple-neighborhood-cellular-automata/>
-
 ## Physics
 2.  Physics
     -   Borrowing "The Pixel of Reality" from Quantum Gravity Theory
@@ -45,7 +42,7 @@ href:
 3. Philosophy
     -   Cognition
     -   Meaning & Goals
-    -   [Meta-Crisis](https://www.youtube.com/watch?v=4kBoLVvoqVY)
+    -   [MetaCrisis](https://www.youtube.com/watch?v=4kBoLVvoqVY)
     -   Autopoiesis, Homeostasis
 
 ## Ecology
@@ -86,7 +83,8 @@ href:
         -   Party analogy
         -   Human desires in Ven diagram
     -   Global agreement, local action.
-    -   Using Ramsey Numbers and graphs of connections to predict hierarchical models for communities to self-organize / self Governance
+    -   Using Ramsey Numbers and graphs of connections to predict hierarchical models for communities to self-organize
+    / self Governance
     -   Models and policies for truth
     -   Peer-To-Peer Fact Validator
     -   Artificial Resource

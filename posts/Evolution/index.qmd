@@ -1,5 +1,5 @@
 ---
-title: "Automata"
+title: "Loose Entries"
 author: "Valdetaro, M"
 date: "2024-01-20"
 categories: [biology]

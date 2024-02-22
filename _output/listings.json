@@ -13,11 +13,12 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/Evolution/index.html",
-      "/posts/Information/index.html",
       "/posts/Education/index.html",
       "/essays/i.html",
+      "/posts/Information/index.html",
+      "/posts/Evolution/index.html",
       "/posts/Civilization-Design/paftf.html",
+      "/essays/Postulating a Communication Theory for Scale-Free Cognition.html",
       "/posts/Resume/resume.html",
       "/essays/index.html",
       "/context.html",
@@ -30,9 +31,9 @@
   {
     "listing": "/posts/Introduction/index.html",
     "items": [
-      "/posts/Evolution/index.html",
       "/posts/Education/index.html",
       "/posts/Information/index.html",
+      "/posts/Evolution/index.html",
       "/posts/Civilization-Design/paftf.html",
       "/posts/Resume/resume.html"
     ]
@@ -40,17 +41,19 @@
   {
     "listing": "/essays/index.html",
     "items": [
-      "/essays/i.html"
+      "/essays/i.html",
+      "/essays/Postulating a Communication Theory for Scale-Free Cognition.html"
     ]
   },
   {
     "listing": "/context.html",
     "items": [
-      "/posts/Evolution/index.html",
-      "/posts/Information/index.html",
       "/posts/Education/index.html",
       "/essays/i.html",
+      "/posts/Information/index.html",
+      "/posts/Evolution/index.html",
       "/posts/Civilization-Design/paftf.html",
+      "/essays/Postulating a Communication Theory for Scale-Free Cognition.html",
       "/posts/Resume/resume.html",
       "/essays/index.html",
       "/log.html",

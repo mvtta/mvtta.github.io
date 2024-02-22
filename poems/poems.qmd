@@ -7,21 +7,52 @@ format:
     grid:
       sidebar-width: 100px
       body-width: 900px
-      margin-width: 600px
+      margin-width: 200px
       gutter-width: 0rem
 ---
 
-::: grid
-::: g-col-8
-## *lexical*
-:::
+## A gentle breeze left the inhospitable desert door stood just ajar
 
-::: g-col-4
-## *visual*
+The unapologetic sun woke\
+And dried the wood to crack\
+If the night would just follow\
+The stiffness would crumble\
+Instead, fire, turned a portal into a plane\
+A rose into a monster\
+Seeds into Humans\
+Morality as a game.\
 
-![](images/Screen Shot 2022-05-17 at 16.15.48.png)
-:::
-:::
+If rain would just fall \
+The flames would tender \
+Instead, wind, turned charcoal into chaos \
+Mountains into buildings \
+Fertility into a bitter poison \
+That turned life against life.\
+
+One could blame many \
+As the breeze. \
+Or the sun, \
+But the one who kept the key \
+Walked away.\
+
+![](images/extra/IMG_20230617_185627189.jpg)
+
+## The Intricate
+The empty\
+The scene\
+How hard\
+And how slippery \
+It is to grasp\
+This Intangible and demeaning \
+The indefinite continuum \
+Of senseless words \
+This show of shadows \
+And superficial desires \
+Voided of meaning \
+And brimming of near truths\
+The pretentious unpretentious \
+Of what once felt \
+Was an appropriate part.\
 
 ## Untitled
 
@@ -30,14 +61,15 @@ Where to start?\
 To do for others my body goes\
 my mind follows\
 to do for me\
-body is made of iron  
+A rigid body 
 
 ## Untitled
 
 For years\
 All that was known \
 reality\
-was mainly pain and scarcity   lack of\
+was mainly pain and scarcity\ 
+lack of\
 being chased by death.\
 One day\
 near the end\
@@ -46,8 +78,9 @@ space was being shared\
 the weather changed\
 and the moons, \
 fertility\
-no more drought   no more loneliness\
-for the small cactus.   241120
+no more drought no more loneliness\
+for the small cactus.\
+241120
 
 ## 𝓠
 
@@ -69,13 +102,16 @@ intestines are roots.\
 Quintessence,\
 inside the ether.
 
+![](images/extra/IMG_20240221_174805642.jpg)
+
 ## Wayword?
 
 Where is there to navigate?\
 Plans are mere distractions.
 
 Contractions of freedom though,\
-with love I draft with you,\
+with love\
+I draft with you,\
 life.
 
 Planing is dreaming,\
@@ -133,6 +169,8 @@ all residents,\
 disloyal exchange\
 wind feeding flames\
 and undeserving fools.
+
+![](images/extra/IMG-20231029-WA01221.jpg)
 
 ## Finally, at home
 

@@ -71,9 +71,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -97,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -145,9 +145,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(13)</span></div><div class="category" data-category="biology">biology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="civilization">civilization <span class="quarto-category-count">(1)</span></div><div class="category" data-category="education">education <span class="quarto-category-count">(2)</span></div><div class="category" data-category="references">references <span class="quarto-category-count">(1)</span></div><div class="category" data-category="thoughts">thoughts <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -181,9 +179,6 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Infix</strong>: Pointers and pins, an index to my current mind map of ideas and references. The purpose is dynamic, as I use the tree of information and links to share as a conversation propeller and contextual mapping to enrich physical dialogs with other Humans.</p></li>
 </ul>
 <p>If you wish to have a conversation with me, here is my preferred method of contact is <a href="mailto:mvtta@proton.me">email</a></p>
-</section>
-<section id="lastest-entries" class="level2">
-<h2 class="anchored" data-anchor-id="lastest-entries">Lastest Entries</h2>
 
 
 
@@ -203,13 +198,6 @@ Education
 <div class="listing-subtitle">
 
 </div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('education'); return false;">
-education
-</div>
-</div>
-<a href="./posts/Education/index.html">
 <div class="listing-description">
 We experience education in sequential steps, closed and determined, and are given information and…
 </div>
@@ -266,13 +254,6 @@ Information
 <div class="listing-subtitle">
 
 </div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('education'); return false;">
-education
-</div>
-</div>
-<a href="./posts/Information/index.html">
 <div class="listing-description">
 Is it possible to formulate a truly generalized theory of Information?
 </div>
@@ -301,13 +282,6 @@ Loose Entries
 <div class="listing-subtitle">
 
 </div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('biology'); return false;">
-biology
-</div>
-</div>
-<a href="./posts/Evolution/index.html">
 <div class="listing-description">
 
 </div>
@@ -336,13 +310,6 @@ Planetary Architecture, future comsiderations
 <div class="listing-subtitle">
 
 </div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('civilization'); return false;">
-civilization
-</div>
-</div>
-<a href="./posts/Civilization-Design/paftf.html">
 <div class="listing-description">
 
 </div>
@@ -441,13 +408,6 @@ infix/
 <div class="listing-subtitle">
 
 </div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('references'); return false;">
-references
-</div>
-</div>
-<a href="./context.html">
 <div class="listing-description">
 Would you like to have a conversation on these topics? Contact me @
 </div>
@@ -537,13 +497,6 @@ staccato/
 <div class="listing-subtitle">
 
 </div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('thoughts'); return false;">
-thoughts
-</div>
-</div>
-<a href="./staccato/staccato.html">
 <div class="listing-description">
 First transcribed from my physical notebooks. I may not fully transition to a digital-only format so the process analog –&gt; digital may still apply in the future.
 </div>

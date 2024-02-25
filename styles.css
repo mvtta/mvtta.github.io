@@ -3,12 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
 
 /* unvisited link */
+
 a:link {
-    color: rgb(145, 134, 134) !important;
+    color: rgb(235, 235, 235) !important;
   }
   /* mouse over link */
   a:hover {
-    background-color: rgba(251, 0, 255, 0.633) !important;
+    color: rgba(251, 0, 255, 0.633) !important;
 }
   
 .navbar-title {
@@ -16,18 +17,18 @@ a:link {
 }
 * {
     font-family: Inter, sans-serif;
-    font-weight: 400;
+    font-weight: 800;
     background-color: black;   
 }
 .nav-item {
     font-size:30px;
-    color:rgb(42, 38, 40) !important;
+    color:rgb(214, 212, 213) !important;
 }
 .nav-link {
     font-size: large;
     font-family: Inter, sans-serif;
     font-weight: 200;
-    color: #5c5c5c !important;
+    color: #eae8e8 !important;
     border-right: 0px;
 }
 h1.title{
@@ -35,7 +36,7 @@ h1.title{
     font-style: italic !important;
     font-size: large !important;
     font-weight: 100;
-    color: #5c5c5c !important;
+    color: #f3f3f3 !important;
 }
 .h2{
     font-size: large;

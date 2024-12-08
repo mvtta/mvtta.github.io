@@ -1,35 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mvtta.github.io/poems/poems.html</loc>
-    <lastmod>2024-04-02T11:07:06.240Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mvtta.github.io/log.html</loc>
-    <lastmod>2024-04-02T11:07:04.471Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mvtta.github.io/index.html</loc>
-    <lastmod>2024-04-02T11:07:03.016Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mvtta.github.io/essays/index.html</loc>
-    <lastmod>2024-04-02T11:07:01.464Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mvtta.github.io/essays/i.html</loc>
-    <lastmod>2024-04-02T11:07:00.412Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mvtta.github.io/posts/Introduction/index.html</loc>
-    <lastmod>2024-04-02T11:07:02.256Z</lastmod>
+    <loc>https://mvtta.github.io/context.html</loc>
+    <lastmod>2024-10-24T08:04:04.942Z</lastmod>
   </url>
   <url>
     <loc>https://mvtta.github.io/staccato/staccato.html</loc>
-    <lastmod>2024-04-02T11:07:03.780Z</lastmod>
+    <lastmod>2024-10-24T08:33:03.632Z</lastmod>
   </url>
   <url>
-    <loc>https://mvtta.github.io/context.html</loc>
-    <lastmod>2024-04-02T11:07:05.254Z</lastmod>
+    <loc>https://mvtta.github.io/posts/Evolution/index.html</loc>
+    <lastmod>2024-10-24T08:04:05.024Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/posts/Resume/resume.html</loc>
+    <lastmod>2024-10-24T08:04:05.025Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/posts/Civilization-Design/paftf.html</loc>
+    <lastmod>2024-10-24T13:28:26.293Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/posts/Information/index.html</loc>
+    <lastmod>2024-10-24T08:04:05.025Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/posts/Introduction/index.html</loc>
+    <lastmod>2024-10-24T08:04:05.025Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/posts/Education/index.html</loc>
+    <lastmod>2024-10-24T08:04:05.024Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/index.html</loc>
+    <lastmod>2024-12-08T13:02:09.307Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/log.html</loc>
+    <lastmod>2024-10-24T08:04:04.947Z</lastmod>
   </url>
 </urlset>

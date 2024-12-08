@@ -1,5 +1,43 @@
 [
   {
+    "listing": "/context.html",
+    "items": [
+      "/posts/Civilization-Design/paftf.html",
+      "/posts/Education/index.html",
+      "/posts/Information/index.html",
+      "/posts/Evolution/index.html",
+      "/posts/Resume/resume.html",
+      "/log.html",
+      "/posts/Introduction/index.html",
+      "/index.html",
+      "/staccato/staccato.html"
+    ]
+  },
+  {
+    "listing": "/posts/Introduction/index.html",
+    "items": [
+      "/posts/Civilization-Design/paftf.html",
+      "/posts/Education/index.html",
+      "/posts/Information/index.html",
+      "/posts/Evolution/index.html",
+      "/posts/Resume/resume.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/Civilization-Design/paftf.html",
+      "/posts/Education/index.html",
+      "/posts/Information/index.html",
+      "/posts/Evolution/index.html",
+      "/posts/Resume/resume.html",
+      "/context.html",
+      "/log.html",
+      "/posts/Introduction/index.html",
+      "/staccato/staccato.html"
+    ]
+  },
+  {
     "listing": "/log.html",
     "items": [
       "/posts/Introduction/index.html",
@@ -8,59 +46,6 @@
       "/posts/Education/index.html",
       "/posts/Evolution/index.html",
       "/posts/Information/index.html"
-    ]
-  },
-  {
-    "listing": "/index.html",
-    "items": [
-      "/posts/Education/index.html",
-      "/essays/i.html",
-      "/posts/Information/index.html",
-      "/posts/Evolution/index.html",
-      "/posts/Civilization-Design/paftf.html",
-      "/essays/Postulating a Communication Theory for Scale-Free Cognition.html",
-      "/posts/Resume/resume.html",
-      "/essays/index.html",
-      "/context.html",
-      "/log.html",
-      "/poems/poems.html",
-      "/posts/Introduction/index.html",
-      "/staccato/staccato.html"
-    ]
-  },
-  {
-    "listing": "/posts/Introduction/index.html",
-    "items": [
-      "/posts/Education/index.html",
-      "/posts/Information/index.html",
-      "/posts/Evolution/index.html",
-      "/posts/Civilization-Design/paftf.html",
-      "/posts/Resume/resume.html"
-    ]
-  },
-  {
-    "listing": "/essays/index.html",
-    "items": [
-      "/essays/i.html",
-      "/essays/Postulating a Communication Theory for Scale-Free Cognition.html"
-    ]
-  },
-  {
-    "listing": "/context.html",
-    "items": [
-      "/posts/Education/index.html",
-      "/essays/i.html",
-      "/posts/Information/index.html",
-      "/posts/Evolution/index.html",
-      "/posts/Civilization-Design/paftf.html",
-      "/essays/Postulating a Communication Theory for Scale-Free Cognition.html",
-      "/posts/Resume/resume.html",
-      "/essays/index.html",
-      "/log.html",
-      "/poems/poems.html",
-      "/posts/Introduction/index.html",
-      "/index.html",
-      "/staccato/staccato.html"
     ]
   }
 ]

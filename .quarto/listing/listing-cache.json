@@ -1,8 +1,5 @@
 {
   "listingMap": {
-    "essays/index.qmd": [
-      "*.qmd"
-    ],
     "posts/Introduction/index.qmd": [
       "../*/*.qmd"
     ],

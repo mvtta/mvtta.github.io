@@ -1,5 +1,5 @@
 ---
-title: "Planetary Architecture, future comsiderations"
+title: "A Planetary Identity: Would it make any difference?"
 author: "Valdetaro, M"
 date: "2024-02-8"
 categories: [civilization]
@@ -12,3 +12,4 @@ citation-location: margin
 ---
 
 ![first draft](Asset%201.png){fig-align="center"}
+

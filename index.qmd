@@ -11,22 +11,15 @@ grid:
 ---
 
 ###  Note of intent
-Contemplating mortality I came to realize, regarding my physical notebooks, that the resistance to share my thoughts with others was an act of selfishness and misalignment with the very core and reason of why am I, as Human, given the ability to convey meaning, communicate, learn and invent. 
-
-Thus, as a consequence, from now on my notes are open, exposing a kaleidoscopeian reflection of the kind of thoughts get shaped into symbols.
+I am, therefore I share.
 
 This Open-Notebook is organized into the following categories:
 
-* **Staccato**: Quick and unsorted daily notes. First transcribed from my physical notebooks. I may not fully transition to a digital-only format so the process analog  --> digital may still apply in the future.
-
-* **Open Notes**: Notes developed/explored, or directly entries that assumed a longer format. They have no revision in argumentation, nor a formal structure. 
-
-* **Essays**: Notes that critically are (being) explored, hopefully, within reasonable and concise argumentation parameters. Can be tagged finished or work-in-progress. 
-
-*  **Poems**: Self-explanatory. 
-
+* **Agency**: A series of articles and notes stemming from the central question "What is Agency?".  
+* **Meaning**: A dedicated series to the question "What is meaning?".  
+* **Intelligence**: Thinking about Intelligence from an AI/ML perspective, some informal reviews on latest developments.  
+* **Experiments**: Some computational experiments related to the above. 
 * **Infix**: Pointers and pins, an index to my current mind map of ideas and references. The purpose is dynamic, as I use the tree of information and links to share as a conversation propeller and contextual mapping to enrich physical dialogs with other Humans. 
 
-If you wish to have a conversation with me, here is my preferred method of contact is [email](mailto:mvtta@proton.me)
+Contact me @ [email](mailto:mvtta@proton.me)
 
-## Lastest Entries

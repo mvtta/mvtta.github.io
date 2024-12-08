@@ -10,6 +10,14 @@ grid:
   gutter-width: 0rem
 ---
 
+| *"part of a plant*
+| *zero of a function*
+| *node in a tree that has no parent*
+| *primary lexical unit of a word*
+| *fundamental tone of any chord; the tone from whose harmonics, or overtones, a chord is composed user account at the root of the directory structure*
+| *highest directory of a directory structure "* 
+Wikipedia extract for the search: [root](https://en.wiktionary.org/wiki/root)
+
 ###  Note of intent
 I am, therefore I share.
 

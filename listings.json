@@ -1,51 +1,18 @@
 [
   {
-    "listing": "/context.html",
+    "listing": "/resource-tree.html",
     "items": [
-      "/posts/Civilization-Design/paftf.html",
-      "/posts/Education/index.html",
-      "/posts/Information/index.html",
-      "/posts/Evolution/index.html",
       "/posts/Resume/resume.html",
-      "/log.html",
-      "/posts/Introduction/index.html",
-      "/index.html",
-      "/staccato/staccato.html"
-    ]
-  },
-  {
-    "listing": "/posts/Introduction/index.html",
-    "items": [
-      "/posts/Civilization-Design/paftf.html",
-      "/posts/Education/index.html",
-      "/posts/Information/index.html",
-      "/posts/Evolution/index.html",
-      "/posts/Resume/resume.html"
+      "/posts/Agency/What is Agency.html",
+      "/index.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
-      "/posts/Civilization-Design/paftf.html",
-      "/posts/Education/index.html",
-      "/posts/Information/index.html",
-      "/posts/Evolution/index.html",
+      "/resource-tree.html",
       "/posts/Resume/resume.html",
-      "/context.html",
-      "/log.html",
-      "/posts/Introduction/index.html",
-      "/staccato/staccato.html"
-    ]
-  },
-  {
-    "listing": "/log.html",
-    "items": [
-      "/posts/Introduction/index.html",
-      "/posts/Resume/resume.html",
-      "/posts/Civilization-Design/paftf.html",
-      "/posts/Education/index.html",
-      "/posts/Evolution/index.html",
-      "/posts/Information/index.html"
+      "/posts/Agency/What is Agency.html"
     ]
   }
 ]

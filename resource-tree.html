@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>/</title>
+<title>/ - Resource Tree/</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,9 +68,67 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="../../styles.css">
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -78,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">/</span>
     </a>
   </div>
@@ -89,27 +149,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/Agency"> 
+    <a class="nav-link" href="./posts/Agency"> 
 <span class="menu-text">Agency</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/Articles"> 
+    <a class="nav-link" href="./posts/Articles"> 
 <span class="menu-text">Articles</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/Experiments"> 
+    <a class="nav-link" href="./posts/Experiments"> 
 <span class="menu-text">Experiments</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/Notebooks"> 
+    <a class="nav-link" href="./posts/Notebooks"> 
 <span class="menu-text">Notebooks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/Thoughts"> 
+    <a class="nav-link" href="./posts/Thoughts"> 
 <span class="menu-text">Thoughts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../resource-tree.html"> 
+    <a class="nav-link active" href="./resource-tree.html" aria-current="page"> 
 <span class="menu-text">Resource-Tree</span></a>
   </li>  
 </ul>
@@ -124,196 +184,295 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#resume" id="toc-resume" class="nav-link active" data-scroll-target="#resume">Resume</a>
-  <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
-  <li><a href="#experience" id="toc-experience" class="nav-link" data-scroll-target="#experience">Experience <br></a></li>
-  <li><a href="#technical-skills" id="toc-technical-skills" class="nav-link" data-scroll-target="#technical-skills">Technical Skills</a></li>
-  <li><a href="#experience-1" id="toc-experience-1" class="nav-link" data-scroll-target="#experience-1">Experience <br></a></li>
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
-  </ul></li>
+  <li><a href="#information" id="toc-information" class="nav-link active" data-scroll-target="#information">Information</a></li>
+  <li><a href="#evolution" id="toc-evolution" class="nav-link" data-scroll-target="#evolution">Evolution</a></li>
+  <li><a href="#philosophy" id="toc-philosophy" class="nav-link" data-scroll-target="#philosophy">Philosophy</a></li>
+  <li><a href="#ecology" id="toc-ecology" class="nav-link" data-scroll-target="#ecology">Ecology</a></li>
+  <li><a href="#complex-systems" id="toc-complex-systems" class="nav-link" data-scroll-target="#complex-systems">Complex Systems</a></li>
+  <li><a href="#political-science-governance" id="toc-political-science-governance" class="nav-link" data-scroll-target="#political-science-governance">Political Science &amp; governance</a></li>
+  <li><a href="#problems-identified" id="toc-problems-identified" class="nav-link" data-scroll-target="#problems-identified">Problems Identified</a></li>
+  <li><a href="#interactions" id="toc-interactions" class="nav-link" data-scroll-target="#interactions">Interactions</a></li>
+  <li><a href="#solutions" id="toc-solutions" class="nav-link" data-scroll-target="#solutions">Solutions</a></li>
+  <li><a href="#civilization" id="toc-civilization" class="nav-link" data-scroll-target="#civilization">Civilization</a></li>
+  <li><a href="#portugal" id="toc-portugal" class="nav-link" data-scroll-target="#portugal">Portugal</a></li>
   </ul>
 </nav>
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Resource Tree/</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">references</div>
+  </div>
+  </div>
 
 
 
-<section id="resume" class="level1">
-<h1>Resume</h1>
-<p><a href="https://www.mvtta.github.io">mvtta.github.io</a></p>
-<section id="summary" class="level3">
-<h3 class="anchored" data-anchor-id="summary">Summary</h3>
-<pre><code>Name: Valdetaro, Mariana
-Current role: R&amp;D L1Phy Software Engineer @ Nokia 
-(Telecom, Networks, Embedded Systems, \
-Radio Technology, Information Theory)
+<div class="quarto-title-meta">
 
-Looking for a cross-field opportunity in Research and Development to
-            • Learn with, and meet inspiring humans,
-            • On the interconnectedness of all problems,
-            • Towards a Planetary Future.
+    
+  
+    
+  </div>
+  
 
-Mobile: +351967409418 | E-mail: mvaldeta42@gmail.com | Location: Portugal, Europe</code></pre>
+
+</header>
+
+
+<section id="information" class="level2">
+<h2 class="anchored" data-anchor-id="information">Information</h2>
+<ol start="0" type="1">
+<li>Theories
+<ul>
+<li><a href="https://arxiv.org/abs/1210.5908">The experience of life is an information process</a></li>
+</ul></li>
+</ol>
 </section>
-<section id="experience" class="level2">
-<h2 class="anchored" data-anchor-id="experience">Experience <br></h2>
-<p>(Still editing, just rambling for now)</p>
-<p>I have a rich, diverse, and broad spectrum of occupational experiences.</p>
-<p>Working in a restaurant frequented by audiophiles was where I got my start. Different groups of customers would extend me invitations to attend musical events, which sparked my interest in the physical aspects of sound, both in the engineering and anthropological senses.</p>
-<p>I listened to them talk for hours and eventually learned their dialect.</p>
-<p>After six months I changed to a bar, at night, while seizing an opportunity during the day as a hairdresser’s assistant.</p>
-<p>Her customers were artists, writers, fashion designers, musicians, and lots of foreigners, I would silently and swiftly attend to her needs, personal and technical, run errands, contact suppliers, wash customers’ hair, and clean. She was demanding, but brilliant.</p>
-<p>I observed people would come and go, and so did their universes. All different and complex.</p>
-<p>Apart from events, film, and photo-shoot days, my routine was ritualistic, like a synchronized dance of being present and anticipating, my English skills matured, my visual culture grew, and I was within reach of beautiful books and art magazines.</p>
-<p>After four years, I decided to dedicate myself more to music and did my first tour through Portugal as a disk-jockey duo. We were on a lot of buses, I could read many hours in a row. The customers were large groups or crowds, and the interactions changed. My colleagues were sound technicians, bartenders, and dancers. I didn’t like performing in general, although I felt like an honor to share that unique moment with strangers.</p>
-<p>Opaque mediums of exchange, loneliness, suffering, and superficial hope. I found that performing in clubs was extremely sad, but it was a small part compared to commuting, reading, and thinking, I enjoyed that part.</p>
-<p>Since that time, plus six years, founded a company that mirrored my interests, from material science, visual culture, and semiotics, and consulted for mineral extraction and production industries in Portugal. I lived in Japan for 2 years and collaborated at the initial stage of a new business development platform in the start-up city of Japan, Fukuoka. It was an important moment, as the depth of the connections between ideas, problems, and outcomes emerged vividly in my perceptual model.</p>
-<p>Optimistic and humbled by this phase of my life, it culminated in the materialization of immaterial product development for the quarry industry of Portugal, an homage to the metamorphic device of space and time, life-giving life different form, marble stone as the agents of time, like gods, watching Humans.</p>
-<p>As a commissioned thought process, the message was conveyed through a movie, our crew was small, and the sacrifices were proportional to the cause. To humanize the objective, a garment collection with biodegradable materials, and hand made was shown at a fashion event and then converted from analog to digital where anyone could interact with it, transform it through gestures if holding a marble device, shaped like a mobile phone, without a screen, that had no instructions, the discovery and interaction where experimental.</p>
-<p>I learned that most didn’t understand, and some were even embarrassed - discomfort, over the experimental nature of the project, but I did change something, the government agency representing mineral resources then appropriated them elves with a language created, and although distorted by greed and vanity, the seed of the message became the new norm to speak, price and sell Portuguese marble stone.</p>
-<p>All I’d read about economics, supply, and demand, marketing, and Human behavior did not match the entrepreneurial expression around me, I was no longer optimistic. No value was being created, value was being destroyed and applauded. If the government had no check on their decisions, and neglected the citizens, private initiative would have a huge responsibility in the social domain, as I previously thought.</p>
-<p>For that reason, I had read more about governance, decentralization, re-distribution, biology, and geometry, and slightly before the pandemic, I realized that different nodes were infecting social bodies with infinite loops of redundancy. I created Reboot, a platform for makers around the world to connect directly with potential end customers, to produce in a made-to-order fashion, cutting transactional costs both in proceeds and logistics, hoping to preserve what was left of cultural heritage in developing economies, freeing fragile communities from exploitation, and by strategic pricing according to local economy, a yearly re-distribution of the companies profit would act as an insurance for the Humans relying on the platform, to make their means be met.</p>
-<p>It felt like a great idea, investors all around the world said it was a great idea. They would connect me to a friend, and then another board director, amounting to nothing. The bootstrapping myth led reboot to the end of our runway, and I was compelled to learn Computer Science from a practical approach. I was accepted into a school, sponsored by patrons, that offered a free course called 42 School.</p>
-<p>This was 2020, and I have been devoting ~80% of my energy to learning and improving to help me think with tools I now understand how to use and incorporate with the previous ones.</p>
-<p>For the first time, I have a corporate job, where hyper-specialization is the trait of the enlightened. My performance is slightly above average, considering my non-seniority status, but to attain it, I internalize a great cost, and the output is nothing. It doesn’t make sense. I’m not directly developing any product, but I don’t have a narrow vision of problems, and to reduce the scope is forging the problems of tomorrow.</p>
-<p>My current occupation is entertaining and distracting, nonetheless, but is not meaningful, and it hinders all the differences I was born with, and what I can contribute to the planet and society.</p>
+<section id="evolution" class="level2">
+<h2 class="anchored" data-anchor-id="evolution">Evolution</h2>
+<ol type="1">
+<li>Evolutionary Biochemistry
+<ul>
+<li>Bio-Chemistry
+<ul>
+<li><a href="https://nick-lane.net/publications/">Nick Lane</a>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=FLaTU-t1CQM" title="The electrical origin of life">The electrical origins of life</a></li>
+<li><a href="https://youtu.be/vBiIDwBOqQA?si=o8golhRao2R4NXIH" title="Kreb Cycle">Kreb Cycle</a>
+<ul>
+<li><a href="https://nick-lane.net/publications/a-biophysical-basis-for-the-emergence-of-the-genetic-code-in-protocells">Protocels</a></li>
+<li><a href="https://nick-lane.net/publications/origin-eukaryotic-cell/">origin-eukaryotic-cell</a></li>
+<li><a href="https://www.nature.com/articles/s41570-019-0155-6">article</a></li>
+<li>Bio-Electricity</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Digital Chemistry</li>
+<li>Assembly Theory vs Co-evolution</li>
+<li><a href="https://www.nature.com/articles/s41586-023-06600-9">Assembly theory explains</a></li>
+<li>Biology
+<ul>
+<li>Michael Levin
+<ul>
+<li><a href="https://drmichaellevin.org/publications/">Papers</a></li>
+<li><a href="https://drmichaellevin.org/presentations/">Presentations</a></li>
+</ul></li>
+<li>Mind Everywhere</li>
+</ul></li>
+<li>Computational Biology
+<ul>
+<li>Von Neuman</li>
+<li>Turin Biology Paper
+<ul>
+<li>Cellular Automata ## Physics</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Physics
+<ul>
+<li>Borrowing “The Pixel of Reality” from Quantum Gravity Theory</li>
+</ul></li>
+</ol>
 </section>
-<section id="technical-skills" class="level2">
-<h2 class="anchored" data-anchor-id="technical-skills">Technical Skills</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 26%">
-<col style="width: 48%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Languages</th>
-<th>Tools</th>
-<th>Standards</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>•C <br> •C++ <br> •bash <br> •learning rust</td>
-<td>•git <br> •jira <br> •docker <br> •unix - linux <br> •term <br> •vim</td>
-<td>•best practices oriented <br> •documentation <br> •clean code <br> •sw life-cycle</td>
-</tr>
-</tbody>
-</table>
+<section id="philosophy" class="level2">
+<h2 class="anchored" data-anchor-id="philosophy">Philosophy</h2>
+<ol start="3" type="1">
+<li>Philosophy
+<ul>
+<li>Cognition</li>
+<li>Meaning &amp; Goals</li>
+<li><a href="https://www.youtube.com/watch?v=4kBoLVvoqVY">MetaCrisis</a></li>
+<li>Autopoiesis, Homeostasis</li>
+</ul></li>
+</ol>
 </section>
-<section id="experience-1" class="level2">
-<h2 class="anchored" data-anchor-id="experience-1">Experience <br></h2>
-<p>I have a rich, diverse and broad spectrum of occupational experiences.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 24%">
-<col style="width: 50%">
-<col style="width: 24%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Date</th>
-<th>Job</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>April 2023</td>
-<td>Software Engineer in R&amp;D 5G Physical Layer Embedded Systems</td>
-<td>Without term</td>
-</tr>
-<tr class="even">
-<td>May 1 2022/2023</td>
-<td>Software Engineer Trainee in R&amp;D Cloud and Networks</td>
-<td>Fixed term</td>
-</tr>
-<tr class="odd">
-<td>2018/2022</td>
-<td>Founder, manager and operator of R&amp;D studio</td>
-<td>Without term</td>
-</tr>
-<tr class="even">
-<td>2008/2018</td>
-<td>Sound Engineer &amp; Music Producer</td>
-<td>Freelance &amp; short term</td>
-</tr>
-</tbody>
-</table>
+<section id="ecology" class="level2">
+<h2 class="anchored" data-anchor-id="ecology">Ecology</h2>
+<ol start="4" type="1">
+<li>Ecology</li>
+</ol>
 </section>
-<section id="education" class="level2">
-<h2 class="anchored" data-anchor-id="education">Education</h2>
-<p>Independent Degree. Some <em>highlights</em> bellow:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Medium</th>
-<th>Scope</th>
-<th>Subject/s</th>
-<th>Status</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>42 Lisboa</td>
-<td>Computer Science</td>
-<td>C, Algorithms, Memory Management &amp; Graphics</td>
-<td><a href="https://github.com/mvtta/42Cursus/tree/main">Projects</a></td>
-<td><strong>42</strong> is a private institution of <a href="https://en.wikipedia.org/wiki/Higher_education" title="Higher education">higher education</a> in <a href="https://en.wikipedia.org/wiki/Computer_science" title="Computer science">computer science</a> (…) The school opened in Paris in 2013. The school does not have any professors and is open 24/7. Students are trained through <a href="https://en.wikipedia.org/wiki/Peer_learning" title="Peer learning">peer-to-peer pedagogy</a>, and <a href="https://en.wikipedia.org/wiki/Project-based_learning" title="Project-based learning">project-based learning</a>.</td>
-</tr>
-<tr class="even">
-<td>Johns Hopkins University</td>
-<td><a href="https://www.coursera.org/specializations/computational-neuroscience">Neuroscience and Neuroimaging Specialization</a></td>
-<td>Neuroanatomy &amp; Neuroimaging • Experimental design • Imaging techniques</td>
-<td><a href="https://coursera.org/share/6bd2b93e78b77ce07101d9de16de85fe">Certificate 1</a> <a href="https://coursera.org/share/70e18a2cafdca8b3a381d59d346ea25c">Certificate 2</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Icahn School of Medicine at Mount Sinai</td>
-<td><a href="https://www.coursera.org/specializations/systems-biology">Systems Biology and Biotechnology Specialization</a></td>
-<td></td>
-<td>In queue</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Johns Hopkins University</td>
-<td><a href="https://coursera.org/share/99027e6f6d3207203d323efb6b6e8ab8">Principles of fMRI 1</a></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><a href="https://edisciplinas.usp.br/pluginfile.php/7538736/mod_resource/content/1/518706950-LEVI-STRAUSS-Claude-Tristes-Tropicos.pdf">Levi Strauss - Triste Tropiques</a></td>
-<td>Anthropology</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>Thank you for your appreciation, <code>Sincerely Mariana</code>.</p>
+<section id="complex-systems" class="level2">
+<h2 class="anchored" data-anchor-id="complex-systems">Complex Systems</h2>
+<ol start="5" type="1">
+<li>Complex Systems
+<ul>
+<li>Information</li>
+<li>Graph Problems</li>
+</ul></li>
+</ol>
+</section>
+<section id="political-science-governance" class="level2">
+<h2 class="anchored" data-anchor-id="political-science-governance">Political Science &amp; governance</h2>
+<ol start="6" type="1">
+<li>Political Science &amp; Governance
+<ul>
+<li>Democracy
+<ul>
+<li>Hongs Formula</li>
+<li>Re-visiting the majority</li>
+<li>Outliers value</li>
+</ul></li>
+<li>Governance
+<ul>
+<li>Topology of governance</li>
+<li>Spatial relationship</li>
+</ul></li>
+</ul></li>
+</ol>
+</section>
+<section id="problems-identified" class="level2">
+<h2 class="anchored" data-anchor-id="problems-identified">Problems Identified</h2>
+<ol start="7" type="1">
+<li>Problems Identified
+<ul>
+<li>Identified Problems: A summary</li>
+</ul></li>
+</ol>
+</section>
+<section id="interactions" class="level2">
+<h2 class="anchored" data-anchor-id="interactions">Interactions</h2>
+<ol start="8" type="1">
+<li>Convergence / Justaposition
+<ul>
+<li>Emergence</li>
+<li>Scale and Abstraction</li>
+<li>Continuum and growth rate</li>
+<li>Outliers value</li>
+<li>Graphing the intuitive relationship</li>
+<li>Testing the relationship by formal logic</li>
+</ul></li>
+</ol>
+</section>
+<section id="solutions" class="level2">
+<h2 class="anchored" data-anchor-id="solutions">Solutions</h2>
+<ol start="9" type="1">
+<li>Solutions and their viability
+<ul>
+<li>For global agreement
+<ul>
+<li>Common ground for mutual understanding</li>
+<li>Party analogy</li>
+<li>Human desires in Ven diagram</li>
+</ul></li>
+<li>Global agreement, local action.</li>
+<li>Using Ramsey Numbers and graphs of connections to predict hierarchical models for communities to self-organize / self Governance</li>
+<li>Models and policies for truth</li>
+<li>Peer-To-Peer Fact Validator</li>
+<li>Artificial Resource</li>
+</ul></li>
+</ol>
+</section>
+<section id="civilization" class="level2">
+<h2 class="anchored" data-anchor-id="civilization">Civilization</h2>
+<ol start="10" type="1">
+<li>Civilization Design
+<ul>
+<li>Axioms</li>
+<li>Boundaries</li>
+<li>Agreements</li>
+</ul></li>
+</ol>
+</section>
+<section id="portugal" class="level2">
+<h2 class="anchored" data-anchor-id="portugal">Portugal</h2>
+<ol start="11" type="1">
+<li>Portugal
+<ul>
+<li>A letter</li>
+<li>Modeling direct democracy in the current context</li>
+<li>Exposing polarizing incentives</li>
+<li>Demystifying / unblocking inductive bias holding back humanity</li>
+</ul></li>
+</ol>
+<p>Would you like to have a conversation on these topics? <a href="mailto:mvaldeta42@gmail.com">Contact me @</a></p>
 
 
-</section>
+
 </section>
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1729757045025" data-listing-reading-time-sort="37" data-listing-word-count-sort="7398">
+<div class="thumbnail">
+<p><a href="./posts/Resume/resume.html" class="no-external"></a></p><a href="./posts/Resume/resume.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/Resume/resume.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/Resume/resume.html" class="no-external">Resume</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/Resume/resume.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/Resume/resume.html" class="no-external">mvtta.github.io</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./posts/Resume/resume.html" class="no-external"></a></p><a href="./posts/Resume/resume.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1733664529678" data-listing-reading-time-sort="2" data-listing-word-count-sort="253">
+<div class="thumbnail">
+<p><a href="./posts/Agency/What is Agency.html" class="no-external"></a></p><a href="./posts/Agency/What is Agency.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/Agency/What is Agency.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/Agency/What is Agency.html" class="no-external">What is Agency?</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/Agency/What is Agency.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/Agency/What is Agency.html" class="no-external">Compiling Linguistic, Conceptual, and Quantitative Dimensions</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./posts/Agency/What is Agency.html" class="no-external"></a></p><a href="./posts/Agency/What is Agency.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1739197128975" data-listing-reading-time-sort="1" data-listing-word-count-sort="120">
+<div class="thumbnail">
+<p><a href="./index.html" class="no-external"></a></p><a href="./index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./index.html" class="no-external">home</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./index.html" class="no-external"><strong>Agency</strong>: A series of articles and notes stemming from the central question “What is Agency?”. <strong>Articles</strong>: * <strong>Meaning</strong>: A dedicated series to the question “What is meaning?”.<br>
+* <strong>Int…</strong><br><strong></strong><strong></strong><strong></strong><strong></strong><strong></strong></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./index.html" class="no-external"></a></p><a href="./index.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -189,17 +189,14 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Index</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">true</div>
-  </div>
-  </div>
+</div>
 
 
 
@@ -221,12 +218,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1743524038817" data-listing-reading-time-sort="7" data-listing-word-count-sort="1332">
-<div class="thumbnail">
-<p><a href="../../posts/agency/preface.html" class="no-external"></a></p><a href="../../posts/agency/preface.html" class="no-external">
-<!-- img(9CEB782EFEE6)[progressive=false, height=]:posts/agency/preface.html -->
-</a><p><a href="../../posts/agency/preface.html" class="no-external"></a></p>
-</div>
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1743462000000" data-listing-file-modified-sort="1743524595512" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1332">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../../posts/agency/preface.html" class="no-external">Preface</a>
@@ -235,11 +227,14 @@ window.Quarto = {
 <a href="../../posts/agency/preface.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<a href="../../posts/agency/preface.html" class="no-external"><!-- desc(5A0113B34292)[max=175]:posts/agency/preface.html --></a>
+<a href="../../posts/agency/preface.html" class="no-external">Preface on Agency</a>
 </div>
 </div>
 <div class="metadata">
-<p><a href="../../posts/agency/preface.html" class="no-external"></a></p><a href="../../posts/agency/preface.html" class="no-external">
+<a href="../../posts/agency/preface.html" class="no-external">
+<div class="listing-date">
+Apr 1, 2025
+</div>
 </a>
 </div>
 </div>

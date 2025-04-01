@@ -1,0 +1,80 @@
+/* Article styling */
+.article {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+/* Body text */
+p {
+    font-size: small;        
+    margin-bottom: 1.2em;
+
+}
+
+/* List items */
+li {
+    font-size: smaller;        
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid #ccc;
+    margin: 1.5em 0;
+    padding: 0.5em 1em;
+    font-style: italic;
+}
+
+/* Code blocks */
+.mermaid {
+    margin: 2em 0;
+}
+
+//* References and Citations */
+.citation {
+    font-size: 0.8rem;
+    vertical-align: super;
+    margin-left: 0.2em;
+}
+
+.references {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-top: 2em;
+}
+
+div.csl-entry {
+    font-size: 0.9rem;
+    margin-bottom: 1em;
+    padding-left: 2em;
+    text-indent: -2em;
+}
+
+div.csl-left-margin {
+    min-width: 2em;
+    float: left;
+}
+
+div.csl-right-inline {
+    margin-left: 2em;
+    padding-left: 1em;
+}
+
+#refs {
+    margin-top: 3em;
+    border-top: 2px solid #eee;
+    padding-top: 2em;
+    clear: both;
+}

@@ -14,9 +14,10 @@ a:link {
 .navbar-title {
     color: rgb(255, 255, 255);
 }
+
 * {
     font-family: Inter, sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     background-color: black;   
 }
 .nav-item {
@@ -55,4 +56,6 @@ h1.title{
 }
 .p{
     color:white;
+    font-size: small;
+    font-weight: 100;
 }

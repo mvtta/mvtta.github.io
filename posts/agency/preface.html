@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2025-04-01">
-<meta name="description" content="Preface on Agency">
+<meta name="description" content="Preface: Agency">
 
 <title>/ - Preface</title>
 <style>
@@ -32,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -70,65 +68,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -155,19 +95,19 @@ window.Quarto = {
 <span class="menu-text">Agency</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/essays/"> 
+    <a class="nav-link" href="../../posts/essays/index.html"> 
 <span class="menu-text">Essays</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/experiments/"> 
+    <a class="nav-link" href="../../posts/experiments/index.html"> 
 <span class="menu-text">Experiments</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/notebooks/"> 
+    <a class="nav-link" href="../../posts/notebooks/index.html"> 
 <span class="menu-text">Notebooks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/thoughts/"> 
+    <a class="nav-link" href="../../posts/thoughts/index.html"> 
 <span class="menu-text">Thoughts</span></a>
   </li>  
   <li class="nav-item">
@@ -197,7 +137,7 @@ window.Quarto = {
   <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div></div></div>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -208,7 +148,7 @@ window.Quarto = {
 
 <div>
   <div class="description">
-    Preface on Agency
+    Preface: Agency
   </div>
 </div>
 
@@ -233,7 +173,9 @@ window.Quarto = {
 
 <section id="preface" class="level3">
 <h3 class="anchored" data-anchor-id="preface">Preface</h3>
-<p><em>“This most of all: ask yourself in the most silent hour of your night:</em> <em>must I write?</em> <em>Dig into yourself for a deep answer. And if this answer rings out in assent,</em> <em>if you meet this solemn question with a strong, simple “I must,”</em> <em>then build your life in accordance with this necessity;</em> <em>your whole l ife, even into its humblest and most indifferent hour,</em> <em>must become a sign and witness to this impulse.”</em> <strong>Rainer Maria Rilke</strong></p>
+<blockquote class="blockquote">
+<p>“This most of all: ask yourself in the most silent hour of your night: must I write? Dig into yourself for a deep answer. And if this answer rings out in assent, if you meet this solemn question with a strong, simple -I must-, then build your life in accordance with this necessity; your whole life, even into its humblest and most indifferent hour, must become a sign and witness to this impulse.” Reiner Maria Rilke</p>
+</blockquote>
 <p>In embarking on this project, I found myself drawn to this question “What is agency?” which has fascinated many great thinkers across centuries and cultures. This question is deceptively simple yet profoundly complex, touching on the essence of action, interaction, causality, intention, and the organisation of systems ranging from cells to societies. My goal, initially, was to explore agency through various lenses, and look for binding principles across scales. As I developed some understanding, it struck me, not only were there points of convergence in how different disciplines understood agency as agency itself connected these disparate fields of study.</p>
 <p>I related how Aristotle’s concept of the “efficient cause” the agent or process that brings about change had a surprising resonance with D’Arcy Thompson’s work. In Thompson’s view, physical forces like gravity, surface tension, and pressure act as efficient causes, shaping the forms of living organisms. While Aristotle might have attributed these forms to a more teleological purpose, Thompson showed how physical laws could drive the development of complex structures, and these could be beautifully expressed through mathematics. Thompson’s exploration of forces acting on biological forms as identifying the physical efficient causes that structure life, seems quite relevant because in more modern terms we can consider physical forces as fundamental interactions. The study of the emergence of life tries to bridge with an understanding of how from those interactions complex life can emerge and self-organize.</p>
 <p>That connection between efficient causes and the forces shaping the world felt/feel deeply significant, and continues to be relevant when delving into how forces that shape nature translate into self-organization. Observations related to order, scales and organisation are in turn connected to open questions of the origin of life, morphogenesis, and other forms of “becoming” of the world and into the world. Once <em>“here”</em>, things interact, predictions are made upon behaviors that seem determined by their nature and the laws that govern <em>“everything”</em>. Modern questions of causal theories and fundamental physics ask: How do interactions between fundamental particles lead to the emergence of complex structures and behaviors? What role does information play in shaping these processes? How can we understand causality at different levels of organization, from the quantum realm to the macroscopic world?</p>
@@ -256,62 +198,9 @@ window.Quarto = {
 <p>Together, we might uncover insights that not only deepen our knowledge but also help us build better relationships with one another, with our environments, and with the systems we create.</p>
 
 
-
 </section>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1743524528611" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="../../posts/agency/index.html" class="no-external"></a></p><a href="../../posts/agency/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="../../posts/agency/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../posts/agency/index.html" class="no-external">Index</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../posts/agency/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../../posts/agency/index.html" class="no-external">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1743462000000" data-listing-file-modified-sort="1743524595512" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1332">
-<div class="body">
-
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-Preface on Agency
-</div>
-</div>
-<div class="metadata">
-
-<div class="listing-date">
-Apr 1, 2025
-</div>
-
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="../../posts/agency/index.html" class="no-external"></a></p><a href="../../posts/agency/index.html" class="no-external">
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

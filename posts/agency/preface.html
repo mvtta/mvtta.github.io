@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -195,7 +195,7 @@ window.Quarto = {
   <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="true">true <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -248,35 +248,51 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1743524280543" data-listing-reading-time-sort="1" data-listing-word-count-sort="17">
+<div class="quarto-post image-right" data-index="0" data-categories="true" data-listing-file-modified-sort="1743524420135" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="thumbnail">
 <p><a href="../../posts/agency/index.html" class="no-external"></a></p><a href="../../posts/agency/index.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
 </a><p><a href="../../posts/agency/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../posts/agency/index.html" class="no-external">Index</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../../posts/agency/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('true'); return false;">
+true
+</div>
+</div>
 <div class="listing-description">
 <a href="../../posts/agency/index.html" class="no-external">
-<tbody>
-<tr class="odd">
-<td>title: “Index”</td>
-</tr>
-<tr class="even">
-<td>listing:</td>
-</tr>
-<tr class="odd">
-<td>contents: “.”</td>
-</tr>
-<tr class="even">
-<td>type: default</td>
-</tr>
-<tr class="odd">
-<td>sort: “date desc”</td>
-</tr>
-<tr class="even">
-<td>categories: true</td>
-</tr>
-</tbody>
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1743524038817" data-listing-reading-time-sort="7" data-listing-word-count-sort="1332">
+<div class="thumbnail">
+<p></p>
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+<p></p>
+</div>
+<div class="body">
+
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+<em>“This most of all: ask yourself in the most silent hour of your night:</em> <em>must I write?</em> <em>Dig into yourself for a deep answer. And if this answer rings out in assent,</em> <em>if you meet…</em><em></em><em></em><em></em><strong></strong>
+</div>
+</div>
+<div class="metadata">
+<p></p>
+
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
 </a>
 </div>
 </div>

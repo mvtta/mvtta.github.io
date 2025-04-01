@@ -3,12 +3,12 @@
     "listing": "/about-me.html",
     "items": [
       "/index.html",
+      "/posts/agency/index.html",
       "/posts/resume/resume.html",
       "/posts/agency/preface.html",
       "/resource-tree.html",
       "/posts/essays/index.html",
       "/posts/experiments/index.html",
-      "/posts/agency/index.html",
       "/posts/thoughts/index.html",
       "/posts/notebooks/index.html"
     ]
@@ -16,15 +16,21 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/agency/index.html",
       "/posts/resume/resume.html",
       "/posts/agency/preface.html",
       "/resource-tree.html",
       "/posts/essays/index.html",
       "/posts/experiments/index.html",
-      "/posts/agency/index.html",
       "/posts/thoughts/index.html",
       "/posts/notebooks/index.html",
       "/about-me.html"
+    ]
+  },
+  {
+    "listing": "/posts/agency/index.html",
+    "items": [
+      "/posts/agency/preface.html"
     ]
   },
   {
@@ -37,11 +43,11 @@
     "listing": "/resource-tree.html",
     "items": [
       "/index.html",
+      "/posts/agency/index.html",
       "/posts/resume/resume.html",
       "/posts/agency/preface.html",
       "/posts/essays/index.html",
       "/posts/experiments/index.html",
-      "/posts/agency/index.html",
       "/posts/thoughts/index.html",
       "/posts/notebooks/index.html",
       "/about-me.html"

@@ -1,93 +1,271 @@
-# Resume
+# MARIANA EMAUZ VALDETARO
 
-[mvtta.github.io](https://www.mvtta.github.io)
+**R&D Software Engineer \| Independent Researcher**\
+Lisboa, Portugal \| mvtta\@proton.me \| [marianas.life](https://marianas.life)
 
-### Summary
+## SUMMARY
 
-```         
-Name: Valdetaro, Mariana
-Current role: R&D L1Phy Software Engineer @ Nokia 
-(Telecom, Networks, Embedded Systems, \
-Radio Technology, Information Theory)
+Multidisciplinary researcher and technical professional with expertise in telecommunications, machine learning, and complex systems. Combining analytical rigor with creative and critical thinking to develop novel approaches to address complex problems while bridging technical implementation with theoretical frameworks across disciplines.
 
-Looking for a cross-field opportunity in Research and Development to
-            • Learn with, and meet inspiring humans,
-            • On the interconnectedness of all problems,
-            • Towards a Planetary Future.
+### SKILLS
 
-Mobile: +351967409418 | E-mail: mvaldeta42@gmail.com | Location: Portugal, Europe
-```
+**Technical**: 5G Technologies, Digital Signal Processing, C/C++, Machine Learning, Generative AI, Complex Systems Modeling, Software Architecture, Python, Julia, HG, TensorFlow, Scikit-learn, Openmm, MDAnalysis, Py3Dmol, Amber14-all, QMD, SentenceTransformer, Dash, TfidfVectorizer, LatentDirichletAllocation, FrameSemanticTransformer, Spacy, Umap, Torch, Tqdm, NLTK, BERT, Flask
 
-## Experience <br>
+**Development**: Prototyping, System Design, Unit/Integration Testing, Interface Adaptation, Code Optimization, Matlab Integration\
+**Research**: Quantitative Methods, Experimental Design, Literature Review, Interdisciplinary Synthesis\
+**Communication**: Technical Writing, Public Speaking, Workshop Facilitation, Requirements Documentation\
+**Leadership**: Strategic Planning, Team Coordination, Community Building, Stakeholder Management\
+**Languages**: English (Fluent), Portuguese (Native), Spanish (Intermediate), French (Basic)
 
-(Still editing, just rambling for now)
+### HIGHLIGHT
 
-I have a rich, diverse, and broad spectrum of occupational experiences.
-
-Working in a restaurant frequented by audiophiles was where I got my start. Different groups of customers would extend me invitations to attend musical events, which sparked my interest in the physical aspects of sound, both in the engineering and anthropological senses.
-
-I listened to them talk for hours and eventually learned their dialect.
-
-After six months I changed to a bar, at night, while seizing an opportunity during the day as a hairdresser's assistant.
-
-Her customers were artists, writers, fashion designers, musicians, and lots of foreigners, I would silently and swiftly attend to her needs, personal and technical, run errands, contact suppliers, wash customers' hair, and clean. She was demanding, but brilliant.
-
-I observed people would come and go, and so did their universes. All different and complex.
-
-Apart from events, film, and photo-shoot days, my routine was ritualistic, like a synchronized dance of being present and anticipating, my English skills matured, my visual culture grew, and I was within reach of beautiful books and art magazines.
-
-After four years, I decided to dedicate myself more to music and did my first tour through Portugal as a disk-jockey duo. We were on a lot of buses, I could read many hours in a row. The customers were large groups or crowds, and the interactions changed. My colleagues were sound technicians, bartenders, and dancers. I didn't like performing in general, although I felt like an honor to share that unique moment with strangers.
-
-Opaque mediums of exchange, loneliness, suffering, and superficial hope. I found that performing in clubs was extremely sad, but it was a small part compared to commuting, reading, and thinking, I enjoyed that part.
-
-Since that time, plus six years, founded a company that mirrored my interests, from material science, visual culture, and semiotics, and consulted for mineral extraction and production industries in Portugal. I lived in Japan for 2 years and collaborated at the initial stage of a new business development platform in the start-up city of Japan, Fukuoka. It was an important moment, as the depth of the connections between ideas, problems, and outcomes emerged vividly in my perceptual model.
-
-Optimistic and humbled by this phase of my life, it culminated in the materialization of immaterial product development for the quarry industry of Portugal, an homage to the metamorphic device of space and time, life-giving life different form, marble stone as the agents of time, like gods, watching Humans.
-
-As a commissioned thought process, the message was conveyed through a movie, our crew was small, and the sacrifices were proportional to the cause. To humanize the objective, a garment collection with biodegradable materials, and hand made was shown at a fashion event and then converted from analog to digital where anyone could interact with it, transform it through gestures if holding a marble device, shaped like a mobile phone, without a screen, that had no instructions, the discovery and interaction where experimental.
-
-I learned that most didn't understand, and some were even embarrassed - discomfort, over the experimental nature of the project, but I did change something, the government agency representing mineral resources then appropriated them elves with a language created, and although distorted by greed and vanity, the seed of the message became the new norm to speak, price and sell Portuguese marble stone.
-
-All I'd read about economics, supply, and demand, marketing, and Human behavior did not match the entrepreneurial expression around me, I was no longer optimistic. No value was being created, value was being destroyed and applauded. If the government had no check on their decisions, and neglected the citizens, private initiative would have a huge responsibility in the social domain, as I previously thought.
-
-For that reason, I had read more about governance, decentralization, re-distribution, biology, and geometry, and slightly before the pandemic, I realized that different nodes were infecting social bodies with infinite loops of redundancy. I created Reboot, a platform for makers around the world to connect directly with potential end customers, to produce in a made-to-order fashion, cutting transactional costs both in proceeds and logistics, hoping to preserve what was left of cultural heritage in developing economies, freeing fragile communities from exploitation, and by strategic pricing according to local economy, a yearly re-distribution of the companies profit would act as an insurance for the Humans relying on the platform, to make their means be met.
-
-It felt like a great idea, investors all around the world said it was a great idea. They would connect me to a friend, and then another board director, amounting to nothing. The bootstrapping myth led reboot to the end of our runway, and I was compelled to learn Computer Science from a practical approach. I was accepted into a school, sponsored by patrons, that offered a free course called 42 School.
-
-This was 2020, and I have been devoting \~80% of my energy to learning and improving to help me think with tools I now understand how to use and incorporate with the previous ones.
-
-For the first time, I have a corporate job, where hyper-specialization is the trait of the enlightened. My performance is slightly above average, considering my non-seniority status, but to attain it, I internalize a great cost, and the output is nothing. It doesn't make sense. I'm not directly developing any product, but I don't have a narrow vision of problems, and to reduce the scope is forging the problems of tomorrow.
-
-My current occupation is entertaining and distracting, nonetheless, but is not meaningful, and it hinders all the differences I was born with, and what I can contribute to the planet and society.
-
-## Technical Skills
-
-| Languages                                   | Tools                                                                | Standards                                                                         |
-|------------------|-------------------|-----------------------------------|
-| •C <br> •C++ <br> •bash <br> •learning rust | •git <br> •jira <br> •docker <br> •unix - linux <br> •term <br> •vim | •best practices oriented <br> •documentation <br> •clean code <br> •sw life-cycle |
-
-## Experience <br>
-
-I have a rich, diverse and broad spectrum of occupational experiences.
-
-| Date            | Job                                                         | Description            |
+| Date                      | Job                                              | Term          |
 |------------------|-------------------------------------|------------------|
-| April 2023      | Software Engineer in R&D 5G Physical Layer Embedded Systems | Without term           |
-| May 1 2022/2023 | Software Engineer Trainee in R&D Cloud and Networks         | Fixed term             |
-| 2018/2022       | Founder, manager and operator of R&D studio                 | Without term           |
-| 2008/2018       | Sound Engineer & Music Producer                             | Freelance & short term |
+| December 2024 - Present   | Senior Consultant Technology & AI                | Self-Employed |
+| October 2024 - Present    | Board Member & Vice President \@ SEMF            | Pro-Bono      |
+| April 2023 - October 2024 | R&D Software Engineer 5G Physical Layer          | Without Term  |
+| May 2022 - April 2023     | Applied R&D Software Engineer Cloud and Networks | Fixed Term    |
 
-## Education
+## PROFESSIONAL EXPERIENCE
 
-Independent Degree. Some *highlights* bellow:
+### SEMF: Vice President \| Society for Multidisciplinary and Fundamental Research
 
-| Medium                                                                                                                                                          | Scope                                                                                                               | Subject/s                                                              | Status                                                                                                                                                    | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|-------------|-------------|-------------|-------------|--------------------|
-| 42 Lisboa                                                                                                                                                       | Computer Science                                                                                                    | C, Algorithms, Memory Management & Graphics                            | [Projects](https://github.com/mvtta/42Cursus/tree/main)                                                                                                   | **42** is a private institution of [higher education](https://en.wikipedia.org/wiki/Higher_education "Higher education") in [computer science](https://en.wikipedia.org/wiki/Computer_science "Computer science") (...) The school opened in Paris in 2013. The school does not have any professors and is open 24/7. Students are trained through [peer-to-peer pedagogy](https://en.wikipedia.org/wiki/Peer_learning "Peer learning"), and [project-based learning](https://en.wikipedia.org/wiki/Project-based_learning "Project-based learning"). |
-| Johns Hopkins University                                                                                                                                        | [Neuroscience and Neuroimaging Specialization](https://www.coursera.org/specializations/computational-neuroscience) | Neuroanatomy & Neuroimaging • Experimental design • Imaging techniques | [Certificate 1](https://coursera.org/share/6bd2b93e78b77ce07101d9de16de85fe) [Certificate 2](https://coursera.org/share/70e18a2cafdca8b3a381d59d346ea25c) |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Icahn School of Medicine at Mount Sinai                                                                                                                         | [Systems Biology and Biotechnology Specialization](https://www.coursera.org/specializations/systems-biology)        |                                                                        | In queue                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Johns Hopkins University                                                                                                                                        | [Principles of fMRI 1](https://coursera.org/share/99027e6f6d3207203d323efb6b6e8ab8)                                 |                                                                        |                                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [Levi Strauss - Triste Tropiques](https://edisciplinas.usp.br/pluginfile.php/7538736/mod_resource/content/1/518706950-LEVI-STRAUSS-Claude-Tristes-Tropicos.pdf) | Anthropology                                                                                                        |                                                                        |                                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-|                                                                                                                                                                 |                                                                                                                     |                                                                        |                                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+*October 2024 - Present: Technology and Infrastructure Office*
 
-Thank you for your appreciation, `Sincerely Mariana`.
+-   Collaborate on strategic initiatives for advancing fundamental research across conventionally disparate fields of inquiry
+
+<!-- -->
+
+-   Oversee community development and engagement initiatives
+
+<!-- -->
+
+-   Participate in community live streams reporting on internal progress and promoting multidisciplinary discussions
+
+<!-- -->
+
+-   Coordinate interdisciplinary events including the yearly interdisciplinary school
+
+<!-- -->
+
+-   Collaborate on organizational partnerships and funding initiatives
+
+<!-- -->
+
+-   Maintain and develop SEMF's technical infrastructure alongside the secretary and manager of operations
+
+### Independent Senior Consultant \| Machine Learning & GenAI
+
+*January 2024 - Present*
+
+-   Advise organizations on implementing and adopting AI systems and machine learning solutions
+
+<!-- -->
+
+-   Develop custom frameworks for data processing and analysis
+
+<!-- -->
+
+-   R&D custom generative AI pipelines for workflow automation
+
+<!-- -->
+
+-   Design novel technical architectures for complex data processing systems
+
+<!-- -->
+
+-   Bridge technical teams with non-technical stakeholders to ensure alignment on project goals
+
+### Nokia: Embedded Software Engineer - Physical Layer - R&D - 5G (Contract)
+
+*April 2023 - December 2024*
+
+-   Conduct digital signal processing and code optimization for 5G systems
+
+<!-- -->
+
+-   Perform feasibility studies of 3GPP 5G features and draft technical requirements
+
+<!-- -->
+
+-   Plan and organize work as part of global software development teams
+
+<!-- -->
+
+-   Implement features using C/C++ for telecommunications infrastructure
+
+<!-- -->
+
+-   Design system architecture and conduct various testing levels (unit, component, integration)
+
+<!-- -->
+
+-   Perform interface adaptation, testing, and troubleshooting
+
+<!-- -->
+
+-   Execute SW co-verification with Matlab models and build time optimization
+
+<!-- -->
+
+-   Create documentation and advocate for software lifecycle best practices
+
+### Nokia: Applied R&D Engineer (Full-time)
+
+*February 2022 - April 2023*
+
+-   Contributed to research and development initiatives for telecommunications technology
+
+<!-- -->
+
+-   Participated in early-stage development of 5G technologies
+
+<!-- -->
+
+-   RAN Infrastructure and Product Development
+
+### Independent Researcher \| Agency & Multi-scale Interaction Dynamics
+
+*2023 - Present*
+
+-   Investigate theoretical frameworks for generalizing interaction patterns across temporal and spatial scales
+
+<!-- -->
+
+-   Develop computational models for analyzing complex social and cognitive systems
+
+<!-- -->
+
+-   Writing research literature
+
+### Independent Researcher \| Computational Linguistics & Machine Learning
+
+*2023 - Present*
+
+-   Investigate theoretical frameworks for generalizing meaning development
+
+<!-- -->
+
+-   Develop computational models for analyzing polysemic terms across interdisciplinary academic publications
+
+<!-- -->
+
+-   Participate in interdisciplinary research projects at the intersection of linguistics and machine learning
+
+### Colisão Studios: Founder and Manager R&D Studio
+
+*February 2018 - November 2021*
+
+-   Led a Zero-to-One Innovation Studio operating at the intersection of technology, art, and natural resources
+
+<!-- -->
+
+-   Developed novel technical solutions and creative applications
+
+<!-- -->
+
+-   Managed a Multidisciplinary Team of 200
+
+<!-- -->
+
+-   [Lead an R&D footwear manufacturing project with biodegradable filament using 3D printing technology](https://observador.pt/2019/10/09/colisao-studios-a-moda-que-vem-do-marmore-e-a-designer-que-chegou-ate-aqui-a-partir-pedra/)
+
+<!-- -->
+
+-   [Re-contextualised Portuguese Marble Stone for the high-end export market resulting in an increase of \~32% and for the first time, surpassing the previous boundary of 400million](https://www.construir.pt/2020/02/20/exportacoes-de-pedra-natural-atingem-maximos-historicos)
+
+### Newlife.ai: External Funding Coordinator
+
+*May 2020 - November 2020*
+
+-   Coordinated funding initiatives for a Decentralized AI-driven social network
+
+<!-- -->
+
+-   Worked on strategic alignment for Portuguese based partnerships
+
+### reboot.fashion: Founder
+
+*November 2019 - March 2020*
+
+-   Created a decentralized fashion system addressing supply-chain complexities through smart contracts
+
+<!-- -->
+
+-   Developed on-chain platform/marketplace connecting independent and MSNE players
+
+<!-- -->
+
+-   Implemented transparency solutions for fashion industry value chain
+
+------------------------------------------------------------------------
+
+## EDUCATION
+
+#### **SEMF Interdisciplinary School**
+
+[*2024*](https://semf.org.es/school2024/) *Intellectual cross-pollination by bringing together researchers, practitioners, students and creators from diverse areas of expertise that share a common vision on fundamental questions.*
+
+-   [Beyond the Nyquist Sampling Theorem](https://semf.org.es/school2024/sessions.html#S13)
+
+<!-- -->
+
+-   [Notions of Structure in Mathematics](https://semf.org.es/school2024/sessions.html#S1)
+
+<!-- -->
+
+-   [The Evolution of Biological Complexity](https://www.uv.es/uvweb/college/en/profile-1285950309813.html?p2=moya&idA=true)
+
+<!-- -->
+
+-   [Computational Foundations of Everything](https://www.stephenwolfram.com/)
+
+#### **Johns Hopkins University**
+
+*Mooc in [Neuroscience and Neuroimaging Specialization](https://www.coursera.org/specializations/computational-neuroscience)*
+
+-   Neuroanatomy & Neuroimaging • Experimental design • Imaging techniques
+
+<!-- -->
+
+-   Certificates: [Certificate 1](https://coursera.org/share/6bd2b93e78b77ce07101d9de16de85fe), [Certificate 2](https://coursera.org/share/70e18a2cafdca8b3a381d59d346ea25c), [Principles of fMRI 1](https://coursera.org/share/99027e6f6d3207203d323efb6b6e8ab8)
+
+**Icahn School of Medicine at Mount Sinai**
+
+[Systems Biology and Biotechnology Specialization](https://www.coursera.org/specializations/systems-biology)
+
+#### **42 School - 42 Lisboa**
+
+*A private institution of [higher education](https://en.wikipedia.org/wiki/Higher_education "Higher education") in [computer science](https://en.wikipedia.org/wiki/Computer_science "Computer science") opened in Paris in 2013. The school does not have any professors and is open 24/7. Students are trained through [peer-to-peer pedagogy](https://en.wikipedia.org/wiki/Peer_learning) "Peer learning", and [project-based learning](https://en.wikipedia.org/wiki/Project-based_learning "Project-based learning").*
+
+-   Focused on: Software Engineering and Computer Science Imperative programming in C, Object-Oriented Programming in C++, Data Structures & Algorithms, Concurrent programming, Network programming, Systems administration, Graphics programming
+
+<!-- -->
+
+-   [Projects](https://github.com/mvtta/42Cursus/tree/main)
+
+#### **Bachelor in Management and Corporate Communication**
+
+*ISCEM, Lisbon Portugal 2015*
+
+#### **Bachelor of Arts in Semiotics and Visual Culture**
+
+*IADE, Lisbon Portugal 2008*
+
+------------------------------------------------------------------------
+
+## VOLUNTEER EXPERIENCE
+
+#### Katefriends
+
+*April 2022 - Present* - Volunteer in animal welfare, focusing on fostering and rehabilitation of rescued greyhounds - Support transition of animals until they find permanent homes
+
+#### A Avó veio Trabalhar (Grandma Came to Work)
+
+*February 2015 - April 2019*
+
+-   Community volunteer for intergenerational creative hub in Lisbon
+-   Helped build social and emotional bonds within local community
+-   Supported program enabling elderly people to participate in creative activities
+
+`Sincerely Mariana`

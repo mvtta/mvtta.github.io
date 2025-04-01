@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Valdetaro, M">
-<meta name="dcterms.date" content="2024-02-08">
 
-<title>/ - A Planetary Identity: Would it make any difference?</title>
+<title>/ -</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,22 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,9 +68,67 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="../../styles.css">
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -80,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">/</span>
     </a>
   </div>
@@ -91,24 +149,32 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/Introduction/index.html"> 
-<span class="menu-text">Open Notes</span></a>
+    <a class="nav-link" href="./posts/agency/index.html"> 
+<span class="menu-text">Agency</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../staccato/staccato.html"> 
-<span class="menu-text">Staccato</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../essays/index.qmd"> 
+    <a class="nav-link" href="./posts/essays/"> 
 <span class="menu-text">Essays</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../poems/poems.qmd"> 
-<span class="menu-text">Poems</span></a>
+    <a class="nav-link" href="./posts/experiments/"> 
+<span class="menu-text">Experiments</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../context.html"> 
-<span class="menu-text">Infix</span></a>
+    <a class="nav-link" href="./posts/notebooks/"> 
+<span class="menu-text">Notebooks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./posts/thoughts/"> 
+<span class="menu-text">Thoughts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resource-tree.html"> 
+<span class="menu-text">Resource-Tree</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./about-me.html" aria-current="page"> 
+<span class="menu-text">About</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -123,54 +189,232 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(9)</span></div><div class="category" data-category="references">references <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">A Planetary Identity: Would it make any difference?</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">civilization</div>
-  </div>
-  </div>
 
 
 
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Valdetaro, M </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">February 8, 2024</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
+<p>Name: Mariana Emauz Valdetaro Planet: Earth Stardate: 78715.8</p>
+<p>I’m an independent researcher, multidisciplinary thinker, and a poet. I see things as systems and groups of things as inter-connected systems. I care deeply about most things, and against all odds I deep dive into how systems come to be, relate and rules that govern their dynamics.</p>
+<p>I’m an active member of the <a href="www.semf.org.es">Society for Multidisciplinary and Fundamental Research</a> and alongside with my colleagues at the Board, and our growing community of associates we promote a space for discussing fundamental questions, by connecting different fields of inquiry, and even organize a yearly Interdisciplinary School. If this tickles your curiosity learn more <a href="www.semf.org.es/school2025">here</a></p>
+<p>A stable version of my resume for recruiters can be found <a href="posts/Resume/resume.qmd">there</a>.</p>
 
 
-</header>
 
 
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Asset 1.png" class="img-fluid figure-img"></p>
-<figcaption>first draft</figcaption>
-</figure>
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1743522098658" data-listing-reading-time-sort="1" data-listing-word-count-sort="144">
+<div class="thumbnail">
+<p><a href="./index.html" class="no-external"></a></p><a href="./index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./index.html" class="no-external"></a></p>
 </div>
-
-
-
-</main> <!-- /main -->
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./index.html" class="no-external">Hello, and welcome to my <em>(not so)</em> secret repository where I store things of type:</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./index.html" class="no-external">email</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./index.html" class="no-external"></a></p><a href="./index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1743520706135" data-listing-reading-time-sort="6" data-listing-word-count-sort="1177">
+<div class="thumbnail">
+<p><a href="./posts/resume/resume.html" class="no-external"></a></p><a href="./posts/resume/resume.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/resume/resume.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/resume/resume.html" class="no-external">MARIANA EMAUZ VALDETARO</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/resume/resume.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/resume/resume.html" class="no-external"><strong>R&amp;D Software Engineer | Independent Researcher</strong><br>
+Lisboa, Portugal | mvtta@proton.me | marianas.life</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./posts/resume/resume.html" class="no-external"></a></p><a href="./posts/resume/resume.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1743524038817" data-listing-reading-time-sort="7" data-listing-word-count-sort="1332">
+<div class="thumbnail">
+<p><a href="./posts/agency/preface.html" class="no-external"></a></p><a href="./posts/agency/preface.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/agency/preface.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/agency/preface.html" class="no-external">Preface</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/agency/preface.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/agency/preface.html" class="no-external"><em>“This most of all: ask yourself in the most silent hour of your night:</em> <em>must I write?</em> <em>Dig into yourself for a deep answer. And if this answer rings out in assent,</em> <em>if you meet…</em><em></em><em></em><em></em><strong></strong></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./posts/agency/preface.html" class="no-external"></a></p><a href="./posts/agency/preface.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="references" data-listing-file-modified-sort="1739196572555" data-listing-reading-time-sort="4" data-listing-word-count-sort="734">
+<div class="thumbnail">
+<p><a href="./resource-tree.html" class="no-external"></a></p><a href="./resource-tree.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./resource-tree.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./resource-tree.html" class="no-external">Resource Tree/</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./resource-tree.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('references'); return false;">
+references
+</div>
+</div>
+<div class="listing-description">
+<a href="./resource-tree.html" class="no-external">Would you like to have a conversation on these topics? Contact me @</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./resource-tree.html" class="no-external"></a></p><a href="./resource-tree.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-listing-file-modified-sort="1743523237120">
+<div class="thumbnail">
+<p><a href="./posts/essays/index.html" class="no-external"></a></p><a href="./posts/essays/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/essays/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/essays/index.html" class="no-external"></a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/essays/index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/essays/index.html" class="no-external"></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./posts/essays/index.html" class="no-external"></a></p><a href="./posts/essays/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-listing-file-modified-sort="1743523251465">
+<div class="thumbnail">
+<p><a href="./posts/experiments/index.html" class="no-external"></a></p><a href="./posts/experiments/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/experiments/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/experiments/index.html" class="no-external"></a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/experiments/index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/experiments/index.html" class="no-external"></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./posts/experiments/index.html" class="no-external"></a></p><a href="./posts/experiments/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-listing-file-modified-sort="1743524007874">
+<div class="thumbnail">
+<p><a href="./posts/agency/index.html" class="no-external"></a></p><a href="./posts/agency/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/agency/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/agency/index.html" class="no-external"></a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/agency/index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/agency/index.html" class="no-external"></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./posts/agency/index.html" class="no-external"></a></p><a href="./posts/agency/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-listing-file-modified-sort="1743523309538">
+<div class="thumbnail">
+<p><a href="./posts/thoughts/index.html" class="no-external"></a></p><a href="./posts/thoughts/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/thoughts/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/thoughts/index.html" class="no-external"></a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/thoughts/index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/thoughts/index.html" class="no-external"></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./posts/thoughts/index.html" class="no-external"></a></p><a href="./posts/thoughts/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="8" data-listing-file-modified-sort="1743523263630">
+<div class="thumbnail">
+<p><a href="./posts/notebooks/index.html" class="no-external"></a></p><a href="./posts/notebooks/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/notebooks/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/notebooks/index.html" class="no-external"></a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/notebooks/index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/notebooks/index.html" class="no-external"></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./posts/notebooks/index.html" class="no-external"></a></p><a href="./posts/notebooks/index.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

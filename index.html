@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>/ - home</title>
+<title>/ -</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -149,28 +183,32 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./posts/Agency"> 
+    <a class="nav-link" href="./posts/agency/index.html"> 
 <span class="menu-text">Agency</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts/Articles"> 
-<span class="menu-text">Articles</span></a>
+    <a class="nav-link" href="./posts/essays/"> 
+<span class="menu-text">Essays</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts/Experiments"> 
+    <a class="nav-link" href="./posts/experiments/"> 
 <span class="menu-text">Experiments</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts/Notebooks"> 
+    <a class="nav-link" href="./posts/notebooks/"> 
 <span class="menu-text">Notebooks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts/Thoughts"> 
+    <a class="nav-link" href="./posts/thoughts/"> 
 <span class="menu-text">Thoughts</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./resource-tree.html"> 
 <span class="menu-text">Resource-Tree</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about-me.html"> 
+<span class="menu-text">About</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -185,35 +223,25 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="references">references <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(9)</span></div><div class="category" data-category="references">references <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">home</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="hello" class="level3">
-<h3 class="anchored" data-anchor-id="hello">Hello,</h3>
-<p><strong>Agency</strong>: A series of articles and notes stemming from the central question “What is Agency?”. <strong>Articles</strong>: * <strong>Meaning</strong>: A dedicated series to the question “What is meaning?”.<br>
-* <strong>Intelligence</strong>: Thinking about Intelligence from an AI/ML perspective, some informal reviews on latest developments.<br>
-* <strong>Other</strong>: Articles &amp; writings on other topics with a different tone. <strong>Experiments</strong>: Some computational experiments. <strong>Notebooks</strong>: Explanations and technical notes <strong>Thoughts</strong>: Short entries with unstructured and loose thoughts. <strong>Resource Tree</strong>: Pointers and pins, an index to my current mind map of ideas and references. The purpose is dynamic, as I use the tree of information and links to share as a conversation propeller and contextual mapping to enrich dialogs.</p>
-<p>Contact me @ <a href="mailto:mvtta@proton.me">email</a></p>
+<section id="hello-and-welcome-to-my-not-so-secret-repository-where-i-store-things-of-type" class="level3">
+<h3 class="anchored" data-anchor-id="hello-and-welcome-to-my-not-so-secret-repository-where-i-store-things-of-type">Hello, and welcome to my <em>(not so)</em> secret repository where I store things of type:</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Agency:</span> A series of articles and notes stemming from the central question “What is Agency<span class="pp">?</span>”. </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Essays:</span> </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="ex">*</span> Meaning: A dedicated series to the question “What is meaning<span class="pp">?</span>”. </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        <span class="ex">*</span> Intelligence: Thinking about Intelligence, given the current AI/ML paradigm, with some informal reviews on latest developments.</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        <span class="ex">*</span> Other: Writings on other topics with a different tone. </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">Experiments:</span> Some computational experiments.</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ex">Notebooks:</span> Explanations and technical notes of topics I like.</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ex">Thoughts:</span> Short entries with unstructured and loose thoughts. </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ex">Resource-Tree:</span> Pointers and pins, an index to my current mind map of ideas and references. The purpose is dynamic, as I use the tree of information and links to share as a conversation propeller and contextual mapping to enrich dialogs with other fellow humans, and sometimes LLM<span class="st">'s. </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><a href="mailto:mvtta@proton.me">email</a></p>
 
 
 
@@ -221,7 +249,52 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="references" data-listing-file-modified-sort="1739196572555" data-listing-reading-time-sort="4" data-listing-word-count-sort="734">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1743520706135" data-listing-reading-time-sort="6" data-listing-word-count-sort="1177">
+<div class="thumbnail">
+<p><a href="./posts/resume/resume.html" class="no-external"></a></p><a href="./posts/resume/resume.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/resume/resume.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/resume/resume.html" class="no-external">MARIANA EMAUZ VALDETARO</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/resume/resume.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/resume/resume.html" class="no-external"><strong>R&amp;D Software Engineer | Independent Researcher</strong><br>
+Lisboa, Portugal | mvtta@proton.me | marianas.life</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./posts/resume/resume.html" class="no-external"></a></p><a href="./posts/resume/resume.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1743524038817" data-listing-reading-time-sort="7" data-listing-word-count-sort="1332">
+<div class="thumbnail">
+<p><a href="./posts/agency/preface.html" class="no-external"></a></p><a href="./posts/agency/preface.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/agency/preface.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/agency/preface.html" class="no-external">Preface</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/agency/preface.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/agency/preface.html" class="no-external"><em>“This most of all: ask yourself in the most silent hour of your night:</em> <em>must I write?</em> <em>Dig into yourself for a deep answer. And if this answer rings out in assent,</em> <em>if you meet…</em><em></em><em></em><em></em><strong></strong></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./posts/agency/preface.html" class="no-external"></a></p><a href="./posts/agency/preface.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="references" data-listing-file-modified-sort="1739196572555" data-listing-reading-time-sort="4" data-listing-word-count-sort="734">
 <div class="thumbnail">
 <p><a href="./resource-tree.html" class="no-external"></a></p><a href="./resource-tree.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -248,47 +321,135 @@ references
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1729757045025" data-listing-reading-time-sort="37" data-listing-word-count-sort="7398">
+<div class="quarto-post image-right" data-index="3" data-listing-file-modified-sort="1743523237120">
 <div class="thumbnail">
-<p><a href="./posts/Resume/resume.html" class="no-external"></a></p><a href="./posts/Resume/resume.html" class="no-external">
+<p><a href="./posts/essays/index.html" class="no-external"></a></p><a href="./posts/essays/index.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/Resume/resume.html" class="no-external"></a></p>
+</a><p><a href="./posts/essays/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/Resume/resume.html" class="no-external">Resume</a>
+<a href="./posts/essays/index.html" class="no-external"></a>
 </h3>
 <div class="listing-subtitle">
-<a href="./posts/Resume/resume.html" class="no-external"></a>
+<a href="./posts/essays/index.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<a href="./posts/Resume/resume.html" class="no-external">mvtta.github.io</a>
+<a href="./posts/essays/index.html" class="no-external"></a>
 </div>
 </div>
 <div class="metadata">
-<p><a href="./posts/Resume/resume.html" class="no-external"></a></p><a href="./posts/Resume/resume.html" class="no-external">
+<p><a href="./posts/essays/index.html" class="no-external"></a></p><a href="./posts/essays/index.html" class="no-external">
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1733664529678" data-listing-reading-time-sort="2" data-listing-word-count-sort="253">
+<div class="quarto-post image-right" data-index="4" data-listing-file-modified-sort="1743523251465">
 <div class="thumbnail">
-<p><a href="./posts/Agency/What is Agency.html" class="no-external"></a></p><a href="./posts/Agency/What is Agency.html" class="no-external">
+<p><a href="./posts/experiments/index.html" class="no-external"></a></p><a href="./posts/experiments/index.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/Agency/What is Agency.html" class="no-external"></a></p>
+</a><p><a href="./posts/experiments/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/Agency/What is Agency.html" class="no-external">What is Agency?</a>
+<a href="./posts/experiments/index.html" class="no-external"></a>
 </h3>
 <div class="listing-subtitle">
-<a href="./posts/Agency/What is Agency.html" class="no-external"></a>
+<a href="./posts/experiments/index.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<a href="./posts/Agency/What is Agency.html" class="no-external">Compiling Linguistic, Conceptual, and Quantitative Dimensions</a>
+<a href="./posts/experiments/index.html" class="no-external"></a>
 </div>
 </div>
 <div class="metadata">
-<p><a href="./posts/Agency/What is Agency.html" class="no-external"></a></p><a href="./posts/Agency/What is Agency.html" class="no-external">
+<p><a href="./posts/experiments/index.html" class="no-external"></a></p><a href="./posts/experiments/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-listing-file-modified-sort="1743524007874">
+<div class="thumbnail">
+<p><a href="./posts/agency/index.html" class="no-external"></a></p><a href="./posts/agency/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/agency/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/agency/index.html" class="no-external"></a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/agency/index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/agency/index.html" class="no-external"></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./posts/agency/index.html" class="no-external"></a></p><a href="./posts/agency/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-listing-file-modified-sort="1743523309538">
+<div class="thumbnail">
+<p><a href="./posts/thoughts/index.html" class="no-external"></a></p><a href="./posts/thoughts/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/thoughts/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/thoughts/index.html" class="no-external"></a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/thoughts/index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/thoughts/index.html" class="no-external"></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./posts/thoughts/index.html" class="no-external"></a></p><a href="./posts/thoughts/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-listing-file-modified-sort="1743523263630">
+<div class="thumbnail">
+<p><a href="./posts/notebooks/index.html" class="no-external"></a></p><a href="./posts/notebooks/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/notebooks/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/notebooks/index.html" class="no-external"></a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/notebooks/index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/notebooks/index.html" class="no-external"></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./posts/notebooks/index.html" class="no-external"></a></p><a href="./posts/notebooks/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="8" data-listing-file-modified-sort="1743522426032" data-listing-reading-time-sort="1" data-listing-word-count-sort="117">
+<div class="thumbnail">
+<p><a href="./about-me.html" class="no-external"></a></p><a href="./about-me.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./about-me.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./about-me.html" class="no-external"></a>
+</h3>
+<div class="listing-subtitle">
+<a href="./about-me.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./about-me.html" class="no-external">Name: Mariana Emauz Valdetaro Planet: Earth Stardate: 78715.8</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./about-me.html" class="no-external"></a></p><a href="./about-me.html" class="no-external">
 </a>
 </div>
 </div>

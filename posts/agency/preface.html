@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>/</title>
+<title>/ - Preface</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -66,7 +68,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -89,28 +149,32 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/Agency"> 
+    <a class="nav-link" href="../../posts/agency/index.html"> 
 <span class="menu-text">Agency</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/Articles"> 
-<span class="menu-text">Articles</span></a>
+    <a class="nav-link" href="../../posts/essays/"> 
+<span class="menu-text">Essays</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/Experiments"> 
+    <a class="nav-link" href="../../posts/experiments/"> 
 <span class="menu-text">Experiments</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/Notebooks"> 
+    <a class="nav-link" href="../../posts/notebooks/"> 
 <span class="menu-text">Notebooks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/Thoughts"> 
+    <a class="nav-link" href="../../posts/thoughts/"> 
 <span class="menu-text">Thoughts</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../resource-tree.html"> 
 <span class="menu-text">Resource-Tree</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about-me.html"> 
+<span class="menu-text">About</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -128,67 +192,83 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-is-agency" id="toc-what-is-agency" class="nav-link active" data-scroll-target="#what-is-agency">What is Agency?</a>
-  <ul>
-  <li><a href="#agency-as-a-word" id="toc-agency-as-a-word" class="nav-link" data-scroll-target="#agency-as-a-word">Agency as a Word</a></li>
-  <li><a href="#agency-as-a-concept" id="toc-agency-as-a-concept" class="nav-link" data-scroll-target="#agency-as-a-concept">Agency as a Concept</a>
-  <ul>
-  <li><a href="#legal-and-economic-implications" id="toc-legal-and-economic-implications" class="nav-link" data-scroll-target="#legal-and-economic-implications">Legal and Economic Implications:</a></li>
-  <li><a href="#cultural-perspectives" id="toc-cultural-perspectives" class="nav-link" data-scroll-target="#cultural-perspectives">Cultural Perspectives:</a></li>
-  <li><a href="#psychological-aspects" id="toc-psychological-aspects" class="nav-link" data-scroll-target="#psychological-aspects">Psychological Aspects:</a></li>
-  </ul></li>
-  <li><a href="#agency-as-a-quantity" id="toc-agency-as-a-quantity" class="nav-link" data-scroll-target="#agency-as-a-quantity">Agency as a Quantity</a></li>
-  </ul></li>
+  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
   </ul>
 </nav>
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Preface</h1>
+</div>
 
 
 
-<section id="what-is-agency" class="level1">
-<h1>What is Agency?</h1>
-<p>Compiling Linguistic, Conceptual, and Quantitative Dimensions</p>
-<ul>
-<li>Introduction</li>
-</ul>
-<p>Investigating the multifaceted nature of agency, examining it from three distinct perspectives: * Background 1. Agency as a word 2. Agency as a concept 3. Agency as a number * Relevance * Propose Next Steps</p>
-<section id="agency-as-a-word" class="level2">
-<h2 class="anchored" data-anchor-id="agency-as-a-word">Agency as a Word</h2>
-<p>The linguistic and semantic properties of the term “agency.”</p>
-<ol type="1">
-<li>The etymology and historical usage of the word</li>
-<li>Its various definitions across different contexts</li>
-<li>How the meaning of “agency” has evolved over time</li>
-</ol>
-</section>
-<section id="agency-as-a-concept" class="level2">
-<h2 class="anchored" data-anchor-id="agency-as-a-concept">Agency as a Concept</h2>
-<p>Theoretical understanding of agency, covering: 1. Philosophical interpretations of agency 2. Agency in social and psychological theories 3. The role of agency in various academic disciplines</p>
-<section id="legal-and-economic-implications" class="level3">
-<h3 class="anchored" data-anchor-id="legal-and-economic-implications">Legal and Economic Implications:</h3>
-<p>In legal matters and trading or commerce settings, agency refers to the roles of agents and principals, which are articulated and regulated by states and organizations. The agency concept became crucial during the 1980s due to significant deregulation in various industries, which increased the need for agents to manage complex transactions.</p>
-</section>
-<section id="cultural-perspectives" class="level3">
-<h3 class="anchored" data-anchor-id="cultural-perspectives">Cultural Perspectives:</h3>
-<p>The concept of agency diverges in classical Chinese philosophy, where it is suggested that not only humans but also objects, ideas, and laws possess agency. Contrasts with the Western notion that links agency solely to intentionality.</p>
-</section>
-<section id="psychological-aspects" class="level3">
-<h3 class="anchored" data-anchor-id="psychological-aspects">Psychological Aspects:</h3>
-<p>In contemporary usage, derivatives such as ‘sense of agency’ are used in psychology and psychiatry to describe the internal state where a self accesses its own agential potential given a situation.</p>
-</section>
-</section>
-<section id="agency-as-a-quantity" class="level2">
-<h2 class="anchored" data-anchor-id="agency-as-a-quantity">Agency as a Quantity</h2>
-<p>Measurement and quantification of agency, which include: 1. Methods for measuring individual or collective agency 2. Indicators and scales used to assess agency 3. Challenges in quantifying an abstract concept like agency</p>
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-</section>
+</header>
+
+
+<section id="preface" class="level3">
+<h3 class="anchored" data-anchor-id="preface">Preface</h3>
+<p><em>“This most of all: ask yourself in the most silent hour of your night:</em> <em>must I write?</em> <em>Dig into yourself for a deep answer. And if this answer rings out in assent,</em> <em>if you meet this solemn question with a strong, simple “I must,”</em> <em>then build your life in accordance with this necessity;</em> <em>your whole l ife, even into its humblest and most indifferent hour,</em> <em>must become a sign and witness to this impulse.”</em> <strong>Rainer Maria Rilke</strong></p>
+<p>In embarking on this project, I found myself drawn to this question “What is agency?” which has fascinated many great thinkers across centuries and cultures. This question is deceptively simple yet profoundly complex, touching on the essence of action, interaction, causality, intention, and the organisation of systems ranging from cells to societies. My goal, initially, was to explore agency through various lenses, and look for binding principles across scales. As I developed some understanding, it struck me, not only were there points of convergence in how different disciplines understood agency as agency itself connected these disparate fields of study.</p>
+<p>I related how Aristotle’s concept of the “efficient cause” the agent or process that brings about change had a surprising resonance with D’Arcy Thompson’s work. In Thompson’s view, physical forces like gravity, surface tension, and pressure act as efficient causes, shaping the forms of living organisms. While Aristotle might have attributed these forms to a more teleological purpose, Thompson showed how physical laws could drive the development of complex structures, and these could be beautifully expressed through mathematics. Thompson’s exploration of forces acting on biological forms as identifying the physical efficient causes that structure life, seems quite relevant because in more modern terms we can consider physical forces as fundamental interactions. The study of the emergence of life tries to bridge with an understanding of how from those interactions complex life can emerge and self-organize.</p>
+<p>That connection between efficient causes and the forces shaping the world felt/feel deeply significant, and continues to be relevant when delving into how forces that shape nature translate into self-organization. Observations related to order, scales and organisation are in turn connected to open questions of the origin of life, morphogenesis, and other forms of “becoming” of the world and into the world. Once <em>“here”</em>, things interact, predictions are made upon behaviors that seem determined by their nature and the laws that govern <em>“everything”</em>. Modern questions of causal theories and fundamental physics ask: How do interactions between fundamental particles lead to the emergence of complex structures and behaviors? What role does information play in shaping these processes? How can we understand causality at different levels of organization, from the quantum realm to the macroscopic world?</p>
+<p>The relevance that these perspectives have in today’s research and governance practices was a compelling drive for this huge endeavor (I voluntarily) signed up for. After all, there is a dissonance in the apparent laws that govern things and the laws that Human societies use to organise and collaborate. Could deeper insights or even interpretations of the first help us address some of the challenges the second face?</p>
+<p>There are many parallels and analogies drawn from physics to other fields of inquiry. There are also several reasonable arguments for the dissonance between the laws we call natural, and the ones we make. Put simply, they are different things, but are they? While the mystery of life and existence remains as is, living and non-living systems are composed of nested levels of organization, and while the fundamental level of reality is still in question, without a doubt the policies we make affect the reality we perceive, individually and collectively. Not just ours, but of all entities embedded in our environment, which some are so small we forget they too are embedded entities in their own environments. Environments which are made up of things that we change, build upon and draw from.</p>
+<p>Across these hierarchies of how things become things by organised clumps of matter, observations tell us that from the very simple to the increasingly complex things interact, and from unorganised to orderly, and to decay things across scales exhibit “inter-active” properties. From light that bends to a gesture of affection, to forms of communication to how information flows, to homeostatic cycles, babies, trees, and seasons.</p>
+<p>These influences, diverse as they are, coalesced into a hypothesis that agency was far more widespread and adaptable than I had ever imagined: regardless of any degrees of intelligence, composition or origin, what dictates relationships could shape a new understanding for relating.</p>
+<p>Could agency and interaction be part of something hidden in plain sight?</p>
+<p>Our senses may not tell us entirely what reality is, but from interdisciplinary experimental evidence to theoretical foundations, we can explore how agency and interaction relate. In pursuit of an explanation for why things interact, implies the assumption that some form of enabling devices for the such could be recognisable, allowing connections, which if true, their understanding could improve our knowledge of design principles for thriving across scales.</p>
+<p>This required a shift in perspective, one that takes hyper-specialised notions within these scales to across them, and instead of getting bogged down in arguments on how they may differ, we should instead look towards all the notions and see if they ”dance”.</p>
+<p>On a practical note, this study touches responsibility: We live on a planet with finite resources, a closed system. This reality demands that we think carefully about how we organize ourselves, how we design our cities, and how we develop new technologies.</p>
+<p>It’s no longer enough to ask, “Does this work?”, instead we can ask, “Does this contribute to the long-term thriving of the whole system?”. It requires recognising that not all systems are necessarily optimized for some goal, and that it may be hard for us to even recognise goals in settings different from our own, but opening up to the possibility that we may be dismissing popular ideas on the interconnectedness of all things, and that is our ignorance preventing us from working towards some kind of harmony.</p>
+<p>This relational perspective on agency has the potential to shift our understanding and practices to a truly integrated one supporting the natural world, and us in it.</p>
+<p>I see this book as a starting point for conversations that reach across disciplines, where philosophers, scientists, artists, policymakers, and citizens come together to explore the meaning of agency.</p>
+<p>Under the assumption that everything impacts everything else, what if we could allow man-made systems to be aware of it? Whether those systems are cities, technologies, or policies, we might be ensuring that their next generations, artificial or otherwise, are by design built for co-evolution.</p>
+<p>While this has not always been the case, and the universe seems to be old, dangerous and weird, it also seems that systems that work together, become more than some of their parts, they persist, giving novel phenomena a chance to be.</p>
+<p>While the assumptions can be objectionable, I would like to use the gift of my brief life and the available means to explore this. As many came before me, and could not continue their work, as I hope when I’m no longer, some will also care for relationships, and be in absolute awe of the beauty our senses allows, moved by pain and curiosity, and held together by immense levels of collaboration, cooperation and remains open to the possibility that the awareness of it may have a scientific explanation.</p>
+<p>As such, this book represents two years of exploration a journey through approximately 500 articles spanning philosophy, biology, artificial intelligence, sociology, and more. It has been both daunting and transformative. Along the way, I’ve come to appreciate not only the richness of the existing body of knowledge but also the gaps that remain between its parts.</p>
+<p>As you read through these pages, I invite you to join me with an open mind, to explore new possibilities for understanding agency.</p>
+<p>Together, we might uncover insights that not only deepen our knowledge but also help us build better relationships with one another, with our environments, and with the systems we create.</p>
+
+
+
 </section>
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1743524007874">
+<div class="thumbnail">
+<p><a href="../../posts/agency/index.html" class="no-external"></a></p><a href="../../posts/agency/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../../posts/agency/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<div class="listing-description">
+<a href="../../posts/agency/index.html" class="no-external"></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="../../posts/agency/index.html" class="no-external"></a></p><a href="../../posts/agency/index.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

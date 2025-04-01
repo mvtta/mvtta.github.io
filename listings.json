@@ -1,18 +1,50 @@
 [
   {
-    "listing": "/resource-tree.html",
+    "listing": "/about-me.html",
     "items": [
-      "/posts/Resume/resume.html",
-      "/posts/Agency/What is Agency.html",
-      "/index.html"
+      "/index.html",
+      "/posts/resume/resume.html",
+      "/posts/agency/preface.html",
+      "/resource-tree.html",
+      "/posts/essays/index.html",
+      "/posts/experiments/index.html",
+      "/posts/agency/index.html",
+      "/posts/thoughts/index.html",
+      "/posts/notebooks/index.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
+      "/posts/resume/resume.html",
+      "/posts/agency/preface.html",
       "/resource-tree.html",
-      "/posts/Resume/resume.html",
-      "/posts/Agency/What is Agency.html"
+      "/posts/essays/index.html",
+      "/posts/experiments/index.html",
+      "/posts/agency/index.html",
+      "/posts/thoughts/index.html",
+      "/posts/notebooks/index.html",
+      "/about-me.html"
+    ]
+  },
+  {
+    "listing": "/posts/agency/preface.html",
+    "items": [
+      "/posts/agency/index.html"
+    ]
+  },
+  {
+    "listing": "/resource-tree.html",
+    "items": [
+      "/index.html",
+      "/posts/resume/resume.html",
+      "/posts/agency/preface.html",
+      "/posts/essays/index.html",
+      "/posts/experiments/index.html",
+      "/posts/agency/index.html",
+      "/posts/thoughts/index.html",
+      "/posts/notebooks/index.html",
+      "/about-me.html"
     ]
   }
 ]

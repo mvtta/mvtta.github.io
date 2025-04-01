@@ -19,14 +19,14 @@ h2 {
 
 /* Body text */
 p {
-    font-size: small;        
+    font-size: medium;        
     margin-bottom: 1.2em;
 
 }
 
 /* List items */
 li {
-    font-size: smaller;        
+    font-size: small;        
 }
 
 /* Blockquotes */
@@ -77,4 +77,28 @@ div.csl-right-inline {
     border-top: 2px solid #eee;
     padding-top: 2em;
     clear: both;
+}
+
+/* Table of Contents styling */
+nav[role=doc-toc] {
+    padding: 20px;
+    z-index: 1020;
+    margin-right: 20px;  /* Add right margin */
+    margin-top: 20px;    /* Add top margin */
+}
+
+/* Style the TOC items */
+nav[role=doc-toc] ul {
+    padding-left: 15px;
+    list-style-type: none;
+}
+
+nav[role=doc-toc] li {
+    margin: 8px 0;
+    font-size: small;
+}
+
+nav[role=doc-toc] a {
+    text-decoration: none;
+    color: #5c5c5c !important;
 }

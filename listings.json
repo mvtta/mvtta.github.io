@@ -8,9 +8,9 @@
   {
     "listing": "/posts/essays/index.html",
     "items": [
+      "/posts/essays/notes-on-intelligence.html",
       "/posts/essays/image-generation.html",
-      "/posts/essays/moving-bodies.html",
-      "/posts/essays/notes-on-intelligence.html"
+      "/posts/essays/moving-bodies.html"
     ]
   }
 ]

@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Mariana Emauz Valdetaro">
+<meta name="dcterms.date" content="2024-10-10">
 
-<title>/ - Essays</title>
+<title>/ - Notes on Image Generation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,8 +52,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,67 +88,13 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -153,7 +119,7 @@ window.Quarto = {
 <span class="menu-text">Agency</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../../posts/essays/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../posts/essays/index.html"> 
 <span class="menu-text">Essays</span></a>
   </li>  
   <li class="nav-item">
@@ -184,25 +150,48 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#notes-on-image-generation" id="toc-notes-on-image-generation" class="nav-link active" data-scroll-target="#notes-on-image-generation">Notes on Image Generation</a>
+  <ul>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#error-correction-hashing-maps" id="toc-error-correction-hashing-maps" class="nav-link" data-scroll-target="#error-correction-hashing-maps"><span class="header-section-number">0.0.0.1</span> Error Correction, Hashing &amp; Maps</a></li>
+  <li><a href="#cutting-edge-cross-modal-hashing" id="toc-cutting-edge-cross-modal-hashing" class="nav-link" data-scroll-target="#cutting-edge-cross-modal-hashing"><span class="header-section-number">0.1</span> Cutting edge cross-modal hashing:</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Essays</h1>
+<h1 class="title">Notes on Image Generation</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mariana Emauz Valdetaro </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 10, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -212,77 +201,114 @@ window.Quarto = {
 </header>
 
 
+<section id="notes-on-image-generation" class="level1 unnumbered page-columns page-full">
+<h1 class="unnumbered">Notes on Image Generation</h1>
+<section id="abstract" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="abstract">Abstract</h4>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Key Topics: Error Correction, Hashing &amp; Maps</p>
+</div>
+</div>
+</div>
+<p>Current bottlenecks along AI/ML pipelines, that can be complex, extensive and costly. As an illustration of what a general sequence / elementary processes (pipeline) of an AI/ML model looks like this:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph LR;
+    A[Data Collection] --&gt; B[Preprocessing];
+    B --&gt; C[Feature Extraction];
+    C --&gt; D[Model Training];
+    D --&gt; E[Evaluation];
+    E --&gt; F[Deployment];
+
+    style A fill:#fff,stroke:#000,stroke-width:2px,rx:10,ry:10,color:#000
+    style B fill:#fff,stroke:#000,stroke-width:2px,rx:10,ry:10,color:#000
+    style C fill:#fff,stroke:#000,stroke-width:2px,rx:10,ry:10,color:#000
+    style D fill:#fff,stroke:#000,stroke-width:2px,rx:10,ry:10,color:#000
+    style E fill:#fff,stroke:#000,stroke-width:2px,rx:10,ry:10,color:#000
+    style F fill:#fff,stroke:#000,stroke-width:2px,rx:10,ry:10,color:#000
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>In the case of image generation, an easily relatable use-case scenario of AI/ML, it seems that the trend is optimizing these various stages of the process. First, an illustration of what it a general sequence / elementary processes (pipeline) of an AI/ML model:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph LR;
+    A[Input Data] --&gt; B[Noise Addition];
+    B --&gt; C[Generator Network];
+    C --&gt; D[Discriminator Network];
+    D --&gt; E[Output Image];
+
+    style A fill:#fff,stroke:#000,stroke-width:2px,rx:10,ry:10,color:#000
+    style B fill:#fff,stroke:#000,stroke-width:2px,rx:10,ry:10,color:#000
+    style C fill:#fff,stroke:#000,stroke-width:2px,rx:10,ry:10,color:#000
+    style D fill:#fff,stroke:#000,stroke-width:2px,rx:10,ry:10,color:#000
+    style E fill:#fff,stroke:#000,stroke-width:2px,rx:10,ry:10,color:#000
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Image generation is a good example of cross-dependency by its multidisciplinary nature. Bottlenecks and pain-points are popular expressions that concern a general idea: Problems. And what can you do with problems? Fix them. Solving one issue versus solving the problem seems to be the main pitfall companies developing AI and tech products, because while it keeps teams busy and immediate rewards of resolving small issues, the architectural problem may not be addressed, and if they were, solving one problem could potentially resolve <em>n</em> more issues.</p>
+<p>While architectural problems are of interested, they deserve an entire article (or several) to address them in more detail. For now, we may focus on one tangible questions that most (a range of technical and general audiences) can follow and leverage from the information here shared:</p>
+<p><strong><em>What efforts are in place to address existing issues?</em></strong></p>
+</section>
+<section id="error-correction-hashing-maps" class="level4 page-columns page-full" data-number="0.0.0.1">
+<h4 data-number="0.0.0.1" class="anchored" data-anchor-id="error-correction-hashing-maps"><span class="header-section-number">0.0.0.1</span> Error Correction, Hashing &amp; Maps</h4>
+<p>If we perceive the flow of information and processes through the pipeline as a signal, a <em>phone call</em>, it’s easy to intuit how it is naturally prone to errors, loss, miss-calculations and interferences in the process. Most of us know what is the <a href="https://en.wikipedia.org/wiki/Telephone_game">Telephone game</a>, or the Whispers game, where <a href="https://en.wikipedia.org/wiki/Telephone_game">“which messages are whispered from person to person and then the original and final messages are compared.”</a>. Now imagine that everyone involved is dedicated to really passing the message accurately, but since they speak different languages, this will have a degree of on influence on how the message will be transmitted.</p>
+<p>For decades, and actually very important in actual <em>phone-calls</em> are <em>error correction codes</em>, and they are widely used in software development as well.</p>
+<p>The concepts of <strong><em>error correction codes</em>,</strong> <em>Hamming codes</em>, and <em>hashing in AI/ML</em>, have shared origins with <strong>information theory</strong>, and although a broad and historically rich research topics, and in spite their complexity, conceptually they are simple to gain some initial intuition on:</p>
+<p>Imagine <strong>error correction codes</strong> as a protective shield or a self-healing fabric wrapped around data (or the <em>message</em> of the <em>Telephone Game</em> analogy above). Just as a self-healing material can repair small tears or damages, error correction codes allow data to recover from minor corruptions during transmission, or even aid the encoder fill in the gaps if data is missing. <strong>Hamming codes</strong>, in this analogy, are like a specialized patch on this fabric, designed to detect and mend <strong>specific types</strong> of tears efficiently.</p>
+<p>This allows us to consider how error correction techniques play a significant role in speeding up input / output operations, feature retrieval and optimize memory usage.</p>
+<p>Hashing, on the other hand, can be viewed as a form of <strong>data compression or approximation</strong>. It’s akin to creating a thumbnail of an image, <em>how much information is necessary to be passed around?</em> A smaller representation that captures the essence of the original sometimes is enough. A <em>smiley face emoji</em> does not need to be yellow if the intent is to answer <em>is it smiling? : yes or no?</em></p>
+<p>In traditional computing, this thumbnail aims for uniqueness, like a fingerprint. But in AI/ML applications, it’s more like an impressionist painting, capturing the semantic essence rather than exact details.</p>
+<p>The evolution of these concepts in AI/ML, particularly in <strong>cross-modal hashing and joint Hamming spaces</strong>, is like creating a universal language or a common currency for different types of information. It’s as if we’re translating diverse data types: text, images, audio; into a shared alphabet, where similarities can be easily compared regardless of their original form.</p>
+<p>All these techniques, at their core, are about efficient representation and manipulation of information. They share a common ancestry in i<strong>nformation theory</strong> and the fundamental challenge of <strong>encoding, transmitting, and decoding data accurately and efficiently.</strong> Whether it’s protecting against errors, creating compact representations, or enabling cross-modal comparisons, these methods are different expressions of the same underlying principle: finding optimal ways to handle and process information in a world of imperfect channels, biases, and diverse data types.</p>
+<p>In this shared universe analogy, for specialized and customized models, the range of data is somehow related. Visual culture has eras, styles etc. Thus, the Hamming distance of “A woman riding a horse on a prairie” and a “Woman sitting on a porch chair” if the model is specialized in Renascence paintings generation, is small, and their corresponding binary codes shall be small too <span class="citation" data-cites="chen2024enhancing">(<a href="#ref-chen2024enhancing" role="doc-biblioref">Chen et al. 2024b</a>)</span>. Thus, joint Hamming spaces allow for a both text and images to be correlated, and their relationship strength to be update given the model’s learning ability.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-chen2024enhancing" class="csl-entry" role="listitem">
+——— et al. 2024b. <span>“Enhancing Cross-Modal Retrieval via Visual-Textual Prompt Hashing.”</span> In <em>Proceedings of the International Joint Conference on Artificial Intelligence</em>. Vol. 69.
+</div></div><p><strong>Highlighting the most recent and used encoders:</strong><br>
+- <strong>TIME</strong>: The TIME (Text-to-Image Model Editing) method can efficiently correct biases in image generator models by editing only about 1.95% of the model’s parameters (Mokady et al., 2023).<br>
+- <strong>ReFACT</strong>: While ReFACT achieves even more precise results by tweaking just 0.25% of parameters while maintaining image quality (Ruiz et al., 2023).</p>
+</section>
+<section id="cutting-edge-cross-modal-hashing" class="level2 page-columns page-full" data-number="0.1">
+<h2 data-number="0.1" class="anchored" data-anchor-id="cutting-edge-cross-modal-hashing"><span class="header-section-number">0.1</span> Cutting edge cross-modal hashing:</h2>
+<ul>
+<li><strong>Visual-Textual Prompt Hashing (VTPH):</strong> Chen et al.&nbsp;(2024) which integrates both visual and textual prompt learning into cross-modal hashing, addressing limitations like <strong>context loss and information redundancy</strong> in existing methods. This facilitates semantic coherence between diverse modalities, improving cross-modal retrieval performance.</li>
+<li><strong>Multi-Grained Similarity Preserving and Updating (MGSPU):</strong> By <span class="citation" data-cites="wu2024">(<a href="#ref-wu2024" role="doc-biblioref">Wu et al. 2024</a>)</span> this unsupervised cross-modal hashing approach combines multi-grained similarity information from local and global views to improve the accuracy of similarity measurements and preserve similarity consistency across modalities.</li>
+<li><strong>Multi-Dimensional Feature Fusion Hashing (MDFFH):</strong> <span class="citation" data-cites="chen2024cross">(<a href="#ref-chen2024cross" role="doc-biblioref">Chen et al. 2024a</a>)</span> proposed the Multi-Dimensional Feature Fusion Hashing (MDFFH), where it constructs multi-dimensional fusion modules in image and text networks to learn multi-dimensional semantic features of data, integrating Vision Transformer with convolution neural networks to fuse local and global information.</li>
+<li><strong>Semantic Embedding-based Online Cross-modal Hashing (SEOCH):</strong> Proposed by <span class="citation" data-cites="liu2024">(<a href="#ref-liu2024" role="doc-biblioref">Liu et al. 2024</a>)</span> SEOCH addresses the challenges of online learning for streaming data in cross-modal hashing by mapping semantic labels to a latent semantic space and employing a discrete optimization strategy for online hashing.</li>
+<li><strong>Hamming Code-Based Hashing:</strong> By <span class="citation" data-cites="hinton2023">(<a href="#ref-hinton2023" role="doc-biblioref">Hinton 2023</a>)</span>, this approach leverages the error correction efficiency and simplicity of Hamming codes to enhance data integrity in hash-based systems.</li>
+</ul>
 
 
+<div class="no-row-height column-margin column-container"><div id="ref-wu2024" class="csl-entry" role="listitem">
+Wu, Z. et al. 2024. <span>“Multi-Grained Similarity Preserving and Updating for Unsupervised Cross-Modal Hashing.”</span> <em>Applied Sciences</em> 14 (2): 870.
+</div><div id="ref-chen2024cross" class="csl-entry" role="listitem">
+Chen, B. et al. 2024a. <span>“Cross-Modal Retrieval Based on Multi-Dimensional Feature Fusion Hashing.”</span> <em>Frontiers in Physics</em> 12: 1379873.
+</div><div id="ref-liu2024" class="csl-entry" role="listitem">
+Liu, Y. et al. 2024. <span>“Semantic Embedding Based Online Cross-Modal Hashing Method.”</span> <em>Scientific Reports</em> 14 (1): 1379873.
+</div><div id="ref-hinton2023" class="csl-entry" role="listitem">
+Hinton, G. 2023. <span>“The Case for Digital over Analog Computation in AI.”</span>
+</div></div>
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1728514800000" data-listing-file-modified-sort="1743758592540" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1197">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../posts/essays/image-generation.html" class="no-external">Notes on Image Generation</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../posts/essays/image-generation.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../../posts/essays/image-generation.html" class="no-external">Key Topics: Error Correction, Hashing &amp; Maps</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../../posts/essays/image-generation.html" class="no-external">
-<div class="listing-date">
-Oct 10, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1728514800000" data-listing-file-modified-sort="1743758460560" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1805">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../posts/essays/moving-bodies.html" class="no-external">Synthetic Intelligence &amp; Moving Bodies</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../posts/essays/moving-bodies.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../../posts/essays/moving-bodies.html" class="no-external">Key topics include the mortal computation thesis, cross-modal hashing techniques, error correction methods, and biomimetic approaches to AI.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../../posts/essays/moving-bodies.html" class="no-external">
-<div class="listing-date">
-Oct 10, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1728514800000" data-listing-file-modified-sort="1743758618799" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1551">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../posts/essays/notes-on-intelligence.html" class="no-external">Notes on Intelligence for the ‘AI’ Era</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../posts/essays/notes-on-intelligence.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../../posts/essays/notes-on-intelligence.html" class="no-external">The aim is to draft an informal overview of recent developments in research tied to <em>intelligence</em>, paralleled with the undergoing and pivotal techno-social-eco-logical shift…<em></em></a>
-</div>
-</div>
-<div class="metadata">
-<a href="../../posts/essays/notes-on-intelligence.html" class="no-external">
-<div class="listing-date">
-Oct 10, 2024
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

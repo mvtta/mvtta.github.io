@@ -1,20 +1,5 @@
 [
   {
-    "listing": "/about-me.html",
-    "items": [
-      "/posts/agency/index.html",
-      "/posts/essays/index.html",
-      "/index.html",
-      "/posts/agency/preface.html",
-      "/resource-tree.html",
-      "/posts/resume/resume.html",
-      "/posts/essays/synthetic-intelligence-n-moving-bodies.html",
-      "/posts/experiments/index.html",
-      "/posts/thoughts/index.html",
-      "/posts/notebooks/index.html"
-    ]
-  },
-  {
     "listing": "/posts/agency/index.html",
     "items": [
       "/posts/agency/preface.html"
@@ -23,7 +8,9 @@
   {
     "listing": "/posts/essays/index.html",
     "items": [
-      "/posts/essays/synthetic-intelligence-n-moving-bodies.html"
+      "/posts/essays/image-generation.html",
+      "/posts/essays/moving-bodies.html",
+      "/posts/essays/notes-on-intelligence.html"
     ]
   }
 ]

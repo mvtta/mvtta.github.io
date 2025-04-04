@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mvtta.github.io/about-me.html</loc>
-    <lastmod>2025-04-01T16:14:56.264Z</lastmod>
+    <lastmod>2025-04-01T19:46:21.325Z</lastmod>
   </url>
   <url>
     <loc>https://mvtta.github.io/index.html</loc>
@@ -13,8 +13,16 @@
     <lastmod>2025-04-01T16:28:02.069Z</lastmod>
   </url>
   <url>
-    <loc>https://mvtta.github.io/posts/essays/synthetic-intelligence-n-moving-bodies.html</loc>
-    <lastmod>2025-04-01T18:08:09.590Z</lastmod>
+    <loc>https://mvtta.github.io/posts/essays/notes-on-intelligence.html</loc>
+    <lastmod>2025-04-04T09:23:38.799Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/posts/essays/moving-bodies.html</loc>
+    <lastmod>2025-04-04T09:21:00.560Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/posts/essays/image-generation.html</loc>
+    <lastmod>2025-04-04T09:23:12.540Z</lastmod>
   </url>
   <url>
     <loc>https://mvtta.github.io/posts/essays/index.html</loc>

@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Mariana Emauz Valdetaro">
+<meta name="dcterms.date" content="2024-10-10">
 
-<title>/ - Essays</title>
+<title>/ - Synthetic Intelligence &amp; Moving Bodies</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,8 +52,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,67 +88,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -153,7 +116,7 @@ window.Quarto = {
 <span class="menu-text">Agency</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../../posts/essays/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../posts/essays/index.html"> 
 <span class="menu-text">Essays</span></a>
   </li>  
   <li class="nav-item">
@@ -184,25 +147,55 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#moving-bodies" id="toc-moving-bodies" class="nav-link active" data-scroll-target="#moving-bodies">Moving Bodies</a>
+  <ul>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a></li>
+  </ul></li>
+  <li><a href="#moving-bodies-1" id="toc-moving-bodies-1" class="nav-link" data-scroll-target="#moving-bodies-1"><span class="header-section-number">1</span> Moving Bodies</a>
+  <ul>
+  <li><a href="#potential-breakthroughs-after-these-initial-hurdles-we-could-see-some-significant-leaps-forward-in" id="toc-potential-breakthroughs-after-these-initial-hurdles-we-could-see-some-significant-leaps-forward-in" class="nav-link" data-scroll-target="#potential-breakthroughs-after-these-initial-hurdles-we-could-see-some-significant-leaps-forward-in"><span class="header-section-number">1.0.1</span> <strong>Potential Breakthroughs</strong>: After these initial hurdles, we could see some significant leaps forward in</a></li>
+  <li><a href="#embodied-models-for-realistic-movement-robots-that-dream" id="toc-embodied-models-for-realistic-movement-robots-that-dream" class="nav-link" data-scroll-target="#embodied-models-for-realistic-movement-robots-that-dream"><span class="header-section-number">1.1</span> Embodied Models for Realistic Movement &amp; Robots That Dream</a></li>
+  <li><a href="#food-for-though-and-discussions" id="toc-food-for-though-and-discussions" class="nav-link" data-scroll-target="#food-for-though-and-discussions"><span class="header-section-number">1.2</span> Food For Though (And Discussions)</a>
+  <ul>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">1.2.1</span> References</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Essays</h1>
+<h1 class="title">Synthetic Intelligence &amp; Moving Bodies</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mariana Emauz Valdetaro </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 10, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -212,77 +205,96 @@ window.Quarto = {
 </header>
 
 
+<section id="moving-bodies" class="level1 unnumbered">
+<h1 class="unnumbered">Moving Bodies</h1>
+<section id="abstract" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="abstract">Abstract</h4>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Key topics include the mortal computation thesis, cross-modal hashing techniques, error correction methods, and biomimetic approaches to AI.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="moving-bodies-1" class="level1 page-columns page-full" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Moving Bodies</h1>
+<blockquote class="blockquote">
+<p>Life can only be understood backwards; but it must be lived forwards. - Søren Kierkegaard</p>
+</blockquote>
+<p>The thesis of mortal computation is a fascinating idea that, when intersected with the future of AI/ML from both hardware and software perspectives, presents an opportunity to further narrow down the limiting ‘gap’ between those perspectives into a new realm of embodied intelligence.</p>
+<p>To grasp the mortal computation thesis, we can take two roads: philosophical and physical.</p>
+<p>Starting with the philosophical standpoint, death, or the finitude of life, may be seen as the the ultimate mediator for life. Without awareness of mortality, survival may be a meaningless concept, and thus could adaptative devices to survive and thrive have evolved? Of course, there are degrees of such awareness, and this is no direct claim defining what it truly means to know the essence of mortality.</p>
+<p>But it does beg an intriguing question: What if we gave machines the awareness to measure and estimate computational effort, life-span of parts, and available energy sources, along with the power to control and manage some hardware/software components to improve their functioning? This concept, which some call Biomimetic Intelligence. It’s a truly transdisciplinary effort, drawing insights from biophysics, cybernetics, cognitive science, and computational biology.</p>
+<p>Moving to the physical perspective, Hinton first introduced the concept of mortal computation in his lectures and talks, notably in his Romanes Lecture at the University of Oxford, and the core idea behind mortal computation is the inseparability of knowledge and hardware in computational systems. Unlike traditional digital computers where software and hardware are distinct, mortal computation proposes a model where the learned knowledge is intrinsically tied to the physical substrate it runs on. Alike the human brain, where cognitive processes are intimately linked to the neural substrate. Hinton argues that this integration could lead to more energy-efficient and potentially more powerful AI systems, albeit at the cost of the universality and perfect reproducibility offered by digital systems.</p>
+<p>The theoretical underpinnings of mortal computation have been further explored and formalized in recent academic works, <span class="citation" data-cites="ororbia2023mortal">Ororbia et al. (<a href="#ref-ororbia2023mortal" role="doc-biblioref">2023</a>)</span>, synthesizes research efforts in neuroscience-inspired AI and biomimetic computing. This work frames the mortal computation thesis through the Markov blanket formalism and circular causality, underpinned by the free energy principle.</p>
+<div class="no-row-height column-margin column-container"></div><p>Connecting both perspectives, the intersection of cybernetics and philosophy in this context seems very interesting. Cybernetics views living things as complex systems with interconnected parts and feedback mechanisms, rather than as simple mechanical entities. Its principles of self-regulation and homeostasis help explain how living systems maintain stability and purpose. It is intriguing how some scholars have noted parallels between cybernetic ideas and concepts from Eastern philosophies - the emphasis on interconnectedness and circular causality in cybernetics resonates with some Buddhist and Taoist concepts. Naturally, discussion on the nature of consciousness, and the implications on theoretical frameworks exploring the question,</p>
+<p>This brings together several key ideas framing the mortal computation thesis through the Markov blanket formalism and circular causality <span class="citation" data-cites="hinton2022interview">Hinton (<a href="#ref-hinton2022interview" role="doc-biblioref">2022</a>)</span> <span class="citation" data-cites="kleiner2024consciousness">Kleiner (<a href="#ref-kleiner2024consciousness" role="doc-biblioref">2024</a>)</span> <span class="citation" data-cites="ororbia2023mortal">Ororbia et al. (<a href="#ref-ororbia2023mortal" role="doc-biblioref">2023</a>)</span>, underpinned by the free energy principle, and the nature of consciousness:</p>
+<div class="no-row-height column-margin column-container"><div id="ref-hinton2022interview" class="csl-entry" role="listitem">
+Hinton, Geoffrey. 2022. <span>“Geoffrey Hinton – Exclusive q&amp;a on His Latest Breakthrough.”</span> <em>Radical Ventures</em>. <a href="https://radical.vc/geoffrey-hinton-exclusive-qa-on-his-latest-breakthrough/">https://radical.vc/geoffrey-hinton-exclusive-qa-on-his-latest-breakthrough/</a>.
+</div><div id="ref-kleiner2024consciousness" class="csl-entry" role="listitem">
+Kleiner, Johannes. 2024. <span>“Consciousness Qua Mortal Computation.”</span> <em>arXiv Preprint arXiv:2403.03925</em>.
+</div><div id="ref-ororbia2023mortal" class="csl-entry" role="listitem">
+Ororbia, Alexander, Ankur Koul, Paul Fergus, Abir Hussain, and Yoonsuck Choe. 2023. <span>“Mortal Computation: A Foundation for Biomimetic Intelligence.”</span> <em>arXiv Preprint arXiv:2311.09589</em>.
+</div></div><pre><code>-   It emphasizes circular causality, which is fundamental to cybernetic thinking.
+-   It incorporates the concept of feedback loops, essential in both cybernetics and biomimetic systems.
+-   It uses a mathematical framework to describe the boundaries of cognitive systems, relating t cybernetic ideas about system boundaries and information flow.
+-   The Free Energy Principle, which underlies the mortal computation thesis, can be seen as an extension of cybernetic ideas about self-regulation and homeostasis.
+-   Proposes an alternative to backpropagation in neural networks, potentially aligning more closely with biological learning processes and being more suitable for implementation in analog-like systems.</code></pre>
+<p>One area that particularly interests me is the integration of Markov blanket formalism to better model system boundaries and information flow. This could lead to some interesting developments in how AI systems process and interpret information. The potential for more energy-efficient architectures that mimic the brain’s low-power processing is another aspect that may be promising. As we push the boundaries of AI capabilities, finding ways to reduce energy consumption will be crucial. I would risk saying that there’s no bottom to the free-energy principle in general, and in this particular case, incorporating the principle could optimize synthetic learning processes in several ways:</p>
+<ol type="1">
+<li>More efficient self-organization and adaptation of models to their environment</li>
+<li>Improved generalization capabilities by minimizing surprise in novel situations</li>
+<li>Potentially faster convergence during training due to better alignment with biological learning principles</li>
+</ol>
+<p>Postulating potential developments:</p>
+<ul>
+<li><p><strong>Initial Performance Drop</strong>: I suspect we might see an initial decrease in performance as we transition from current highly-optimized digital systems to more biologically-inspired models. The complexity of implementing mortal computation principles could lead to temporary setbacks in efficiency and accuracy. But this may be a necessary step towards greater advancements.</p></li>
+<li><p><strong>Adaptation Period</strong>: There will likely be a period where we’ll have to adapt to new paradigms and tools. Our existing datasets and benchmarks might not be well-suited for evaluating biomimetic systems, so we’ll need to develop new evaluation methods. This could be a challenging but exciting time in the field.</p></li>
+</ul>
+<section id="potential-breakthroughs-after-these-initial-hurdles-we-could-see-some-significant-leaps-forward-in" class="level3" data-number="1.0.1">
+<h3 data-number="1.0.1" class="anchored" data-anchor-id="potential-breakthroughs-after-these-initial-hurdles-we-could-see-some-significant-leaps-forward-in"><span class="header-section-number">1.0.1</span> <strong>Potential Breakthroughs</strong>: After these initial hurdles, we could see some significant leaps forward in</h3>
+<ul>
+<li><p><strong>Efficiency Breakthrough</strong>: Once we successfully implement the principles of mortal computation, we might see dramatic improvements in energy efficiency and processing speed. This could enable much larger and more complex models to run on smaller, more affordable hardware.</p></li>
+<li><p><strong>Novel Learning Capabilities</strong>: I’m particularly excited about the potential for biomimetic systems to demonstrate superior adaptability and generalization. We might see the emergence of more robust and flexible AI systems capable of handling a wider range of real-world scenarios.</p></li>
+<li><p><strong>Integration with Biological Systems</strong>: The thesis opens up fascinating possibilities for better integration between AI and biological systems, envisioning advanced brain-computer interfaces or hybrid computational systems that blur the lines between artificial and biological intelligence.</p></li>
+</ul>
+<p>Of course, it’s important to consider alternative viewpoints. Geoffrey Hinton, for instance, argues in favor of digital over analog (mortal) computation, citing advantages in parallelism and the implementation of backpropagation (Hinton, 2023) . While mortal computation might offer initial benefits in energy efficiency, the long-term advantages of digital systems in scalability and algorithm implementation could lead to more significant improvements.</p>
+<p>I find this debate between computational paradigms fascinating, and may play an important role in shaping the future of AI hardware development.</p>
+<blockquote class="blockquote">
+<p>I’m not interested in how people move, but what moves them. - Pina Bausch</p>
+</blockquote>
+</section>
+<section id="embodied-models-for-realistic-movement-robots-that-dream" class="level2 page-columns page-full" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="embodied-models-for-realistic-movement-robots-that-dream"><span class="header-section-number">1.1</span> Embodied Models for Realistic Movement &amp; Robots That Dream</h2>
+<p>The potential for achieving extreme realism in moving images will likely require models to be embodied, at least at some stage of training. Recent work on motion capture and transposition, such as ByteDance’s Magic Avatar, demonstrates the ability to generate synthetic AI video with transposed actors and environments (ByteDance, 2023). Coupled with advancements in 3D environment reconstruction, like NVIDIA’s Neuralangelo could contribute to more realistic movement generation<span class="citation" data-cites="xiangli2023">(<a href="#ref-xiangli2023" role="doc-biblioref">Xiangli et al. 2023</a>)</span>, We think we may be on the cusp of some really exciting breakthroughs in generating realistic motion and interactions.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-xiangli2023" class="csl-entry" role="listitem">
+Xiangli, Y., L. Xu, X. Pan, N. Zhao, A. Rao, C. Theobalt, B. Dai, and D. Lin. 2023. <span>“Neuralangelo: High-Fidelity Neural Surface Reconstruction.”</span>
+</div></div><p>Embodiment can mean many things and have as well many interpretations. The core idea is for the software to be bound to a container, and this container be intrinsically related to the software, where the feedback mechanisms, we discussed above, loop between one adn the other passing information of internal states and the surroundings. New sensing mechanisms and protocol design must then be developed, improves and optimized.</p>
+<p>As we look towards the future of AI and ML, particularly in the realm of image generation and embodied intelligence, we find ourselves at the cusp of a paradigm shift. The mortal computation thesis, coupled with advancements in cross-modal hashing, error correction, and biomimetic approaches, presents exciting possibilities for more efficient, adaptable, and biologically-inspired AI systems.</p>
+<p>The integration of concepts like the Free Energy Principle and circular causality from cybernetics into AI architectures could lead to significant breakthroughs in how machines process information and interact with their environment. Potentially resulting in AI systems that are not only more powerful but also more aligned with biological substrates.</p>
+</section>
+<section id="food-for-though-and-discussions" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="food-for-though-and-discussions"><span class="header-section-number">1.2</span> Food For Though (And Discussions)</h2>
+<p>Reflect on these developments, a key observation lays on how rapidly technology is and will likely keep evolving. There’s no shortage of fascinating areas to explore, and the scenarios we will shortly live and whiteness are completely unforeseen. Some questions that seem worth thinking about are for example “What is the potential for high photorealism and personalization in avatars to lead to stronger embodiment and self-identification in virtual environments of Humans, and how will that impact the way we relate to each other and our non-virtual environment?”, and “How will societies evolver, adapt and integrate their cultural identities, having these new domains of interaction at the peer-relations level, and new means of individual self-expression?”. Moreover, we may ask: “What kind of new necessities will rise?”, “How will this new environment shape future generations into a new stage of Human Evolution?”, and “What kind of safe guards we can design for ourselves, to ensure that what we hold as valuable now, will persist in the future?”</p>
+<p>For any kind of new system we create, given the shared meta-substrate: a closed planetary system called Earth, it seems quite reasonable in design principles that align shared constraints and necessities.</p>
+<p>Additionally, intuition tells me that when striving for literacy at all levels of society and the continuous encouragement by facilitating the access to information and knowledge, is paramount. The reverse is a then the choice of alienating some, and deliberately incapacitating democracies, thus impacting policy-making, governance and constituting an obstruction to constructive debates and participatory politics.</p>
+<p>Moreover, as science and information become more complex, more specialized, a similar effort in bridging topics, simplifying language and streamlining the learning curve towards a panoramic understanding of the current knowledge map, seems, again, a sensible and tangible course of action towards current and future assurance of sense-making.</p>
+<p>In conclusion, while it’s not easy to predict exactly where these developments will lead us, or if they will happen at all, neither vehemently subscribe to any idea in particular, thinking about the present and envisioning the future scope of possibilities helps us design the tomorrow we want to live in. In such, this series of opinion articles aim just that, informally and accessibly, to the best of my abilities, expose some ideas, transversely and across fields of inquiry. The future of AI and ML is not just about technological advancement, but about re-imagining the very nature of intelligence, computation, ecosystems, societies and life. As researchers, developers, and citizens, we have a responsibility to shape this future thoughtfully and responsibly.</p>
+<section id="references" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="references"><span class="header-section-number">1.2.1</span> References</h3>
 
 
 
+</section>
+</section>
+</section>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1728514800000" data-listing-file-modified-sort="1743758592540" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1197">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../posts/essays/image-generation.html" class="no-external">Notes on Image Generation</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../posts/essays/image-generation.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../../posts/essays/image-generation.html" class="no-external">Key Topics: Error Correction, Hashing &amp; Maps</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../../posts/essays/image-generation.html" class="no-external">
-<div class="listing-date">
-Oct 10, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1728514800000" data-listing-file-modified-sort="1743758460560" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1805">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../posts/essays/moving-bodies.html" class="no-external">Synthetic Intelligence &amp; Moving Bodies</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../posts/essays/moving-bodies.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../../posts/essays/moving-bodies.html" class="no-external">Key topics include the mortal computation thesis, cross-modal hashing techniques, error correction methods, and biomimetic approaches to AI.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../../posts/essays/moving-bodies.html" class="no-external">
-<div class="listing-date">
-Oct 10, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1728514800000" data-listing-file-modified-sort="1743758618799" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1551">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../posts/essays/notes-on-intelligence.html" class="no-external">Notes on Intelligence for the ‘AI’ Era</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../posts/essays/notes-on-intelligence.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../../posts/essays/notes-on-intelligence.html" class="no-external">The aim is to draft an informal overview of recent developments in research tied to <em>intelligence</em>, paralleled with the undergoing and pivotal techno-social-eco-logical shift…<em></em></a>
-</div>
-</div>
-<div class="metadata">
-<a href="../../posts/essays/notes-on-intelligence.html" class="no-external">
-<div class="listing-date">
-Oct 10, 2024
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

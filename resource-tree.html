@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>/ - Resource Tree/</title>
+<title>/ - Tree/</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -132,17 +132,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#information" id="toc-information" class="nav-link active" data-scroll-target="#information">Information</a></li>
-  <li><a href="#evolution" id="toc-evolution" class="nav-link" data-scroll-target="#evolution">Evolution</a></li>
-  <li><a href="#philosophy" id="toc-philosophy" class="nav-link" data-scroll-target="#philosophy">Philosophy</a></li>
-  <li><a href="#ecology" id="toc-ecology" class="nav-link" data-scroll-target="#ecology">Ecology</a></li>
-  <li><a href="#complex-systems" id="toc-complex-systems" class="nav-link" data-scroll-target="#complex-systems">Complex Systems</a></li>
-  <li><a href="#political-science-governance" id="toc-political-science-governance" class="nav-link" data-scroll-target="#political-science-governance">Political Science &amp; governance</a></li>
-  <li><a href="#problems-identified" id="toc-problems-identified" class="nav-link" data-scroll-target="#problems-identified">Problems Identified</a></li>
-  <li><a href="#interactions" id="toc-interactions" class="nav-link" data-scroll-target="#interactions">Interactions</a></li>
-  <li><a href="#solutions" id="toc-solutions" class="nav-link" data-scroll-target="#solutions">Solutions</a></li>
-  <li><a href="#civilization" id="toc-civilization" class="nav-link" data-scroll-target="#civilization">Civilization</a></li>
-  <li><a href="#portugal" id="toc-portugal" class="nav-link" data-scroll-target="#portugal">Portugal</a></li>
+  <li><a href="#information" id="toc-information" class="nav-link active" data-scroll-target="#information">INFORMATION</a></li>
   </ul>
 </nav>
     </div>
@@ -151,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Resource Tree/</h1>
+<h1 class="title">Tree/</h1>
   <div class="quarto-categories">
     <div class="quarto-category">references</div>
   </div>
@@ -171,172 +161,275 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+
+
+  
+    <meta charset="utf-8">
+    <title>Mind Map Prototype - Hierarchical</title>
+    <style>
+      body { margin: 0; }
+      /* Container restricts the SVG appearance */
+      #quarto-document-content {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+      }
+      /* Ensure the SVG fills the container */
+      #quarto-document-content svg {
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+      
+      .node circle { fill: none; stroke: darkblue; stroke-width: 0px; }
+      .central circle { fill: red; stroke: none; stroke-width: 0px; }
+      .node text { font: 8px sans-serif; pointer-events: visible; text-anchor: middle; fill: rgb(255, 255, 255); }
+      .link { stroke: rgb(0, 13, 255); stroke-opacity: 0.6; }
+    </style>
+  
+  
+    <div id="quarto-document-content">
+      <svg></svg>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+      // Define nodes. Central nodes have a property `central: true`.
+      const nodes = [
+        { id: "INFORMATION", central: true, link: "" },
+        { id: "The experience of life is an information process", link: "https://arxiv.org/abs/1210.5908" },
+        { id: "The Problem with Phi: A Critique of Integrated Information Theory", link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4574706/" },
+        { id: "EVOLUTION", central: true, link: "" },
+        { id: "Nick Lane", link: "https://nick-lane.net/publications/" },
+        { id: "The Electrical Origins Of Life", link: "https://www.youtube.com/watch?v=FLaTU-t1CQM" },
+        { id: "Krebs Cycle", link: "https://youtu.be/vBiIDwBOqQA?si=o8golhRao2R4NXIH" },
+        { id: "Proto-Cels", link: "https://nick-lane.net/publications/a-biophysical-basis-for-the-emergence-of-the-genetic-code-in-protocells" },
+        { id: "Origin Eukaryotic Cell", link: "https://nick-lane.net/publications/origin-eukaryotic-cell/" },
+        { id: "On the conditions for mimicking natural selection in chemical systems", link: "https://www.nature.com/articles/s41570-019-0155-6" },
+        { id: "Assembly Theory", link: "https://www.nature.com/articles/s41586-023-06600-9" },
+        { id: "Michael Levin - Publications", link: "https://drmichaellevin.org/publications/" },
+        { id: "Michael Levin - Presentations", link: "https://drmichaellevin.org/presentations/" },
+        { id: "REALITY", central: true, link: "" },
+        { id: "Borrowing 'The Pixel of Reality' from Quantum Gravity Theory", link: "" },
+        { id: "INTELLIGENCE", central: true, link: "" },
+        { id: "Intelligence: Knowns and Unknowns", link: "https://differentialclub.wdfiles.com/local--files/definitions-structure-and-measurement/Intelligence-Knowns-and-unknowns.pdf" },
+        { id: "Intelligence and the frontal lobe: the organization of goal-directed behavior", link: "https://pubmed.ncbi.nlm.nih.gov/8660786/" },
+        { id: "A Longitudinal Meta-Analysis of Range Restriction Estimates and General Mental Ability Validity Coefficients: Better Addressing Overcorrection Amid Decline Effects", link: "https://psycnet.apa.org/fulltext/2025-06323-001.pdf" },
+        { id: "Intelligence Is the Best Predictor of Job Performance", link: "https://journals.sagepub.com/doi/abs/10.1111/1467-8721.ep10768746" },
+        { id: "Does IQ Really Predict Job Performance?", link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4557354/" },
+        { id: "Slime mold uses externalized spatial “memory” to navigate in complex environments", link: "https://www.researchgate.net/publication/232223792_Slime_mold_uses_externalized_spatial_memory_to_navigate_in_complex_environments" },
+        { id: "Accurate structure prediction of biomolecular interactions with AlphaFold 3", link: "https://www.nature.com/articles/s41586-024-07487-w" },
+        { id: "Analytic Idealism: A consciousness-only ontology", link: "https://philarchive.org/rec/KASAIA-3" },
+        { id: "Idealism and the Mind-Body Problem", link: "https://consc.net/papers/idealism.pdf" },
+        { id: "Facing Up to the Problem of Consciousness", link: "https://consc.net/papers/facing.pdf" },
+        { id: "Mata Problem of Consciousness", link: "https://www.youtube.com/watch?v=OsYUWtLQBS0" },
+        { id: "MetaCrisis", link: "https://www.youtube.com/watch?v=4kBoLVvoqVY" },
+        { id: "RELATIONSHIPS", central: true, link: "" },
+        { id: "Extended Iterated, Spatialized Prisoners' Dilemma: game theory of multicellularity", link: "https://www.youtube.com/watch?v=iOFHyNliS9M" }
+      ];
+      
+      // Define links connecting each central node to its related items.
+      const links = [
+        { source: "INFORMATION", target: "The experience of life is an information process" },
+        { source: "INFORMATION", target: "The Problem with Phi: A Critique of Integrated Information Theory" },
+        { source: "EVOLUTION", target: "Nick Lane" },
+        { source: "EVOLUTION", target: "The Electrical Origins Of Life" },
+        { source: "EVOLUTION", target: "Krebs Cycle" },
+        { source: "EVOLUTION", target: "Proto-Cels" },
+        { source: "EVOLUTION", target: "Origin Eukaryotic Cell" },
+        { source: "EVOLUTION", target: "On the conditions for mimicking natural selection in chemical systems" },
+        { source: "EVOLUTION", target: "Assembly Theory" },
+        { source: "EVOLUTION", target: "Michael Levin - Publications" },
+        { source: "EVOLUTION", target: "Michael Levin - Presentations" },
+        { source: "REALITY", target: "Borrowing 'The Pixel of Reality' from Quantum Gravity Theory" },
+        { source: "INTELLIGENCE", target: "Intelligence: Knowns and Unknowns" },
+        { source: "INTELLIGENCE", target: "Intelligence and the frontal lobe: the organization of goal-directed behavior" },
+        { source: "INTELLIGENCE", target: "A Longitudinal Meta-Analysis of Range Restriction Estimates and General Mental Ability Validity Coefficients: Better Addressing Overcorrection Amid Decline Effects" },
+        { source: "INTELLIGENCE", target: "Intelligence Is the Best Predictor of Job Performance" },
+        { source: "INTELLIGENCE", target: "Does IQ Really Predict Job Performance?" },
+        { source: "INTELLIGENCE", target: "Slime mold uses externalized spatial “memory” to navigate in complex environments" },
+        { source: "INTELLIGENCE", target: "Accurate structure prediction of biomolecular interactions with AlphaFold 3" },
+        { source: "INTELLIGENCE", target: "Analytic Idealism: A consciousness-only ontology" },
+        { source: "INTELLIGENCE", target: "Idealism and the Mind-Body Problem" },
+        { source: "INTELLIGENCE", target: "Facing Up to the Problem of Consciousness" },
+        { source: "INTELLIGENCE", target: "Mata Problem of Consciousness" },
+        { source: "INTELLIGENCE", target: "MetaCrisis" },
+        { source: "RELATIONSHIPS", target: "Extended Iterated, Spatialized Prisoners' Dilemma: game theory of multicellularity" }
+      ];
+      
+      // Get the dimensions from the SVG element.
+      const svg = d3.select("svg"),
+            width = window.innerWidth,
+            height = window.innerHeight;
+      
+      // Configure the force simulation.
+      const simulation = d3.forceSimulation(nodes)
+          .force("link", d3.forceLink(links).id(d => d.id).distance(150))
+          .force("charge", d3.forceManyBody().strength(-400))
+          .force("center", d3.forceCenter(width / 2, height / 2));
+      
+      // Draw the links.
+      const link = svg.append("g")
+          .attr("class", "links")
+        .selectAll("line")
+        .data(links)
+        .enter().append("line")
+          .attr("class", "link");
+      
+      // Draw the nodes.
+      const node = svg.append("g")
+          .attr("class", "nodes")
+        .selectAll("g")
+        .data(nodes)
+        .enter().append("g")
+          .attr("class", d => d.central ? "node central" : "node")
+          .on("click", (event, d) => { 
+            if(d.link) window.open(d.link, '_blank'); 
+          });
+      
+      node.append("circle")
+          .attr("r", d => d.central ? 25 : 15);
+      
+      // Append text and apply wrapping.
+      node.append("text")
+          .attr("dy", 4)
+          .text(d => d.id)
+          .each(function() { wrap(d3.select(this), 80); });
+      
+      // Helper function to wrap SVG text with additional padding (increased lineHeight).
+      function wrap(text, width) {
+        text.each(function() {
+          var textEl = d3.select(this),
+              words = textEl.text().split(/\s+/).reverse(),
+              word,
+              line = [],
+              lineNumber = 0,
+              lineHeight = 1.5, // Extra vertical spacing
+              y = textEl.attr("y") || 0,
+              dy = parseFloat(textEl.attr("dy")) || 0,
+              tspan = textEl.text(null)
+                            .append("tspan")
+                            .attr("x", 0)
+                            .attr("y", y)
+                            .attr("dy", dy + "em");
+          while (word = words.pop()) {
+            line.push(word);
+            tspan.text(line.join(" "));
+            if (tspan.node().getComputedTextLength() > width) {
+              line.pop();
+              tspan.text(line.join(" "));
+              line = [word];
+              tspan = textEl.append("tspan")
+                             .attr("x", 0)
+                             .attr("y", y)
+                             .attr("dy", (++lineNumber * lineHeight + dy) + "em")
+                             .text(word);
+            }
+          }
+        });
+      }
+      
+      // Clamp nodes to stay within the window boundary.
+      simulation.on("tick", () => {
+        link.attr("x1", d => d.source.x)
+            .attr("y1", d => d.source.y)
+            .attr("x2", d => d.target.x)
+            .attr("y2", d => d.target.y);
+        
+        node.attr("transform", d => {
+          const radius = d.central ? 25 : 15;
+          d.x = Math.max(radius, Math.min(width - radius, d.x));
+          d.y = Math.max(radius, Math.min(height - radius, d.y));
+          return `translate(${d.x},${d.y})`;
+        });
+      });
+      
+      // Drag functionality.
+      function drag(simulation) {
+        function dragstarted(event, d) {
+          if (!event.active) simulation.alphaTarget(0.3).restart();
+          d.fx = d.x;
+          d.fy = d.y;
+        }
+        function dragged(event, d) {
+          d.fx = event.x;
+          d.fy = event.y;
+        }
+        function dragended(event, d) {
+          if (!event.active) simulation.alphaTarget(0);
+          d.fx = null;
+          d.fy = null;
+        }
+        return d3.drag()
+          .on("start", dragstarted)
+          .on("drag", dragged)
+          .on("end", dragended);
+      }
+      
+      node.call(drag(simulation));
+    </script>
+  
+
 <section id="information" class="level2">
-<h2 class="anchored" data-anchor-id="information">Information</h2>
-<ol start="0" type="1">
-<li>Theories
+<h2 class="anchored" data-anchor-id="information">INFORMATION</h2>
 <ul>
 <li><a href="https://arxiv.org/abs/1210.5908">The experience of life is an information process</a></li>
-</ul></li>
-</ol>
-</section>
-<section id="evolution" class="level2">
-<h2 class="anchored" data-anchor-id="evolution">Evolution</h2>
-<ol type="1">
-<li>Evolutionary Biochemistry
-<ul>
-<li>Bio-Chemistry
-<ul>
-<li><a href="https://nick-lane.net/publications/">Nick Lane</a>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=FLaTU-t1CQM" title="The electrical origin of life">The electrical origins of life</a></li>
-<li><a href="https://youtu.be/vBiIDwBOqQA?si=o8golhRao2R4NXIH" title="Kreb Cycle">Kreb Cycle</a>
-<ul>
-<li><a href="https://nick-lane.net/publications/a-biophysical-basis-for-the-emergence-of-the-genetic-code-in-protocells">Protocels</a></li>
-<li><a href="https://nick-lane.net/publications/origin-eukaryotic-cell/">origin-eukaryotic-cell</a></li>
-<li><a href="https://www.nature.com/articles/s41570-019-0155-6">article</a></li>
-<li>Bio-Electricity</li>
-</ul></li>
-</ul></li>
-</ul></li>
-<li>Digital Chemistry</li>
-<li>Assembly Theory vs Co-evolution</li>
-<li><a href="https://www.nature.com/articles/s41586-023-06600-9">Assembly theory explains</a></li>
-<li>Biology
-<ul>
-<li>Michael Levin
-<ul>
-<li><a href="https://drmichaellevin.org/publications/">Papers</a></li>
-<li><a href="https://drmichaellevin.org/presentations/">Presentations</a></li>
-</ul></li>
-<li>Mind Everywhere</li>
-</ul></li>
-<li>Computational Biology
-<ul>
-<li>Von Neuman</li>
-<li>Turin Biology Paper
-<ul>
-<li>Cellular Automata ## Physics</li>
-</ul></li>
-</ul></li>
-</ul></li>
-<li>Physics
-<ul>
-<li>Borrowing “The Pixel of Reality” from Quantum Gravity Theory</li>
-</ul></li>
-</ol>
-</section>
-<section id="philosophy" class="level2">
-<h2 class="anchored" data-anchor-id="philosophy">Philosophy</h2>
-<ol start="3" type="1">
-<li>Philosophy
-<ul>
-<li>Cognition</li>
-<li>Meaning &amp; Goals</li>
-<li><a href="https://www.youtube.com/watch?v=4kBoLVvoqVY">MetaCrisis</a></li>
-<li>Autopoiesis, Homeostasis</li>
-</ul></li>
-</ol>
-</section>
-<section id="ecology" class="level2">
-<h2 class="anchored" data-anchor-id="ecology">Ecology</h2>
-<ol start="4" type="1">
-<li>Ecology</li>
-</ol>
-</section>
-<section id="complex-systems" class="level2">
-<h2 class="anchored" data-anchor-id="complex-systems">Complex Systems</h2>
-<ol start="5" type="1">
-<li>Complex Systems
-<ul>
-<li>Information</li>
-<li>Graph Problems</li>
-</ul></li>
-</ol>
-</section>
-<section id="political-science-governance" class="level2">
-<h2 class="anchored" data-anchor-id="political-science-governance">Political Science &amp; governance</h2>
-<ol start="6" type="1">
-<li>Political Science &amp; Governance
-<ul>
-<li>Democracy
-<ul>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4574706/">The Problem with Phi: A Critique of Integrated Information Theory</a> ## EVOLUTION</li>
+<li><a href="https://nick-lane.net/publications/">Nick Lane</a></li>
+<li><a href="https://www.youtube.com/watch?v=FLaTU-t1CQM" title="The electrical origin of life">The Electrical Origins Of Life</a></li>
+<li><a href="https://youtu.be/vBiIDwBOqQA?si=o8golhRao2R4NXIH" title="Kreb Cycle">Krebs Cycle</a></li>
+<li><a href="https://nick-lane.net/publications/a-biophysical-basis-for-the-emergence-of-the-genetic-code-in-protocells">Proto-Cels</a></li>
+<li><a href="https://nick-lane.net/publications/origin-eukaryotic-cell/">Origin Eukaryotic Cell</a></li>
+<li><a href="https://www.nature.com/articles/s41570-019-0155-6">On the conditions for mimicking natural selection in chemical systems</a></li>
+<li><a href="https://www.nature.com/articles/s41586-023-06600-9">Assembly Theory</a></li>
+<li><a href="https://drmichaellevin.org/publications/">Michael Levin - Publications</a></li>
+<li><a href="https://drmichaellevin.org/presentations/">Michael Levin - Presentations</a> ## REALITY</li>
+<li>Borrowing “The Pixel of Reality” from Quantum Gravity Theory ## INTELLIGENCE</li>
+<li><a href="https://differentialclub.wdfiles.com/local--files/definitions-structure-and-measurement/Intelligence-Knowns-and-unknowns.pdf">Intelligence: Knowns and Unknowns</a></li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/8660786/">Intelligence and the frontal lobe: the organization of goal-directed behavior</a></li>
+<li><a href="https://psycnet.apa.org/fulltext/2025-06323-001.pdf">A Longitudinal Meta-Analysis of Range Restriction Estimates and General Mental Ability Validity Coefficients: Better Addressing Overcorrection Amid Decline Effects</a></li>
+<li><a href="https://journals.sagepub.com/doi/abs/10.1111/1467-8721.ep10768746">Intelligence Is the Best Predictor of Job Performance</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4557354/">Does IQ Really Predict Job Performance?</a></li>
+<li><a href="https://www.researchgate.net/publication/232223792_Slime_mold_uses_externalized_spatial_memory_to_navigate_in_complex_environments">Slime mold uses externalized spatial “memory” to navigate in complex environments</a></li>
+<li><a href="https://www.nature.com/articles/s41586-024-07487-w">Accurate structure prediction of biomolecular interactions with AlphaFold 3</a></li>
+<li><a href="https://philarchive.org/rec/KASAIA-3">Analytic Idealism: A consciousness-only ontology</a></li>
+<li><a href="https://consc.net/papers/idealism.pdf">Idealism and the Mind-Body Problem</a></li>
+<li><a href="https://consc.net/papers/facing.pdf">Facing Up to the Problem of Consciousness</a></li>
+<li><a href="https://www.youtube.com/watch?v=OsYUWtLQBS0">Mata Problem of Consciousness</a></li>
+<li><a href="https://www.youtube.com/watch?v=4kBoLVvoqVY">MetaCrisis</a> ## RELATIONSHIPS</li>
+<li><a href="https://www.youtube.com/watch?v=iOFHyNliS9M">Extended Iterated, Spatialized Prisoners’ Dilemma: game theory of multicellularity</a></li>
+<li><h2 id="political-science-governance" class="anchored">6. Political Science &amp; governance</h2></li>
+<li>Democracy</li>
 <li>Hongs Formula</li>
 <li>Re-visiting the majority</li>
 <li>Outliers value</li>
-</ul></li>
-<li>Governance
-<ul>
+<li>Governance</li>
 <li>Topology of governance</li>
-<li>Spatial relationship</li>
-</ul></li>
-</ul></li>
-</ol>
-</section>
-<section id="problems-identified" class="level2">
-<h2 class="anchored" data-anchor-id="problems-identified">Problems Identified</h2>
-<ol start="7" type="1">
-<li>Problems Identified
-<ul>
-<li>Identified Problems: A summary</li>
-</ul></li>
-</ol>
-</section>
-<section id="interactions" class="level2">
-<h2 class="anchored" data-anchor-id="interactions">Interactions</h2>
-<ol start="8" type="1">
-<li>Convergence / Justaposition
-<ul>
+<li>Spatial relationship ## 7. Problems Identified</li>
+<li>Identified Problems: A summary ## 8. Convergence / Justaposition</li>
 <li>Emergence</li>
 <li>Scale and Abstraction</li>
 <li>Continuum and growth rate</li>
 <li>Outliers value</li>
 <li>Graphing the intuitive relationship</li>
-<li>Testing the relationship by formal logic</li>
-</ul></li>
-</ol>
-</section>
-<section id="solutions" class="level2">
-<h2 class="anchored" data-anchor-id="solutions">Solutions</h2>
-<ol start="9" type="1">
-<li>Solutions and their viability
-<ul>
-<li>For global agreement
-<ul>
+<li>Testing the relationship by formal logic ## 9. Solutions and their viability</li>
+<li>For global agreement</li>
 <li>Common ground for mutual understanding</li>
 <li>Party analogy</li>
 <li>Human desires in Ven diagram</li>
-</ul></li>
 <li>Global agreement, local action.</li>
 <li>Using Ramsey Numbers and graphs of connections to predict hierarchical models for communities to self-organize / self Governance</li>
 <li>Models and policies for truth</li>
 <li>Peer-To-Peer Fact Validator</li>
-<li>Artificial Resource</li>
-</ul></li>
-</ol>
-</section>
-<section id="civilization" class="level2">
-<h2 class="anchored" data-anchor-id="civilization">Civilization</h2>
-<ol start="10" type="1">
-<li>Civilization Design
-<ul>
+<li>Artificial Resource ## 10. Civilization Design</li>
 <li>Axioms</li>
 <li>Boundaries</li>
-<li>Agreements</li>
-</ul></li>
-</ol>
-</section>
-<section id="portugal" class="level2">
-<h2 class="anchored" data-anchor-id="portugal">Portugal</h2>
-<ol start="11" type="1">
-<li>Portugal
-<ul>
+<li>Agreements ## 11. Portugal</li>
 <li>A letter</li>
 <li>Modeling direct democracy in the current context</li>
 <li>Exposing polarizing incentives</li>
 <li>Demystifying / unblocking inductive bias holding back humanity</li>
-</ul></li>
-</ol>
+</ul>
 <p>Would you like to have a conversation on these topics? <a href="mailto:mvaldeta42@gmail.com">Contact me @</a></p>
 
 

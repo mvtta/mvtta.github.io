@@ -66,6 +66,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -161,215 +162,241 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<style>
+.visualization-container {
+  width: 100%;
+  height: 80vh;
+  margin: 0 auto;
+  background: #000;
+  position: relative;
+  z-index: 0;
+}
 
+#graph {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 
-  
-    <meta charset="utf-8">
-    <title>Mind Map Prototype - Hierarchical</title>
-    <style>
-      body { margin: 0; }
-      /* Container restricts the SVG appearance */
-      #quarto-document-content {
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        position: relative;
-      }
-      /* Ensure the SVG fills the container */
-      #quarto-document-content svg {
-        width: 100%;
-        height: 100%;
-        display: flex;
-      }
-      
-      .node circle { fill: none; stroke: darkblue; stroke-width: 0px; }
-      .central circle { fill: red; stroke: none; stroke-width: 0px; }
-      .node text { font: 8px sans-serif; pointer-events: visible; text-anchor: middle; fill: rgb(255, 255, 255); }
-      .link { stroke: rgb(0, 13, 255); stroke-opacity: 0.6; }
-    </style>
-  
-  
-    <div id="quarto-document-content">
-      <svg></svg>
-    </div>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script>
-      // Define nodes. Central nodes have a property `central: true`.
-      const nodes = [
-        { id: "INFORMATION", central: true, link: "" },
-        { id: "The experience of life is an information process", link: "https://arxiv.org/abs/1210.5908" },
-        { id: "The Problem with Phi: A Critique of Integrated Information Theory", link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4574706/" },
-        { id: "EVOLUTION", central: true, link: "" },
-        { id: "Nick Lane", link: "https://nick-lane.net/publications/" },
-        { id: "The Electrical Origins Of Life", link: "https://www.youtube.com/watch?v=FLaTU-t1CQM" },
-        { id: "Krebs Cycle", link: "https://youtu.be/vBiIDwBOqQA?si=o8golhRao2R4NXIH" },
-        { id: "Proto-Cels", link: "https://nick-lane.net/publications/a-biophysical-basis-for-the-emergence-of-the-genetic-code-in-protocells" },
-        { id: "Origin Eukaryotic Cell", link: "https://nick-lane.net/publications/origin-eukaryotic-cell/" },
-        { id: "On the conditions for mimicking natural selection in chemical systems", link: "https://www.nature.com/articles/s41570-019-0155-6" },
-        { id: "Assembly Theory", link: "https://www.nature.com/articles/s41586-023-06600-9" },
-        { id: "Michael Levin - Publications", link: "https://drmichaellevin.org/publications/" },
-        { id: "Michael Levin - Presentations", link: "https://drmichaellevin.org/presentations/" },
-        { id: "REALITY", central: true, link: "" },
-        { id: "Borrowing 'The Pixel of Reality' from Quantum Gravity Theory", link: "" },
-        { id: "INTELLIGENCE", central: true, link: "" },
-        { id: "Intelligence: Knowns and Unknowns", link: "https://differentialclub.wdfiles.com/local--files/definitions-structure-and-measurement/Intelligence-Knowns-and-unknowns.pdf" },
-        { id: "Intelligence and the frontal lobe: the organization of goal-directed behavior", link: "https://pubmed.ncbi.nlm.nih.gov/8660786/" },
-        { id: "A Longitudinal Meta-Analysis of Range Restriction Estimates and General Mental Ability Validity Coefficients: Better Addressing Overcorrection Amid Decline Effects", link: "https://psycnet.apa.org/fulltext/2025-06323-001.pdf" },
-        { id: "Intelligence Is the Best Predictor of Job Performance", link: "https://journals.sagepub.com/doi/abs/10.1111/1467-8721.ep10768746" },
-        { id: "Does IQ Really Predict Job Performance?", link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4557354/" },
-        { id: "Slime mold uses externalized spatial “memory” to navigate in complex environments", link: "https://www.researchgate.net/publication/232223792_Slime_mold_uses_externalized_spatial_memory_to_navigate_in_complex_environments" },
-        { id: "Accurate structure prediction of biomolecular interactions with AlphaFold 3", link: "https://www.nature.com/articles/s41586-024-07487-w" },
-        { id: "Analytic Idealism: A consciousness-only ontology", link: "https://philarchive.org/rec/KASAIA-3" },
-        { id: "Idealism and the Mind-Body Problem", link: "https://consc.net/papers/idealism.pdf" },
-        { id: "Facing Up to the Problem of Consciousness", link: "https://consc.net/papers/facing.pdf" },
-        { id: "Mata Problem of Consciousness", link: "https://www.youtube.com/watch?v=OsYUWtLQBS0" },
-        { id: "MetaCrisis", link: "https://www.youtube.com/watch?v=4kBoLVvoqVY" },
-        { id: "RELATIONSHIPS", central: true, link: "" },
-        { id: "Extended Iterated, Spatialized Prisoners' Dilemma: game theory of multicellularity", link: "https://www.youtube.com/watch?v=iOFHyNliS9M" }
-      ];
-      
-      // Define links connecting each central node to its related items.
-      const links = [
-        { source: "INFORMATION", target: "The experience of life is an information process" },
-        { source: "INFORMATION", target: "The Problem with Phi: A Critique of Integrated Information Theory" },
-        { source: "EVOLUTION", target: "Nick Lane" },
-        { source: "EVOLUTION", target: "The Electrical Origins Of Life" },
-        { source: "EVOLUTION", target: "Krebs Cycle" },
-        { source: "EVOLUTION", target: "Proto-Cels" },
-        { source: "EVOLUTION", target: "Origin Eukaryotic Cell" },
-        { source: "EVOLUTION", target: "On the conditions for mimicking natural selection in chemical systems" },
-        { source: "EVOLUTION", target: "Assembly Theory" },
-        { source: "EVOLUTION", target: "Michael Levin - Publications" },
-        { source: "EVOLUTION", target: "Michael Levin - Presentations" },
-        { source: "REALITY", target: "Borrowing 'The Pixel of Reality' from Quantum Gravity Theory" },
-        { source: "INTELLIGENCE", target: "Intelligence: Knowns and Unknowns" },
-        { source: "INTELLIGENCE", target: "Intelligence and the frontal lobe: the organization of goal-directed behavior" },
-        { source: "INTELLIGENCE", target: "A Longitudinal Meta-Analysis of Range Restriction Estimates and General Mental Ability Validity Coefficients: Better Addressing Overcorrection Amid Decline Effects" },
-        { source: "INTELLIGENCE", target: "Intelligence Is the Best Predictor of Job Performance" },
-        { source: "INTELLIGENCE", target: "Does IQ Really Predict Job Performance?" },
-        { source: "INTELLIGENCE", target: "Slime mold uses externalized spatial “memory” to navigate in complex environments" },
-        { source: "INTELLIGENCE", target: "Accurate structure prediction of biomolecular interactions with AlphaFold 3" },
-        { source: "INTELLIGENCE", target: "Analytic Idealism: A consciousness-only ontology" },
-        { source: "INTELLIGENCE", target: "Idealism and the Mind-Body Problem" },
-        { source: "INTELLIGENCE", target: "Facing Up to the Problem of Consciousness" },
-        { source: "INTELLIGENCE", target: "Mata Problem of Consciousness" },
-        { source: "INTELLIGENCE", target: "MetaCrisis" },
-        { source: "RELATIONSHIPS", target: "Extended Iterated, Spatialized Prisoners' Dilemma: game theory of multicellularity" }
-      ];
-      
-      // Get the dimensions from the SVG element.
-      const svg = d3.select("svg"),
-            width = window.innerWidth,
-            height = window.innerHeight;
-      
-      // Configure the force simulation.
-      const simulation = d3.forceSimulation(nodes)
-          .force("link", d3.forceLink(links).id(d => d.id).distance(150))
-          .force("charge", d3.forceManyBody().strength(-400))
-          .force("center", d3.forceCenter(width / 2, height / 2));
-      
-      // Draw the links.
-      const link = svg.append("g")
-          .attr("class", "links")
-        .selectAll("line")
-        .data(links)
-        .enter().append("line")
-          .attr("class", "link");
-      
-      // Draw the nodes.
-      const node = svg.append("g")
-          .attr("class", "nodes")
-        .selectAll("g")
-        .data(nodes)
-        .enter().append("g")
-          .attr("class", d => d.central ? "node central" : "node")
-          .on("click", (event, d) => { 
-            if(d.link) window.open(d.link, '_blank'); 
-          });
-      
-      node.append("circle")
-          .attr("r", d => d.central ? 25 : 15);
-      
-      // Append text and apply wrapping.
-      node.append("text")
-          .attr("dy", 4)
-          .text(d => d.id)
-          .each(function() { wrap(d3.select(this), 80); });
-      
-      // Helper function to wrap SVG text with additional padding (increased lineHeight).
-      function wrap(text, width) {
-        text.each(function() {
-          var textEl = d3.select(this),
-              words = textEl.text().split(/\s+/).reverse(),
-              word,
-              line = [],
-              lineNumber = 0,
-              lineHeight = 1.5, // Extra vertical spacing
-              y = textEl.attr("y") || 0,
-              dy = parseFloat(textEl.attr("dy")) || 0,
-              tspan = textEl.text(null)
-                            .append("tspan")
-                            .attr("x", 0)
-                            .attr("y", y)
-                            .attr("dy", dy + "em");
-          while (word = words.pop()) {
-            line.push(word);
-            tspan.text(line.join(" "));
-            if (tspan.node().getComputedTextLength() > width) {
-              line.pop();
-              tspan.text(line.join(" "));
-              line = [word];
-              tspan = textEl.append("tspan")
-                             .attr("x", 0)
-                             .attr("y", y)
-                             .attr("dy", (++lineNumber * lineHeight + dy) + "em")
-                             .text(word);
-            }
-          }
-        });
-      }
-      
-      // Clamp nodes to stay within the window boundary.
-      simulation.on("tick", () => {
-        link.attr("x1", d => d.source.x)
-            .attr("y1", d => d.source.y)
-            .attr("x2", d => d.target.x)
-            .attr("y2", d => d.target.y);
-        
-        node.attr("transform", d => {
-          const radius = d.central ? 25 : 15;
-          d.x = Math.max(radius, Math.min(width - radius, d.x));
-          d.y = Math.max(radius, Math.min(height - radius, d.y));
-          return `translate(${d.x},${d.y})`;
-        });
-      });
-      
-      // Drag functionality.
-      function drag(simulation) {
-        function dragstarted(event, d) {
-          if (!event.active) simulation.alphaTarget(0.3).restart();
-          d.fx = d.x;
-          d.fy = d.y;
-        }
-        function dragged(event, d) {
-          d.fx = event.x;
-          d.fy = event.y;
-        }
-        function dragended(event, d) {
-          if (!event.active) simulation.alphaTarget(0);
-          d.fx = null;
-          d.fy = null;
-        }
-        return d3.drag()
-          .on("start", dragstarted)
-          .on("drag", dragged)
-          .on("end", dragended);
-      }
-      
-      node.call(drag(simulation));
-    </script>
-  
+.node circle { 
+  fill: none; 
+  stroke: darkblue; 
+  stroke-width: 0px; 
+}
 
+.central circle { 
+  fill: red; 
+  stroke: none; 
+  stroke-width: 0px; 
+}
+
+.node text { 
+  font: 8px sans-serif; 
+  pointer-events: visible; 
+  text-anchor: middle; 
+  fill: rgb(255, 255, 255); 
+}
+
+.link { 
+  stroke: rgb(0, 13, 255); 
+  stroke-opacity: 0.6; 
+}
+</style>
+
+<div class="visualization-container">
+  <svg id="graph" viewbox="0 0 1200 800" preserveaspectratio="xMidYMid meet"></svg>
+</div>
+
+<script>
+// Get the container dimensions
+const container = document.querySelector('.visualization-container');
+const width = container.clientWidth;
+const height = container.clientHeight;
+
+// Select the SVG first
+const svg = d3.select("#graph");
+
+// Define nodes
+const nodes = [
+  { id: "INFORMATION", central: true, link: "" },
+  { id: "The experience of life is an information process", link: "https://arxiv.org/abs/1210.5908" },
+  { id: "The Problem with Phi: A Critique of Integrated Information Theory", link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4574706/" },
+  { id: "EVOLUTION", central: true, link: "" },
+  { id: "Nick Lane", link: "https://nick-lane.net/publications/" },
+  { id: "The Electrical Origins Of Life", link: "https://www.youtube.com/watch?v=FLaTU-t1CQM" },
+  { id: "Krebs Cycle", link: "https://youtu.be/vBiIDwBOqQA?si=o8golhRao2R4NXIH" },
+  { id: "Proto-Cels", link: "https://nick-lane.net/publications/a-biophysical-basis-for-the-emergence-of-the-genetic-code-in-protocells" },
+  { id: "Origin Eukaryotic Cell", link: "https://nick-lane.net/publications/origin-eukaryotic-cell/" },
+  { id: "On the conditions for mimicking natural selection in chemical systems", link: "https://www.nature.com/articles/s41570-019-0155-6" },
+  { id: "Assembly Theory", link: "https://www.nature.com/articles/s41586-023-06600-9" },
+  { id: "Michael Levin - Publications", link: "https://drmichaellevin.org/publications/" },
+  { id: "Michael Levin - Presentations", link: "https://drmichaellevin.org/presentations/" },
+  { id: "REALITY", central: true, link: "" },
+  { id: "Borrowing 'The Pixel of Reality' from Quantum Gravity Theory", link: "" },
+  { id: "INTELLIGENCE", central: true, link: "" },
+  { id: "Intelligence: Knowns and Unknowns", link: "https://differentialclub.wdfiles.com/local--files/definitions-structure-and-measurement/Intelligence-Knowns-and-unknowns.pdf" },
+  { id: "Intelligence and the frontal lobe: the organization of goal-directed behavior", link: "https://pubmed.ncbi.nlm.nih.gov/8660786/" },
+  { id: "A Longitudinal Meta-Analysis of Range Restriction Estimates and General Mental Ability Validity Coefficients: Better Addressing Overcorrection Amid Decline Effects", link: "https://psycnet.apa.org/fulltext/2025-06323-001.pdf" },
+  { id: "Intelligence Is the Best Predictor of Job Performance", link: "https://journals.sagepub.com/doi/abs/10.1111/1467-8721.ep10768746" },
+  { id: "Does IQ Really Predict Job Performance?", link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4557354/" },
+  { id: "Slime mold uses externalized spatial memory to navigate in complex environments", link: "https://www.researchgate.net/publication/232223792_Slime_mold_uses_externalized_spatial_memory_to_navigate_in_complex_environments" },
+  { id: "Accurate structure prediction of biomolecular interactions with AlphaFold 3", link: "https://www.nature.com/articles/s41586-024-07487-w" },
+  { id: "Analytic Idealism: A consciousness-only ontology", link: "https://philarchive.org/rec/KASAIA-3" },
+  { id: "Idealism and the Mind-Body Problem", link: "https://consc.net/papers/idealism.pdf" },
+  { id: "Facing Up to the Problem of Consciousness", link: "https://consc.net/papers/facing.pdf" },
+  { id: "Mata Problem of Consciousness", link: "https://www.youtube.com/watch?v=OsYUWtLQBS0" },
+  { id: "MetaCrisis", link: "https://www.youtube.com/watch?v=4kBoLVvoqVY" },
+  { id: "RELATIONSHIPS", central: true, link: "" },
+  { id: "Extended Iterated, Spatialized Prisoners' Dilemma: game theory of multicellularity", link: "https://www.youtube.com/watch?v=iOFHyNliS9M" }
+];
+
+// Define links
+const links = [
+  { source: "INFORMATION", target: "The experience of life is an information process" },
+  { source: "INFORMATION", target: "The Problem with Phi: A Critique of Integrated Information Theory" },
+  { source: "EVOLUTION", target: "Nick Lane" },
+  { source: "EVOLUTION", target: "The Electrical Origins Of Life" },
+  { source: "EVOLUTION", target: "Krebs Cycle" },
+  { source: "EVOLUTION", target: "Proto-Cels" },
+  { source: "EVOLUTION", target: "Origin Eukaryotic Cell" },
+  { source: "EVOLUTION", target: "On the conditions for mimicking natural selection in chemical systems" },
+  { source: "EVOLUTION", target: "Assembly Theory" },
+  { source: "EVOLUTION", target: "Michael Levin - Publications" },
+  { source: "EVOLUTION", target: "Michael Levin - Presentations" },
+  { source: "REALITY", target: "Borrowing 'The Pixel of Reality' from Quantum Gravity Theory" },
+  { source: "INTELLIGENCE", target: "Intelligence: Knowns and Unknowns" },
+  { source: "INTELLIGENCE", target: "Intelligence and the frontal lobe: the organization of goal-directed behavior" },
+  { source: "INTELLIGENCE", target: "A Longitudinal Meta-Analysis of Range Restriction Estimates and General Mental Ability Validity Coefficients: Better Addressing Overcorrection Amid Decline Effects" },
+  { source: "INTELLIGENCE", target: "Intelligence Is the Best Predictor of Job Performance" },
+  { source: "INTELLIGENCE", target: "Does IQ Really Predict Job Performance?" },
+  { source: "INTELLIGENCE", target: "Slime mold uses externalized spatial memory to navigate in complex environments" },
+  { source: "INTELLIGENCE", target: "Accurate structure prediction of biomolecular interactions with AlphaFold 3" },
+  { source: "INTELLIGENCE", target: "Analytic Idealism: A consciousness-only ontology" },
+  { source: "INTELLIGENCE", target: "Idealism and the Mind-Body Problem" },
+  { source: "INTELLIGENCE", target: "Facing Up to the Problem of Consciousness" },
+  { source: "INTELLIGENCE", target: "Mata Problem of Consciousness" },
+  { source: "INTELLIGENCE", target: "MetaCrisis" },
+  { source: "RELATIONSHIPS", target: "Extended Iterated, Spatialized Prisoners' Dilemma: game theory of multicellularity" }
+];
+
+// Initialize the simulation
+const simulation = d3.forceSimulation(nodes)
+    .force("link", d3.forceLink(links).id(d => d.id).distance(80))
+    .force("charge", d3.forceManyBody().strength(d => d.central ? -800 : -200))
+    .force("collide", d3.forceCollide().radius(50))
+    .force("center", d3.forceCenter(width / 2, height / 2))
+    .force("x", d3.forceX(width / 2).strength(0.1))
+    .force("y", d3.forceY(height / 2).strength(0.1));
+
+// Create the links
+const link = svg.append("g")
+    .attr("class", "links")
+    .selectAll("line")
+    .data(links)
+    .enter()
+    .append("line")
+    .attr("class", "link");
+
+// Create the nodes (only once!)
+const node = svg.append("g")
+    .attr("class", "nodes")
+    .selectAll("g")
+    .data(nodes)
+    .enter()
+    .append("g")
+    .attr("class", d => d.central ? "node central" : "node")
+    .on("click", (event, d) => { 
+      if(d.link) window.open(d.link, '_blank'); 
+    });
+
+// Add circles to nodes
+node.append("circle")
+    .attr("r", d => d.central ? 25 : 15);
+
+// Add text to nodes
+node.append("text")
+    .attr("dy", 4)
+    .text(d => d.id)
+    .each(function() { wrap(d3.select(this), 80); });
+
+// Text wrapping function
+function wrap(text, width) {
+  text.each(function() {
+    var textEl = d3.select(this),
+        words = textEl.text().split(/\s+/).reverse(),
+        word,
+        line = [],
+        lineNumber = 0,
+        lineHeight = 1.5,
+        y = textEl.attr("y") || 0,
+        dy = parseFloat(textEl.attr("dy")) || 0,
+        tspan = textEl.text(null)
+                    .append("tspan")
+                    .attr("x", 0)
+                    .attr("y", y)
+                    .attr("dy", dy + "em");
+    while (word = words.pop()) {
+      line.push(word);
+      tspan.text(line.join(" "));
+      if (tspan.node().getComputedTextLength() > width) {
+        line.pop();
+        tspan.text(line.join(" "));
+        line = [word];
+        tspan = textEl.append("tspan")
+                     .attr("x", 0)
+                     .attr("y", y)
+                     .attr("dy", (++lineNumber * lineHeight + dy) + "em")
+                     .text(word);
+      }
+    }
+  });
+}
+
+// Update positions on tick
+simulation.on("tick", () => {
+  const padding = 100;
+  
+  nodes.forEach(d => {
+    d.x = Math.max(padding, Math.min(width - padding, d.x));
+    d.y = Math.max(padding, Math.min(height - padding, d.y));
+  });
+
+  link
+    .attr("x1", d => d.source.x)
+    .attr("y1", d => d.source.y)
+    .attr("x2", d => d.target.x)
+    .attr("y2", d => d.target.y);
+
+  node.attr("transform", d => `translate(${d.x},${d.y})`);
+});
+
+// Drag functionality
+function drag(simulation) {
+  function dragstarted(event, d) {
+    if (!event.active) simulation.alphaTarget(0.3).restart();
+    d.fx = d.x;
+    d.fy = d.y;
+  }
+  
+  function dragged(event, d) {
+    d.fx = event.x;
+    d.fy = event.y;
+  }
+  
+  function dragended(event, d) {
+    if (!event.active) simulation.alphaTarget(0);
+    d.fx = null;
+    d.fy = null;
+  }
+  
+  return d3.drag()
+    .on("start", dragstarted)
+    .on("drag", dragged)
+    .on("end", dragended);
+}
+
+node.call(drag(simulation));
+</script>
 <section id="information" class="level2">
 <h2 class="anchored" data-anchor-id="information">INFORMATION</h2>
 <ul>
@@ -846,6 +873,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><a href="mailto:mvtta@proton.me">email</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>mvtta = mariana emauz valdetaro</p>
+</div>
+  </div>
+</footer>
 
 
 

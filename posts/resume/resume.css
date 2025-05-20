@@ -1,0 +1,66 @@
+header h1 {
+    font-size: 0.5em;
+    font-weight: 900;
+    color: #2a2a2a;
+    text-align: left;
+    margin-bottom: 0.2em;
+}
+header h2, .subtitle {
+    font-size: 1.4em;
+    color: #555;
+    text-align: left;
+    margin-bottom: 0.5em;
+}
+.author, .contact-block {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 1em;
+}
+
+/* Add these new styles for the summary section */
+#summary {
+    font-size: 0.9em;      /* Smaller text */
+    color: #666;           /* Lighter color */
+    font-weight: 300;      /* Lighter font weight */
+    line-height: 1.4;      /* Tighter line spacing */
+    margin-bottom: 1em;    /* Space before skills section */
+    font-style: italic;    /* Optional: makes it appear lighter */
+    max-width: 95%;        /* Optional: slightly narrower than other sections */
+}
+
+#skills {
+    font-size: 0.9em;      /* Smaller text */
+    color: #666;           /* Lighter color */
+    font-weight: 300;      /* Lighter font weight */
+    line-height: 1.4;      /* Tighter line spacing */
+    margin-bottom: 1em;    /* Space before skills section */
+    font-style: italic;    /* Optional: makes it appear lighter */
+    max-width: 95%;        /* Optional: slightly narrower than other sections */
+}
+
+#highlight {
+    font-size: 0.9em;      /* Smaller text */
+    color: #666;           /* Lighter color */
+    font-weight: 300;      /* Lighter font weight */
+    line-height: 1.4;      /* Tighter line spacing */
+    margin-bottom: 1em;    /* Space before skills section */
+    font-style: italic;    /* Optional: makes it appear lighter */
+    max-width: 95%;        /* Optional: slightly narrower than other sections */
+}
+
+/* For PDF output via LaTeX */
+.smaller {
+    font-size: 0.9em;
+}
+
+/* Page break styling */
+.page-break-before {
+  page-break-before: always;
+}
+
+/* Page break styling for HTML output */
+@media print {
+  .page-break-before {
+    page-break-before: always;
+  }
+}

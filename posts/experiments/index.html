@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>/</title>
+<title>/ - Onboarding Docs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,9 +66,13 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -128,16 +132,296 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#onboarding-module" id="toc-onboarding-module" class="nav-link active" data-scroll-target="#onboarding-module"><span class="header-section-number">1</span> Onboarding Module</a>
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview"><span class="header-section-number">1.1</span> Overview</a></li>
+  </ul></li>
+  <li><a href="#system-architecture" id="toc-system-architecture" class="nav-link" data-scroll-target="#system-architecture"><span class="header-section-number">2</span> System Architecture</a>
+  <ul>
+  <li><a href="#component-interactions" id="toc-component-interactions" class="nav-link" data-scroll-target="#component-interactions"><span class="header-section-number">2.1</span> Component Interactions</a></li>
+  <li><a href="#example-conversation-flow" id="toc-example-conversation-flow" class="nav-link" data-scroll-target="#example-conversation-flow"><span class="header-section-number">2.2</span> Example Conversation Flow</a>
+  <ul>
+  <li><a href="#initial-contact" id="toc-initial-contact" class="nav-link" data-scroll-target="#initial-contact"><span class="header-section-number">2.2.1</span> Initial Contact</a></li>
+  <li><a href="#website-analysis" id="toc-website-analysis" class="nav-link" data-scroll-target="#website-analysis"><span class="header-section-number">2.2.2</span> Website Analysis</a></li>
+  <li><a href="#business-understanding" id="toc-business-understanding" class="nav-link" data-scroll-target="#business-understanding"><span class="header-section-number">2.2.3</span> Business Understanding</a></li>
+  <li><a href="#follow-up-questions" id="toc-follow-up-questions" class="nav-link" data-scroll-target="#follow-up-questions"><span class="header-section-number">2.2.4</span> Follow-up Questions</a></li>
+  <li><a href="#final-context" id="toc-final-context" class="nav-link" data-scroll-target="#final-context"><span class="header-section-number">2.2.5</span> Final Context</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Onboarding Docs</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<pre><code>import sys
+print(sys.executable)</code></pre>
+<section id="onboarding-module" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Onboarding Module</h1>
+<p>AI-powered sales agent system for automated customer onboarding.</p>
+<section id="overview" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">1.1</span> Overview</h2>
+<p>This architecture captures the essence of the main product in general terms. However, it’s a standalone mini-product design to deliver our value proposition to potential costumers.</p>
+<p>Simply deployed in a Flask-based web application, LLM powered conversation flow, dynamically oriented for conversion / client acquisition. Later on I’d like to test a profiling-optimisation algorithm, to segment the business and deliver a more tailored experience. For now, the system is designed to be a simple, yet effective, onboarding tool.</p>
+</section>
+</section>
+<section id="system-architecture" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> System Architecture</h1>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">sequenceDiagram
+    %% Participants
+    participant H as Human
+    participant A as Sales Agent
+    participant LS as LangSmith
+    participant SL as Security Layer
+    participant LLM as LLM Gateway
+    participant WS as Web Scraper
+    participant DB as Memory Store
+    participant O as Orchestrator
+    participant AP as Apollo API
+
+    %% Phase 1: Session Initialization &amp; Security
+    rect rgb(255, 255, 200)
+        Note over H,AP: Phase 1 - Session Initialization
+        H-&gt;&gt;A: GET /onboarding
+        A-&gt;&gt;SL: Generate Session UUID
+        SL-&gt;&gt;DB: Store session (IP hash, timestamp, user-agent)
+        A-&gt;&gt;H: Set session cookie with UUID
+        A-&gt;&gt;LS: Start trace (anonymous)
+        Note right of SL: Session contains:&lt;br/&gt;Usage counters&lt;br/&gt;Rate-Limits&lt;br/&gt;Timestamps
+    end
+
+    %% Phase 2: Initial Contact &amp; Website Analysis
+    rect rgb(200, 255, 200)
+        Note over H,AP: Phase 2 - Data Collection
+        H-&gt;&gt;A: POST /chat (with website URL)
+        A-&gt;&gt;WS: Analyze website
+        WS-&gt;&gt;A: Return website data
+        A-&gt;&gt;LLM: Request business analysis
+        LLM-&gt;&gt;A: Return segmentation
+        A-&gt;&gt;DB: Store analysis
+        A-&gt;&gt;H: Request additional info
+    end
+
+    %% Phase 3: Business Understanding
+    rect rgb(200, 200, 255)
+        Note over H,AP: Phase 3 - Business Understanding
+        H-&gt;&gt;A: Provide business details
+        A-&gt;&gt;O: Process information
+        O-&gt;&gt;LLM: Generate business context
+        LLM-&gt;&gt;O: Return insights
+        O-&gt;&gt;AP: Enrich data
+        AP-&gt;&gt;O: Return enriched data
+        O-&gt;&gt;DB: Store complete context
+        A-&gt;&gt;H: Tailored response
+    end
+
+    %% Phase 4: Session Completion
+    rect rgb(255, 200, 200)
+        Note over H,AP: Phase 4 - Finalization
+        H-&gt;&gt;A: POST /audit
+        A-&gt;&gt;SL: Verify session
+        SL-&gt;&gt;DB: Log completion
+        A-&gt;&gt;H: Session complete
+    end
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<section id="component-interactions" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="component-interactions"><span class="header-section-number">2.1</span> Component Interactions</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    subgraph Frontend
+        H[Human] --&gt; |HTTP| A[Sales Agent]
+    end
+
+    subgraph Security
+        A --&gt; |Verify| SL[Security Layer]
+        SL --&gt; |Log| DB[Memory Store]
+    end
+
+    subgraph Analysis
+        A --&gt; |Request| WS[Web Scraper]
+        WS --&gt; |Data| O[Orchestrator]
+        O --&gt; |Process| LLM[LLM Gateway]
+    end
+
+    subgraph Storage
+        O --&gt; |Store| DB
+        DB --&gt; |Retrieve| A
+    end
+
+    subgraph Enrichment
+        O --&gt; |Query| AP[Apollo API]
+        AP --&gt; |Enrich| O
+    end
+
+    style Frontend fill:#f9f,stroke:#333
+    style Security fill:#ff9,stroke:#333
+    style Analysis fill:#9f9,stroke:#333
+    style Storage fill:#99f,stroke:#333
+    style Enrichment fill:#f99,stroke:#333
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">sequenceDiagram
+    participant H as Human
+    participant A as Agent
+    participant WS as Web Scraper
+    participant LLM as LLM
+    participant DB as Memory
+
+    %% Initial Contact
+    rect rgb(200,255,200)
+        H-&gt;&gt;A: POST /chat {"message": "Hi, I need help with my business"}
+        A-&gt;&gt;H: "Hello! I'd be happy to help. Could you share your business website?"
+        Note right of A: Initial Greeting Template
+        
+        H-&gt;&gt;A: "Sure, it's www.example.com"
+        Note right of H: Website Input
+    end
+
+    %% Website Analysis
+    rect rgb(200,200,255)
+        A-&gt;&gt;WS: analyze_website("www.example.com")
+        Note right of WS: Scraping Data Structure:&lt;br/&gt;{&lt;br/&gt;  "content": "text content",&lt;br/&gt;  "metadata": {&lt;br/&gt;    "title": "Example Inc",&lt;br/&gt;    "links": ["url1", "url2"],&lt;br/&gt;    "images": ["img1", "img2"]&lt;br/&gt;  }&lt;br/&gt;}
+        WS-&gt;&gt;A: Return website data
+        
+        A-&gt;&gt;LLM: Request analysis
+        Note right of LLM: Analysis Prompt:&lt;br/&gt;"Analyze this business website:&lt;br/&gt;Content: {content}&lt;br/&gt;Focus on: target market,&lt;br/&gt;value proposition, industry"
+    end
+
+    %% Business Understanding
+    rect rgb(255,200,200)
+        LLM-&gt;&gt;A: {&lt;br/&gt;"segmentation": "B2B SaaS",&lt;br/&gt;"target_market": "SMEs",&lt;br/&gt;"industry": "Technology"&lt;br/&gt;}
+        A-&gt;&gt;DB: Store analysis
+        
+        A-&gt;&gt;H: "I see you're in B2B SaaS. Could you tell me more about your target customers?"
+        Note right of A: Contextual Follow-up
+        
+        H-&gt;&gt;A: "We focus on small businesses in retail"
+        
+        A-&gt;&gt;LLM: "Refine analysis with new info"
+        LLM-&gt;&gt;A: Updated segmentation
+    end
+
+    %% Final Context
+    rect rgb(255,255,200)
+        A-&gt;&gt;DB: Store final context
+        Note right of DB: Context Structure:&lt;br/&gt;{&lt;br/&gt;  "business_type": "B2B SaaS",&lt;br/&gt;  "target_market": "SME Retail",&lt;br/&gt;  "website_data": {...},&lt;br/&gt;  "conversation_history": [...]&lt;br/&gt;}
+        
+        A-&gt;&gt;H: "Based on our analysis, here's how we can help..."
+    end
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="example-conversation-flow" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="example-conversation-flow"><span class="header-section-number">2.2</span> Example Conversation Flow</h2>
+<section id="initial-contact" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="initial-contact"><span class="header-section-number">2.2.1</span> Initial Contact</h3>
+<ul>
+<li><strong>Agent</strong>: “Hello! I’m here to help understand your business needs. Could you share your website?”</li>
+<li><strong>Human</strong>: “Hi, our website is www.example.com”</li>
+</ul>
+</section>
+<section id="website-analysis" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="website-analysis"><span class="header-section-number">2.2.2</span> Website Analysis</h3>
+<pre class="{json}"><code>{
+    "scrape_data": {
+        "content": "Example Inc provides retail management solutions...",
+        "metadata": {
+            "title": "Example Inc - Retail Solutions",
+            "description": "B2B SaaS for retail management"
+        }
+    }
+}</code></pre>
+</section>
+<section id="business-understanding" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="business-understanding"><span class="header-section-number">2.2.3</span> Business Understanding</h3>
+<pre class="{json}"><code>{
+    "analysis": {
+        "business_type": "B2B SaaS",
+        "target_market": "SME Retail",
+        "value_proposition": "Streamlined retail management",
+        "industry": "Technology/Retail"
+    }
+}</code></pre>
+</section>
+<section id="follow-up-questions" class="level3" data-number="2.2.4">
+<h3 data-number="2.2.4" class="anchored" data-anchor-id="follow-up-questions"><span class="header-section-number">2.2.4</span> Follow-up Questions</h3>
+<ul>
+<li><strong>Agent</strong>: “I notice you focus on retail. What size businesses do you typically work with?”</li>
+<li><strong>Human</strong>: “Mainly small to medium retailers, around 5-50 employees”</li>
+<li><strong>Agent</strong>: “And what’s your current customer acquisition strategy?”</li>
+</ul>
+</section>
+<section id="final-context" class="level3" data-number="2.2.5">
+<h3 data-number="2.2.5" class="anchored" data-anchor-id="final-context"><span class="header-section-number">2.2.5</span> Final Context</h3>
+<pre class="{json}"><code>{
+    "session_data": {
+        "business_info": {
+            "type": "B2B SaaS",
+            "target": "SME Retail",
+            "size_range": "5-50 employees"
+        },
+        "analysis": {
+            "segmentation": "Small Business Solutions",
+            "potential": "High",
+            "recommended_approach": "Value-based pricing"
+        }
+    }
+}</code></pre>
+
+
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

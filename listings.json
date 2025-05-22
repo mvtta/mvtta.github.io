@@ -6,12 +6,6 @@
     ]
   },
   {
-    "listing": "/posts/essays/relations/index.html",
-    "items": [
-      "/posts/essays/relations/relational-view.html"
-    ]
-  },
-  {
     "listing": "/posts/essays/index.html",
     "items": [
       "/posts/essays/agency/index.html",
@@ -25,10 +19,11 @@
       "/posts/essays/tech/index.html",
       "/posts/essays/tech/sales-agent-system.html",
       "/posts/essays/bounderies/philosofical-bounderies.html",
+      "/posts/essays/relations/relational-formalised.html",
       "/posts/essays/relations/relational-view.html",
+      "/posts/essays/bounderies/interfaces-as-formal-bounderies.html",
       "/posts/essays/flux/flux-theory.html",
       "/posts/essays/flux/flux.html",
-      "/posts/essays/interfaces/interfaces-as-formal-bounderies.html",
       "/posts/essays/interfaces/notes-on-interfacing.html",
       "/posts/essays/selves/self-referencing-as-structured-redundancies.html",
       "/posts/essays/agency/preface.html",
@@ -38,15 +33,16 @@
     ]
   },
   {
-    "listing": "/posts/essays/agency/index.html",
+    "listing": "/posts/essays/bounderies/index.html",
     "items": [
-      "/posts/essays/agency/preface.html"
+      "/posts/essays/bounderies/philosofical-bounderies.html",
+      "/posts/essays/bounderies/interfaces-as-formal-bounderies.html"
     ]
   },
   {
-    "listing": "/posts/essays/bounderies/index.html",
+    "listing": "/posts/essays/agency/index.html",
     "items": [
-      "/posts/essays/bounderies/philosofical-bounderies.html"
+      "/posts/essays/agency/preface.html"
     ]
   },
   {
@@ -71,8 +67,14 @@
   {
     "listing": "/posts/essays/interfaces/index.html",
     "items": [
-      "/posts/essays/interfaces/interfaces-as-formal-bounderies.html",
       "/posts/essays/interfaces/notes-on-interfacing.html"
+    ]
+  },
+  {
+    "listing": "/posts/essays/relations/index.html",
+    "items": [
+      "/posts/essays/relations/relational-formalised.html",
+      "/posts/essays/relations/relational-view.html"
     ]
   },
   {

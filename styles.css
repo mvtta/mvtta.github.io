@@ -46,7 +46,7 @@ a:hover {
 
 * {
     font-family: Inter, sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: small;
     background-color: rgba(0, 0, 0, 0);   
 }
@@ -61,6 +61,13 @@ a:hover {
     font-weight: 200;
     color: #cbcaca !important;
     border-right: 0px;
+}
+
+.dropdown-menu {
+    background-color: #5c5c5c00 !important; 
+    color: rgb(255, 255, 255);
+    font-family: Inter, sans-serif;
+    font-weight: 400;
 }
 
 h1.title{

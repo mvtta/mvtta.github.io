@@ -8,7 +8,7 @@ a:link {
   }
   /* mouse over link */
   a:hover {
-    background-color: rgba(251, 0, 255, 0.633) !important;
+    color: rgba(251, 0, 255, 0.633) !important;
 }
   
 .navbar-title {
@@ -27,8 +27,8 @@ a:link {
     font-family: Inter, sans-serif;
     font-weight: 300;
 }
+
 .sidebar .nav-link:hover {
-    background-color: rgba(251, 0, 255, 0.633) !important;
     color: rgb(255, 255, 255);
 }
 
@@ -40,12 +40,14 @@ a:link {
 * {
     font-family: Inter, sans-serif;
     font-weight: 300;
+    font-size: small;
     background-color: black;   
 }
 .nav-item {
     font-size:30px;
     color:rgb(42, 38, 40) !important;
 }
+
 .nav-link {
     font-size: large;
     font-family: Inter, sans-serif;
@@ -53,6 +55,7 @@ a:link {
     color: #5c5c5c !important;
     border-right: 0px;
 }
+
 h1.title{
     text-align: center !important;
     font-style: italic !important;

@@ -6,8 +6,9 @@
 a:link {
     color: rgb(145, 134, 134) !important;
   }
+
   /* mouse over link */
-  a:hover {
+a:hover {
     color: rgba(251, 0, 255, 0.633) !important;
 }
   
@@ -35,6 +36,12 @@ a:link {
 .sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
     border-left: 1px solid #ffffff;
     color:  rgb(251, 0, 255) !important;
+    background-color: #5c5c5c00;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    color: var(--bs-dropdown-link-hover-color);
+    background-color: #ffffff00 !important;
 }
 
 * {

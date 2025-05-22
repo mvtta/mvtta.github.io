@@ -15,6 +15,28 @@ a:link {
     color: rgb(255, 255, 255);
 }
 
+.sidebar nav
+{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+}
+.sidebar .nav-link {
+    color: rgb(255, 255, 255);
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+}
+.sidebar .nav-link:hover {
+    background-color: rgba(251, 0, 255, 0.633) !important;
+    color: rgb(255, 255, 255);
+}
+
+.sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+    border-left: 1px solid #ffffff;
+    color:  rgb(251, 0, 255) !important;
+}
+
 * {
     font-family: Inter, sans-serif;
     font-weight: 300;
@@ -41,7 +63,8 @@ h1.title{
 .h2{
     font-size: large;
     font-style: italic !important;
-    font-weight: 20;
+    font-weight: 200;
+    color:rgb(216, 216, 216);
 }
 .anchored{
     font-size: large;
@@ -55,9 +78,9 @@ h1.title{
     color: #5c5c5c  !important;
 }
 .p{
-    color:white;
+    color:rgb(255, 255, 255);
     font-size: small;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 /* Table of Contents styling */

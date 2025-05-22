@@ -66,12 +66,20 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+</head><body class="nav-fixed fullcontent">\usepackage[dvipsnames]{xcolor}
+\usepackage{sectsty}
+\usepackage{titlesec}
+
+% Set headings to Palatino, body to sans-serif
+\titleformat*{\section}{\Large\bfseries\fontfamily{ppl}\selectfont}
+\titleformat*{\subsection}{\large\bfseries\fontfamily{ppl}\selectfont}
+\titleformat*{\subsubsection}{\normalsize\bfseries\fontfamily{ppl}\selectfont}
 
 
 <link rel="stylesheet" href="styles.css">
-</head>
 
-<body class="nav-fixed fullcontent">
+
+
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -88,18 +96,53 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./posts/agency/index.html"> 
-<span class="menu-text">Agency</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-essays" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Essays</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-essays">    
+        <li>
+    <a class="dropdown-item" href="./posts/essays/index.html">
+ <span class="dropdown-text">All Essays</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./posts/essays/index.html"> 
-<span class="menu-text">Essays</span></a>
+        <li>
+    <a class="dropdown-item" href="./posts/essays/agency/index.html">
+ <span class="dropdown-text">Agency</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./posts/experiments/index.html"> 
-<span class="menu-text">Experiments</span></a>
+        <li>
+    <a class="dropdown-item" href="./posts/essays/bounderies/index.html">
+ <span class="dropdown-text">Boundaries</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./posts/essays/embodiment/index.html">
+ <span class="dropdown-text">Embodiment</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./posts/essays/flux/index.html">
+ <span class="dropdown-text">Flux</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./posts/essays/intelligence/index.html">
+ <span class="dropdown-text">Intelligence</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./posts/essays/interfaces/index.html">
+ <span class="dropdown-text">Interfaces</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./posts/essays/relations/index.html">
+ <span class="dropdown-text">Relations</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./posts/essays/selves/index.html">
+ <span class="dropdown-text">Selves</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./posts/essays/tech/index.html">
+ <span class="dropdown-text">Technology</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./posts/notebooks/index.html"> 
 <span class="menu-text">Notebooks</span></a>
@@ -563,7 +606,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>mvtta = mariana emauz valdetaro</p>
+<p>mvtta 2025</p>
 </div>
   </div>
 </footer>

@@ -1,21 +1,85 @@
 [
   {
-    "listing": "/posts/essays/index.html",
+    "listing": "/posts/essays/selves/index.html",
     "items": [
-      "/posts/essays/flux.html",
-      "/posts/essays/interfaces-as-formal-bounderies.html",
-      "/posts/essays/notes-on-interfacing.html",
-      "/posts/essays/philosofical-bounderies.html",
-      "/posts/essays/self-referencing-as-structured-redundancies.html",
-      "/posts/essays/notes-on-intelligence.html",
-      "/posts/essays/image-generation.html",
-      "/posts/essays/moving-bodies.html"
+      "/posts/essays/selves/self-referencing-as-structured-redundancies.html"
     ]
   },
   {
-    "listing": "/posts/agency/index.html",
+    "listing": "/posts/essays/relations/index.html",
     "items": [
-      "/posts/agency/preface.html"
+      "/posts/essays/relations/relational-view.html"
+    ]
+  },
+  {
+    "listing": "/posts/essays/index.html",
+    "items": [
+      "/posts/essays/agency/index.html",
+      "/posts/essays/bounderies/index.html",
+      "/posts/essays/embodiment/index.html",
+      "/posts/essays/flux/index.html",
+      "/posts/essays/intelligence/index.html",
+      "/posts/essays/interfaces/index.html",
+      "/posts/essays/relations/index.html",
+      "/posts/essays/selves/index.html",
+      "/posts/essays/tech/index.html",
+      "/posts/essays/tech/sales-agent-system.html",
+      "/posts/essays/relations/relational-view.html",
+      "/posts/essays/bounderies/philosofical-bounderies.html",
+      "/posts/essays/flux/flux-theory.html",
+      "/posts/essays/flux/flux.html",
+      "/posts/essays/interfaces/interfaces-as-formal-bounderies.html",
+      "/posts/essays/interfaces/notes-on-interfacing.html",
+      "/posts/essays/selves/self-referencing-as-structured-redundancies.html",
+      "/posts/essays/agency/preface.html",
+      "/posts/essays/intelligence/notes-on-intelligence.html",
+      "/posts/essays/tech/image-generation.html",
+      "/posts/essays/embodiment/moving-bodies.html"
+    ]
+  },
+  {
+    "listing": "/posts/essays/agency/index.html",
+    "items": [
+      "/posts/essays/agency/preface.html"
+    ]
+  },
+  {
+    "listing": "/posts/essays/bounderies/index.html",
+    "items": [
+      "/posts/essays/bounderies/philosofical-bounderies.html"
+    ]
+  },
+  {
+    "listing": "/posts/essays/embodiment/index.html",
+    "items": [
+      "/posts/essays/embodiment/moving-bodies.html"
+    ]
+  },
+  {
+    "listing": "/posts/essays/flux/index.html",
+    "items": [
+      "/posts/essays/flux/flux-theory.html",
+      "/posts/essays/flux/flux.html"
+    ]
+  },
+  {
+    "listing": "/posts/essays/intelligence/index.html",
+    "items": [
+      "/posts/essays/intelligence/notes-on-intelligence.html"
+    ]
+  },
+  {
+    "listing": "/posts/essays/interfaces/index.html",
+    "items": [
+      "/posts/essays/interfaces/interfaces-as-formal-bounderies.html",
+      "/posts/essays/interfaces/notes-on-interfacing.html"
+    ]
+  },
+  {
+    "listing": "/posts/essays/tech/index.html",
+    "items": [
+      "/posts/essays/tech/sales-agent-system.html",
+      "/posts/essays/tech/image-generation.html"
     ]
   }
 ]

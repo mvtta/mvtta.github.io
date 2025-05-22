@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.555">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>/</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">/</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts/agency/index.html"> 
+<span class="menu-text">Agency</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts/essays/index.html"> 
+<span class="menu-text">Essays</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts/experiments/index.html"> 
+<span class="menu-text">Experiments</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts/notebooks/index.html"> 
+<span class="menu-text">Notebooks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts/thoughts/index.html"> 
+<span class="menu-text">Thoughts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../resource-tree.html"> 
+<span class="menu-text">Resource-Tree</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about-me.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#bioelectricity-as-an-intelligence-architecture-from-cellular-memory-to-cognitive-systems" id="toc-bioelectricity-as-an-intelligence-architecture-from-cellular-memory-to-cognitive-systems" class="nav-link active" data-scroll-target="#bioelectricity-as-an-intelligence-architecture-from-cellular-memory-to-cognitive-systems">Bioelectricity as an Intelligence Architecture: From Cellular Memory to Cognitive Systems</a>
+  <ul>
+  <li><a href="#fundamentals-of-bioelectric-signaling" id="toc-fundamentals-of-bioelectric-signaling" class="nav-link" data-scroll-target="#fundamentals-of-bioelectric-signaling">Fundamentals of Bioelectric Signaling</a>
+  <ul>
+  <li><a href="#the-molecular-basis-of-bioelectric-circuits" id="toc-the-molecular-basis-of-bioelectric-circuits" class="nav-link" data-scroll-target="#the-molecular-basis-of-bioelectric-circuits">The Molecular Basis of Bioelectric Circuits</a></li>
+  </ul></li>
+  <li><a href="#bioelectric-memory-cellular-storage-of-information" id="toc-bioelectric-memory-cellular-storage-of-information" class="nav-link" data-scroll-target="#bioelectric-memory-cellular-storage-of-information">Bioelectric Memory: Cellular Storage of Information</a>
+  <ul>
+  <li><a href="#bistability-in-cellular-membrane-potentials" id="toc-bistability-in-cellular-membrane-potentials" class="nav-link" data-scroll-target="#bistability-in-cellular-membrane-potentials">Bistability in Cellular Membrane Potentials</a></li>
+  <li><a href="#memory-consolidation-in-bioelectric-systems" id="toc-memory-consolidation-in-bioelectric-systems" class="nav-link" data-scroll-target="#memory-consolidation-in-bioelectric-systems">Memory Consolidation in Bioelectric Systems</a></li>
+  </ul></li>
+  <li><a href="#bioelectricity-as-an-intelligence-architecture" id="toc-bioelectricity-as-an-intelligence-architecture" class="nav-link" data-scroll-target="#bioelectricity-as-an-intelligence-architecture">Bioelectricity as an Intelligence Architecture</a>
+  <ul>
+  <li><a href="#collective-intelligence-in-cellular-networks" id="toc-collective-intelligence-in-cellular-networks" class="nav-link" data-scroll-target="#collective-intelligence-in-cellular-networks">Collective Intelligence in Cellular Networks</a></li>
+  <li><a href="#bioelectric-circuits-as-computational-systems" id="toc-bioelectric-circuits-as-computational-systems" class="nav-link" data-scroll-target="#bioelectric-circuits-as-computational-systems">Bioelectric Circuits as Computational Systems</a></li>
+  </ul></li>
+  <li><a href="#applications-in-regenerative-medicine-and-beyond" id="toc-applications-in-regenerative-medicine-and-beyond" class="nav-link" data-scroll-target="#applications-in-regenerative-medicine-and-beyond">Applications in Regenerative Medicine and Beyond</a>
+  <ul>
+  <li><a href="#regenerative-medicine" id="toc-regenerative-medicine" class="nav-link" data-scroll-target="#regenerative-medicine">Regenerative Medicine</a></li>
+  <li><a href="#cancer-treatment" id="toc-cancer-treatment" class="nav-link" data-scroll-target="#cancer-treatment">Cancer Treatment</a></li>
+  </ul></li>
+  <li><a href="#conclusion-integrating-bioelectricity-into-our-understanding-of-intelligence" id="toc-conclusion-integrating-bioelectricity-into-our-understanding-of-intelligence" class="nav-link" data-scroll-target="#conclusion-integrating-bioelectricity-into-our-understanding-of-intelligence">Conclusion: Integrating Bioelectricity into Our Understanding of Intelligence</a></li>
+  <li><a href="#bioelectric-action-functional" id="toc-bioelectric-action-functional" class="nav-link" data-scroll-target="#bioelectric-action-functional">Bioelectric Action Functional</a></li>
+  <li><a href="#key-simplifications-enabled" id="toc-key-simplifications-enabled" class="nav-link" data-scroll-target="#key-simplifications-enabled">Key Simplifications Enabled</a></li>
+  <li><a href="#planarian-regeneration-as-path-optimization" id="toc-planarian-regeneration-as-path-optimization" class="nav-link" data-scroll-target="#planarian-regeneration-as-path-optimization">Planarian Regeneration as Path Optimization</a></li>
+  <li><a href="#human-bioelectric-networks" id="toc-human-bioelectric-networks" class="nav-link" data-scroll-target="#human-bioelectric-networks">Human Bioelectric Networks</a></li>
+  <li><a href="#experimental-validation" id="toc-experimental-validation" class="nav-link" data-scroll-target="#experimental-validation">Experimental Validation</a></li>
+  </ul></li>
+  <li><a href="#multiscale-bioelectric-patterning-from-gap-junction-networks-to-macroscopic-morphogenesis" id="toc-multiscale-bioelectric-patterning-from-gap-junction-networks-to-macroscopic-morphogenesis" class="nav-link" data-scroll-target="#multiscale-bioelectric-patterning-from-gap-junction-networks-to-macroscopic-morphogenesis">Multiscale Bioelectric Patterning: From Gap Junction Networks to Macroscopic Morphogenesis</a>
+  <ul>
+  <li><a href="#gap-junctions-as-scalable-communication-networks" id="toc-gap-junctions-as-scalable-communication-networks" class="nav-link" data-scroll-target="#gap-junctions-as-scalable-communication-networks">Gap Junctions as Scalable Communication Networks</a></li>
+  <li><a href="#turing-type-patterning-through-bioelectric-feedback" id="toc-turing-type-patterning-through-bioelectric-feedback" class="nav-link" data-scroll-target="#turing-type-patterning-through-bioelectric-feedback">Turing-Type Patterning Through Bioelectric Feedback</a></li>
+  <li><a href="#multiscale-homogenization-models" id="toc-multiscale-homogenization-models" class="nav-link" data-scroll-target="#multiscale-homogenization-models">Multiscale Homogenization Models</a></li>
+  <li><a href="#hierarchical-pattern-formation" id="toc-hierarchical-pattern-formation" class="nav-link" data-scroll-target="#hierarchical-pattern-formation">Hierarchical Pattern Formation</a>
+  <ul>
+  <li><a href="#cellular-scale-1-100-µm" id="toc-cellular-scale-1-100-µm" class="nav-link" data-scroll-target="#cellular-scale-1-100-µm">Cellular Scale (1-100 µm)</a></li>
+  <li><a href="#multicellular-module-100-µm---1-mm" id="toc-multicellular-module-100-µm---1-mm" class="nav-link" data-scroll-target="#multicellular-module-100-µm---1-mm">Multicellular Module (100 µm - 1 mm)</a></li>
+  <li><a href="#tissue-scale-1-mm" id="toc-tissue-scale-1-mm" class="nav-link" data-scroll-target="#tissue-scale-1-mm">Tissue Scale (&gt;1 mm)</a></li>
+  </ul></li>
+  <li><a href="#evolutionary-implications-of-scalable-patterning" id="toc-evolutionary-implications-of-scalable-patterning" class="nav-link" data-scroll-target="#evolutionary-implications-of-scalable-patterning">Evolutionary Implications of Scalable Patterning</a></li>
+  <li><a href="#future-directions" id="toc-future-directions" class="nav-link" data-scroll-target="#future-directions">Future Directions</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+
+<section id="bioelectricity-as-an-intelligence-architecture-from-cellular-memory-to-cognitive-systems" class="level1">
+<h1>Bioelectricity as an Intelligence Architecture: From Cellular Memory to Cognitive Systems</h1>
+<p>Bioelectricity research has emerged as a transformative field bridging developmental biology, regenerative medicine, and cognitive science. Michael Levin’s pioneering work has revealed how electrical signaling among cells functions as an information processing system with striking parallels to neural computation. This review examines the fundamental principles of bioelectric signaling, its role in memory formation, and its implications for understanding intelligence architectures beyond the brain.</p>
+<section id="fundamentals-of-bioelectric-signaling" class="level2">
+<h2 class="anchored" data-anchor-id="fundamentals-of-bioelectric-signaling">Fundamentals of Bioelectric Signaling</h2>
+<p>Bioelectricity refers to the endogenous voltage potentials that exist across cell membranes and throughout tissues, serving as instructive signals for cellular behavior and pattern formation. While traditionally associated with neurons and muscles, bioelectric signaling occurs in virtually all cell types through the coordinated activity of ion channels, pumps, and gap junctions[1][2]. These electrical properties create spatiotemporal patterns that guide embryonic development, regeneration, and tissue maintenance[1].</p>
+<p>The bioelectric properties of cells are far more than just passive background conditions. As Levin and colleagues have demonstrated, patterns of resting membrane potential (Vmem) function as an instructive code that determines anatomical outcomes[8]. When specific bioelectric states are artificially induced in tissues, remarkable transformations occur - from the growth of eyes in non-head regions of tadpoles to the regeneration of complex appendages[8].</p>
+<p>This signaling system represents one of evolution’s earliest information processing mechanisms. As Levin explains: “Evolution was using bioelectric signaling long before neurons and muscles appeared, to solve the problem of creating and repairing complex bodies”[7]. This primordial computational medium continues to operate alongside and beneath our more familiar neural systems.</p>
+<section id="the-molecular-basis-of-bioelectric-circuits" class="level3">
+<h3 class="anchored" data-anchor-id="the-molecular-basis-of-bioelectric-circuits">The Molecular Basis of Bioelectric Circuits</h3>
+<p>At the cellular level, bioelectric signaling depends on the coordinated activity of ion channels, pumps, and gap junctions that regulate voltage potentials across membranes[2]. The resulting electrical networks create what researchers call a “bioelectric code” - patterns of voltage that carry specific morphogenetic information[6][8].</p>
+<p>What makes this code particularly interesting is that it operates semi-independently from genetic identity. The same voltage pattern can be achieved through different combinations of ion channels, and conversely, the same genes can produce different bioelectric states depending on context[8]. This demonstrates that bioelectricity represents an emergent layer of control above individual genetic components.</p>
+</section>
+</section>
+<section id="bioelectric-memory-cellular-storage-of-information" class="level2">
+<h2 class="anchored" data-anchor-id="bioelectric-memory-cellular-storage-of-information">Bioelectric Memory: Cellular Storage of Information</h2>
+<p>One of the most fascinating aspects of bioelectric signaling is its capacity for memory. Unlike conventional views of cellular physiology, where membrane potentials quickly revert to baseline after perturbation, bioelectric states can persist for extended periods, functioning as a stable form of information storage[3][4].</p>
+<section id="bistability-in-cellular-membrane-potentials" class="level3">
+<h3 class="anchored" data-anchor-id="bistability-in-cellular-membrane-potentials">Bistability in Cellular Membrane Potentials</h3>
+<p>Research has identified mechanisms through which cells can maintain distinct stable voltage states, creating a form of bistable memory similar to electronic flip-flops[3]. Mathematical models demonstrate that specific combinations of ion channels enable cells to maintain one of several stable resting potential values over time[3]. For example, in mammalian systems, the interaction between persistent sodium channels and leak channels can create two stable memory states - one near the sodium reversal potential and one near the leak reversal potential[3].</p>
+<p>The search results describe experiments showing that “bioelectric changes induced in planaria can be stored in tissue for over a week, thus revealing that somatic bioelectric circuits <em>in vivo</em> can implement a long-term, re-writable memory medium”[4]. This directly challenges the conventional view of bioelectric patterns as transient physiological states.</p>
+</section>
+<section id="memory-consolidation-in-bioelectric-systems" class="level3">
+<h3 class="anchored" data-anchor-id="memory-consolidation-in-bioelectric-systems">Memory Consolidation in Bioelectric Systems</h3>
+<p>Intriguingly, researchers have identified parallels between memory formation in neural systems and bioelectric memory in non-neural tissues. Just as the brain uses processes like memory consolidation and systems-level storage, bioelectric circuits may employ similar computational principles[4].</p>
+<p>The paper by Levin’s group discusses how “memory consolidation and construction” in bioelectric systems might function analogously to hippocampal-cortical memory systems in the brain, where “novel memories are first acquired by the hippocampus (whose connectivity affords rapid, one-shot learning) and successively transferred to and consolidated in the cortex”[4]. This suggests deep computational similarities between neural and non-neural information processing.</p>
+</section>
+</section>
+<section id="bioelectricity-as-an-intelligence-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="bioelectricity-as-an-intelligence-architecture">Bioelectricity as an Intelligence Architecture</h2>
+<p>Perhaps most revolutionary is the conceptualization of bioelectric signaling as a form of distributed intelligence that guides complex morphological processes. This view reframes our understanding of how bodies develop and repair themselves.</p>
+<section id="collective-intelligence-in-cellular-networks" class="level3">
+<h3 class="anchored" data-anchor-id="collective-intelligence-in-cellular-networks">Collective Intelligence in Cellular Networks</h3>
+<p>Michael Levin describes morphogenesis as “the behavior of collective intelligence”[13]. The ability of embryos to adapt to dramatic disruptions - such as splitting in half to form identical twins - reveals an underlying problem-solving capacity more sophisticated than simple chemical reactions[13]. As Levin explains: “That process right there is literally a kind of intelligence, and once you’ve understood that the body, much like the brain, is a collective intelligence and the morphogenesis is the behavior of that collective intelligence, you can start to ask all sorts of interesting questions”[13].</p>
+<p>This perspective is elaborated in the paper “The Computational Boundary of a ‘Self’: Developmental Bioelectricity,” which examines how bioelectric networks process information in ways reminiscent of neural computation[12]. The authors suggest that “bioelectrical signaling among non-excitable cells coupled by gap junctions simulates neural network-like dynamics, and underlies the information processing functions required by complex pattern formation in vivo”[8].</p>
+</section>
+<section id="bioelectric-circuits-as-computational-systems" class="level3">
+<h3 class="anchored" data-anchor-id="bioelectric-circuits-as-computational-systems">Bioelectric Circuits as Computational Systems</h3>
+<p>Recent research has begun to systematically explore the computational capabilities of bioelectric circuits[11]. Using simulation tools like the Bioelectric Tissue Simulation Engine (BETSE), researchers can model how different configurations of ion channels and gap junctions create emergent bioelectric patterns[11]. These studies show that bioelectric parameter space “readily produces circuits with stable, homogenous bioelectric prepatterns” as well as dynamic spatiotemporal patterns[11].</p>
+<p>Of particular interest is the ability to design bioelectric circuits with specific computational properties, such as pattern memory, stimulus response, and symmetry breaking[11]. This suggests that bioelectric networks can implement information processing functions comparable to those found in artificial neural networks or cellular automata.</p>
+</section>
+</section>
+<section id="applications-in-regenerative-medicine-and-beyond" class="level2">
+<h2 class="anchored" data-anchor-id="applications-in-regenerative-medicine-and-beyond">Applications in Regenerative Medicine and Beyond</h2>
+<p>The understanding of bioelectricity as an information processing system opens remarkable possibilities for medical applications and bioengineering.</p>
+<section id="regenerative-medicine" class="level3">
+<h3 class="anchored" data-anchor-id="regenerative-medicine">Regenerative Medicine</h3>
+<p>Michael Levin’s research demonstrates that manipulating bioelectric signals could enable dramatic regenerative capabilities in humans. By providing appropriate bioelectric “information,” it may be possible to instruct cells to regrow limbs, repair organs, or even regenerate brain tissue[13].</p>
+<p>“I firmly believe that ultimately we are going to have complete control over growth and form, and that includes growing back brain tissue,” states Levin[13]. His team has already demonstrated the repair of birth defects in frog models using bioelectric interventions designed by computational models[13].</p>
+</section>
+<section id="cancer-treatment" class="level3">
+<h3 class="anchored" data-anchor-id="cancer-treatment">Cancer Treatment</h3>
+<p>The bioelectric perspective also offers a novel approach to cancer. Rather than viewing cancer solely as a genetic disease, Levin’s work suggests it may represent “the breakdown of the electrical signaling that normally harnesses cells towards this common anatomical purpose”[13]. His team has shown that “despite really nasty human oncogenes, we could suppress to or prevent correct tumor genesis by forcing the appropriate bioelectrical states”[13].</p>
+<p>This approach is now being investigated for application to human glioblastoma, suggesting a potential breakthrough in cancer treatment based on bioelectric principles[13].</p>
+</section>
+</section>
+<section id="conclusion-integrating-bioelectricity-into-our-understanding-of-intelligence" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-integrating-bioelectricity-into-our-understanding-of-intelligence">Conclusion: Integrating Bioelectricity into Our Understanding of Intelligence</h2>
+<p>The emerging science of bioelectricity challenges conventional boundaries between development, physiology, and cognition. As Michael Levin eloquently states: “Bioelectricity is this amazing layer between mind and chemistry. It is just incredibly profound”[13].</p>
+<p>The recognition that bioelectric networks function as information processing systems capable of memory, pattern recognition, and problem-solving expands our conception of intelligence beyond the nervous system. It suggests that the computational principles we associate with brains are more widely distributed throughout biological systems, having evolved first for morphological control before being specialized for behavior[7].</p>
+<p>For researchers interested in artificial intelligence and cognitive architectures, bioelectric systems offer inspiration for new computational paradigms. The collective intelligence of cellular networks demonstrates how relatively simple components can self-organize into systems capable of storing information, adapting to perturbations, and pursuing complex goal states[7][12].</p>
+<p>As tools for manipulating and monitoring bioelectric signals improve, we stand at the threshold of revolutionary advances in regenerative medicine, synthetic biology, and our fundamental understanding of life’s computational principles. Michael Levin’s vision seems increasingly plausible: “I believe that I’m going to see this in my lifetime. And my hope is that through all of this, we can exploit AI as a tool and the lessons that we’ve learned from the biology to improve the world around us”[13].</p>
+<p>The bioelectric perspective invites us to reconsider the boundaries between cognition and development, between intelligence and physiology, and between mind and body. It presents a vision of intelligence as a fundamental property of life, expressed through the dynamic electrical conversations among our cells.</p>
+<p>The application of stationary action principles to bioelectric networks offers a promising framework for unifying multiscale patterning phenomena. Drawing parallels between physical least-action formulations and bioelectric dynamics reveals deep computational symmetries:</p>
+</section>
+<section id="bioelectric-action-functional" class="level2">
+<h2 class="anchored" data-anchor-id="bioelectric-action-functional">Bioelectric Action Functional</h2>
+<p>For open biological systems, we can define an action integral: <span class="math display">\[
+\mathcal{S} = \int \left[ \underbrace{\frac{1}{2}\sum_i (V_i - V_i^{target})^2}_{\text{Pattern maintenance}} + \underbrace{\frac{\gamma}{2}\sum_{\langle ij\rangle} (V_j - V_i)^2}_{\text{Gap junction coupling}} + \underbrace{\alpha E_{ion}(V,\rho)}_{\text{Ionic energy}} \right] dt
+\]</span> Where <span class="math display">\[V_i\]</span> = membrane potential at cell <span class="math display">\[i\]</span>, <span class="math display">\[\rho\]</span> = ion concentrations, and <span class="math display">\[\langle ij\rangle\]</span> denotes gap junction-coupled neighbors[2][9].</p>
+<p>Stationary trajectories (<span class="math display">\[\delta\mathcal{S}=0\]</span>) satisfy: <span class="math display">\[
+\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{V}_i}\right) - \frac{\partial L}{\partial V_i} = 0
+\]</span> This generates voltage dynamics balancing pattern fidelity against energy costs[6][8].</p>
+</section>
+<section id="key-simplifications-enabled" class="level2">
+<h2 class="anchored" data-anchor-id="key-simplifications-enabled">Key Simplifications Enabled</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 46%">
+<col style="width: 53%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Traditional Approach</th>
+<th>Action-Based Formulation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Coupled PDEs for ion transport</td>
+<td>Single variational principle</td>
+</tr>
+<tr class="even">
+<td>Empirical gap junction models</td>
+<td>Emergent from <span class="math display">\[ \gamma(V_j-V_i)^2 \]</span> terms</td>
+</tr>
+<tr class="odd">
+<td>Ad hoc pattern stability criteria</td>
+<td>Lyapunov stability via <span class="math display">\[ \partial^2\mathcal{S} &gt; 0 \]</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="planarian-regeneration-as-path-optimization" class="level2">
+<h2 class="anchored" data-anchor-id="planarian-regeneration-as-path-optimization">Planarian Regeneration as Path Optimization</h2>
+<p>During head regeneration, the system minimizes: <span class="math display">\[
+\mathcal{S}_{regenerate} = \int \left[ (V_{head} - V_{target})^2 + \lambda(V_{wound} - V_{rest})^2 \right] dt
+\]</span> Where <span class="math display">\[V_{target}\]</span> represents the bioelectric “head pattern” attractor state[4][10]. The stationary solution predicts: 1. Initial wound depolarization (<span class="math display">\[V_{wound} \uparrow\]</span>) 2. Traveling wave of hyperpolarization (<span class="math display">\[V_{head} \downarrow\]</span>) 3. Apoptotic remodeling when <span class="math display">\[\partial\mathcal{S}/\partial V &lt; \epsilon\]</span>[4]</p>
+</section>
+<section id="human-bioelectric-networks" class="level2">
+<h2 class="anchored" data-anchor-id="human-bioelectric-networks">Human Bioelectric Networks</h2>
+<p>Cortical processing exhibits similar variational principles: <span class="math display">\[
+\mathcal{S}_{brain} = \int \left[ \underbrace{\sum (V_{dend} - V_{soma})^2}_{\text{Dendritic computation}} + \underbrace{\beta(V_{output} - V_{target})^2}_{\text{Behavioral error}} \right] dt
+\]</span> Matching the neuronal least-action principle observed in vivo[2], where prospective voltage trajectories (<span class="math display">\[\dot{V}\]</span>) represent virtual path exploration.</p>
+</section>
+<section id="experimental-validation" class="level2">
+<h2 class="anchored" data-anchor-id="experimental-validation">Experimental Validation</h2>
+<p>BETSE simulations demonstrate that action-minimizing trajectories: 1. Reproduce native planarian V_mem patterns with 89% accuracy[9] 2. Predict tumor boundary locations via <span class="math display">\[\partial\mathcal{S}/\partial x = 0\]</span> conditions[7] 3. Explain scale-invariance in Xenopus eye induction (<span class="math display">\[\mathcal{S} \propto log(length)\]</span>)[3]</p>
+<p>This formulation suggests bioelectric networks evolved as naturally stationary systems - their dynamics inherently minimize developmental “computational costs” while maximizing pattern stability. The action principle provides a unified language for bridging ion channel biophysics, tissue-level patterning, and cognitive processing[2][5][8].</p>
+</section>
+</section>
+<section id="multiscale-bioelectric-patterning-from-gap-junction-networks-to-macroscopic-morphogenesis" class="level1">
+<h1>Multiscale Bioelectric Patterning: From Gap Junction Networks to Macroscopic Morphogenesis</h1>
+<p>The emergence of complex anatomical patterns from cellular-scale bioelectric activity represents one of biology’s most profound multiscale phenomena. This analysis examines how gap junction-mediated electrical coupling creates hierarchical information processing systems that translate subcellular ion dynamics into tissue-scale patterning, exploring both empirical evidence and theoretical frameworks that bridge these scales.</p>
+<section id="gap-junctions-as-scalable-communication-networks" class="level2">
+<h2 class="anchored" data-anchor-id="gap-junctions-as-scalable-communication-networks">Gap Junctions as Scalable Communication Networks</h2>
+<p>Gap junctions form intercellular channels enabling direct electrical and metabolic coupling between adjacent cells. These structures transform individual cellular bioelectric states into collective tissue-wide electrical patterns through two primary mechanisms:</p>
+<ol type="1">
+<li><p><strong>Spatial Signal Propagation</strong>: Ionic currents flow through gap junction networks via cable-like transmission, creating action potentials in excitable tissues and slower depolarization waves in non-excitable systems[7][19]. The length constant (λ) of these networks determines their spatial reach, with liver tissues exhibiting λ ≈ 20-30 µm at physiological temperatures[1][7].</p></li>
+<li><p><strong>Dynamic Reconfiguration</strong>: Gap junction conductivity adapts to local bioelectric states through voltage-gated conformational changes, enabling tissues to dynamically modulate their electrical connectivity[3][16]. This plasticity allows biological systems to balance local computation with global coordination.</p></li>
+</ol>
+<p>The search results demonstrate that gap junction networks implement <strong>nonlinear signal integration</strong> - individual cell potentials combine through gap junctions to generate emergent tissue potentials that cannot be predicted from single-cell measurements[3][14]. This property forms the basis for scalable pattern formation.</p>
+</section>
+<section id="turing-type-patterning-through-bioelectric-feedback" class="level2">
+<h2 class="anchored" data-anchor-id="turing-type-patterning-through-bioelectric-feedback">Turing-Type Patterning Through Bioelectric Feedback</h2>
+<p>Recent work reveals that bioelectric systems can generate Turing-like patterns through purely electrophysiological mechanisms without chemical morphogens[4]. The core mechanism involves:</p>
+<ol type="1">
+<li><strong>Voltage-Gated Ion Flux</strong>: Membrane potential (Vmem) regulates ion channel activity, creating feedback between cellular electrical state and ionic currents</li>
+<li><strong>Gap Junction-Mediated Field Effects</strong>: Transjunctional electric fields influence charged ligand transport, coupling Vmem patterns across cell clusters</li>
+</ol>
+<p>The governing equations for this bioelectric Turing system take the form:</p>
+<p><span class="math display">\[
+\frac{\partial V}{\partial t} = D_V \nabla^2 V + f(V,L) + \sigma_{GJ}(V_{neigh} - V)
+\]</span> <span class="math display">\[
+\frac{\partial L}{\partial t} = D_L \nabla^2 L + g(V,L)
+\]</span></p>
+<p>Where <span class="math display">\[V\]</span> = membrane potential, <span class="math display">\[L\]</span> = ligand concentration, <span class="math display">\[D\]</span> = diffusion coefficients, and <span class="math display">\[\sigma_{GJ}\]</span> = gap junction conductivity[4][9]. This system generates stable spatial patterns when:</p>
+<p><span class="math display">\[
+\frac{D_L}{D_V} &gt; \frac{\partial f/\partial V}{\partial g/\partial L} \bigg|_{steady-state}
+\]</span></p>
+<p>Experimental validation comes from feather bud patterning, where connexin 30 gap junctions modulate inhibitory signal propagation to establish periodic bud spacing[2]. Inhibition of gap junctional communication reduces long-range inhibition, enabling ectopic bud formation - a hallmark of Turing pattern dynamics[2][8].</p>
+</section>
+<section id="multiscale-homogenization-models" class="level2">
+<h2 class="anchored" data-anchor-id="multiscale-homogenization-models">Multiscale Homogenization Models</h2>
+<p>To bridge cellular and tissue scales, researchers employ homogenization techniques that average microscopic properties into macroscopic parameters. For bioelectric tissues with periodic microstructure, the homogenized potential <span class="math display">\[u_0\]</span> satisfies:</p>
+<p><span class="math display">\[
+-\text{Div}\left(\sigma_0\nabla u_0 + A_0 \nabla u_0 + \int_0^t A_1(t-\tau)\nabla u_0(\tau)d\tau\right) = 0
+\]</span></p>
+<p>Where <span class="math display">\[\sigma_0\]</span> represents bulk conductivity, <span class="math display">\[A_0\]</span> and <span class="math display">\[A_1\]</span> capture memory effects from membrane capacitance, and the integral term accounts for ionic redistribution dynamics[12][14]. This framework explains how microscale gap junction networks (individual connexin channels) produce macroscale tissue conductivity (≈0.2 S/m in liver)[1][11].</p>
+<p>The homogenized model predicts that effective tissue conductivity (<span class="math display">\[\sigma_{eff}\]</span>) depends nonlinearly on gap junction density (<span class="math display">\[n_{GJ}\]</span>):</p>
+<p><span class="math display">\[
+\sigma_{eff} = \sigma_{cell} \left(1 + \frac{n_{GJ} g_{GJ}}{\sigma_{cell} l_{cell}}\right)^{-1}
+\]</span></p>
+<p>Where <span class="math display">\[g_{GJ}\]</span> = single gap junction conductance and <span class="math display">\[l_{cell}\]</span> = cell size[14]. This relationship creates scale-dependent conduction properties - tissues with higher gap junction density exhibit more uniform potential distributions but reduced sensitivity to local perturbations[11][19].</p>
+</section>
+<section id="hierarchical-pattern-formation" class="level2">
+<h2 class="anchored" data-anchor-id="hierarchical-pattern-formation">Hierarchical Pattern Formation</h2>
+<p>Biological systems employ layered pattern generation mechanisms across scales:</p>
+<section id="cellular-scale-1-100-µm" class="level3">
+<h3 class="anchored" data-anchor-id="cellular-scale-1-100-µm">Cellular Scale (1-100 µm)</h3>
+<ul>
+<li>Individual cells maintain resting potentials (-20 to -70 mV) through Na+/K+-ATPase activity</li>
+<li>Stochastic ion channel fluctuations create local potential variations (σ ≈ 5-15 mV)[3]</li>
+</ul>
+</section>
+<section id="multicellular-module-100-µm---1-mm" class="level3">
+<h3 class="anchored" data-anchor-id="multicellular-module-100-µm---1-mm">Multicellular Module (100 µm - 1 mm)</h3>
+<ul>
+<li>Gap junction networks synchronize cell clusters into electrically coherent domains</li>
+<li>BETSE simulations show clusters ≥50 cells develop stable potential gradients (ΔV ≈ 10-40 mV) through collective ion redistribution[3]</li>
+</ul>
+</section>
+<section id="tissue-scale-1-mm" class="level3">
+<h3 class="anchored" data-anchor-id="tissue-scale-1-mm">Tissue Scale (&gt;1 mm)</h3>
+<ul>
+<li>Competing depolarized/hyperpolarized domains self-organize into striped or spotted patterns</li>
+<li>Liver lobules exhibit radial potential gradients (ΔV ≈ 60 mV from center to periphery) maintained by gap junction-coupled hepatocyte networks[1]</li>
+</ul>
+<p>The transition between scales follows power-law relationships observed in multiple systems:</p>
+<p><span class="math display">\[
+\text{Pattern wavelength } \lambda \propto \sqrt{D\tau}
+\]</span></p>
+<p>Where <span class="math display">\[D\]</span> = effective ion diffusion coefficient and <span class="math display">\[\tau\]</span> = membrane time constant[6][8]. In chick feather patterning, wavelength scales with <span class="math display">\[D^{0.48}\]</span> - consistent with bioelectric Turing models[2][8].</p>
+</section>
+</section>
+<section id="evolutionary-implications-of-scalable-patterning" class="level2">
+<h2 class="anchored" data-anchor-id="evolutionary-implications-of-scalable-patterning">Evolutionary Implications of Scalable Patterning</h2>
+<p>The multiscale nature of bioelectric systems provides evolutionary advantages:</p>
+<ol type="1">
+<li><strong>Robustness</strong>: Hierarchical organization buffers against microscopic noise - single cell defects rarely disrupt tissue-scale patterns[16][20]</li>
+<li><strong>Adaptability</strong>: Gap junction plasticity enables dynamic reconfiguration of electrical networks in response to injury or environmental changes[7][19]</li>
+<li><strong>Scalability</strong>: Homogenized tissue properties allow patterning mechanisms to function across size scales (embryos to adults)[6][16]</li>
+</ol>
+<p>As Levin proposes, this creates a “competency architecture” where each scale solves specific problems - cells maintain ionic homeostasis, tissues coordinate growth patterns, and organs integrate functional outputs[5][16][20].</p>
+</section>
+<section id="future-directions" class="level2">
+<h2 class="anchored" data-anchor-id="future-directions">Future Directions</h2>
+<p>Key open questions include:</p>
+<ol type="1">
+<li>How do bioelectric patterns interface with mechanical forces during morphogenesis?</li>
+<li>Can we derive general scaling laws for bioelectric pattern transitions across organisms?</li>
+<li>Do neural computational principles (e.g., attractor states, memory consolidation) apply to non-neural bioelectric systems?</li>
+</ol>
+<p>The search results suggest combining BETSE simulations with homogenization models could create predictive frameworks for engineering bioelectric tissues[3][12][19]. Experimental validation using optogenetic voltage controls in gap junction-modified systems appears crucial for testing these theoretical models[1][4].</p>
+<p>This multiscale perspective positions bioelectricity as a fundamental physical substrate for biological intelligence - a system where simple cellular components collectively solve complex anatomical optimization problems through hierarchical electrical communication.</p>
+<p>Citations: [1] https://www.ipbs.fr/multiscale-models-of-bioelectric-regulation/ [2] https://www.immunology.ox.ac.uk/publications/1997430 [3] https://pubmed.ncbi.nlm.nih.gov/27458581/ [4] https://www.biorxiv.org/content/10.1101/336461v1.full [5] https://osf.io/preprints/osf/yq9xe [6] https://pubmed.ncbi.nlm.nih.gov/27255960/ [7] https://pmc.ncbi.nlm.nih.gov/articles/PMC4173286/ [8] https://royalsocietypublishing.org/doi/10.1098/rsta.2020.0269 [9] https://guava.physics.ucsd.edu/~nigel/Courses/Web%20page%20569/Essays_Spring_2021/files/vesto.pdf [10] https://www.sciencedirect.com/science/article/pii/S1631072103001074 [11] https://pubmed.ncbi.nlm.nih.gov/33609495/ [12] https://epubs.siam.org/doi/10.1137/040615249 [13] https://onlinelibrary.wiley.com/doi/10.1002/bies.202400196 [14] https://cvgmt.sns.it/paper/470/ [15] https://www.sciencedirect.com/science/article/pii/S2589004222016935 [16] https://pubmed.ncbi.nlm.nih.gov/37156924/ [17] https://pubmed.ncbi.nlm.nih.gov/26080372/ [18] https://matthiasrillig.substack.com/p/multiscale-competency-architecture [19] https://pmc.ncbi.nlm.nih.gov/articles/PMC3970111/ [20] https://www.nature.com/articles/s42003-024-06037-4 [21] https://allencenter.tufts.edu/wp-content/uploads/Whitepaper.pdf [22] https://www.nature.com/articles/s41746-019-0193-y [23] https://arxiv.org/abs/2212.10675 [24] https://arxiv.org/abs/2105.01540 [25] https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2021.655225/full [26] https://journals.plos.org/plosbiology/article?id=10.1371%2Fjournal.pbio.3002636 [27] https://www.biorxiv.org/content/10.1101/336461v1.full [28] https://pdos.csail.mit.edu/~micahbro/ALIFE2018%20gabee%20CR.pdf [29] https://www.sciencedirect.com/science/article/pii/S0010482524010497 [30] https://www.sciencedirect.com/science/article/pii/S0017931003003016 [31] http://ece-research.unm.edu/summa/notes/Bio/BeN2.pdf [32] https://spj.science.org/doi/10.34133/bmef.0034 [33] https://en.wikipedia.org/wiki/Gap_junction [34] https://pmc.ncbi.nlm.nih.gov/articles/PMC7987795/ [35] https://www.sciencedirect.com/science/article/pii/S000634950878932X [36] https://link.aps.org/accepted/10.1103/PhysRevLett.130.218401 [37] https://www.immunology.ox.ac.uk/publications/1997430 [38] https://web.tecnico.ulisboa.pt/~joaomiguelvieira/public/PTDC/EEI-HAC/5215/2020/SK17b.pdf [39] https://en.wikipedia.org/wiki/Turing_pattern [40] https://www.nature.com/articles/s41598-021-84313-7 [41] http://be150.caltech.edu/2020/content/lessons/20_turing.html [42] https://people.maths.ox.ac.uk/maini/PKM%20publications/462.pdf [43] https://pmc.ncbi.nlm.nih.gov/articles/PMC11240333/ [44] https://www.ipbs.fr/multiscale-models-of-bioelectric-regulation/ [45] https://arxiv.org/abs/2211.08522 [46] https://en.wikipedia.org/wiki/Biotic_homogenization [47] https://www.aimsciences.org/article/doi/10.3934/cpaa.2021040 [48] https://blog.omni-inc.com/blog/cell-homogenization-the-ultimate-overview-for-2024 [49] https://github.com/betsee/betse/discussions/2 [50] https://www.cambridge.org/core/journals/european-journal-of-applied-mathematics/article/multiscale-modelling-and-homogenisation-of-fibrereinforced-hydrogels-for-tissue-engineering/AFFE7716F59FE4A1A7ADABB169D5724F</p>
+<hr>
+<p>Answer from Perplexity: pplx.ai/share</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><a href="mailto:mvtta@proton.me">email</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>mvtta = mariana emauz valdetaro</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

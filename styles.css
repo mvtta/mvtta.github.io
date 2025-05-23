@@ -1,6 +1,6 @@
 /* css styles */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500&display=swap');
 
 /* unvisited link */
 a:link {
@@ -65,7 +65,7 @@ a:hover {
 }
 
 .dropdown-menu {
-    background-color: #5c5c5c00 !important; 
+    background-color: #000000 !important; 
     color: rgb(255, 255, 255);
     font-family: Inter, sans-serif;
     font-weight: 400;
@@ -137,22 +137,41 @@ body {
   min-height: 100vh;
 }
 
-.page-layout-article main {
-  flex: 1 0 auto;
-  display: flex;
-  flex-direction: column;
+#quarto-content {
+  flex: 1 0 auto; /* This makes the content area take up all available space */
 }
 
-.quarto-title-block {
-  margin-bottom: auto;
+main {
+  padding-bottom: 60px; /* Add padding to prevent content from touching footer */
 }
 
-.content {
-  margin-bottom: auto;
+footer.footer {
+  flex-shrink: 0; /* Prevent footer from shrinking */
+  margin-top: auto; /* Push footer to the bottom */
+  position: relative !important; /* Don't use fixed positioning */
+  width: 100%;
+  padding: 20px 0;
+  z-index: 1000; /* Ensure footer stays above content */
+  border-top: 1px solid rgba(200, 200, 200, 0.1); /* Subtle separator */
 }
 
-/* Ensure page content doesn't push footer below viewport */
-.container {
-  max-height: calc(100vh - 120px); /* Adjust the value based on your navbar and footer height */
-  overflow-y: auto;
+/* Mobile-specific styles for better readability */
+@media (max-width: 768px) {
+  * {
+    font-weight: 500;
+    font-size: medium;
+  }
+  
+  p, .p {
+    font-weight: 500;
+    font-size: medium;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+  }
+  
+  .sidebar .nav-link {
+    font-weight: 500;
+  }
 }

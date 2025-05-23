@@ -8,16 +8,6 @@
   {
     "listing": "/posts/essays/index.html",
     "items": [
-      "/posts/essays/agency/index.html",
-      "/posts/essays/bounderies/index.html",
-      "/posts/essays/embodiment/index.html",
-      "/posts/essays/flux/index.html",
-      "/posts/essays/intelligence/index.html",
-      "/posts/essays/interfaces/index.html",
-      "/posts/essays/relations/index.html",
-      "/posts/essays/selves/index.html",
-      "/posts/essays/tech/index.html",
-      "/posts/essays/tech/sales-agent-system.html",
       "/posts/essays/bounderies/philosofical-bounderies.html",
       "/posts/essays/relations/relational-formalised.html",
       "/posts/essays/relations/relational-view.html",
@@ -80,7 +70,6 @@
   {
     "listing": "/posts/essays/tech/index.html",
     "items": [
-      "/posts/essays/tech/sales-agent-system.html",
       "/posts/essays/tech/image-generation.html"
     ]
   }

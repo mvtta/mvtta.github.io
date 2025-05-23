@@ -111,6 +111,73 @@ div.csl-right-inline {
     clear: both;
 }
 
+/* Custom styles for the essays listing table */
+.quarto-listing-table {
+    border-collapse: separate;
+    border-spacing: 0 12px;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #333 !important;
+}
+
+.quarto-listing-table td {
+    border: none;
+    padding: 8px 16px;
+    vertical-align: top;
+}
+
+.quarto-listing-table tr {
+    background: transparent !important;
+    transition: all 0.3s ease;
+}
+
+.quarto-listing-table tr:hover {
+    background-color: rgba(200, 200, 200, 0.1) !important;
+}
+
+/* Style for the date column */
+.quarto-listing-table td:first-child {
+    width: 80px;
+    color: #888;
+    font-size: small;
+    font-weight: 300;
+    padding-left: 0;
+}
+
+/* Style for title column */
+.quarto-listing-table td:nth-child(2) a {
+    font-size: medium;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* Style for description column - truncate to single line with ellipsis */
+.quarto-listing-table td:nth-child(3) {
+    font-size: small;
+    color: #aaa;
+    font-weight: 300;
+    max-width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Hide table headers */
+.quarto-listing-table thead {
+    display: none;
+}
+
+/* Categories styling */
+.listing-category {
+    font-size: x-small;
+    padding: 3px 8px;
+    margin-right: 6px;
+    border-radius: 3px;
+    background-color: rgba(150, 150, 150, 0.1);
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
 /* Table of Contents styling */
 nav[role=doc-toc] {
     padding: 20px;

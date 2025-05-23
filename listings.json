@@ -9,12 +9,11 @@
     "listing": "/posts/essays/index.html",
     "items": [
       "/posts/essays/bounderies/philosofical-bounderies.html",
+      "/posts/essays/bounderies/philosophical-boundaries-2.html",
       "/posts/essays/relations/relational-formalised.html",
       "/posts/essays/relations/relational-view.html",
-      "/posts/essays/bounderies/interfaces-as-formal-bounderies.html",
       "/posts/essays/flux/flux-theory.html",
       "/posts/essays/flux/flux.html",
-      "/posts/essays/interfaces/notes-on-interfacing.html",
       "/posts/essays/selves/self-referencing-as-structured-redundancies.html",
       "/posts/essays/agency/preface.html",
       "/posts/essays/intelligence/notes-on-intelligence.html",
@@ -26,7 +25,7 @@
     "listing": "/posts/essays/bounderies/index.html",
     "items": [
       "/posts/essays/bounderies/philosofical-bounderies.html",
-      "/posts/essays/bounderies/interfaces-as-formal-bounderies.html"
+      "/posts/essays/bounderies/philosophical-boundaries-2.html"
     ]
   },
   {
@@ -55,12 +54,6 @@
     ]
   },
   {
-    "listing": "/posts/essays/interfaces/index.html",
-    "items": [
-      "/posts/essays/interfaces/notes-on-interfacing.html"
-    ]
-  },
-  {
     "listing": "/posts/essays/relations/index.html",
     "items": [
       "/posts/essays/relations/relational-formalised.html",
@@ -71,6 +64,12 @@
     "listing": "/posts/essays/tech/index.html",
     "items": [
       "/posts/essays/tech/image-generation.html"
+    ]
+  },
+  {
+    "listing": "/posts/wip/interfaces/index.html",
+    "items": [
+      "/posts/wip/interfaces/notes-on-interfacing.html"
     ]
   }
 ]

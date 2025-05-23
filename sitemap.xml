@@ -5,6 +5,10 @@
     <lastmod>2025-05-22T10:39:16.406Z</lastmod>
   </url>
   <url>
+    <loc>https://mvtta.github.io/posts/wip/interfaces/notes-on-interfacing.html</loc>
+    <lastmod>2025-05-23T18:20:13.707Z</lastmod>
+  </url>
+  <url>
     <loc>https://mvtta.github.io/posts/thoughts/index.html</loc>
     <lastmod>2025-05-23T14:40:32.041Z</lastmod>
   </url>
@@ -18,11 +22,7 @@
   </url>
   <url>
     <loc>https://mvtta.github.io/posts/essays/relations/relational-formalised.html</loc>
-    <lastmod>2025-05-22T13:07:29.268Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mvtta.github.io/posts/essays/interfaces/notes-on-interfacing.html</loc>
-    <lastmod>2025-05-22T08:38:47.668Z</lastmod>
+    <lastmod>2025-05-23T18:48:46.550Z</lastmod>
   </url>
   <url>
     <loc>https://mvtta.github.io/posts/essays/intelligence/notes-on-intelligence.html</loc>
@@ -41,8 +41,8 @@
     <lastmod>2025-05-22T11:30:15.228Z</lastmod>
   </url>
   <url>
-    <loc>https://mvtta.github.io/posts/essays/bounderies/philosofical-bounderies.html</loc>
-    <lastmod>2025-05-23T13:35:18.814Z</lastmod>
+    <loc>https://mvtta.github.io/posts/essays/bounderies/philosophical-boundaries-2.html</loc>
+    <lastmod>2025-05-23T18:34:00.835Z</lastmod>
   </url>
   <url>
     <loc>https://mvtta.github.io/posts/essays/bounderies/index.html</loc>
@@ -65,8 +65,8 @@
     <lastmod>2025-05-22T11:08:29.240Z</lastmod>
   </url>
   <url>
-    <loc>https://mvtta.github.io/posts/essays/bounderies/interfaces-as-formal-bounderies.html</loc>
-    <lastmod>2025-05-22T08:50:46.438Z</lastmod>
+    <loc>https://mvtta.github.io/posts/essays/bounderies/philosofical-bounderies.html</loc>
+    <lastmod>2025-05-23T15:43:23.267Z</lastmod>
   </url>
   <url>
     <loc>https://mvtta.github.io/posts/essays/embodiment/index.html</loc>
@@ -85,20 +85,16 @@
     <lastmod>2025-05-22T08:28:44.406Z</lastmod>
   </url>
   <url>
-    <loc>https://mvtta.github.io/posts/essays/interfaces/index.html</loc>
-    <lastmod>2025-05-22T08:29:00.371Z</lastmod>
-  </url>
-  <url>
     <loc>https://mvtta.github.io/posts/essays/relations/index.html</loc>
     <lastmod>2025-05-22T11:03:29.218Z</lastmod>
   </url>
   <url>
     <loc>https://mvtta.github.io/posts/essays/relations/relational-view.html</loc>
-    <lastmod>2025-05-22T12:58:38.526Z</lastmod>
+    <lastmod>2025-05-23T15:54:22.684Z</lastmod>
   </url>
   <url>
     <loc>https://mvtta.github.io/posts/essays/selves/self-referencing-as-structured-redundancies.html</loc>
-    <lastmod>2025-05-22T17:03:48.843Z</lastmod>
+    <lastmod>2025-05-23T17:03:41.681Z</lastmod>
   </url>
   <url>
     <loc>https://mvtta.github.io/posts/essays/tech/index.html</loc>
@@ -107,6 +103,10 @@
   <url>
     <loc>https://mvtta.github.io/posts/resume/resume.html</loc>
     <lastmod>2025-05-22T09:38:30.857Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/posts/wip/interfaces/index.html</loc>
+    <lastmod>2025-05-22T08:29:00.371Z</lastmod>
   </url>
   <url>
     <loc>https://mvtta.github.io/posts/wip/sales-agent-system.html</loc>

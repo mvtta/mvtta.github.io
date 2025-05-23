@@ -175,3 +175,35 @@ footer.footer {
     font-weight: 500;
   }
 }
+
+/* Fix for math fractions rendering */
+.mjx-math {
+  color: inherit !important;
+  background: transparent !important;
+}
+
+.mjx-chtml .mjx-frac {
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+}
+
+.mjx-numerator, .mjx-denominator {
+  display: block !important;
+  text-align: center !important;
+  background: transparent !important;
+}
+
+.mjx-line {
+  display: block !important;
+  height: 1px !important;
+  background-color: currentColor !important;
+  border: none !important;
+  margin: 2px 0 !important;
+}
+
+/* Make math font match the rest of the document */
+.mjx-char {
+  font-weight: 400 !important;
+  color: #aaa5a5 !important;
+}

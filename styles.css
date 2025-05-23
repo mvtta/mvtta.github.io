@@ -46,8 +46,9 @@ a:hover {
 
 * {
     font-family: Inter, sans-serif;
-    font-weight: 500;
-    font-size: small;
+    font-weight: 300;
+    font-size: medium;
+    color:#aaa5a5;
     background-color: rgba(0, 0, 0, 0);   
 }
 .nav-item {
@@ -122,4 +123,36 @@ nav[role=doc-toc] li {
 nav[role=doc-toc] a {
     text-decoration: none;
     color: #5c5c5c !important;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-layout-article main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.quarto-title-block {
+  margin-bottom: auto;
+}
+
+.content {
+  margin-bottom: auto;
+}
+
+/* Ensure page content doesn't push footer below viewport */
+.container {
+  max-height: calc(100vh - 120px); /* Adjust the value based on your navbar and footer height */
+  overflow-y: auto;
 }

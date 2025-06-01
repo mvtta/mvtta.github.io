@@ -2,7 +2,7 @@
 .article {
     font-family: "Inter", sans-serif;
     line-height: 1.6;
-    max-width: 900px;
+    max-width: 950px !important;
     margin: 0 auto;
 }
 
@@ -19,10 +19,38 @@ body {
     min-height: 100vh;
 }
 
+.page-columns.page-full blockquote,
+.page-columns .blockquote,
+.blockquote,
+blockquote {
+  width: 100% !important;
+  max-width: 900px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  box-sizing: border-box !important;
+}
+
 .page-layout-article main {
     flex: 1 0 auto;
     display: flex;
     flex-direction: column;
+}
+.quarto-title-block,
+.quarto-title,
+.article,
+.main-content,
+.content,
+body > main,
+.abstract,
+blockquote {
+  max-width: 1500px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  box-sizing: border-box;
 }
 
 .content {

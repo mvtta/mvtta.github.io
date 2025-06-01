@@ -1,56 +1,14 @@
 [
   {
+    "listing": "/posts/essays/tech/index.html",
+    "items": [
+      "/posts/essays/tech/image-generation.html"
+    ]
+  },
+  {
     "listing": "/posts/essays/selves/index.html",
     "items": [
-      "/posts/essays/selves/self-referencing-as-structured-redundancies.html"
-    ]
-  },
-  {
-    "listing": "/posts/essays/index.html",
-    "items": [
-      "/posts/essays/bounderies/philosofical-bounderies.html",
-      "/posts/essays/bounderies/philosophical-boundaries-2.html",
-      "/posts/essays/relations/relational-formalised.html",
-      "/posts/essays/relations/relational-view.html",
-      "/posts/essays/flux/flux-theory.html",
-      "/posts/essays/flux/flux.html",
-      "/posts/essays/selves/self-referencing-as-structured-redundancies.html",
-      "/posts/essays/agency/preface.html",
-      "/posts/essays/intelligence/notes-on-intelligence.html",
-      "/posts/essays/tech/image-generation.html",
-      "/posts/essays/embodiment/moving-bodies.html"
-    ]
-  },
-  {
-    "listing": "/posts/essays/bounderies/index.html",
-    "items": [
-      "/posts/essays/bounderies/philosofical-bounderies.html",
-      "/posts/essays/bounderies/philosophical-boundaries-2.html"
-    ]
-  },
-  {
-    "listing": "/posts/essays/agency/index.html",
-    "items": [
-      "/posts/essays/agency/preface.html"
-    ]
-  },
-  {
-    "listing": "/posts/essays/embodiment/index.html",
-    "items": [
-      "/posts/essays/embodiment/moving-bodies.html"
-    ]
-  },
-  {
-    "listing": "/posts/essays/flux/index.html",
-    "items": [
-      "/posts/essays/flux/flux-theory.html",
-      "/posts/essays/flux/flux.html"
-    ]
-  },
-  {
-    "listing": "/posts/essays/intelligence/index.html",
-    "items": [
-      "/posts/essays/intelligence/notes-on-intelligence.html"
+      "/posts/essays/selves/identity-1.html"
     ]
   },
   {
@@ -61,9 +19,53 @@
     ]
   },
   {
-    "listing": "/posts/essays/tech/index.html",
+    "listing": "/posts/essays/intelligence/index.html",
     "items": [
-      "/posts/essays/tech/image-generation.html"
+      "/posts/essays/intelligence/notes-on-intelligence.html"
+    ]
+  },
+  {
+    "listing": "/posts/essays/flux/index.html",
+    "items": [
+      "/posts/essays/flux/flux-theory.html",
+      "/posts/essays/flux/flux.html"
+    ]
+  },
+  {
+    "listing": "/posts/essays/embodiment/index.html",
+    "items": [
+      "/posts/essays/embodiment/moving-bodies.html"
+    ]
+  },
+  {
+    "listing": "/posts/essays/bounderies/index.html",
+    "items": [
+      "/posts/essays/bounderies/boundaries-2-math.html",
+      "/posts/essays/bounderies/boundaries-3-exp.html",
+      "/posts/essays/bounderies/philosofical-bounderies.html"
+    ]
+  },
+  {
+    "listing": "/posts/essays/agency/index.html",
+    "items": [
+      "/posts/essays/agency/preface.html"
+    ]
+  },
+  {
+    "listing": "/posts/essays/index.html",
+    "items": [
+      "/posts/essays/bounderies/boundaries-2-math.html",
+      "/posts/essays/bounderies/boundaries-3-exp.html",
+      "/posts/essays/bounderies/philosofical-bounderies.html",
+      "/posts/essays/relations/relational-formalised.html",
+      "/posts/essays/relations/relational-view.html",
+      "/posts/essays/selves/identity-1.html",
+      "/posts/essays/flux/flux-theory.html",
+      "/posts/essays/flux/flux.html",
+      "/posts/essays/agency/preface.html",
+      "/posts/essays/intelligence/notes-on-intelligence.html",
+      "/posts/essays/tech/image-generation.html",
+      "/posts/essays/embodiment/moving-bodies.html"
     ]
   },
   {

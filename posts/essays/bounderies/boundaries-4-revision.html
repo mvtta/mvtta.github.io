@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mariana Emauz Valdetaro">
-<meta name="dcterms.date" content="2025-06-20">
+<meta name="dcterms.date" content="2025-06-22">
 
-<title>/ - Philosophical Boundaries: Avant-Propos</title>
+<title>/ - Philosophical Boundaries IV: Sheaf-Theoretic Co-Constitution</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -100,6 +120,7 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -192,24 +213,27 @@ window.Quarto = {
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a>
   <ul>
-  <li><a href="#foundational-definitions-clarifications" id="toc-foundational-definitions-clarifications" class="nav-link" data-scroll-target="#foundational-definitions-clarifications"><span class="header-section-number">1.1</span> Foundational Definitions &amp; Clarifications</a></li>
-  <li><a href="#ideas-principles" id="toc-ideas-principles" class="nav-link" data-scroll-target="#ideas-principles"><span class="header-section-number">1.2</span> Ideas &amp; Principles</a>
+  <li><a href="#revisions" id="toc-revisions" class="nav-link" data-scroll-target="#revisions"><span class="header-section-number">1.1</span> Revisions</a>
   <ul>
-  <li><a href="#the-interface-axiom" id="toc-the-interface-axiom" class="nav-link" data-scroll-target="#the-interface-axiom"><span class="header-section-number">1.2.1</span> The Interface Axiom</a></li>
-  <li><a href="#hierarchical-resolution-of-paradoxes" id="toc-hierarchical-resolution-of-paradoxes" class="nav-link" data-scroll-target="#hierarchical-resolution-of-paradoxes"><span class="header-section-number">1.2.2</span> Hierarchical Resolution of Paradoxes</a></li>
+  <li><a href="#revision-1-from-hierarchical-ranks-to-sheaf-gluing" id="toc-revision-1-from-hierarchical-ranks-to-sheaf-gluing" class="nav-link" data-scroll-target="#revision-1-from-hierarchical-ranks-to-sheaf-gluing"><span class="header-section-number">1.1.1</span> Revision 1: From Hierarchical Ranks to Sheaf Gluing</a></li>
+  <li><a href="#revision-2-structured-cospans---asymmetry-in-boundary-formation" id="toc-revision-2-structured-cospans---asymmetry-in-boundary-formation" class="nav-link" data-scroll-target="#revision-2-structured-cospans---asymmetry-in-boundary-formation"><span class="header-section-number">1.1.2</span> Revision 2: Structured Cospans -&gt; Asymmetry in Boundary Formation</a></li>
+  <li><a href="#revision-3-temporal-attractors-in-boundaries-states" id="toc-revision-3-temporal-attractors-in-boundaries-states" class="nav-link" data-scroll-target="#revision-3-temporal-attractors-in-boundaries-states"><span class="header-section-number">1.1.3</span> Revision 3: Temporal Attractors In Boundaries States</a></li>
   </ul></li>
-  <li><a href="#proof-kinda" id="toc-proof-kinda" class="nav-link" data-scroll-target="#proof-kinda"><span class="header-section-number">1.3</span> Proof-<em>Kinda</em></a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">1.4</span> Conclusion</a></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">1.2</span> Discussion</a></li>
+  <li><a href="#conclusion-existence-as-co-constitutive-negotiation" id="toc-conclusion-existence-as-co-constitutive-negotiation" class="nav-link" data-scroll-target="#conclusion-existence-as-co-constitutive-negotiation"><span class="header-section-number">1.3</span> Conclusion: Existence as Co-Constitutive Negotiation</a>
+  <ul>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">1.3.1</span> References</a></li>
+  </ul></li>
   </ul></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="philosofical-bounderies.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="boundaries-4-revision.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Philosophical Boundaries: Avant-Propos</h1>
+<h1 class="title">Philosophical Boundaries IV: Sheaf-Theoretic Co-Constitution</h1>
 </div>
 
 
@@ -226,7 +250,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">20 June 2025</p>
+      <p class="date">22 June 2025</p>
     </div>
   </div>
   
@@ -236,7 +260,7 @@ window.Quarto = {
 <div>
   <div class="abstract">
     <div class="block-title">Abstract</div>
-    <p>This article explores the concept of boundaries, where I venture into depths of the role of boundaries and hierarchies in selves, and nature.</p>
+    <p>This paper contains a few revisions on the boundary relatare avan-propos and formalism attempts, derived from new insights related to identity-as-process, replacing hierarchical axioms with sheaf-theoretic coherence and structured cospans. We then re-attempt to address some paradoxes treated in the previous papers “On Boundaries” by treating boundaries as <em>contextual sections</em> rather than absolute separators, formalizing how entities co-constitute one another through asymmetric interaction patterns. Empirical validations experiments are re-designed to include temporal attractors and relational scaling.</p>
   </div>
 </div>
 
@@ -244,89 +268,124 @@ window.Quarto = {
 </header>
 
 
-<section id="introduction" class="level1" data-number="1">
+<section id="introduction" class="level1 page-columns page-full" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
-<p>In the world of things, nothing can be a part of itself, or so it is said. Regardless of how perception of signs and the intricate processes of symbolic attribution, in order to interpret to interpret and materialize them ivia structured categorisation and classification of things such as a cell, a cell is a cell via its membrane. No membrane, no cell. There is no contradiction, as the cell cannot be and not be simultaneously. But if we call it “kgkds” instead of a cell, and attribute it to the same object, it would not change the fact that the object in question requires an identity to persist, and that part of that identity is its own morphological description. This, partially agrees with Aristotelians and partially disagrees with positivists who argue that contradictions in nature result from linguistic or cognitive errors given by our perceptual limitations. A proposal is that scale and perspective at scale is where the issue resides. Moreover, paradoxes such as <em>Who shaves the barber</em>, and <em>Does infinity contain itself or not?</em> are familiar and I’m curious as to which methods we could use to test a hypothesis where in both cases, for the barber and the infinity, they are a boundary, a formal interface to something else much like the cell or the reference object “kgkds”. If we make a clear distinction between belonging (cell belonging to tissue) and composing (morphisms of atoms and molecules into cells), and allow specification and regularity (set/subset - blocking self membership Zermelo-Fraenkel) atoms compose and belong to cells simultaneously and there is no contradiction because they refer (belonging / composition) to different levels of abstraction (hierarchical description composition &lt; belonging). There are several aspects of interest here: The first one is self-reference as a reusable pattern in nature, which should be allowed because it is observed, but in either case (allowed / not allowed) a sound explanation should exist. The second is, in the case of infinity, what does this pose?</p>
-<p>While hierarchical boundaries could in principle resolve logical contradictions by enforcing scale-dependent distinctions between composition (parts forming a whole) and membership (elements belonging to a set), this seems rather profound, nearing questions much greater than what I originally thought of.</p>
-<section id="foundational-definitions-clarifications" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="foundational-definitions-clarifications"><span class="header-section-number">1.1</span> Foundational Definitions &amp; Clarifications</h2>
-<p>A cell’s membrane defines its identity by separating it from what’s not a cell. Without this boundary, the cell dissolves into its environment. The law of identity <span class="math inline">\((A = A)\)</span> and as some logical positivist, points to how contradictions arise only when boundaries (physical or conceptual) are ambiguously defined.</p>
-<p>At the atomic level, the cell is a dynamic composition of molecules; at the tissue level, it’s a functional unit. Contradictions vanish when distinctions between belonging (cell ∈ tissue) and composing (atoms → molecules → organelles → cell) are maintained across hierarchical scales. Russell’s paradox (does the set of all sets that don’t contain themselves contain itself?) arises from self-membership. Similarly, the “barber paradox” exposes inconsistencies in self-referential definitions. By banning self-membership (via the axiom of regularity), ZF set theory treats sets as hierarchical containers. A set cannot belong to itself, just as a cell’s membrane prevents it from being its own environment.</p>
-<p>In the “kgkds” example I used earlier, I attempted a humorous provocation to show that in this context identity depends on structural interfaces (e.g., membranes, mathematical axioms) rather than labels; it does not matter what we call this object, allowing us to introduce a certain secure abstraction and tangibility hereafter.</p>
-<p>The implications are that self-reference and infinity are paradoxic inducers only when objects in scope are treated as monolithic symbols rather than nested but well defined interfaces.</p>
-<p>Theoretically, by distinguishing belonging (membership) from composing (structure), and embracing scale-dependent perspectives, ww could in principle model nature without logical inconsistency. Self-reference, scale-dependent perspectives, and paradoxes like Russell’s, could just be ambiguous descriptions that dissolve under hierarchical structuring.</p>
-<p>But can the axioms of regularity, cumulative hierarchies, and category theory be used to show / proof how systems avoid logical inconsistency through stratified organization?</p>
-<p>If we let <span class="math inline">\(\mathcal{H}\)</span> denote a hierarchical system with scales indexed by ordinals <span class="math inline">\(\alpha\)</span>, then at each scale, we have lower-scale entities as composition: <span class="math display">\[
-\begin{CD}
-x_\beta @&gt;\text{Comp}_\alpha&gt;&gt; X_\alpha @&gt;\text{Mem}_\alpha&gt;&gt; \mathcal{C}_{\alpha+1} \\
-@V\partial_\beta VV @V\partial_\alpha VV @V\partial_{\alpha+1}VV \\
-V_\beta @&gt;\subseteq&gt;&gt; V_\alpha @&gt;\subseteq&gt;&gt; V_{\alpha+1}
-\end{CD}
+<p>In earlier papers concerning boundaries, I explored if they could be rendered contradiction-free by enforcing hierarchical distinctions: composition versus membership, part versus whole, each neatly separated by a rank axiom. The cell’s membrane, used as an example of a static interface, a necessary wall between self and other, with hierarchy as the ultimate safeguard against paradox. While question on the nature of identity <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, it occurred to me, that my some of the previous notes on boundaries had limitations that contradicted some of the insights gathered in the process of formalise identity. Previously I was looking at boundaries as interfaces, and attempted to formalise without fully capturing their dynamism. Perhaps framing them even as absolute partitions, without full acknowledgement of the the cases where they appear <em>fuzzy</em>, such as clouds, where boundaries become contextual, dynamic, and co-constitutively embedded in their niches, that may not be reflected in the past approaches grounded in rank-theoretic axioms, and symmetric adjunctions.</p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;“On Identity: Ideas On Being &amp; Becoming”</p></div></div><p>By treating boundaries as static interfaces between pre-existing entities rather than as <strong>processual co-constitutive dynamics</strong> as explored in the Identity paper, the hierarchical axiom <span class="math display">\[
+\text{rank}(x)&lt;\text{rank}(y) \implies x \notin y
 \]</span></p>
-<p>Which commutatively, <span class="math inline">\(\partial_\alpha \circ \text{Comp}_\alpha = \text{Comp}_\alpha \circ \partial_\beta\)</span> ensure boundaries propagate upward, with no self-membership, as the vertical <span class="math inline">\(\partial\)</span>-arrows enforce <span class="math inline">\(X_\alpha \notin X_\alpha\)</span>, as <span class="math inline">\(X_\alpha \subseteq V_\alpha\)</span> but <span class="math inline">\(X_\alpha \in V_{\alpha+1}\)</span>.</p>
-<p>And if we let <span class="math inline">\(R = \{ X \mid X \notin X \}\)</span>, under hierarchical boundaries, the resolution <span class="math inline">\(R\)</span> is demoted to a <strong>proper class</strong> because <span class="math inline">\(\text{rank}(R) = \sup_{X \in R} (\text{rank}(X) + 1)\)</span>, which is not an ordinal in ZF, and as such <span class="math inline">\(R \notin V_\alpha\)</span> for any <span class="math inline">\(\alpha\)</span>, avoiding <span class="math inline">\(R \in R \iff R \notin R\)</span>.</p>
-<p>For a “cell” <span class="math inline">\(C\)</span>, <span class="math inline">\(C = \text{Comp}(\text{atoms}) \subseteq V_{\alpha}\)</span>, which for both composition, and membership we have <span class="math inline">\(C \in \text{Tissue} \subseteq V_{\alpha+1}\)</span>.</p>
-<p>Here, the rank inequality, <span class="math inline">\(\text{rank}(\text{atoms}) &lt; \text{rank}(C) &lt; \text{rank}(\text{Tissue})\)</span>, eliminates ambiguity.</p>
-</section>
-<section id="ideas-principles" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="ideas-principles"><span class="header-section-number">1.2</span> Ideas &amp; Principles</h2>
-<section id="the-interface-axiom" class="level3" data-number="1.2.1">
-<h3 data-number="1.2.1" class="anchored" data-anchor-id="the-interface-axiom"><span class="header-section-number">1.2.1</span> The Interface Axiom</h3>
-<p>For any system <span class="math display">\[ S \]</span>, its boundary <span class="math display">\[ \partial S \]</span> is defined by interaction capacity:<br>
-<span class="math display">\[  
-\partial S = \{ x \,|\, \forall y (y \prec x \rightarrow y \prec_{\text{int}} S) \}  
-\]</span><br>
-where <span class="math display">\[ \prec_{\text{int}} \]</span> denotes “interacts with.” A cell’s membrane, for instance, defines <span class="math display">\[ \partial S \]</span> via ion channel selectivity.</p>
-</section>
-<section id="hierarchical-resolution-of-paradoxes" class="level3" data-number="1.2.2">
-<h3 data-number="1.2.2" class="anchored" data-anchor-id="hierarchical-resolution-of-paradoxes"><span class="header-section-number">1.2.2</span> Hierarchical Resolution of Paradoxes</h3>
-<p>Russell’s paradox (<span class="math display">\[ R = \{ X | X \notin X \} \]</span>) dissolves under ZF set theory’s <strong>axiom of regularity</strong>, which enforces:<br>
-<span class="math display">\[  
-\forall S \, \exists \alpha \, \left( \partial_\alpha(S) \neq \emptyset \implies \text{rank}(S) = \alpha \land S \notin V_\beta \text{ for } \beta \leq \alpha \right)  
-\]</span><br>
-This ensures:<br>
-- <strong>Atoms</strong> compose cells (<span class="math display">\[ \text{rank}(\text{atoms}) &lt; \text{rank}(\text{cell}) \]</span>)<br>
-- <strong>Cells</strong> belong to tissues (<span class="math display">\[ \text{cell} \in V_{\alpha+1} \]</span>)</p>
-<p>Here no system contains itself as a safeguard against contradiction.</p>
-</section>
-</section>
-<section id="proof-kinda" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="proof-kinda"><span class="header-section-number">1.3</span> Proof-<em>Kinda</em></h2>
-<p>For the hierarchical system <span class="math inline">\(\mathcal{H}\)</span> with scales indexed by ordinals <span class="math inline">\(\alpha\)</span>, then at each scale, we have lower-scale entities as composition:</p>
+<p>presupposes that entities possess determinate ranks independently of their relational contexts, when in fact both entities and their organizational levels may be given through boundary interactions themselves. This was of course mentioned throughout the Boundary series papers, however the formulation need a revision. The identity paper’s insight that existence is <strong>relational becoming</strong> rather than substantial being exposes this fundamental category error.</p>
+<p>Mathematically, my reliance on ZF set theory and rank functions reflects what sheaf theorists recognize as the inadequacy of classical foundations for capturing contextual relationships <span class="citation" data-cites="arxiv2025sheaf">(<a href="#ref-arxiv2025sheaf" role="doc-biblioref">Chen and Harris 2025</a>)</span>. The identity paper’s sheaf formulation</p>
 <p><span class="math display">\[
-\begin{CD}
-x_\beta @&gt;\text{Comp}_\alpha&gt;&gt; X_\alpha @&gt;\text{Mem}_\alpha&gt;&gt; \mathcal{C}_{\alpha+1} \\
-@V\partial_\beta VV @V\partial_\alpha VV @V\partial_{\alpha+1}VV \\
-V_\beta @&gt;\subseteq&gt;&gt; V_\alpha @&gt;\subseteq&gt;&gt; V_{\alpha+1}
-\end{CD}
+\mathcal{I}_S(U) = \{\text{Properties of } S \text{ observable in context } U\}
+\]</span></p>
+<p>reveals that boundaries are <strong>sections of sheaves</strong>, locally defined but globally coherent structures, rather than absolute separators between ranked sets.</p>
+<p>My mistake was fruit of ignorance, I came across the realisation that set-theoretic approaches assume that membership relations (<span class="math inline">\(x \in y\)</span>) are context-independent, but biological and social systems demonstrate that part-whole relationships are fundamentally <strong>contextual</strong><span class="citation" data-cites="boundaries-2">(<a href="#ref-boundaries-2" role="doc-biblioref"><strong>boundaries-2?</strong></a>)</span>. A mitochondrion “belongs to” a cell in metabolic contexts but “composes” tissue in developmental contexts, relationships that sheaf theory captures through its gluing conditions but that rank hierarchies cannot accommodate.</p>
+<p>The experimental validation in Boundaries III sought universal convergence thresholds (<span class="math inline">\(\lambda \approx 0.9957\)</span>) across biological systems, and in the bioelectric experiments I conducted, measuring scaling laws in Xenopus tissue and slime mold networks, actually demonstrate contextual boundary formation rather than universal constants <span class="citation" data-cites="frontiers2019computational pmc2014molecular">(<a href="#ref-frontiers2019computational" role="doc-biblioref">Levin 2019</a>; <a href="#ref-pmc2014molecular" role="doc-biblioref">Chao, Fakhreddin, and Shimerov 2014</a>)</span>.</p>
+<p>The identity paper’s core insight, that identity emerges through <strong>structured cospans</strong> <span class="math inline">\(S \to I \leftarrow E\)</span> where intrinsic invariants (<span class="math inline">\(I\)</span>) maintain stability amid extrinsic flux (<span class="math inline">\(E\)</span>), seems to somewhat challenges the boundary hypothesis symmetric assumptions. The retract condition <span class="math inline">\(r: E \to I\)</span> may better capture how environmental pressures asymmetrically constitute boundaries while preserving internal coherence, a dynamic that my previous symmetric adjunctions <span class="math inline">\(B_S \dashv R_S\)</span> completely missed.</p>
+<p>Critically, the identity paper’s temporal formulation <span class="math display">\[
+\text{Id}(X) = \lim_{\rightarrow \text{interactions}} X_t
+\]</span> may better express boundaries as <strong>temporal attractors</strong> rather than spatial demarcations <span class="citation" data-cites="iep2024personal">(<a href="#ref-iep2024personal" role="doc-biblioref">Nimbalkar 2024</a>)</span>.</p>
+<p>More tangibly, <em>Boundaries I</em> explores the interface axiom but failed to recognize that interfaces are co-constituted rather than mediating. It is expressed in verbatim, however in <em>Boundaries II</em> the developed hierarchical rank functions impose artificial separations on what may be naturally continuous processes. Then, in <em>Boundaries III</em>, it is provided experimental validation of a shared transaction via scaling factor for bioelectric-patterns, that require a careful consideration to test this contextual variability require in case of sheaf-theoretic interpretation. In each paper it is proposed that fomalising boundaries could solve paradoxes, achieved by separating conflicting domains, and the operators for such separation did not express the tension, or asymmetry through which interactions occur, which in case of a cell’s membrane, the asymmetry in voltage potentials seems to be what confers its identity as a cell. In this light, self-referential paradoxes may dissolves not through rank separation, which is incomplete, but through contextual restriction of self-membership domains, which a sheaf-theoretic approach expresses better than the hierarchical solution.</p>
+<p>Here, we’ll attempt to reconstruct the boundary theory through three revisions:<br>
+- First: replacing hierarchical axioms with <strong>sheaf gluing conditions</strong> to capture contextual coherence,<br>
+- Second: incorporating <strong>asymmetric structured cospans</strong> as an attempt to re-formalize the dynamics in boundary formation<br>
+- Third: redesigning experiments to incorporate the <strong>temporal attractors</strong> and <strong>relational scaling</strong></p>
+<section id="revisions" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="revisions"><span class="header-section-number">1.1</span> Revisions</h2>
+<section id="revision-1-from-hierarchical-ranks-to-sheaf-gluing" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="revision-1-from-hierarchical-ranks-to-sheaf-gluing"><span class="header-section-number">1.1.1</span> Revision 1: From Hierarchical Ranks to Sheaf Gluing</h3>
+<p>The original hierarchical axiom <span class="math inline">\(\text{rank}(x) &lt; \text{rank}(y) \implies x \notin y\)</span> fails to capture part-whole relationships which are context-dependent. Model boundaries as sections of a sheaf <span class="math inline">\(\mathcal{I}_S(U)\)</span>, where <span class="math inline">\(U\)</span> denotes observational context:</p>
+<p><span class="math display">\[
+\mathcal{I}_S(U) = \{ \text{Properties of } S \text{ observable in } U\}
+\]</span></p>
+<p>Cell:</p>
+<p><span class="math display">\[
+\mathcal{I}_{\text{cell}}(\text{metabolism}) = \{\text{ATP production}\}
 \]</span></p>
 <p><span class="math display">\[
-\boxed{\forall S \, \exists \alpha \, \left( \partial_\alpha(S) \neq \emptyset \implies \text{rank}(S) = \alpha \land \neg \exists \beta \leq \alpha \, (S \in V_\beta) \right)}
-\]</span></p>
+\mathcal{I}_{\text{cell}}(\text{immune}) = \{\text{MHC presentation}\}
+\]</span>.</p>
+<p>Todo: Attempt to prove that Russell’s set dissolves when <span class="math inline">\(U\)</span> restricts self-membership contexts.</p>
+</section>
+<section id="revision-2-structured-cospans---asymmetry-in-boundary-formation" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="revision-2-structured-cospans---asymmetry-in-boundary-formation"><span class="header-section-number">1.1.2</span> Revision 2: Structured Cospans -&gt; Asymmetry in Boundary Formation</h3>
+<p>Replacing symmetric adjunctions <span class="math inline">\(B_S \dashv R_S\)</span> with <strong>structured cospans</strong> encoding intrinsic/extrinsic asymmetry:<br>
+<span class="math display">\[
+S \to I \leftarrow E
+\]</span><br>
+- <span class="math inline">\(I\)</span>: Intrinsic invariants (e.g., ion channels maintaining membrane potential).<br>
+- <span class="math inline">\(E\)</span>: Extrinsic interactions (e.g., neurotransmitter release).<br>
+- <span class="math inline">\(r: E \to I\)</span> ensures homeostasis (e.g., membrane repair post-injury).</p>
 <ul>
-<li>Where in <span class="math inline">\(\boxed{\forall S \, \exists \alpha \, \left( \partial_\alpha(S) \neq \emptyset \right)}\)</span> : The existence of a boundary <span class="math inline">\(\partial_\alpha(S)\)</span> implies <span class="math inline">\(S\)</span> is constrained to rank <span class="math inline">\(\alpha\)</span>.<br>
-</li>
-<li>And in <span class="math inline">\(\boxed{\text{rank}(S) = \alpha \land \neg \exists \beta \leq \alpha \, (S \in V_\beta)}\)</span> : The rank ensures <span class="math inline">\(S\)</span> cannot self-belong or compose itself at any lower scale <span class="math inline">\(\beta \leq \alpha\)</span>.</li>
+<li><p>Neuron: Synaptic inputs (<span class="math inline">\(E\)</span>) rewire connectomes, but ion channel configurations (<span class="math inline">\(I\)</span>) constrain plasticity, formalizing neurocentric asymmetry.</p></li>
+<li><p>Todo: Need to find experimental data -&gt; test</p></li>
 </ul>
 </section>
-<section id="conclusion" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">1.4</span> Conclusion</h2>
-<p>The question if this is informing us of a fundamental design principle in nature requires humility. It seems sound to say that hierarchical boundaries resolve contradictions by enforcing scale-dependent distinctions. But is objectionable from epistemic and quantum limits. Perhaps the assumption that nature’s apparent non-contradiction arises not from human logic, but from boundary-defined strata that approximate reality’s complexity. An inconsistency also seems apparent when treating scale separation as intrinsic to nature, because if theories succeed at describing gravity according to to quantum mechanics, the implication that space-time may be discrete at Planck scales blurs hierarchical distinctions. Yet, another point of contentions is the paradox resolve of infinity through proper classes, because for the case of an absolute infinity (canto’r) which is said to transcends all hierarchies, it implies a contradiction at the meta-level.</p>
-<p>So, the following <span class="math display">\[Things=∑∂(boundaries)\]</span> does not hold, because hierarchy may break down.</p>
-<p>Maybe just relativity enforces <span class="math inline">\(c\)</span> as a cosmic speed limit, hierarchical boundaries act as logical speed limits, preventing contradictions, and the rank function <span class="math inline">\(rank(S)\)</span> may be seen as analogous to spacetime intervals, invariant across frames (scales). At Planck scales, the hierarchy may break down, but emergent boundaries (e.g., decoherence) restore classicality. Thus, boundaries are effective, not fundamental, and hierarchy can be better seen as a map, and not the territory, although a useful map in understanding.</p>
-<p>I care about abstraction-layers because logical levels of abstraction, and clarity in abstraction requires discipline in separation, allowing for higher-order relational reasoning, which in turn allows us to manipulate symbols pointing to large structures of knowledge and things, for sense-making at scale. If we take notions of composition and belonging those are not the same. They express distinct levels of of abstraction, where composition is to a lower-level of abstraction, and belonging a higher-level one. Interfaces as structured boundaries that enforce non-circular interaction, resolving paradoxes and enable scalable complexity without conflating identities. Here by identity I’m expressing a sort of coherence, a persistence, one that does not avoid completely environmental interactions, but one that allows for coherence.</p>
-<p>While hierarchical boundaries resolve contradictions by enforcing scale-dependent distinctions as an effective tool. However I must confess to be confused because, quantum coherence expresses phase relationships between waves the ones that, together, describe an object. Then boundaries are coherence-preserving tools via interactions (decoherence), while also phase-relationships between waves, better put stabilized phase relationships?</p>
-<p>If so, a workaround for it not to invalidate the boundary problem at the Planck scale is by having decoherence restoring effective boundaries at larger scales by averaging out Planck-scale chaos.</p>
-<p>If at a quantum level decoherence means the loss of identity (dissolves quantum superposition), into a new identity (into classical definiteness) then at the collapsing superpositions, decoherence creates stable classical identities (a cell as alive, a set as rank-α).</p>
-<p>From a classic point of view decoherence allow for identity then what does coherence do?</p>
-<p>Also, if a cell’s membrane is no more “real” than a qubit’s coherence, given that both are stable patterns, a description of nature’s strata that succeeds not by mirroring reality, but by description, what are interactions? Are they more or less real that substances (particles, cells, sets) that we perceive as distinct entities?</p>
-<p>If we put as <span class="math display">\[Things=∑∂(interactions)\]</span> where boundaries are fruit by interactions, then what allows interaction? And if the hierarchical boundaries don’t hold between quantum and classical mechanics, but as mere effective negotiations through interaction density and scale, what can be the nature of this negotiation be?</p>
-<p>Could it be so that from a relational-ontology perspective, interactions are some kind of fundamental means of reality, while boundaries are the habits of reality? Stable interaction patterns that enable prediction and coherence while decoherence negotiates quantum-classical transitions by filtering noise, much like a cell membrane filters toxins?</p>
-<p>Can the hierarchical boundary axiom <span class="math display">\[\boxed{\forall S \, \exists \alpha \, \left( \partial_\alpha(S) \neq \emptyset \implies \text{rank}(S) = \alpha \land \neg \exists \beta \leq \alpha \, (S \in V_\beta) \right)}\]</span> and formalising interaction summation making up reality <span class="math display">\[Things=∑∂(interactions)\]</span> mean anything at all beyond formal insights?</p>
+<section id="revision-3-temporal-attractors-in-boundaries-states" class="level3" data-number="1.1.3">
+<h3 data-number="1.1.3" class="anchored" data-anchor-id="revision-3-temporal-attractors-in-boundaries-states"><span class="header-section-number">1.1.3</span> Revision 3: Temporal Attractors In Boundaries States</h3>
+<p>Replacing static spatial demarcations with:<br>
+<span class="math display">\[
+\text{Id}(X) = \lim_{\rightarrow \text{interactions}} X_t
+\]</span><br>
+- River boundary: Persists as a terrain-flow feedback loop, not a fixed bank.</p>
+<ul>
+<li>Todo: Review literature + find experimenatal data on “social identity”, mentioning recursive discourse patterns, not just demographic categories.</li>
+</ul>
+</section>
+</section>
+<section id="discussion" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="discussion"><span class="header-section-number">1.2</span> Discussion</h2>
+<p>The reconceptualization of boundaries as <em>enabling constraints</em> overturns the classical view of boundaries as passive mediators between pre-existing entities. Where Boundaries I–III sought to resolve paradoxes through hierarchical containment <span class="math display">\[
+\text{rank}(x) &lt; \text{rank}(y) \implies x \notin y
+\]</span></p>
+<p>here we contemplate that things may exist through relational tension at boundaries, which seems to somewhat aligned with Brentano-Chisholm theory’s of mutual ontological dependence between boundaries and continua (todo: cit) evolves into a dynamic asymmetry, where boundaries materialise not as static interfaces but as <em>processual stratifications</em> where intrinsic invariants (<span class="math inline">\(I\)</span>) and extrinsic interactions (<span class="math inline">\(E\)</span>) negotiate via structured cospans <span class="math inline">\(S \to I \leftarrow E\)</span> (todo: cit).</p>
+<p>In Boundaries I, I argued that boundaries resolve paradoxes by mediating between contradictory properties (e.g., a cell as both whole and part). Boundaries II extended this to hierarchical stratification, positing that scale separation dissolves logical tensions (e.g., quantum-classical transitions via decoherence). But this framework failed to explain how boundaries themselves arise from the very systems they mediate, a circularity only resolved by the identity paper’s insight: boundaries materialize through relational tension, not prior mediation.</p>
+<p>The experimental validation in Boundaries III, which measured universal <span class="math inline">\(\lambda\)</span> thresholds, is reinterpreted through sheaf gluing conditions. A boundary’s sharpness becomes context-dependent:<br>
+<span class="math display">\[
+\lambda(U) \geq 0.98 \quad \text{locally, not globally}
+\]</span><br>
+as demonstrated in slime mold networks under viscosity gradients [Results 4.2]. This aligns with Gieryn’s boundary-work theory, where scientific demarcations adapt to contextual power dynamics [11]. Empirical rigor now demands tracking <em>sectional coherence</em> across observational contexts <span class="math inline">\(U\)</span>, akin to software testing’s boundary value analysis [12][20]. For example, a geopolitical border’s permeability varies when analyzed as <span class="math inline">\(\mathcal{I}_{\text{border}}(\text{migration})\)</span> versus <span class="math inline">\(\mathcal{I}_{\text{border}}(\text{trade})\)</span> [8].</p>
+<p>The structured cospan formalism exposes inherent asymmetries in boundary formation. Where Boundaries II treated adjoint functors <span class="math inline">\(B_S \dashv R_S\)</span> symmetrically, Boundaries IV’s retract <span class="math inline">\(r: E \to I\)</span> codifies power imbalances:<br>
+- <strong>Bioelectric systems</strong>: Ion channels (<span class="math inline">\(I\)</span>) constrain synaptic plasticity (<span class="math inline">\(E\)</span>) [5.1.1]<br>
+- <strong>Social hierarchies</strong>: Legal borders asymmetrically privilege resident populations over migrants <span class="citation" data-cites="lamont2002boundaries">(<a href="#ref-lamont2002boundaries" role="doc-biblioref"><strong>lamont2002boundaries?</strong></a>)</span></p>
+<p>The hierarchical scale separation in Boundaries I–II (cellular &lt; tissue &lt; organism) is replaced by:<br>
+<span class="math display">\[
+\text{Scale}(S) = \int_{U} \mathcal{I}_S(U) \otimes \mathcal{I}_E(U) \, dU
+\]</span><br>
+where scales co-constitute through boundary interactions. For instance, integrin signaling between cells and ECM [5.1] generates tissue-scale coherence not by containment but through sheaf-section overlaps. This formalizes Latour’s “flat ontology,” where molecular and social scales interoperate via boundary functors.</p>
+</section>
+<section id="conclusion-existence-as-co-constitutive-negotiation" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="conclusion-existence-as-co-constitutive-negotiation"><span class="header-section-number">1.3</span> Conclusion: Existence as Co-Constitutive Negotiation</h2>
+<p><em>Boundaries II</em> treated scales (molecular, cellular, social) as pre-existing layers. The new framework reveals scales as <strong>emergent negotiations</strong>:<br>
+<span class="math display">\[
+\text{Scale}(S) = \int_{U} \mathcal{I}_S(U) \otimes \mathcal{I}_E(U) \, dU
+\]</span><br>
+- <strong>Biological example</strong>: A mitochondrion’s scale shifts depending on whether we observe metabolic flux (<span class="math inline">\(U = \text{energy}\)</span>) or evolutionary history (<span class="math inline">\(U = \text{phylogeny}\)</span>).<br>
+- <strong>Social example</strong>: A “family” scales as a nuclear unit in legal contexts (<span class="math inline">\(U = \text{custody law}\)</span>) but as an extended network in cultural ones (<span class="math inline">\(U = \text{genealogy}\)</span>).<br>
+This replaces hierarchical ranks with <em>processual trajectories</em>, boundaries stratify not by containment, but through iterative reconfiguration.</p>
+<section id="references" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="references"><span class="header-section-number">1.3.1</span> References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-pmc2014molecular" class="csl-entry" role="listitem">
+Chao, H. X., R. I. Fakhreddin, and H. K. Shimerov. 2014. <span>“Molecular Regulation of Decision Making in the Interphase Cell Cycle.”</span> <em>PMC (PubMed Central)</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4244194/">https://pmc.ncbi.nlm.nih.gov/articles/PMC4244194/</a>.
+</div>
+<div id="ref-arxiv2025sheaf" class="csl-entry" role="listitem">
+Chen, L., and J. Harris. 2025. <span>“Sheaf Theory Applications in Identity Construction.”</span> <a href="https://arxiv.org/pdf/2502.15476.pdf">https://arxiv.org/pdf/2502.15476.pdf</a>.
+</div>
+<div id="ref-frontiers2019computational" class="csl-entry" role="listitem">
+Levin, Michael. 2019. <span>“The Computational Boundary of a "Self": Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition.”</span> <em>Frontiers in Psychology</em> 10: 2688. <a href="https://doi.org/10.3389/fpsyg.2019.02688">https://doi.org/10.3389/fpsyg.2019.02688</a>.
+</div>
+<div id="ref-iep2024personal" class="csl-entry" role="listitem">
+Nimbalkar, Namita. 2024. <span>“Personal Identity.”</span> Internet Encyclopedia of Philosophy. 2024. <a href="https://iep.utm.edu/person-i/">https://iep.utm.edu/person-i/</a>.
+</div>
+</div>
 
 
 </section>
 </section>
+</section>
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

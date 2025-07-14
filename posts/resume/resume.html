@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -90,52 +124,24 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-essays" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Essays</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-notes" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Notes</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-essays">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-notes">    
         <li>
-    <a class="dropdown-item" href="../../posts/essays/index.html">
+    <a class="dropdown-item" href="../../posts/notes/index.html">
  <span class="dropdown-text">All Essays</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../posts/essays/relations/index.html">
+    <a class="dropdown-item" href="../../posts/essays/relations/index.qmd">
  <span class="dropdown-text">Relations</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../posts/essays/agency/index.html">
- <span class="dropdown-text">Agency</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../posts/essays/bounderies/index.html">
- <span class="dropdown-text">Boundaries</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../posts/essays/embodiment/index.html">
- <span class="dropdown-text">Embodiment</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../posts/essays/flux/index.html">
- <span class="dropdown-text">Flux</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../posts/essays/intelligence/index.html">
- <span class="dropdown-text">Intelligence</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../posts/essays/selves/index.html">
+    <a class="dropdown-item" href="../../posts/essays/selves/index.qmd">
  <span class="dropdown-text">Selves</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../posts/essays/tech/index.html">
- <span class="dropdown-text">Technology</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../../posts/notebooks/index.html"> 
-<span class="menu-text">Notebooks</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../resource-tree.html"> 
 <span class="menu-text">Resource-Tree</span></a>
@@ -164,16 +170,16 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#skills" id="toc-skills" class="nav-link" data-scroll-target="#skills">Skills</a></li>
   <li><a href="#highlight" id="toc-highlight" class="nav-link" data-scroll-target="#highlight">Highlight</a></li>
-  <li><a href="#gen-ai-mvp-commission-multi-agent-genai-onboarding-mvp-for-startup-x" id="toc-gen-ai-mvp-commission-multi-agent-genai-onboarding-mvp-for-startup-x" class="nav-link" data-scroll-target="#gen-ai-mvp-commission-multi-agent-genai-onboarding-mvp-for-startup-x">GEN AI MVP Commission: Multi-Agent GenAI Onboarding MVP for Startup X</a></li>
-  <li><a href="#semf-vice-president-society-for-multidisciplinary-and-fundamental-research" id="toc-semf-vice-president-society-for-multidisciplinary-and-fundamental-research" class="nav-link" data-scroll-target="#semf-vice-president-society-for-multidisciplinary-and-fundamental-research">SEMF: Vice President | Society for Multidisciplinary and Fundamental Research</a></li>
-  <li><a href="#independent-senior-consultant-machine-learning-genai" id="toc-independent-senior-consultant-machine-learning-genai" class="nav-link" data-scroll-target="#independent-senior-consultant-machine-learning-genai">Independent Senior Consultant | Machine Learning &amp; GenAI</a></li>
-  <li><a href="#nokia-embedded-software-engineer---physical-layer---rd---5g-contract" id="toc-nokia-embedded-software-engineer---physical-layer---rd---5g-contract" class="nav-link" data-scroll-target="#nokia-embedded-software-engineer---physical-layer---rd---5g-contract">Nokia: Embedded Software Engineer - Physical Layer - R&amp;D - 5G (Contract)</a></li>
-  <li><a href="#nokia-applied-rd-engineer-full-time" id="toc-nokia-applied-rd-engineer-full-time" class="nav-link" data-scroll-target="#nokia-applied-rd-engineer-full-time">Nokia: Applied R&amp;D Engineer (Full-time)</a></li>
-  <li><a href="#independent-researcher-agency-multi-scale-interaction-dynamics" id="toc-independent-researcher-agency-multi-scale-interaction-dynamics" class="nav-link" data-scroll-target="#independent-researcher-agency-multi-scale-interaction-dynamics">Independent Researcher | Agency &amp; Multi-scale Interaction Dynamics</a></li>
-  <li><a href="#independent-researcher-computational-linguistics-machine-learning" id="toc-independent-researcher-computational-linguistics-machine-learning" class="nav-link" data-scroll-target="#independent-researcher-computational-linguistics-machine-learning">Independent Researcher | Computational Linguistics &amp; Machine Learning</a></li>
-  <li><a href="#colisão-studios-founder-and-manager-rd-studio" id="toc-colisão-studios-founder-and-manager-rd-studio" class="nav-link" data-scroll-target="#colisão-studios-founder-and-manager-rd-studio">Colisão Studios: Founder and Manager R&amp;D Studio</a></li>
-  <li><a href="#newlife.ai-external-funding-coordinator" id="toc-newlife.ai-external-funding-coordinator" class="nav-link" data-scroll-target="#newlife.ai-external-funding-coordinator">Newlife.ai: External Funding Coordinator</a></li>
-  <li><a href="#reboot.fashion-founder" id="toc-reboot.fashion-founder" class="nav-link" data-scroll-target="#reboot.fashion-founder">reboot.fashion: Founder</a></li>
+  <li><a href="#gen-ai-mvp-commission-multi-agent-genai-onboarding-mvp-for-startup-x-april-2025---may-2025" id="toc-gen-ai-mvp-commission-multi-agent-genai-onboarding-mvp-for-startup-x-april-2025---may-2025" class="nav-link" data-scroll-target="#gen-ai-mvp-commission-multi-agent-genai-onboarding-mvp-for-startup-x-april-2025---may-2025">GEN AI MVP Commission: Multi-Agent GenAI Onboarding MVP for Startup X <em>April 2025 - May 2025</em></a></li>
+  <li><a href="#semf-vice-president-society-for-multidisciplinary-and-fundamental-research-october-2024---present-technology-and-infrastructure-office" id="toc-semf-vice-president-society-for-multidisciplinary-and-fundamental-research-october-2024---present-technology-and-infrastructure-office" class="nav-link" data-scroll-target="#semf-vice-president-society-for-multidisciplinary-and-fundamental-research-october-2024---present-technology-and-infrastructure-office">SEMF: Vice President | Society for Multidisciplinary and Fundamental Research <em>October 2024 - Present: Technology and Infrastructure Office</em></a></li>
+  <li><a href="#independent-senior-consultant-machine-learning-genai-january-2024---present" id="toc-independent-senior-consultant-machine-learning-genai-january-2024---present" class="nav-link" data-scroll-target="#independent-senior-consultant-machine-learning-genai-january-2024---present">Independent Senior Consultant | Machine Learning &amp; GenAI <em>January 2024 - Present</em></a></li>
+  <li><a href="#nokia-embedded-software-engineer---physical-layer---rd---5g-contract-april-2023---december-2024" id="toc-nokia-embedded-software-engineer---physical-layer---rd---5g-contract-april-2023---december-2024" class="nav-link" data-scroll-target="#nokia-embedded-software-engineer---physical-layer---rd---5g-contract-april-2023---december-2024">Nokia: Embedded Software Engineer - Physical Layer - R&amp;D - 5G (Contract) <em>April 2023 - December 2024</em></a></li>
+  <li><a href="#nokia-applied-rd-engineer-full-time-february-2022---april-2023" id="toc-nokia-applied-rd-engineer-full-time-february-2022---april-2023" class="nav-link" data-scroll-target="#nokia-applied-rd-engineer-full-time-february-2022---april-2023">Nokia: Applied R&amp;D Engineer (Full-time) <em>February 2022 - April 2023</em></a></li>
+  <li><a href="#independent-researcher-agency-multi-scale-interaction-dynamics-2023---present" id="toc-independent-researcher-agency-multi-scale-interaction-dynamics-2023---present" class="nav-link" data-scroll-target="#independent-researcher-agency-multi-scale-interaction-dynamics-2023---present">Independent Researcher | Agency &amp; Multi-scale Interaction Dynamics <em>2023 - Present</em></a></li>
+  <li><a href="#independent-researcher-computational-linguistics-machine-learning-2023---present" id="toc-independent-researcher-computational-linguistics-machine-learning-2023---present" class="nav-link" data-scroll-target="#independent-researcher-computational-linguistics-machine-learning-2023---present">Independent Researcher | Computational Linguistics &amp; Machine Learning <em>2023 - Present</em></a></li>
+  <li><a href="#colisão-studios-founder-and-manager-rd-studio-february-2018---november-2021" id="toc-colisão-studios-founder-and-manager-rd-studio-february-2018---november-2021" class="nav-link" data-scroll-target="#colisão-studios-founder-and-manager-rd-studio-february-2018---november-2021">Colisão Studios: Founder and Manager R&amp;D Studio <em>February 2018 - November 2021</em></a></li>
+  <li><a href="#newlife.ai-external-funding-coordinator-may-2020---november-2020" id="toc-newlife.ai-external-funding-coordinator-may-2020---november-2020" class="nav-link" data-scroll-target="#newlife.ai-external-funding-coordinator-may-2020---november-2020">Newlife.ai: External Funding Coordinator <em>May 2020 - November 2020</em></a></li>
+  <li><a href="#reboot.fashion-founder-november-2019---march-2020" id="toc-reboot.fashion-founder-november-2019---march-2020" class="nav-link" data-scroll-target="#reboot.fashion-founder-november-2019---march-2020">reboot.fashion: Founder <em>November 2019 - March 2020</em></a></li>
   <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">EDUCATION</a>
   <ul>
   <li><a href="#semf-interdisciplinary-school" id="toc-semf-interdisciplinary-school" class="nav-link" data-scroll-target="#semf-interdisciplinary-school"><strong>SEMF Interdisciplinary School</strong></a></li>
@@ -207,17 +213,17 @@ Lisboa, Portugal | <a href="mailto:mvtta@proton.me">mvtta@proton.me</a> | <a hre
 <section id="skills" class="level5 smaller">
 <h5 class="anchored" data-anchor-id="skills">Skills</h5>
 <p><strong>Technical</strong>: 5G Technologies, Digital Signal Processing, C/C++, Machine Learning, Generative AI, Complex Systems Modeling, Software Architecture, Python, Julia, HG, TensorFlow, Scikit-learn, Openmm, MDAnalysis, Py3Dmol, Amber14-all, QMD, SentenceTransformer, Dash, TfidfVectorizer, LatentDirichletAllocation, FrameSemanticTransformer, Spacy, Umap, Torch, Tqdm, NLTK, BERT, Flask<br>
-<br>
-<strong>Development</strong>:<br>
-Prototyping, System Design, Unit/Integration Testing, Interface Adaptation, Code Optimization<br>
-<strong>Research</strong>:<br>
-Quantitative Methods, Experimental Design, Literature Review, Interdisciplinary Synthesis<br>
-<strong>Communication</strong>:<br>
-Technical Writing, Public Speaking, Workshop Facilitation, Requirements &amp; Documentation<br>
-<strong>Leadership</strong>:<br>
-Strategic Planning, Team Coordination, Community Building, Stakeholder Management<br>
-<strong>Languages</strong>:<br>
-English (Fluent), Portuguese (Native), Spanish (Intermediate), French (Basic)</p>
+</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>Development: <span class="ex">Prototyping,</span> System Design, Unit</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Integration</span> Testing, Interface Adaptation, Code Optimization</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>Research: <span class="ex">Quantitative</span> Methods, Experimental Design, Literature Review, </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Interdisciplinary</span> Synthesis</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>Communication: <span class="ex">Technical</span> Writing, Public Speaking, Workshop Facilitation, </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">Requirements</span> <span class="kw">&amp;</span> <span class="ex">Documentation</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>Leadership:Strategic <span class="ex">Planning,</span> Team Coordination, Community Building, </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ex">Stakeholder</span> Management</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>Languages: <span class="ex">English</span> <span class="er">(</span><span class="ex">Fluent</span><span class="kw">)</span><span class="ex">,</span> Portuguese <span class="er">(</span><span class="ex">Native</span><span class="kw">)</span><span class="ex">,</span> </span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ex">Spanish</span> <span class="er">(</span><span class="ex">Intermediate</span><span class="kw">)</span><span class="ex">,</span> French <span class="er">(</span><span class="ex">Basic</span><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="highlight" class="level5 smaller">
 <h5 class="anchored" data-anchor-id="highlight">Highlight</h5>
@@ -268,9 +274,8 @@ English (Fluent), Portuguese (Native), Spanish (Intermediate), French (Basic)</p
 <h2 class="anchored" data-anchor-id="professional-experience">PROFESSIONAL EXPERIENCE</h2>
 </section>
 </div>
-<section id="gen-ai-mvp-commission-multi-agent-genai-onboarding-mvp-for-startup-x" class="level3">
-<h3 class="anchored" data-anchor-id="gen-ai-mvp-commission-multi-agent-genai-onboarding-mvp-for-startup-x">GEN AI MVP Commission: Multi-Agent GenAI Onboarding MVP for Startup X</h3>
-<p><em>April 2025 - May 2025</em></p>
+<section id="gen-ai-mvp-commission-multi-agent-genai-onboarding-mvp-for-startup-x-april-2025---may-2025" class="level3">
+<h3 class="anchored" data-anchor-id="gen-ai-mvp-commission-multi-agent-genai-onboarding-mvp-for-startup-x-april-2025---may-2025">GEN AI MVP Commission: Multi-Agent GenAI Onboarding MVP for Startup X <em>April 2025 - May 2025</em></h3>
 <ul>
 <li>Roles: Solo developer, Head of Engineering, PM</li>
 <li>Decided and Designed the entire infrastructure, presented and documented the process</li>
@@ -284,9 +289,8 @@ English (Fluent), Portuguese (Native), Spanish (Intermediate), French (Basic)</p
 <li>Classes and Agent flow were fully documented for next developer teams to scale the MVP</li>
 </ul>
 </section>
-<section id="semf-vice-president-society-for-multidisciplinary-and-fundamental-research" class="level3">
-<h3 class="anchored" data-anchor-id="semf-vice-president-society-for-multidisciplinary-and-fundamental-research">SEMF: Vice President | Society for Multidisciplinary and Fundamental Research</h3>
-<p><em>October 2024 - Present: Technology and Infrastructure Office</em></p>
+<section id="semf-vice-president-society-for-multidisciplinary-and-fundamental-research-october-2024---present-technology-and-infrastructure-office" class="level3">
+<h3 class="anchored" data-anchor-id="semf-vice-president-society-for-multidisciplinary-and-fundamental-research-october-2024---present-technology-and-infrastructure-office">SEMF: Vice President | Society for Multidisciplinary and Fundamental Research <em>October 2024 - Present: Technology and Infrastructure Office</em></h3>
 <ul>
 <li>Collaborate on strategic initiatives for advancing fundamental research across conventionally disparate fields of inquiry</li>
 <li>Oversee community development and engagement initiatives</li>
@@ -296,9 +300,8 @@ English (Fluent), Portuguese (Native), Spanish (Intermediate), French (Basic)</p
 <li>Maintain and develop SEMF’s technical infrastructure alongside the secretary and manager of operations</li>
 </ul>
 </section>
-<section id="independent-senior-consultant-machine-learning-genai" class="level3">
-<h3 class="anchored" data-anchor-id="independent-senior-consultant-machine-learning-genai">Independent Senior Consultant | Machine Learning &amp; GenAI</h3>
-<p><em>January 2024 - Present</em></p>
+<section id="independent-senior-consultant-machine-learning-genai-january-2024---present" class="level3">
+<h3 class="anchored" data-anchor-id="independent-senior-consultant-machine-learning-genai-january-2024---present">Independent Senior Consultant | Machine Learning &amp; GenAI <em>January 2024 - Present</em></h3>
 <ul>
 <li>Advise organizations on implementing and adopting AI systems and machine learning solutions</li>
 <li>Develop custom frameworks for data processing and analysis</li>
@@ -307,9 +310,8 @@ English (Fluent), Portuguese (Native), Spanish (Intermediate), French (Basic)</p
 <li>Bridge technical teams with non-technical stakeholders to ensure alignment on project goals</li>
 </ul>
 </section>
-<section id="nokia-embedded-software-engineer---physical-layer---rd---5g-contract" class="level3">
-<h3 class="anchored" data-anchor-id="nokia-embedded-software-engineer---physical-layer---rd---5g-contract">Nokia: Embedded Software Engineer - Physical Layer - R&amp;D - 5G (Contract)</h3>
-<p><em>April 2023 - December 2024</em></p>
+<section id="nokia-embedded-software-engineer---physical-layer---rd---5g-contract-april-2023---december-2024" class="level3">
+<h3 class="anchored" data-anchor-id="nokia-embedded-software-engineer---physical-layer---rd---5g-contract-april-2023---december-2024">Nokia: Embedded Software Engineer - Physical Layer - R&amp;D - 5G (Contract) <em>April 2023 - December 2024</em></h3>
 <ul>
 <li>Conduct digital signal processing and code optimization for 5G systems</li>
 <li>Perform feasibility studies of 3GPP 5G features and draft technical requirements</li>
@@ -321,36 +323,32 @@ English (Fluent), Portuguese (Native), Spanish (Intermediate), French (Basic)</p
 <li>Create documentation and advocate for software lifecycle best practices</li>
 </ul>
 </section>
-<section id="nokia-applied-rd-engineer-full-time" class="level3">
-<h3 class="anchored" data-anchor-id="nokia-applied-rd-engineer-full-time">Nokia: Applied R&amp;D Engineer (Full-time)</h3>
-<p><em>February 2022 - April 2023</em></p>
+<section id="nokia-applied-rd-engineer-full-time-february-2022---april-2023" class="level3">
+<h3 class="anchored" data-anchor-id="nokia-applied-rd-engineer-full-time-february-2022---april-2023">Nokia: Applied R&amp;D Engineer (Full-time) <em>February 2022 - April 2023</em></h3>
 <ul>
 <li>Contributed to research and development initiatives for telecommunications technology</li>
 <li>Participated in early-stage development of 5G technologies</li>
 <li>RAN Infrastructure and Product Development</li>
 </ul>
 </section>
-<section id="independent-researcher-agency-multi-scale-interaction-dynamics" class="level3">
-<h3 class="anchored" data-anchor-id="independent-researcher-agency-multi-scale-interaction-dynamics">Independent Researcher | Agency &amp; Multi-scale Interaction Dynamics</h3>
-<p><em>2023 - Present</em></p>
+<section id="independent-researcher-agency-multi-scale-interaction-dynamics-2023---present" class="level3">
+<h3 class="anchored" data-anchor-id="independent-researcher-agency-multi-scale-interaction-dynamics-2023---present">Independent Researcher | Agency &amp; Multi-scale Interaction Dynamics <em>2023 - Present</em></h3>
 <ul>
 <li>Investigate theoretical frameworks for generalizing interaction patterns across temporal and spatial scales</li>
 <li>Develop computational models for analyzing complex social and cognitive systems</li>
 <li>Writing research literature</li>
 </ul>
 </section>
-<section id="independent-researcher-computational-linguistics-machine-learning" class="level3">
-<h3 class="anchored" data-anchor-id="independent-researcher-computational-linguistics-machine-learning">Independent Researcher | Computational Linguistics &amp; Machine Learning</h3>
-<p><em>2023 - Present</em></p>
+<section id="independent-researcher-computational-linguistics-machine-learning-2023---present" class="level3">
+<h3 class="anchored" data-anchor-id="independent-researcher-computational-linguistics-machine-learning-2023---present">Independent Researcher | Computational Linguistics &amp; Machine Learning <em>2023 - Present</em></h3>
 <ul>
 <li>Investigate theoretical frameworks for generalizing meaning development</li>
 <li>Develop computational models for analyzing polysemic terms across interdisciplinary academic publications</li>
 <li>Participate in interdisciplinary research projects at the intersection of linguistics and machine learning</li>
 </ul>
 </section>
-<section id="colisão-studios-founder-and-manager-rd-studio" class="level3">
-<h3 class="anchored" data-anchor-id="colisão-studios-founder-and-manager-rd-studio">Colisão Studios: Founder and Manager R&amp;D Studio</h3>
-<p><em>February 2018 - November 2021</em></p>
+<section id="colisão-studios-founder-and-manager-rd-studio-february-2018---november-2021" class="level3">
+<h3 class="anchored" data-anchor-id="colisão-studios-founder-and-manager-rd-studio-february-2018---november-2021">Colisão Studios: Founder and Manager R&amp;D Studio <em>February 2018 - November 2021</em></h3>
 <ul>
 <li>Led a Zero-to-One Innovation Studio operating at the intersection of technology, art, and natural resources</li>
 <li>Developed novel technical solutions and creative applications</li>
@@ -359,17 +357,15 @@ English (Fluent), Portuguese (Native), Spanish (Intermediate), French (Basic)</p
 <li><a href="https://www.construir.pt/2020/02/20/exportacoes-de-pedra-natural-atingem-maximos-historicos">Re-contextualized Portuguese Marble Stone for the high-end export market resulting in an increase of ~32% and for the first time, surpassing the previous boundary of 400million</a></li>
 </ul>
 </section>
-<section id="newlife.ai-external-funding-coordinator" class="level3">
-<h3 class="anchored" data-anchor-id="newlife.ai-external-funding-coordinator">Newlife.ai: External Funding Coordinator</h3>
-<p><em>May 2020 - November 2020</em></p>
+<section id="newlife.ai-external-funding-coordinator-may-2020---november-2020" class="level3">
+<h3 class="anchored" data-anchor-id="newlife.ai-external-funding-coordinator-may-2020---november-2020">Newlife.ai: External Funding Coordinator <em>May 2020 - November 2020</em></h3>
 <ul>
 <li>Coordinated funding initiatives for a Decentralized AI-driven social network</li>
 <li>Worked on strategic alignment for Portuguese based partnerships</li>
 </ul>
 </section>
-<section id="reboot.fashion-founder" class="level3">
-<h3 class="anchored" data-anchor-id="reboot.fashion-founder">reboot.fashion: Founder</h3>
-<p><em>November 2019 - March 2020</em></p>
+<section id="reboot.fashion-founder-november-2019---march-2020" class="level3">
+<h3 class="anchored" data-anchor-id="reboot.fashion-founder-november-2019---march-2020">reboot.fashion: Founder <em>November 2019 - March 2020</em></h3>
 <ul>
 <li>Created a decentralized fashion system addressing supply-chain complexities through smart contracts</li>
 <li>Developed on-chain platform/marketplace connecting independent and MSNE players</li>
@@ -421,7 +417,11 @@ English (Fluent), Portuguese (Native), Spanish (Intermediate), French (Basic)</p
 <h2 class="anchored" data-anchor-id="volunteer-experience">VOLUNTEER EXPERIENCE</h2>
 <section id="katefriends" class="level4">
 <h4 class="anchored" data-anchor-id="katefriends">Katefriends</h4>
-<p><em>April 2022 - Present</em> - Volunteer in animal welfare, focusing on fostering and rehabilitation of rescued greyhounds - Support transition of animals until they find permanent homes</p>
+<p><em>April 2022 - Present</em></p>
+<ul>
+<li>Volunteer in animal welfare, focusing on fostering and rehabilitation of rescued greyhounds</li>
+<li>Support transition of animals until they find permanent homes</li>
+</ul>
 </section>
 <section id="a-avó-veio-trabalhar-grandma-came-to-work" class="level4">
 <h4 class="anchored" data-anchor-id="a-avó-veio-trabalhar-grandma-came-to-work">A Avó veio Trabalhar (Grandma Came to Work)</h4>

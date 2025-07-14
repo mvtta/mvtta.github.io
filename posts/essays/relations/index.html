@@ -214,11 +214,11 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+    </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -227,7 +227,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -245,7 +245,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1750374000000" data-listing-file-modified-sort="1748949975474" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1838">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1750374000000" data-listing-file-modified-sort="1749136179692" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2603">
 <div class="thumbnail">
 <p><a href="../../../posts/essays/relations/relational-formalised.html" class="no-external"></a></p><a href="../../../posts/essays/relations/relational-formalised.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" style="height: 50px;">&nbsp;</div>
@@ -268,12 +268,12 @@ window.Quarto = {
 Jun 20, 2025
 </div>
 <div class="listing-reading-time">
-10 min
+14 min
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1750374000000" data-listing-file-modified-sort="1748015662684" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2395">
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1750374000000" data-listing-file-modified-sort="1751613658036" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2395">
 <div class="thumbnail">
 <p><a href="../../../posts/essays/relations/relational-view.html" class="no-external"></a></p><a href="../../../posts/essays/relations/relational-view.html" class="no-external">
 <p class="card-img-top"><img src="../_media/levin2023ecologicaltiers.png" alt="Multiscale competency architecture operates across problem spaces Levin (2023)" style="height: 50px;"  class="thumbnail-image card-img"/></p>
@@ -387,7 +387,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/mvtta\.github\.io\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

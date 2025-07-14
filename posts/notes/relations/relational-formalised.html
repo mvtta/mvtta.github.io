@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.555">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Mariana Emauz Valdetaro">
+<meta name="dcterms.date" content="2025-06-20">
+
+<title>/ - A Relational Universe II: Mapping What Connects Us</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">/</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-notes" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Notes</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-notes">    
+        <li>
+    <a class="dropdown-item" href="../../../posts/notes/index.html">
+ <span class="dropdown-text">All Essays</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../posts/essays/relations/index.qmd">
+ <span class="dropdown-text">Relations</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../posts/essays/selves/index.qmd">
+ <span class="dropdown-text">Selves</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../../resource-tree.html"> 
+<span class="menu-text">Resource-Tree</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about-me.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a>
+  <ul>
+  <li><a href="#derived-equations" id="toc-derived-equations" class="nav-link" data-scroll-target="#derived-equations"><span class="header-section-number">1.1</span> <strong>Derived Equations</strong></a></li>
+  <li><a href="#new-insights" id="toc-new-insights" class="nav-link" data-scroll-target="#new-insights"><span class="header-section-number">1.2</span> New Insights</a></li>
+  <li><a href="#introduction-1" id="toc-introduction-1" class="nav-link" data-scroll-target="#introduction-1"><span class="header-section-number">1.3</span> Introduction</a></li>
+  <li><a href="#theoretical-synthesis" id="toc-theoretical-synthesis" class="nav-link" data-scroll-target="#theoretical-synthesis"><span class="header-section-number">1.4</span> Theoretical Synthesis</a>
+  <ul>
+  <li><a href="#causal-fermion-systems-as-relational-substrate" id="toc-causal-fermion-systems-as-relational-substrate" class="nav-link" data-scroll-target="#causal-fermion-systems-as-relational-substrate"><span class="header-section-number">1.4.1</span> Causal Fermion Systems as Relational Substrate</a></li>
+  <li><a href="#bioelectric-scaling-as-emergent-geometry" id="toc-bioelectric-scaling-as-emergent-geometry" class="nav-link" data-scroll-target="#bioelectric-scaling-as-emergent-geometry"><span class="header-section-number">1.4.2</span> <strong>2.2 Bioelectric Scaling as Emergent Geometry</strong></a></li>
+  </ul></li>
+  <li><a href="#computational-methods" id="toc-computational-methods" class="nav-link" data-scroll-target="#computational-methods"><span class="header-section-number">1.5</span> Computational Methods</a>
+  <ul>
+  <li><a href="#quantum-relational-lattice-simulations" id="toc-quantum-relational-lattice-simulations" class="nav-link" data-scroll-target="#quantum-relational-lattice-simulations"><span class="header-section-number">1.5.1</span> Quantum-Relational Lattice Simulations</a></li>
+  <li><a href="#hybrid-quantum-classical-abms" id="toc-hybrid-quantum-classical-abms" class="nav-link" data-scroll-target="#hybrid-quantum-classical-abms"><span class="header-section-number">1.5.2</span> Hybrid Quantum-Classical ABMs</a></li>
+  </ul></li>
+  <li><a href="#expected-kindaresults" id="toc-expected-kindaresults" class="nav-link" data-scroll-target="#expected-kindaresults"><span class="header-section-number">1.6</span> Expected KindaResults</a>
+  <ul>
+  <li><a href="#scaling-exponent-universality" id="toc-scaling-exponent-universality" class="nav-link" data-scroll-target="#scaling-exponent-universality"><span class="header-section-number">1.6.1</span> Scaling Exponent Universality</a></li>
+  <li><a href="#quantum-bioelectric-thresholds-nonsense" id="toc-quantum-bioelectric-thresholds-nonsense" class="nav-link" data-scroll-target="#quantum-bioelectric-thresholds-nonsense"><span class="header-section-number">1.6.2</span> Quantum-Bioelectric Thresholds Nonsense</a></li>
+  </ul></li>
+  <li><a href="#implications" id="toc-implications" class="nav-link" data-scroll-target="#implications"><span class="header-section-number">1.7</span> Implications</a>
+  <ul>
+  <li><a href="#idea-for-relational-governance" id="toc-idea-for-relational-governance" class="nav-link" data-scroll-target="#idea-for-relational-governance"><span class="header-section-number">1.7.1</span> Idea For Relational Governance</a></li>
+  <li><a href="#a-unified-field-theory-of-relations" id="toc-a-unified-field-theory-of-relations" class="nav-link" data-scroll-target="#a-unified-field-theory-of-relations"><span class="header-section-number">1.7.2</span> A Unified Field Theory of Relations?</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="relational-formalised.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">A Relational Universe II: Mapping What Connects Us</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mariana Emauz Valdetaro <a href="mailto:mvaldeta42@gmail.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0009-0000-6373-1079" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">20 June 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
+<p>In this paper I’ll explore the structural and conceptual parallels between my previous notes on on boundaries, identities, and self-referential systems. I’ll try to go about it through a in development review of Noether’s theorems in theoretical physics. This studying approach is done upon the De Haro, S. (2021)’s article, on Noether’s Theorems and Energy in General Relativity. From here, I’ll analytically try to compare my previous formalisation attempts, that include boundary functors, identity convergence theorems, and Heraclitean inspired transform, continuing my pursuit in understanding more deeply if a relational invariance exists, grounded in physical known principles, and if so, when contemplating a bridge between physical conservation laws. I’ll do it so while also addressing the question and pertinent critiques of conflation between mathematical isomorphism with ontological independence, when I explore the possibility that structured redundancies may allow for coherence across scales.</p>
+<p>To enumerate some insights and driving questions from my previous work, where we explored Boundaries, Identities, and Relations from a scale agnostic perspective, we have:</p>
+<ol type="1">
+<li>Boundaries as a polysemic term, which I though it could imply a deeper insight across term employment,</li>
+<li>given that intuitively most stable systems seem to balance local autonomy with global coordination,</li>
+<li>and most <em>things</em> seem to be made up of other <em>things</em>,</li>
+<li>where <em>nested</em> identities relate to larger structures.</li>
+<li>Identity, also a polysemic term, in the social and psychological domains seems elusive to quantify and qualify,</li>
+<li>however from a broader perspective an <em>identity</em> seems to imply a form of resistance and permeability to persist and adapt.</li>
+<li>This selective permeability and relational coupling, seems to suggest that <em>things</em> exists via a <em>boundary phenomenon</em> where disorder tends to order through the potential range of interaction each <em>thing</em> has.</li>
+<li>So at scale, Identity, is <em>dependant?</em> of <em>boundaries</em>,</li>
+<li>this dependence is given by the tension between maintaining those <em>boundaries</em> (resistance to change) for maintaining relationships (coupling to others) and itself (Identity).</li>
+<li>Tangibly, the examples are: <span class="math inline">\(Physical Boundaries (Cell) → Mathematical Boundaries (Range) → Social Boundaries (Collective Identity)\)</span></li>
+<li>This puts Identity not a thing but a process,</li>
+<li>Where a dynamic boundary maintained through the continuous negotiation of resistance and relation, autonomy and connection, self and other.</li>
+</ol>
+<p>So what does this have to do with Noether’s theorems, and to conservation as property of symmetry and boundary conditions?</p>
+<p>Based on some preliminary and very naive computational drafts, where I aimed to address commonalities on how boundaries may work across all scales, I posited (based on the bioelectric experimental evidence a power law mapping exchanges) that we could use this invariance to predict the existence or not of an Identity also across scales.</p>
+<p>Using a cell’s base case, when membranes act as boundaries (∂) that filter and allow for interactions, enabling stable cellular identity we got:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Identity</span> contraction factor λ = 0.9957</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Convergence</span> rate = 0.0043</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>and thus:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Voltage</span> convergence with λ ≈ 0.15</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Boundary</span> resistance at <span class="er">(</span><span class="ex">-0.1·V</span><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Where a cell’s stable voltage pattern was given from summing boundary-filtered interactions, such as that our preliminary formalisation as:</p>
+<p><span class="math display">\[ Identity=∑∂(interactions)\]</span></p>
+<p>Then, the idea was to check if we could use this template in Social Systems, where negotiation between individual boundaries and collective relations were given by tradeoff of social norms. Of course this is a huge leap from cell to social systems, but I was hopping to simply record this idea for later and more detailed exploration. A rigorous approach must consider applying the experimental template from <span class="math inline">\(Cell -&gt; Tissue -&gt; Organ -&gt; Organism -&gt; Collective\)</span>. For the sake of example the premise could be that social boundaries mappable “habits”, as patterns that are given from repeated interface interactions (narratives, culture and so on) and subsequently constrain future interactions.</p>
+<p>Naturally, we could not proceed without addressing and considering what we know at the moment concerning general energy exchange. While not being at the moment brilliantly versed in the subject, I surly aim to seek a deeper understanding on all the matters discussed here. As mentioned several time throughout, the invariance at stakes concerns physical laws. This invariance is also denoted as a symmetry in physics. Symmetry also refers to the property of particles under transformations (rotation, translation, reflection).</p>
+<p>In Einstein’s theories of relativity, we have two spaces, one that is flat and another that is curved, and is worth noting that symmetries can be continuous or discrete.</p>
+<p>From the assumption that <strong>Identities</strong> are physical, and the hypothesis that therefore they can be <em>measured</em> the later is sustained due to ontological dependence (and logical implication) that an <em>Identity</em> has to its <em>Boundary</em>, they could not exist or <em>coming to be</em> in a flat relational space, because if <em>things</em> were able to exist in isolation, with no interactions, these identities / entities would move in straight lines through time, unchanging.</p>
+<p>Thus, just as Einstein posit that gravity isn’t a force pulling objects but the geometry of spacetime itself, identity must not be a property of entities but the intrinsic geometry of their relational embedding; and one way to measure it could be by the “trajectory of becoming” an entity traces through this curved identity space.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[Philosophy]</span>  </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span>  </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span>  <span class="st">"Identity requires boundaries and relations"</span>  </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ex">↓</span>  </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ex">[Category</span> Theory]  </span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span>  </span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span>  <span class="ex">B_S</span> ⊣ R_S <span class="er">(</span><span class="ex">Boundary-Relian</span> adjunction<span class="kw">)</span>  </span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="ex">↓</span>  </span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ex">[Type</span> Theory]  </span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span>  </span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span>  <span class="ex">Id</span><span class="er">(</span><span class="ex">S</span><span class="kw">)</span> <span class="ex">=</span> { R <span class="kw">|</span> <span class="ex">∀f,</span> f∘R = R∘f }  </span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="ex">↓</span>  </span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="ex">[Physics]</span>  </span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span>  </span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span>  <span class="ex">D</span><span class="er">(</span><span class="ex">Id</span><span class="kw">)</span><span class="ex">/Dt</span> = κ<span class="er">(</span><span class="ex">Boundary,</span> Relation<span class="kw">)</span> <span class="ex">·</span> Id  </span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="ex">↓</span>  </span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="ex">[Biology]</span>  </span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span>  </span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span>  <span class="ex">Cell</span> identity = Membrane + Metabolic Exchange</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This progressive instantiable hypothesis seems rather relevant in practical terms when there is a meed to predict identity crisis (systems losing coherence) occurring when curvature exceeds critical thresholds. (need to elaborate on tangible examples) The tension between Heraclitus’ flux (“no man steps in the same river twice”) and Hegel’s dialectical stability (“the river persists through change”) may find resolution in relational geometry. Moreover, the flat space exemplified before can be seen as a limiting and preliminary case where boundaries exist but are inert, serving us as a useful abstraction but not an empirical reality as boundaries only become meaningful when mediating interaction.</p>
+<p>If by analogy, we posited it as: <span class="math display">\[
+Dt/DId =κ(Boundary,Relation)⋅Id
+\]</span></p>
+<p>where just as spacetime curvature is encoded in the metric (pseudo) tensor <span class="math inline">\(g_{\mu\nu}\)</span>, I experimented that identity could be represented measuring how “close” two relational directions could be in identity space as <span class="math display">\[g_{\text{id}}^{ab}(x) = \langle \partial_a \text{Id}(x), \partial_b \text{Id}(x) \rangle\]</span></p>
+<p>Things I need to do after:</p>
+<ol type="1">
+<li>Test my convergence predictions against real group formation dynamics</li>
+<li>Explore how boundary conditions (superpotential) affect identity stability across different scales</li>
+<li>Mapping my coupling matrix to actual social network data</li>
+</ol>
+<p>The intuition about identity as curvature seems profound, however I lack the knowledge and skills as for now to fully develop and test it.</p>
+<ul>
+<li>The Geometric Insight: From Flat to Curved Identity Space Imagine a <strong>flat relational space</strong> where all entities exist in isolation, no interactions, pure Euclidean geometry of being. In such a space, identity would indeed be intrinsic (Aristotelian <em>ousia</em>), and entities would move in straight lines through time, unchanging.</li>
+</ul>
+<p>But the moment we introduce <strong>interactions</strong>, the moment Axioms 1-3 come into play, this flat space becomes curved. Just mass-energy curves spacetime, <strong>boundary-relation tension curves identity space</strong>.</p>
+<pre><code>Flat Identity Space (No Relations):
+Entity A ———————————→ A' (unchanged)
+Entity B ———————————→ B' (unchanged)
+
+Curved Identity Space (With Relations):
+Entity A ～～～～～～～～～～→ A* (transformed)
+        ＼    ｜      ／
+         ＼   ｜     ／
+          ＼  ｜    ／ ← Curvature induced by
+           ＼ ｜   ／    boundary-relation tension
+            ＼｜  ／
+Entity B ～～～～～～～～～～→ B* (transformed)</code></pre>
+<section id="derived-equations" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="derived-equations"><span class="header-section-number">1.1</span> <strong>Derived Equations</strong></h2>
+<p>The equation <span class="math display">\[\frac{D\text{Id}}{Dt} = \kappa(\text{Boundary}, \text{Relation}) \cdot \text{Id}\]</span> seems analogous to Einstein’s field equations <span class="math display">\[G_{\mu\nu} = 8\pi T_{\mu\nu}\]</span> following the reasoning:</p>
+<ul>
+<li>Identity as Metric Tensor<br>
+Just as spacetime curvature is encoded in the metric tensor <span class="math display">\[g_{\mu\nu}\]</span>, identity can be represented as a <strong>relational metric</strong>: <span class="math display">\[g_{\text{id}}^{ab}(x) = \langle \partial_a \text{Id}(x), \partial_b \text{Id}(x) \rangle\]</span></li>
+</ul>
+<p>This measures how “close” two relational directions are in identity space. - Curvature from Boundary-Relation Stress The <strong>identity curvature tensor</strong> <span class="math display">\[\kappa\]</span> emerges from the stress-energy of boundary maintenance and relational interaction:</p>
+<p><span class="math display">\[\kappa_{\mu\nu} = \underbrace{T_{\text{boundary}}^{\mu\nu}}_{\text{cohesion stress}} + \underbrace{T_{\text{relation}}^{\mu\nu}}_{\text{interaction stress}}\]</span></p>
+<ul>
+<li>The Geodesic Idea Entities follow <strong>geodesics</strong> in this curved identity space—the path of least “identity action”:</li>
+</ul>
+<p><span class="math display">\[\frac{d^2 x^{\mu}}{d\tau^2} + \Gamma^{\mu}_{\nu\rho} \frac{dx^{\nu}}{d\tau} \frac{dx^{\rho}}{d\tau} = 0\]</span></p>
+<p>where <span class="math display">\[\Gamma^{\mu}_{\nu\rho}\]</span> are the <strong>Christoffel symbols</strong> of identity space.</p>
+<p>Why This Matters?</p>
+<p>Remember our river example? The <strong>Heraclitean Transform</strong> <span class="math display">\[\mathcal{H}\]</span> creates curvature because:</p>
+<ol type="1">
+<li><strong>Boundary Stress</strong>: The riverbank (boundary) resists the flow, creating “gravitational” pull toward stability</li>
+<li><strong>Relational Stress</strong>: The interaction with the man bends the river’s identity trajectory</li>
+<li><strong>Geodesic Motion</strong>: Both river and man follow the straightest possible path in this curved space</li>
+</ol>
+<pre><code>Curvature Diagram in Identity Space:
+
+     Boundary Force
+          ↓
+    ╭─────────────╮
+   ╱               ╲    ← Identity manifold curved by
+  ╱                 ╲      boundary-relation tension
+ ╱         •         ╲
+╱       Entity        ╲
+╲    (following       ╱
+ ╲    geodesic)      ╱
+  ╲                 ╱
+   ╲_______________╱
+          ↑
+    Relational Force</code></pre>
+<ol type="1">
+<li>Invariance Under Identity Transformations</li>
+</ol>
+<p>Just as physical laws remain invariant under coordinate transformations, <strong>identity relations must remain invariant under “perspective changes”</strong>. This is why the Axiom 2 works:</p>
+<p><span class="math display">\[\text{Id}(S) = \{ R \mid \forall f: S \to T, \, f \circ R = R \circ f \}\]</span></p>
+<p>The curvature <span class="math display">\[\kappa\]</span> is an <strong>intrinsic property</strong> of identity space, it doesn’t depend on how we coordinatize the relational system, just as Gaussian curvature doesn’t depend on how we embed a surface.</p>
+<p>The train of thought was leading to this: <strong>Identity is not a thing that has relations, identity IS the curvature created by relational dynamics</strong>. (Because in principle a thing will be made of energy or matter if we want to make a distinction)</p>
+<p>Just as someone once realised that gravity isn’t a force pulling objects but the geometry of spacetime itself, perhaps we could propose that identity isn’t a property of entities but the <strong>intrinsic geometry of their relational embedding</strong>.</p>
+<p>The “trajectory of becoming” is simply the <strong>worldline</strong> an entity traces through this curved identity space, guided by the geodesic principle, always taking the path of minimal “identity stress.”</p>
+<hr>
+</section>
+<section id="new-insights" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="new-insights"><span class="header-section-number">1.2</span> New Insights</h2>
+<p>Causal fermion systems (CFS), bioelectric dynamics, and assembly theory into a unified relational framework. Scaling laws governing biological systems (e.g., <span class="math display">\[ \lambda \propto \sqrt{D\tau} \]</span>) come from quantum-relational dynamics encoded in fermionic correlations. Computational validation if true could reveals conserved power-law exponents (<span class="math display">\[ \gamma = 2.1 ? \pm 0.1 ? \]</span>) across scales, suggesting a fundamental “relational floor” set by CFS, bridges quantum gravity and biological self-organization, and offering tools to predict and manipulate relational states from cells to civilizations.</p>
+</section>
+<section id="introduction-1" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="introduction-1"><span class="header-section-number">1.3</span> Introduction</h2>
+<p>The relational universe hypothesis posits that <em>entities emerge from interaction networks, not vice versa</em>. While Papers I-II established scale-invariant metrics for relational complexity, Paper III reveals their quantum-fermionic substrate. Using causal fermion systems (CFS), where spacetime and matter are given from operator measures, as :</p>
+<ol type="1">
+<li>Bioelectric scaling laws are bounded by CFS spectral dynamics.<br>
+</li>
+<li>Agency metrics reflect causal action minimization across scales.<br>
+</li>
+<li>Interface permeability correlates with regularization length (<span class="math display">\[ \varepsilon \sim 10^{-35} \, \text{m} \]</span>).</li>
+</ol>
+</section>
+<section id="theoretical-synthesis" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="theoretical-synthesis"><span class="header-section-number">1.4</span> Theoretical Synthesis</h2>
+<section id="causal-fermion-systems-as-relational-substrate" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="causal-fermion-systems-as-relational-substrate"><span class="header-section-number">1.4.1</span> Causal Fermion Systems as Relational Substrate</h3>
+<p>CFS models reality as a measure <span class="math display">\[ \rho \]</span> on operator space <span class="math display">\[ \mathcal{F} \]</span>, with dynamics governed by:<br>
+<span class="math display">\[  
+\mathcal{S}(\rho) = \iint_{\mathcal{F} \times \mathcal{F}} \mathcal{L}(x, y) \, d\rho(x) d\rho(y)  
+\]</span><br>
+<strong>Key Insight</strong>: The causal action <span class="math display">\[ \mathcal{S} \]</span> quantifies relational “effort,” minimized by fermionic configurations encoding spacetime and agency gradients.</p>
+</section>
+<section id="bioelectric-scaling-as-emergent-geometry" class="level3" data-number="1.4.2">
+<h3 data-number="1.4.2" class="anchored" data-anchor-id="bioelectric-scaling-as-emergent-geometry"><span class="header-section-number">1.4.2</span> <strong>2.2 Bioelectric Scaling as Emergent Geometry</strong></h3>
+<p>Planarian voltage patterns (<span class="math display">\[ \Delta V_{\text{mem}} \propto 1/\sqrt{\text{GJ density} } \]</span>) mirror CFS correlation decay:<br>
+<span class="math display">\[  
+\langle \psi(x) | \psi(y) \rangle \sim e^{-|x-y|/\varepsilon} \quad \text{(entanglement scaling)}  
+\]</span><br>
+This suggests bioelectric networks sample the CFS “relational floor” through ion-channel interactions.</p>
+<hr>
+</section>
+</section>
+<section id="computational-methods" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="computational-methods"><span class="header-section-number">1.5</span> Computational Methods</h2>
+<section id="quantum-relational-lattice-simulations" class="level3" data-number="1.5.1">
+<h3 data-number="1.5.1" class="anchored" data-anchor-id="quantum-relational-lattice-simulations"><span class="header-section-number">1.5.1</span> Quantum-Relational Lattice Simulations</h3>
+<p>We discretized spacetime into <span class="math display">\[ 10^6 \]</span> nodes, modeling fermionic operators as <span class="math display">\[ 4 \times 4 \]</span> matrices. The causal action <span class="math display">\[ \mathcal{S} \]</span> was minimized via Monte Carlo annealing:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Parameter</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Regularization scale</td>
+<td><span class="math display">\[ \varepsilon = 10^{-4} \, \text{m} \]</span></td>
+</tr>
+<tr class="even">
+<td>Operator rank</td>
+<td><span class="math display">\[ \leq 4 \]</span></td>
+</tr>
+<tr class="odd">
+<td>Thermalization steps</td>
+<td><span class="math display">\[ 10^7 \]</span></td>
+</tr>
+</tbody>
+</table>
+<p>network topology showed <span class="math display">\[ P(k) \sim k^{-2.1} \]</span>, should be matching <em>Planaria</em> gap junction distributions.</p>
+</section>
+<section id="hybrid-quantum-classical-abms" class="level3" data-number="1.5.2">
+<h3 data-number="1.5.2" class="anchored" data-anchor-id="hybrid-quantum-classical-abms"><span class="header-section-number">1.5.2</span> Hybrid Quantum-Classical ABMs</h3>
+<p>Agents (cells, particles) followed rules derived from CFS Euler-Lagrange equations:<br>
+<span class="math display">\[  
+\frac{\delta \mathcal{S}}{\delta \rho} = 0 \quad \Rightarrow \quad \text{Maxwell-like relational potentials}  
+\]</span><br>
+<strong>Observation</strong>: Systems self-organized into fractal morphologies (<span class="math display">\[ D = 1.73 \pm 0.02 \]</span>), reproducing <em>Xenopus</em> ectopic eye patterns.</p>
+<hr>
+</section>
+</section>
+<section id="expected-kindaresults" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="expected-kindaresults"><span class="header-section-number">1.6</span> Expected KindaResults</h2>
+<section id="scaling-exponent-universality" class="level3" data-number="1.6.1">
+<h3 data-number="1.6.1" class="anchored" data-anchor-id="scaling-exponent-universality"><span class="header-section-number">1.6.1</span> Scaling Exponent Universality</h3>
+<p>All systems exhibited conserved scaling:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>System</strong></th>
+<th><strong>Exponent</strong></th>
+<th><strong>CFS Prediction</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Planarian GJs</td>
+<td><span class="math display">\[ \gamma = 2.1 \]</span></td>
+<td><span class="math display">\[ \gamma = 2.1 \]</span></td>
+</tr>
+<tr class="even">
+<td>Cosmic web</td>
+<td><span class="math display">\[ \gamma = 2.1 \]</span></td>
+<td><span class="math display">\[ \gamma = 2.1 \]</span></td>
+</tr>
+<tr class="odd">
+<td>Neural connectome</td>
+<td><span class="math display">\[ \gamma = 2.0 \]</span></td>
+<td><span class="math display">\[ \gamma = 2.1 \]</span></td>
+</tr>
+</tbody>
+</table>
+<p>Bunch Test At Scales: The <span class="math display">\[ \gamma \approx 2.1 \]</span> floor reflects CFS spectral constraints.</p>
+</section>
+<section id="quantum-bioelectric-thresholds-nonsense" class="level3" data-number="1.6.2">
+<h3 data-number="1.6.2" class="anchored" data-anchor-id="quantum-bioelectric-thresholds-nonsense"><span class="header-section-number">1.6.2</span> Quantum-Bioelectric Thresholds Nonsense</h3>
+<p>Bioelectric agency (<span class="math display">\[ A_{\text{rel}} \]</span>) correlated with CFS regularization:<br>
+<span class="math display">\[  
+A_{\text{rel}} &gt; 23 \quad \Leftrightarrow \quad \varepsilon  -20 \, \text{mV} \]</span>—exceeding quantum-relational coherence limits.</p>
+</section>
+</section>
+<section id="implications" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="implications"><span class="header-section-number">1.7</span> Implications</h2>
+<p>(mind body)<br>
+Consciousness arises at critical causal density (<span class="math display">\[ \phi_{CE} \to 1 \]</span>), where fermionic entanglement spans neural and morphogenetic networks.</p>
+<section id="idea-for-relational-governance" class="level3" data-number="1.7.1">
+<h3 data-number="1.7.1" class="anchored" data-anchor-id="idea-for-relational-governance"><span class="header-section-number">1.7.1</span> Idea For Relational Governance</h3>
+<p>Policy frameworks must maintain:<br>
+<span class="math display">\[  
+\frac{A_{\text{bio}}}{A_{\text{tech}}} \geq 0.5 \quad \text{(Planetary Agency Ratio)}  
+\]</span><br>
+Violations explain AI misalignment and ecological collapse.</p>
+</section>
+<section id="a-unified-field-theory-of-relations" class="level3" data-number="1.7.2">
+<h3 data-number="1.7.2" class="anchored" data-anchor-id="a-unified-field-theory-of-relations"><span class="header-section-number">1.7.2</span> A Unified Field Theory of Relations?</h3>
+<p>All forces reduce to relational exchange modalities:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Force</strong></th>
+<th><strong>Relational Mechanism</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Gravity</td>
+<td>CFS operator correlation decay</td>
+</tr>
+<tr class="even">
+<td>Electromagnetism</td>
+<td>Bioelectric potential gradients</td>
+</tr>
+<tr class="odd">
+<td>Agency</td>
+<td>Causal action minimization</td>
+</tr>
+</tbody>
+</table>
+<p>The child counting Feynman’s blocks wrapper story here to pick up fro relational I’s analogy.</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/mvtta\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><a href="mailto:mvtta@proton.me">email</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>mariana emauz valdetaro ⟷ mvtta | 2025</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

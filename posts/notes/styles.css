@@ -1,0 +1,231 @@
+/* Article styling */
+.article {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    max-width: 950px !important;
+    margin: 0 auto;
+}
+
+/* Root elements - fixing the sticky footer issue */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-columns.page-full blockquote,
+.page-columns .blockquote,
+.blockquote,
+blockquote {
+  width: 100% !important;
+  max-width: 900px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  box-sizing: border-box !important;
+}
+
+.page-layout-article main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.quarto-title-block,
+.quarto-title,
+.article,
+.main-content,
+.content,
+body > main,
+.abstract,
+blockquote {
+  max-width: 1500px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  box-sizing: border-box;
+}
+
+.content {
+    flex: 1 0 auto;
+    margin-bottom: 0;
+}
+
+.nav-footer {
+    position: relative !important;
+    margin-top: auto;
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+/* Body text */
+p {
+    font-size: medium;        
+    margin-bottom: 1.2em;
+
+}
+
+/* List items */
+li {
+    font-size: small;        
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid #ccc;
+    margin: 1.5em 0;
+    padding: 0.5em 1em;
+    font-style: italic;
+}
+
+/* Code blocks */
+.mermaid {
+    margin: 2em 0;
+}
+
+//* References and Citations */
+.citation {
+    font-size: 0.8rem;
+    vertical-align: super;
+    margin-left: 0.2em;
+}
+
+.references {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-top: 2em;
+}
+
+div.csl-entry {
+    font-size: 0.9rem;
+    margin-bottom: 1em;
+    padding-left: 2em;
+    text-indent: -2em;
+}
+
+div.csl-left-margin {
+    min-width: 2em;
+    float: left;
+}
+
+div.csl-right-inline {
+    margin-left: 2em;
+    padding-left: 1em;
+}
+
+#refs {
+    margin-top: 3em;
+    border-top: 2px solid #eee;
+    padding-top: 2em;
+    clear: both;
+}
+
+/* Custom styles for the essays listing table */
+.quarto-listing-table {
+    border-collapse: separate;
+    border-spacing: 0 12px;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #333 !important;
+}
+
+.quarto-listing-table td {
+    border: none;
+    padding: 8px 16px;
+    vertical-align: top;
+}
+
+.quarto-listing-table tr {
+    background: transparent !important;
+    transition: all 0.3s ease;
+}
+
+.quarto-listing-table tr:hover {
+    background-color: rgba(200, 200, 200, 0.1) !important;
+}
+
+/* Style for the date column */
+.quarto-listing-table td:first-child {
+    width: 80px;
+    color: #888;
+    font-size: small;
+    font-weight: 300;
+    padding-left: 0;
+}
+
+/* Style for title column */
+.quarto-listing-table td:nth-child(2) a {
+    font-size: medium;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* Style for description column - truncate to single line with ellipsis */
+.quarto-listing-table td:nth-child(3) {
+    font-size: small;
+    color: #aaa;
+    font-weight: 300;
+    max-width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Hide table headers */
+.quarto-listing-table thead {
+    display: none;
+}
+
+/* Categories styling */
+.listing-category {
+    font-size: x-small;
+    padding: 3px 8px;
+    margin-right: 6px;
+    border-radius: 3px;
+    background-color: rgba(150, 150, 150, 0.1);
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+/* Table of Contents styling */
+nav[role=doc-toc] {
+    padding: 20px;
+    z-index: 1020;
+    margin-right: 20px;  /* Add right margin */
+    margin-top: 20px;    /* Add top margin */
+}
+
+/* Style the TOC items */
+nav[role=doc-toc] ul {
+    padding-left: 15px;
+    list-style-type: none;
+}
+
+nav[role=doc-toc] li {
+    margin: 8px 0;
+    font-size: small;
+}
+
+nav[role=doc-toc] a {
+    text-decoration: none;
+    color: #5c5c5c !important;
+}

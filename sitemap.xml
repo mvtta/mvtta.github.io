@@ -1,32 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mvtta.github.io/resource-tree.html</loc>
-    <lastmod>2025-05-22T10:39:16.406Z</lastmod>
-  </url>
-  <url>
     <loc>https://mvtta.github.io/posts/resume/resume.html</loc>
     <lastmod>2025-06-05T15:09:14.912Z</lastmod>
   </url>
   <url>
-    <loc>https://mvtta.github.io/posts/notes/selves/identity-1.html</loc>
-    <lastmod>2025-07-14T15:46:27.466Z</lastmod>
+    <loc>https://mvtta.github.io/posts/notes/selves/identity-2.html</loc>
+    <lastmod>2025-07-18T11:59:39.133Z</lastmod>
   </url>
   <url>
-    <loc>https://mvtta.github.io/posts/notes/relations/relational-formalised.html</loc>
-    <lastmod>2025-07-14T15:28:58.960Z</lastmod>
+    <loc>https://mvtta.github.io/posts/notes/relations/relational-view.html</loc>
+    <lastmod>2025-07-14T15:28:58.006Z</lastmod>
   </url>
   <url>
-    <loc>https://mvtta.github.io/posts/notes/index.html</loc>
-    <lastmod>2025-07-14T15:29:17.274Z</lastmod>
+    <loc>https://mvtta.github.io/posts/notes/relations/index.html</loc>
+    <lastmod>2025-07-14T15:29:10.476Z</lastmod>
   </url>
   <url>
-    <loc>https://mvtta.github.io/posts/notes/boundaries/index.html</loc>
-    <lastmod>2025-05-22T08:47:00.183Z</lastmod>
+    <loc>https://mvtta.github.io/posts/notes/boundaries/philosofical-bounderies.html</loc>
+    <lastmod>2025-07-14T15:24:06.303Z</lastmod>
   </url>
   <url>
-    <loc>https://mvtta.github.io/posts/notes/boundaries/boundaries-3-exp.html</loc>
-    <lastmod>2025-07-14T15:22:40.942Z</lastmod>
+    <loc>https://mvtta.github.io/posts/notes/boundaries/boundaries-4-revision.html</loc>
+    <lastmod>2025-07-14T15:29:07.682Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/posts/notebooks/bubble-logic/seven_gate_experiment_clean.html</loc>
+    <lastmod>2025-07-23T19:39:29.311Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/posts/notebooks/bubble-logic/c-experiment/src/truth-bubles.html</loc>
+    <lastmod>2025-07-23T19:29:15.792Z</lastmod>
   </url>
   <url>
     <loc>https://mvtta.github.io/index.html</loc>
@@ -37,31 +41,31 @@
     <lastmod>2025-05-22T10:11:10.833Z</lastmod>
   </url>
   <url>
+    <loc>https://mvtta.github.io/posts/notebooks/bubble-logic/requirements.html</loc>
+    <lastmod>2025-07-23T19:36:40.653Z</lastmod>
+  </url>
+  <url>
     <loc>https://mvtta.github.io/posts/notes/boundaries/boundaries-2-math.html</loc>
     <lastmod>2025-07-14T15:22:07.084Z</lastmod>
   </url>
   <url>
-    <loc>https://mvtta.github.io/posts/notes/boundaries/boundaries-4-revision.html</loc>
-    <lastmod>2025-07-14T15:29:07.682Z</lastmod>
+    <loc>https://mvtta.github.io/posts/notes/boundaries/index.html</loc>
+    <lastmod>2025-05-22T08:47:00.183Z</lastmod>
   </url>
   <url>
-    <loc>https://mvtta.github.io/posts/notes/boundaries/philosofical-bounderies.html</loc>
-    <lastmod>2025-07-14T15:24:06.303Z</lastmod>
+    <loc>https://mvtta.github.io/posts/notes/index.html</loc>
+    <lastmod>2025-07-14T15:29:17.274Z</lastmod>
   </url>
   <url>
-    <loc>https://mvtta.github.io/posts/notes/relations/index.html</loc>
-    <lastmod>2025-07-14T15:29:10.476Z</lastmod>
+    <loc>https://mvtta.github.io/posts/notes/relations/relational-formalised.html</loc>
+    <lastmod>2025-07-14T15:28:58.960Z</lastmod>
   </url>
   <url>
-    <loc>https://mvtta.github.io/posts/notes/relations/relational-view.html</loc>
-    <lastmod>2025-07-14T15:28:58.006Z</lastmod>
+    <loc>https://mvtta.github.io/posts/notes/selves/identity-1.html</loc>
+    <lastmod>2025-07-18T11:59:39.133Z</lastmod>
   </url>
   <url>
     <loc>https://mvtta.github.io/posts/notes/selves/index.html</loc>
     <lastmod>2025-05-22T08:29:38.267Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mvtta.github.io/posts/thoughts/index.html</loc>
-    <lastmod>2025-05-23T14:40:32.041Z</lastmod>
   </url>
 </urlset>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>/ -</title>
+<title>/</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,17 +68,17 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">/</span>
     </a>
   </div>
@@ -89,11 +89,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./posts/dialogues/"> 
+    <a class="nav-link" href="../../../posts/dialogues/"> 
 <span class="menu-text">dialogues</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about-me.html"> 
+    <a class="nav-link" href="../../../about-me.html"> 
 <span class="menu-text">about</span></a>
   </li>  
 </ul>
@@ -107,27 +107,84 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 
 
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-10">
-      <h1 class="display-4 text-center"></h1>
-      
-      <div class="text-center my-4">
-        <p></p>
-        <a href="https://i.pinimg.com/736x/cc/a3/3e/cca33ea76613e929969a0d090fe22bb7.jpg" target="_blank">
-          <img src="https://i.pinimg.com/736x/cc/a3/3e/cca33ea76613e929969a0d090fe22bb7.jpg" alt="Image" class="img-fluid" style="width: 70%;">
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+<p>Requirements The experiment broke two fundamental assumptions of traditional sorting algorithms:</p>
+<ol type="1">
+<li>Top-Down Control Elimination Instead of central algorithmic control, each element (cell) within an array exerts minimal agency</li>
+</ol>
+<p>Implementation of sorting policies from the bottom-up using distributed control</p>
+<p>Each cell makes local decisions based on its immediate environment</p>
+<ol start="2" type="1">
+<li>Unreliable Hardware Simulation Allow elements to be “damaged” and fail to execute the algorithm</li>
+</ol>
+<p>Introduction of “Frozen Cells” that cannot move when instructed</p>
+<p>Two types of frozen cells:</p>
+<p>Movable Frozen Cells: Cannot initiate moves but can be moved by others</p>
+<p>Immovable Frozen Cells: Cannot move or be moved by others</p>
+<p>Implementation Details Platform Architecture Programming Language: Python 3.0</p>
+<p>Architecture: Multi-threaded implementation with two thread types:</p>
+<p>Cell threads: Each cell represented by a single thread</p>
+<p>Main thread: Activates all threads and monitors the sorting process</p>
+<p>Code Repository: Available at https://github.com/Zhangtaining/cell_research</p>
+<p>Cell-View Sorting Algorithms Three distributed versions of classical sorting algorithms were implemented:</p>
+<p>Cell-View Bubble Sort Each cell views and swaps with left or right neighbor</p>
+<p>Moves left if smaller than left neighbor, right if bigger than right neighbor</p>
+<p>Cell-View Insertion Sort Each cell views all cells to its left, swaps only with left neighbor</p>
+<p>Moves left if left side is sorted and cell value is smaller than left neighbor</p>
+<p>Cell-View Selection Sort Each cell has an ideal target position (initially leftmost)</p>
+<p>Swaps with cell currently occupying its ideal position if it has smaller value</p>
+<p>Shifts ideal position right if swap is denied</p>
+<p>Experimental Setup Array Size: 100 elements per experiment</p>
+<p>Repetitions: 100 experiments per condition</p>
+<p>Initial State: Randomized arrays of cells</p>
+<p>Stop Condition: No more changes in sortedness value for several time steps</p>
+<p>Behavior in Scope The study analyzed several key behavioral competencies:</p>
+<ol type="1">
+<li>Basic Sorting Performance Ability to complete sorting tasks successfully</li>
+</ol>
+<p>Efficiency comparison between traditional and cell-view versions</p>
+<ol start="2" type="1">
+<li>Error Tolerance Performance degradation with increasing numbers of frozen cells</li>
+</ol>
+<p>Robustness against different types of cellular damage</p>
+<ol start="3" type="1">
+<li>Delayed Gratification Ability to temporarily increase monotonicity error to achieve long-term gains</li>
+</ol>
+<p>Context-sensitive deployment of backtracking strategies when facing obstacles</p>
+<ol start="4" type="1">
+<li>Chimeric Array Behavior Mixed “algotype” experiments where different cells use different sorting algorithms</li>
+</ol>
+<p>Emergence of clustering behavior among cells with similar algorithms</p>
+<p>Conflict resolution when different algotypes have opposing goals</p>
+<p>Analysis Methods Quantitative Metrics Sorting Performance Metrics: Total Sorting Steps: Count of comparisons and swaps needed</p>
+<p>Sortedness Value: Percentage of cells following designated sort order</p>
+<p>Monotonicity Error: Number of cells violating monotonic order</p>
+<p>Behavioral Analysis Metrics: Delayed Gratification Index:</p>
+<p>text DG = (Total consecutive Sortedness increase after drop) / (Total consecutive Sortedness decrease before increase) Aggregation Value: Percentage of cells with directly adjacent neighbors of same algotype</p>
+<p>Statistical Methods: Z-test and T-test for significance evaluation</p>
+<p>100 experimental repetitions for statistical power</p>
+<p>Standard deviation analysis for performance consistency</p>
+<p>Experimental Conditions Frozen Cell Variations: 0, 1, 2, 3 frozen cells per array</p>
+<p>Algotype Combinations: Pure algotype vs.&nbsp;mixed algotype arrays</p>
+<p>Duplicate Value Testing: Arrays with repeated values to separate explicit vs.&nbsp;emergent goals</p>
+<p>OUR VERSION:</p>
+<ol type="1">
+<li>SAME AS REPRODUCING RESULTS</li>
+<li>WITH BITWISE OPERATORS MAPPED TO ALGOTYPES
+<ol type="1">
+<li><ul>
+<li><strong>Algotype Comparison</strong>: Each logical operator (AND, OR, XOR, NAND, NOR) can be treated as an algotype. We can record operator usage per element over time and analyze clustering patterns or performance differences between operator types. This reveals how different decision policies behave under identical conditions.</li>
+</ul></li>
+</ol></li>
+</ol>
 
 
 

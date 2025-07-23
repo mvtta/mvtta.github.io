@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.555">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Scientific Research Notebook">
+<meta name="dcterms.date" content="2025-07-21">
+<meta name="description" content="Complete implementation of seven-gate identity framework with rigorous testing against Michael Levin’s algotype experiment, demonstrating processual identity theory through logical operations in sorting algorithms">
+
+<title>/ - Seven-Gate Identity Framework Implementation</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">/</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../posts/dialogues/"> 
+<span class="menu-text">dialogues</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about-me.html"> 
+<span class="menu-text">about</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#seven-gate-identity-framework-implementation" id="toc-seven-gate-identity-framework-implementation" class="nav-link active" data-scroll-target="#seven-gate-identity-framework-implementation">Seven-Gate Identity Framework Implementation</a>
+  <ul class="collapse">
+  <li><a href="#framework-overview" id="toc-framework-overview" class="nav-link" data-scroll-target="#framework-overview">Framework Overview</a>
+  <ul class="collapse">
+  <li><a href="#what-well-implement" id="toc-what-well-implement" class="nav-link" data-scroll-target="#what-well-implement">What We’ll Implement</a></li>
+  </ul></li>
+  <li><a href="#interactive-seven-gate-visualization" id="toc-interactive-seven-gate-visualization" class="nav-link" data-scroll-target="#interactive-seven-gate-visualization">Interactive Seven-Gate Visualization</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Seven-Gate Identity Framework Implementation</h1>
+<p class="subtitle lead">Comprehensive Testing Blueprint for Michael Levin’s Algotype Experiment</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">computer science</div>
+    <div class="quarto-category">philosophy</div>
+    <div class="quarto-category">logic</div>
+    <div class="quarto-category">emergence</div>
+    <div class="quarto-category">identity theory</div>
+    <div class="quarto-category">algorithms</div>
+    <div class="quarto-category">experimental validation</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Complete implementation of seven-gate identity framework with rigorous testing against Michael Levin’s algotype experiment, demonstrating processual identity theory through logical operations in sorting algorithms
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Scientific Research Notebook </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 21, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="seven-gate-identity-framework-implementation" class="level1">
+<h1>Seven-Gate Identity Framework Implementation</h1>
+<p>This notebook implements a comprehensive seven-gate identity framework that directly interfaces with Michael Levin’s algotype experiment conditions, following the rigorous testing blueprint for integrating our identity-gate framework with empirical clustering phenomena.</p>
+<section id="framework-overview" class="level2">
+<h2 class="anchored" data-anchor-id="framework-overview">Framework Overview</h2>
+<p>Building on Michael Levin’s groundbreaking discovery of clustering behavior in sorting algorithms, we implement a theoretical framework where:</p>
+<ul>
+<li><strong>Elements are self-implementing logical operators</strong> with Gate-Policy Vectors (GPVs)</li>
+<li><strong>Seven identity gates</strong> (Be, Sustain, Compose, Belong, Generate, Transition, Maintain) govern element interactions</li>
+<li><strong>Gate-Policy Vectors (GPVs)</strong> encode each element’s operational behavior as 7-bit binary strings</li>
+<li><strong>Clustering emerges</strong> from logical compatibility and gate interactions</li>
+<li><strong>Identity is processual</strong> - maintained through consistent operational patterns</li>
+</ul>
+<section id="what-well-implement" class="level3">
+<h3 class="anchored" data-anchor-id="what-well-implement">What We’ll Implement</h3>
+<ol type="1">
+<li><strong>Seven-gate identity framework</strong> mapped to Levin’s experimental conditions</li>
+<li><strong>Gate-Policy Vectors</strong> encoding element behaviors as 7-bit binary strings</li>
+<li><strong>Interactive seven-gate visualization</strong> with real-time heatmap and gate activation patterns</li>
+<li><strong>Levin’s exact metrics</strong>: Sortedness, Monotonicity Error, Delayed Gratification, Aggregation Value</li>
+<li><strong>Factorial experimental design</strong> spanning 486 conditions with fault models</li>
+<li><strong>Statistical validation</strong> against Levin’s published results</li>
+</ol>
+</section>
+</section>
+<section id="interactive-seven-gate-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-seven-gate-visualization">Interactive Seven-Gate Visualization</h2>
+<p>Before diving into the Python implementation, let’s explore the seven-gate identity framework through an interactive visualization that shows real-time gate activation patterns, clustering dynamics, and GPV interactions during bubble sort:</p>
+<!-- Enhanced Seven-Gate Identity Framework Visualization -->
+<div class="visualization-container">
+    <!-- Control Panel -->
+    <div class="control-panel card">
+        <div class="controls-grid">
+            <div class="control-group">
+                <h4 class="anchored">Animation Controls</h4>
+                <div style="display: flex; gap: 8px;">
+                    <button id="startBtn" class="btn">Start Seven-Gate Sort</button>
+                    <button id="pauseBtn" class="btn btn--secondary">Pause</button>
+                    <button id="resetBtn" class="btn btn--outline">Reset</button>
+                </div>
+            </div>
+            <div class="control-group">
+                <label>Speed: <span id="speedValue">5x</span></label>
+                <input type="range" id="speedSlider" class="form-control" min="1" max="20" value="5" step="1">
+            </div>
+            <div class="control-group">
+                <label>Array Size: <span id="arraySizeValue">400</span></label>
+                <select id="arraySizeSelect" class="form-control">
+                    <option value="12">12 elements</option>
+                    <option value="16">16 elements</option>
+                    <option value="20">20 elements</option>
+                    <option value="24">24 elements</option>
+                    <option value="400" selected="">400 elements</option>
+                </select> 
+            </div>
+            <div class="control-group">
+                <label>GPV Distribution: <span id="gpvDistValue">Bubble Heavy</span></label>
+                <select id="gpvDistSelect" class="form-control">
+                    <option value="balanced">Balanced (Equal GPVs)</option>
+                    <option value="bubble-heavy" selected="">Bubble Heavy (70/30)</option>
+                    <option value="selection-heavy">Selection Heavy (30/70)</option>
+                    <option value="diverse">Diverse (4 GPV types)</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Gate Activation Threshold: <span id="thresholdValue">0.5</span></label>
+                <input type="range" id="thresholdSlider" class="form-control" min="0" max="1" value="0.5" step="0.1">
+            </div>
+            <div class="control-group">
+                <div style="display: flex; gap: 8px; align-items: center;">
+                    <input type="checkbox" id="trailEffectToggle" checked="">
+                    <label for="trailEffectToggle">Gate Trail Effect</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seven-Gate Bubble Sort Array -->
+    <div class="sort-panel card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+            <h3 class="anchored">Seven-Gate Bubble Sort Array</h3>
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="color-box" style="background: #e74c3c;"></div>
+                    <span>BE Gate (Identity)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box" style="background: #f39c12;"></div>
+                    <span>SUSTAIN Gate (OR)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box" style="background: #f1c40f;"></div>
+                    <span>COMPOSE Gate (XOR)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box" style="background: #2ecc71;"></div>
+                    <span>BELONG Gate (XOR)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box" style="background: #3498db;"></div>
+                    <span>GENERATE Gate (AND)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box" style="background: #9b59b6;"></div>
+                    <span>TRANSITION Gate (NOR)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box" style="background: #34495e;"></div>
+                    <span>MAINTAIN Gate (NAND)</span>
+                </div>
+            </div>
+        </div>
+        <canvas id="sortCanvas" width="800" height="200"></canvas>
+        <div style="display: flex; justify-content: space-around; margin-top: 10px; font-weight: bold;">
+            <span>Swaps: <span id="swapCount">0</span></span>
+            <span>Comparisons: <span id="comparisonCount">0</span></span>
+            <span>Gate Activations: <span id="gateActivationCount">0</span></span>
+            <span>Sort Progress: <span id="sortProgress">0%</span></span>
+        </div>
+    </div>
+
+    <!-- Gate Activation Heatmap -->
+    <div class="heatmap-panel card">
+        <h3 class="anchored">Gate Activation Heatmap</h3>
+        <p style="color: #666; margin: 5px 0;">Real-time visualization of seven-gate activation patterns across array positions</p>
+        <canvas id="heatmapCanvas" width="800" height="300"></canvas>
+    </div>
+
+    <!-- GPV Pattern Analysis -->
+    <div class="functions-panel card">
+        <h3 class="anchored">Gate-Policy Vector (GPV) Patterns</h3>
+        <p style="color: #666; margin: 5px 0;">Visual representation of GPV distributions and their interactions</p>
+        <canvas id="functionsCanvas" width="800" height="200"></canvas>
+    </div>
+
+    <!-- Color Summation Visualization -->
+    <div class="summation-panel card">
+        <h3 class="anchored">Seven-Gate Color Summation</h3>
+        <p style="color: #666; margin: 5px 0;">Combined gate activation intensities showing emergent pattern complexity</p>
+        <canvas id="summationCanvas" width="800" height="150"></canvas>
+    </div>
+
+    <!-- Analytics Panel -->
+    <div class="analytics-panel card">
+        <h3 class="anchored">Real-time Pattern Analytics</h3>
+        <div class="analytics-grid">
+            <div class="metric-card">
+                <div class="metric-value" id="clusteringCoefficient">0.00</div>
+                <div style="font-size: 0.9em; color: #666;">Clustering Coefficient</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value" id="patternStability">0.00</div>
+                <div style="font-size: 0.9em; color: #666;">Pattern Stability</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value" id="gateComplexity">0.00</div>
+                <div style="font-size: 0.9em; color: #666;">Gate Complexity</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value" id="operationFreq">0</div>
+                <div style="font-size: 0.9em; color: #666;">Operation Frequency</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value" id="identityFlow">0</div>
+                <div style="font-size: 0.9em; color: #666;">Identity Flow</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value" id="levinMetric">0.00</div>
+                <div style="font-size: 0.9em; color: #666;">Levin Sortedness</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seven-Gate Operations Panel -->
+    <div class="gate-operations-panel card">
+        <h3 class="anchored">Seven-Gate Operations Status</h3>
+        <p style="color: #666; margin: 5px 0;">Current operational state analysis of identity gates</p>
+        <div id="operationsStatus" class="operations-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+            <!-- Operations status will be populated by JavaScript -->
+        </div>
+    </div>
+</div>
+
+<script>
+// Enhanced Seven-Gate Identity Framework Visualization
+class SevenGateVisualization {
+    constructor() {
+        // Canvas elements
+        this.sortCanvas = document.getElementById('sortCanvas');
+        this.sortCtx = this.sortCanvas.getContext('2d');
+        this.heatmapCanvas = document.getElementById('heatmapCanvas');
+        this.heatmapCtx = this.heatmapCanvas.getContext('2d');
+        this.functionsCanvas = document.getElementById('functionsCanvas');
+        this.functionsCtx = this.functionsCanvas.getContext('2d');
+        this.summationCanvas = document.getElementById('summationCanvas');
+        this.summationCtx = this.summationCanvas.getContext('2d');
+        
+        // State variables
+        this.elements = [];
+        this.isRunning = false;
+        this.isPaused = false;
+        this.speed = 5;
+        this.gateThreshold = 0.5;
+        this.trailEffect = true;
+        this.animationId = null;
+        this.currentStep = 0;
+        
+        // Heatmap data
+        this.heatmapData = [];
+        this.heatmapHistory = [];
+        this.maxHistoryLength = 60;
+        
+        // Seven identity gates with enhanced tracking
+        this.sevenGates = {
+            BE: {
+                name: "BE",
+                symbol: "≡",
+                logic: "IDENTITY",
+                color: [231, 76, 60],
+                description: "Maintains essential identity through transformations",
+                active: false,
+                intensity: 0,
+                count: 0,
+                positions: []
+            },
+            SUSTAIN: {
+                name: "SUSTAIN", 
+                symbol: "∨",
+                logic: "OR",
+                color: [243, 156, 18],
+                description: "Preserves through alternative pathways",
+                active: false,
+                intensity: 0,
+                count: 0,
+                positions: []
+            },
+            COMPOSE: {
+                name: "COMPOSE",
+                symbol: "⊕", 
+                logic: "XOR",
+                color: [241, 196, 15],
+                description: "Creates new configurations from differences",
+                active: false,
+                intensity: 0,
+                count: 0,
+                positions: []
+            },
+            BELONG: {
+                name: "BELONG",
+                symbol: "⊕",
+                logic: "XOR",
+                color: [46, 204, 113],
+                description: "Seeks resonant clustering relationships",
+                active: false,
+                intensity: 0,
+                count: 0,
+                positions: []
+            },
+            GENERATE: {
+                name: "GENERATE",
+                symbol: "∧",
+                logic: "AND",
+                color: [52, 152, 219],
+                description: "Produces new patterns through conjunction",
+                active: false,
+                intensity: 0,
+                count: 0,
+                positions: []
+            },
+            TRANSITION: {
+                name: "TRANSITION",
+                symbol: "↓",
+                logic: "NOR",
+                color: [155, 89, 182],
+                description: "Facilitates state changes when neither input is active",
+                active: false,
+                intensity: 0,
+                count: 0,
+                positions: []
+            },
+            MAINTAIN: {
+                name: "MAINTAIN",
+                symbol: "↑",
+                logic: "NAND",
+                color: [52, 73, 94],
+                description: "Preserves stability by rejecting simultaneous activation",
+                active: false,
+                intensity: 0,
+                count: 0,
+                positions: []
+            }
+        };
+        
+        // Standard Gate-Policy Vectors (GPVs) for seven-gate framework
+        this.standardGPVs = {
+            BUBBLE: "1110001",      // Be, Sustain, Compose, Generate
+            INSERTION: "1011100",   // Be, Sustain, Belong, Maintain
+            SELECTION: "1001110",   // Be, Belong, Transition, Maintain  
+            LAZY: "1100011",        // Be, Sustain, Transition, Maintain
+            AGGRESSIVE: "1111000",  // Be, Sustain, Compose, Belong, Generate
+            FAULT_TOLERANT: "1000111" // Be, Transition, Maintain
+        };
+        
+        // Animation and visual effects
+        this.particleEffects = [];
+        this.colorIntensity = 1.0;
+        
+        this.init();
+    }
+
+    init() {
+        this.setupEventListeners();
+        this.generateElements();
+        this.initializeVisualizationData();
+        this.renderAll();
+        this.updateAllMetrics();
+    }
+
+    setupEventListeners() {
+        // Animation controls
+        document.getElementById('startBtn').addEventListener('click', () => this.start());
+        document.getElementById('pauseBtn').addEventListener('click', () => this.pause());
+        document.getElementById('resetBtn').addEventListener('click', () => this.reset());
+        
+        // Configuration controls
+        document.getElementById('speedSlider').addEventListener('input', (e) => {
+            this.speed = parseInt(e.target.value);
+            document.getElementById('speedValue').textContent = e.target.value + 'x';
+        });
+        
+        document.getElementById('arraySizeSelect').addEventListener('change', (e) => {
+            if (!this.isRunning) {
+                document.getElementById('arraySizeValue').textContent = e.target.value;
+                this.generateElements(parseInt(e.target.value));
+                this.renderAll();
+            }
+        });
+        
+        document.getElementById('gpvDistSelect').addEventListener('change', (e) => {
+            if (!this.isRunning) {
+                const options = {
+                    'balanced': 'Balanced',
+                    'bubble-heavy': 'Bubble Heavy',
+                    'selection-heavy': 'Selection Heavy',
+                    'diverse': 'Diverse'
+                };
+                document.getElementById('gpvDistValue').textContent = options[e.target.value];
+                this.generateElements();
+                this.renderAll();
+            }
+        });
+        
+        document.getElementById('thresholdSlider').addEventListener('input', (e) => {
+            this.gateThreshold = parseFloat(e.target.value);
+            document.getElementById('thresholdValue').textContent = e.target.value;
+        });
+        
+        document.getElementById('trailEffectToggle').addEventListener('change', (e) => {
+            this.trailEffect = e.target.checked;
+        });
+    }
+
+    generateElements(size = null) {
+        const arraySize = size || parseInt(document.getElementById('arraySizeSelect').value);
+        const distribution = document.getElementById('gpvDistSelect').value;
+        
+        this.elements = [];
+        const values = Array.from({length: arraySize}, (_, i) => i + 1);
+        this.shuffleArray(values);
+        
+        // Define GPV distributions
+        let gpvDist = {};
+        switch(distribution) {
+            case 'balanced':
+                gpvDist = {
+                    BUBBLE: 0.25, INSERTION: 0.25, SELECTION: 0.25, LAZY: 0.25
+                };
+                break;
+            case 'bubble-heavy':
+                gpvDist = {
+                    BUBBLE: 0.7, SELECTION: 0.3
+                };
+                break;
+            case 'selection-heavy':
+                gpvDist = {
+                    SELECTION: 0.7, BUBBLE: 0.3
+                };
+                break;
+            case 'diverse':
+                gpvDist = {
+                    BUBBLE: 0.3, INSERTION: 0.2, SELECTION: 0.2, 
+                    LAZY: 0.15, AGGRESSIVE: 0.1, FAULT_TOLERANT: 0.05
+                };
+                break;
+        }
+        
+        // Create elements with GPVs and enhanced properties
+        for(let i = 0; i < arraySize; i++) {
+            const gpvType = this.selectGPVByDistribution(gpvDist);
+            const gpv = this.standardGPVs[gpvType];
+            
+            this.elements.push({
+                value: values[i],
+                originalIndex: i,
+                gpv: gpv,
+                gpvType: gpvType,
+                x: 0,
+                y: 0,
+                targetX: 0,
+                targetY: 0,
+                isComparing: false,
+                isSwapping: false,
+                gateStates: this.parseGPV(gpv),
+                interactionHistory: [],
+                swapCount: 0,
+                brightness: 1.0,
+                pulsePhase: Math.random() * Math.PI * 2
+            });
+        }
+        
+        this.calculatePositions();
+        this.resetAllMetrics();
+        this.initializeVisualizationData();
+    }
+
+    parseGPV(gpv) {
+        return {
+            BE: gpv[0] === '1',
+            SUSTAIN: gpv[1] === '1',
+            COMPOSE: gpv[2] === '1',
+            BELONG: gpv[3] === '1',
+            GENERATE: gpv[4] === '1',
+            TRANSITION: gpv[5] === '1',
+            MAINTAIN: gpv[6] === '1'
+        };
+    }
+
+    selectGPVByDistribution(distribution) {
+        const random = Math.random();
+        let cumulative = 0;
+        
+        for(const [type, probability] of Object.entries(distribution)) {
+            cumulative += probability;
+            if(random <= cumulative) {
+                return type;
+            }
+        }
+        return 'BUBBLE'; // fallback
+    }
+
+    shuffleArray(array) {
+        for(let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
+    calculatePositions() {
+        const canvas = this.sortCanvas;
+        const rect = canvas.getBoundingClientRect();
+        const padding = 60;
+        const elementWidth = Math.max(8, (rect.width - 2 * padding) / this.elements.length);
+        const maxHeight = rect.height - 120;
+        
+        this.elements.forEach((element, index) => {
+            const x = padding + index * elementWidth + elementWidth / 2;
+            const normalizedHeight = (element.value - 1) / (this.elements.length - 1);
+            const y = rect.height - 60 - (normalizedHeight * maxHeight);
+            
+            element.targetX = x;
+            element.targetY = y;
+            element.position = index;
+            
+            // Initialize positions on first run
+            if(element.x === 0 && element.y === 0) {
+                element.x = x;
+                element.y = y;
+            }
+        });
+    }
+
+    initializeVisualizationData() {
+        const size = this.elements.length;
+        
+        // Initialize heatmap
+        this.heatmapData = Array(7).fill(null).map(() => Array(size).fill(0));
+        this.heatmapHistory = [];
+        
+        // Initialize metrics history
+        this.metricsHistory = [];
+    }
+
+    resetAllMetrics() {
+        this.metrics = {
+            swapCount: 0,
+            comparisonCount: 0,
+            gateActivationCount: 0,
+            sortProgress: 0,
+            clusteringCoefficient: 0,
+            patternStability: 0,
+            gateComplexity: 0,
+            operationFreq: 0,
+            identityFlow: 0,
+            levinMetric: 0
+        };
+        
+        // Reset gate activations
+        Object.keys(this.sevenGates).forEach(gate => {
+            this.sevenGates[gate] = {
+                ...this.sevenGates[gate],
+                active: false,
+                intensity: 0,
+                count: 0,
+                positions: []
+            };
+        });
+        
+        this.currentStep = 0;
+    }
+
+    start() {
+        if(!this.isRunning || this.isPaused) {
+            this.isRunning = true;
+            this.isPaused = false;
+            document.getElementById('startBtn').textContent = 'Running...';
+            document.getElementById('startBtn').disabled = true;
+            this.animate();
+        }
+    }
+
+    pause() {
+        this.isPaused = !this.isPaused;
+        const pauseBtn = document.getElementById('pauseBtn');
+        pauseBtn.textContent = this.isPaused ? 'Resume' : 'Pause';
+        
+        if(!this.isPaused && this.isRunning) {
+            this.animate();
+        }
+    }
+
+    reset() {
+        this.isRunning = false;
+        this.isPaused = false;
+        
+        if(this.animationId) {
+            clearTimeout(this.animationId);
+            this.animationId = null;
+        }
+        
+        document.getElementById('startBtn').textContent = 'Start Seven-Gate Sort';
+        document.getElementById('startBtn').disabled = false;
+        document.getElementById('pauseBtn').textContent = 'Pause';
+        
+        this.generateElements();
+        this.renderAll();
+        this.updateAllMetrics();
+    }
+
+    animate() {
+        if(!this.isRunning || this.isPaused) return;
+        
+        // Check if already sorted (this check is now redundant but kept for safety)
+        if(this.isSorted()) {
+            this.isRunning = false;
+            document.getElementById('startBtn').textContent = 'Sorting Complete!';
+            document.getElementById('startBtn').disabled = false;
+            return;
+        }
+        
+        // Perform sorting step with seven-gate logic
+        this.sevenGateBubbleSortStep();
+        
+        // Update visualizations and metrics
+        this.updateVisualizationData();
+        this.renderAll();
+        this.updateAllMetrics();
+        
+        // Schedule next animation frame only if still running
+        if(this.isRunning) {
+            const delay = Math.max(5, 500 / this.speed);
+            this.animationId = setTimeout(() => this.animate(), delay);
+        }
+    }
+
+    sevenGateBubbleSortStep() {
+        // Reset comparison and swap states
+        this.elements.forEach(el => {
+            el.isComparing = false;
+            el.isSwapping = false;
+        });
+        
+        // Complete bubble sort pass - continue until fully sorted
+        let swapped = false;
+        for(let i = 0; i < this.elements.length - 1; i++) {
+            this.elements[i].isComparing = true;
+            this.elements[i + 1].isComparing = true;
+            this.metrics.comparisonCount++;
+            
+            if(this.shouldSwapWithGates(i, i + 1)) {
+                [this.elements[i], this.elements[i + 1]] = [this.elements[i + 1], this.elements[i]];
+                this.elements[i].isSwapping = true;
+                this.elements[i + 1].isSwapping = true;
+                this.metrics.swapCount++;
+                swapped = true;
+            }
+        }
+        
+        // If no swaps occurred in this pass, array is sorted
+        if (!swapped) {
+            this.isRunning = false;
+            document.getElementById('startBtn').textContent = 'Sorting Complete!';
+            document.getElementById('startBtn').disabled = false;
+        }
+        
+        this.currentStep++;
+        this.calculatePositions();
+    }
+
+    shouldSwapWithGates(i, j) {
+        if(i >= this.elements.length - 1 || j >= this.elements.length) return false;
+        
+        const element1 = this.elements[i];
+        const element2 = this.elements[j];
+        
+        if(element1.value <= element2.value) return false;
+        
+        // Apply seven-gate decision logic
+        const decision = this.evaluateSevenGateDecision(element1, element2, i, j);
+        
+        // Update gate activations based on decision
+        this.updateGateActivations(i, decision);
+        
+        return decision.shouldSwap;
+    }
+
+    evaluateSevenGateDecision(elem1, elem2, pos1, pos2) {
+        const gates1 = elem1.gateStates;
+        const gates2 = elem2.gateStates;
+        
+        const decision = {
+            shouldSwap: false,
+            activeGates: [],
+            gateActivations: {}
+        };
+        
+        // BE gate - Always reflects current value state
+        if(gates1.BE || gates2.BE) {
+            decision.activeGates.push('BE');
+            decision.gateActivations.BE = 1.0;
+            decision.shouldSwap = true;
+        }
+        
+        // GENERATE gate (AND) - Both elements must be active for swap
+        if(gates1.GENERATE && gates2.GENERATE) {
+            decision.activeGates.push('GENERATE');
+            decision.gateActivations.GENERATE = 1.0;
+            decision.shouldSwap = true;
+        }
+        
+        // SUSTAIN gate (OR) - Maintains current order if either is well-positioned
+        if(gates1.SUSTAIN || gates2.SUSTAIN) {
+            if(this.isWellPositioned(pos1) || this.isWellPositioned(pos2)) {
+                decision.activeGates.push('SUSTAIN');
+                decision.gateActivations.SUSTAIN = 0.8;
+                decision.shouldSwap = false;
+            }
+        }
+        
+        // BELONG gate (XOR) - Seeks clustering with similar GPV types
+        if((gates1.BELONG && !gates2.BELONG) || (!gates1.BELONG && gates2.BELONG)) {
+            decision.activeGates.push('BELONG');
+            decision.gateActivations.BELONG = this.calculateClusteringBenefit(pos1, pos2);
+            if(elem1.gpvType === elem2.gpvType) {
+                decision.shouldSwap = decision.gateActivations.BELONG > this.gateThreshold;
+            }
+        }
+        
+        // Final decision based on value comparison if no gates override
+        if(decision.activeGates.length === 0 || decision.activeGates.includes('BE')) {
+            decision.shouldSwap = elem1.value > elem2.value;
+        }
+        
+        return decision;
+    }
+
+    isWellPositioned(position) {
+        const element = this.elements[position];
+        const expectedPosition = element.value - 1;
+        const tolerance = Math.max(1, this.elements.length * 0.1);
+        return Math.abs(position - expectedPosition) <= tolerance;
+    }
+
+    calculateClusteringBenefit(pos1, pos2) {
+        // Simple clustering benefit calculation based on neighboring similar GPVs
+        const elem1 = this.elements[pos1];
+        const elem2 = this.elements[pos2];
+        
+        let benefit = 0.5;
+        
+        // Check neighbors for similar GPV types
+        const neighbors = [-1, 1];
+        neighbors.forEach(offset => {
+            const neighborPos = pos1 + offset;
+            if(neighborPos >= 0 && neighborPos < this.elements.length) {
+                if(this.elements[neighborPos].gpvType === elem1.gpvType) {
+                    benefit += 0.2;
+                }
+            }
+        });
+        
+        return Math.min(1.0, benefit);
+    }
+
+    updateGateActivations(position, decision) {
+        decision.activeGates.forEach(gateName => {
+            const gate = this.sevenGates[gateName];
+            gate.active = true;
+            gate.count++;
+            gate.intensity = Math.min(1.0, gate.intensity + decision.gateActivations[gateName] * 0.1);
+            gate.positions.push(position);
+            this.metrics.gateActivationCount++;
+        });
+    }
+
+    updateVisualizationData() {
+        // Update heatmap data with current gate activations
+        const size = this.elements.length;
+        const currentHeatmap = Array(7).fill(null).map(() => Array(size).fill(0));
+        
+        // Map gate activations to heatmap positions
+        Object.entries(this.sevenGates).forEach(([gateName, gate], gateIndex) => {
+            gate.positions.forEach(pos => {
+                if(pos >= 0 && pos < size) {
+                    currentHeatmap[gateIndex][pos] = gate.intensity;
+                }
+            });
+            // Clear positions for next frame
+            gate.positions = [];
+        });
+        
+        // Add to history and maintain length
+        this.heatmapHistory.push(currentHeatmap);
+        if(this.heatmapHistory.length > this.maxHistoryLength) {
+            this.heatmapHistory.shift();
+        }
+        
+        // Update current heatmap data
+        this.heatmapData = currentHeatmap;
+    }
+
+    isSorted() {
+        for(let i = 0; i < this.elements.length - 1; i++) {
+            if(this.elements[i].value > this.elements[i + 1].value) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    renderAll() {
+        this.renderSortArray();
+        this.renderHeatmap();
+        this.renderGPVPatterns();
+        this.renderColorSummation();
+    }
+
+    renderSortArray() {
+        const ctx = this.sortCtx;
+        const canvas = this.sortCanvas;
+        
+        // Clear canvas
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        // Draw elements with gate-based coloring
+        this.elements.forEach((element, index) => {
+            const x = element.x;
+            const y = element.y;
+            const width = Math.max(8, canvas.width / this.elements.length - 2);
+            const height = Math.max(20, (element.value / this.elements.length) * 150);
+            
+            // Base color from primary gate
+            let color = [100, 100, 100]; // default gray
+            
+            // Color based on most active gate in GPV
+            const activeGates = Object.entries(element.gateStates)
+                .filter(([_, active]) => active)
+                .map(([gate, _]) => gate);
+            
+            if(activeGates.length > 0) {
+                const primaryGate = activeGates[0];
+                color = this.sevenGates[primaryGate].color;
+            }
+            
+            // Adjust for comparison and swapping
+            if(element.isComparing) {
+                color = color.map(c => Math.min(255, c * 1.3));
+            }
+            if(element.isSwapping) {
+                color = [255, 255, 255]; // White flash for swapping
+            }
+            
+            // Draw element
+            ctx.fillStyle = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
+            ctx.fillRect(x - width/2, y - height, width, height);
+            
+            // Draw value label
+            ctx.fillStyle = '#333';
+            ctx.font = '12px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText(element.value.toString(), x, y + 15);
+            
+            // Draw GPV type label
+            ctx.fillStyle = '#666';
+            ctx.font = '10px Arial';
+            ctx.fillText(element.gpvType.substring(0, 3), x, y + 25);
+        });
+    }
+
+    renderHeatmap() {
+        const ctx = this.heatmapCtx;
+        const canvas = this.heatmapCanvas;
+        
+        // Clear canvas
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        if(this.heatmapData.length === 0) return;
+        
+        const cellWidth = canvas.width / this.heatmapData[0].length;
+        const cellHeight = canvas.height / 7;
+        
+        // Draw heatmap
+        for(let gateIndex = 0; gateIndex < 7; gateIndex++) {
+            const gateName = Object.keys(this.sevenGates)[gateIndex];
+            const gateColor = this.sevenGates[gateName].color;
+            
+            for(let pos = 0; pos < this.heatmapData[gateIndex].length; pos++) {
+                const intensity = this.heatmapData[gateIndex][pos];
+                
+                if(intensity > 0) {
+                    const alpha = intensity;
+                    ctx.fillStyle = `rgba(${gateColor[0]}, ${gateColor[1]}, ${gateColor[2]}, ${alpha})`;
+                    ctx.fillRect(pos * cellWidth, gateIndex * cellHeight, cellWidth, cellHeight);
+                }
+            }
+        }
+        
+        // Draw gate labels
+        ctx.fillStyle = '#333';
+        ctx.font = '14px Arial';
+        ctx.textAlign = 'left';
+        Object.keys(this.sevenGates).forEach((gateName, index) => {
+            ctx.fillText(gateName, 5, index * cellHeight + cellHeight/2 + 5);
+        });
+    }
+
+    renderGPVPatterns() {
+        const ctx = this.functionsCtx;
+        const canvas = this.functionsCanvas;
+        
+        // Clear canvas
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        // Draw GPV distribution
+        const gpvTypes = {};
+        this.elements.forEach(elem => {
+            gpvTypes[elem.gpvType] = (gpvTypes[elem.gpvType] || 0) + 1;
+        });
+        
+        let x = 20;
+        Object.entries(gpvTypes).forEach(([type, count]) => {
+            const percentage = (count / this.elements.length) * 100;
+            const width = (canvas.width - 40) * (count / this.elements.length);
+            
+            ctx.fillStyle = '#3498db';
+            ctx.fillRect(x, 50, width, 30);
+            
+            ctx.fillStyle = '#333';
+            ctx.font = '12px Arial';
+            ctx.fillText(`${type}: ${count} (${percentage.toFixed(1)}%)`, x, 45);
+            
+            x += width + 10;
+        });
+    }
+
+    renderColorSummation() {
+        const ctx = this.summationCtx;
+        const canvas = this.summationCanvas;
+        
+        // Clear canvas
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        // Draw combined gate intensities
+        const cellWidth = canvas.width / this.elements.length;
+        
+        this.elements.forEach((element, index) => {
+            let totalR = 0, totalG = 0, totalB = 0;
+            let activeCount = 0;
+            
+            // Sum all active gate colors
+            Object.entries(element.gateStates).forEach(([gateName, active]) => {
+                if(active) {
+                    const color = this.sevenGates[gateName].color;
+                    totalR += color[0];
+                    totalG += color[1];
+                    totalB += color[2];
+                    activeCount++;
+                }
+            });
+            
+            if(activeCount > 0) {
+                const avgR = totalR / activeCount;
+                const avgG = totalG / activeCount;
+                const avgB = totalB / activeCount;
+                
+                ctx.fillStyle = `rgb(${avgR}, ${avgG}, ${avgB})`;
+                ctx.fillRect(index * cellWidth, 20, cellWidth, canvas.height - 40);
+            }
+        });
+    }
+
+    updateAllMetrics() {
+        // Calculate sort progress
+        let sortedCount = 0;
+        for(let i = 0; i < this.elements.length - 1; i++) {
+            if(this.elements[i].value <= this.elements[i + 1].value) {
+                sortedCount++;
+            }
+        }
+        this.metrics.sortProgress = Math.round((sortedCount / (this.elements.length - 1)) * 100);
+        
+        // Calculate clustering coefficient
+        this.metrics.clusteringCoefficient = this.calculateClusteringCoefficient();
+        
+        // Calculate pattern stability
+        this.metrics.patternStability = this.calculatePatternStability();
+        
+        // Calculate gate complexity
+        this.metrics.gateComplexity = this.calculateGateComplexity();
+        
+        // Calculate Levin sortedness metric
+        this.metrics.levinMetric = this.calculateLevinSortedness();
+        
+        // Update DOM elements
+        document.getElementById('swapCount').textContent = this.metrics.swapCount;
+        document.getElementById('comparisonCount').textContent = this.metrics.comparisonCount;
+        document.getElementById('gateActivationCount').textContent = this.metrics.gateActivationCount;
+        document.getElementById('sortProgress').textContent = this.metrics.sortProgress + '%';
+        document.getElementById('clusteringCoefficient').textContent = this.metrics.clusteringCoefficient.toFixed(3);
+        document.getElementById('patternStability').textContent = this.metrics.patternStability.toFixed(3);
+        document.getElementById('gateComplexity').textContent = this.metrics.gateComplexity.toFixed(3);
+        document.getElementById('operationFreq').textContent = Math.round(this.metrics.gateActivationCount / Math.max(1, this.currentStep));
+        document.getElementById('identityFlow').textContent = this.sevenGates.BE.count;
+        document.getElementById('levinMetric').textContent = this.metrics.levinMetric.toFixed(3);
+        
+        // Update gate operations status
+        this.updateOperationsStatus();
+    }
+
+    calculateClusteringCoefficient() {
+        // Simple clustering coefficient based on GPV type proximity
+        let clusteringSum = 0;
+        let totalPairs = 0;
+        
+        for(let i = 0; i < this.elements.length - 1; i++) {
+            for(let j = i + 1; j < Math.min(i + 4, this.elements.length); j++) {
+                if(this.elements[i].gpvType === this.elements[j].gpvType) {
+                    clusteringSum += 1 / (j - i);
+                }
+                totalPairs++;
+            }
+        }
+        
+        return totalPairs > 0 ? clusteringSum / totalPairs : 0;
+    }
+
+    calculatePatternStability() {
+        // Pattern stability based on how much the array has changed recently
+        if(this.heatmapHistory.length < 2) return 0;
+        
+        const recent = this.heatmapHistory[this.heatmapHistory.length - 1];
+        const previous = this.heatmapHistory[this.heatmapHistory.length - 2];
+        
+        let totalChange = 0;
+        let totalCells = 0;
+        
+        for(let i = 0; i < recent.length; i++) {
+            for(let j = 0; j < recent[i].length; j++) {
+                totalChange += Math.abs(recent[i][j] - previous[i][j]);
+                totalCells++;
+            }
+        }
+        
+        return totalCells > 0 ? 1 - (totalChange / totalCells) : 0;
+    }
+
+    calculateGateComplexity() {
+        // Gate complexity based on the variety and intensity of gate activations
+        let totalIntensity = 0;
+        let activeGates = 0;
+        
+        Object.values(this.sevenGates).forEach(gate => {
+            if(gate.intensity > 0) {
+                totalIntensity += gate.intensity;
+                activeGates++;
+            }
+        });
+        
+        return activeGates > 0 ? (totalIntensity / activeGates) * (activeGates / 7) : 0;
+    }
+
+    calculateLevinSortedness() {
+        // Implement Levin's sortedness metric
+        let sortedness = 0;
+        for(let i = 0; i < this.elements.length - 1; i++) {
+            if(this.elements[i].value <= this.elements[i + 1].value) {
+                sortedness++;
+            }
+        }
+        return this.elements.length > 1 ? sortedness / (this.elements.length - 1) : 0;
+    }
+
+    updateOperationsStatus() {
+        const statusContainer = document.getElementById('operationsStatus');
+        statusContainer.innerHTML = '';
+        
+        Object.entries(this.sevenGates).forEach(([gateName, gate]) => {
+            const statusItem = document.createElement('div');
+            statusItem.className = 'operation-status-item';
+            statusItem.style.cssText = `
+                background: ${gate.active ? '#e8f5e8' : '#f8f8f8'};
+                padding: 10px;
+                border-radius: 6px;
+                border: 2px solid ${gate.active ? '#4caf50' : '#ddd'};
+            `;
+            
+            statusItem.innerHTML = `
+                <div style="font-weight: bold; color: rgb(${gate.color.join(',')});">
+                    ${gate.name} ${gate.symbol}
+                </div>
+                <div style="font-size: 0.9em; color: #666;">
+                    ${gate.description}
+                </div>
+                <div style="font-size: 0.8em; margin-top: 5px;">
+                    Count: ${gate.count} | Intensity: ${gate.intensity.toFixed(2)}
+                </div>
+            `;
+            
+            statusContainer.appendChild(statusItem);
+        });
+    }
+}
+
+// Initialize the visualization when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+    new SevenGateVisualization();
+});
+</script>
+<p>Let’s explore the theoretical foundations through Python implementation…</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/mvtta\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><a href="mailto:mvtta@proton.me">email</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>mvtta | 2025</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

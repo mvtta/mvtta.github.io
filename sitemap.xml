@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mvtta.github.io/index.html</loc>
+    <loc>https://mvtta.github.io/posts/Resume/resume.html</loc>
     <lastmod>2025-08-27T19:35:53.010Z</lastmod>
   </url>
   <url>
-    <loc>https://mvtta.github.io/posts/Resume/resume.html</loc>
-    <lastmod>2025-08-27T19:35:53.010Z</lastmod>
+    <loc>https://mvtta.github.io/about-me.html</loc>
+    <lastmod>2025-08-27T19:48:39.581Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/index.html</loc>
+    <lastmod>2025-08-27T19:41:55.364Z</lastmod>
   </url>
 </urlset>

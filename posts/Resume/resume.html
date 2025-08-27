@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>/ - On Boundaries</title>
+<title>/</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<script src="../../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,67 +66,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-date','listing-image','listing-reading-time','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -138,7 +78,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">/</span>
     </a>
   </div>
@@ -149,12 +89,28 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../posts/dialogues/"> 
-<span class="menu-text">dialogues</span></a>
+    <a class="nav-link" href="../../posts/Agency"> 
+<span class="menu-text">Agency</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../about-me.html"> 
-<span class="menu-text">about</span></a>
+    <a class="nav-link" href="../../posts/Articles"> 
+<span class="menu-text">Articles</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts/Experiments"> 
+<span class="menu-text">Experiments</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts/Notebooks"> 
+<span class="menu-text">Notebooks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts/Thoughts"> 
+<span class="menu-text">Thoughts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../resource-tree.qmd"> 
+<span class="menu-text">Resource-Tree</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -164,129 +120,106 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#valdetaro-m" id="toc-valdetaro-m" class="nav-link active" data-scroll-target="#valdetaro-m">VALDETARO, M</a>
+  <ul>
+  <li><a href="#about-explorer" id="toc-about-explorer" class="nav-link" data-scroll-target="#about-explorer">About: <em>Explorer</em></a></li>
+  <li><a href="#society-for-multidisciplinary-and-fundamental-research---semf" id="toc-society-for-multidisciplinary-and-fundamental-research---semf" class="nav-link" data-scroll-target="#society-for-multidisciplinary-and-fundamental-research---semf">Society for multidisciplinary and fundamental research - SEMF</a>
+  <ul>
+  <li><a href="#thoughts-of-a-gentlewoman" id="toc-thoughts-of-a-gentlewoman" class="nav-link" data-scroll-target="#thoughts-of-a-gentlewoman">Thoughts of a Gentlewoman</a></li>
+  <li><a href="#poetry" id="toc-poetry" class="nav-link" data-scroll-target="#poetry">Poetry</a></li>
+  <li><a href="#constructions-w-todos" id="toc-constructions-w-todos" class="nav-link" data-scroll-target="#constructions-w-todos">Constructions w/ Todos</a></li>
+  <li><a href="#short-film-w-todos" id="toc-short-film-w-todos" class="nav-link" data-scroll-target="#short-film-w-todos">Short film w/ Todos</a></li>
+  <li><a href="#making-jewellery-in-japan-w-ide-san-fred" id="toc-making-jewellery-in-japan-w-ide-san-fred" class="nav-link" data-scroll-target="#making-jewellery-in-japan-w-ide-san-fred">Making Jewellery in Japan w/ Ide San &amp; Fred</a></li>
+  </ul></li>
+  <li><a href="#rd" id="toc-rd" class="nav-link" data-scroll-target="#rd">R&amp;D</a>
+  <ul>
+  <li><a href="#nokia" id="toc-nokia" class="nav-link" data-scroll-target="#nokia">Nokia</a></li>
+  <li><a href="#applied-rd-cloud-computing" id="toc-applied-rd-cloud-computing" class="nav-link" data-scroll-target="#applied-rd-cloud-computing">Applied R&amp;D Cloud Computing</a></li>
+  </ul></li>
+  <li><a href="#service" id="toc-service" class="nav-link" data-scroll-target="#service">SERVICE</a>
+  <ul>
+  <li><a href="#katefriends---greyhound-rescue-rehabilitation" id="toc-katefriends---greyhound-rescue-rehabilitation" class="nav-link" data-scroll-target="#katefriends---greyhound-rescue-rehabilitation">Katefriends - Greyhound Rescue &amp; Rehabilitation</a></li>
+  <li><a href="#a-avó-veio-trabalhar-grandma-came-to-work" id="toc-a-avó-veio-trabalhar-grandma-came-to-work" class="nav-link" data-scroll-target="#a-avó-veio-trabalhar-grandma-came-to-work">A Avó Veio Trabalhar (Grandma Came to Work)</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">On Boundaries</h1>
-</div>
-
-
-
-<div class="quarto-title-meta column-page-left">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
+<main class="content" id="quarto-document-content">
 
 
 
 
+<section id="valdetaro-m" class="level1">
+<h1>VALDETARO, M</h1>
+<p>Lisboa, Portugal | mvtta@proton.me |</p>
+<section id="about-explorer" class="level5">
+<h5 class="anchored" data-anchor-id="about-explorer">About: <em>Explorer</em></h5>
+</section>
+<section id="society-for-multidisciplinary-and-fundamental-research---semf" class="level2">
+<h2 class="anchored" data-anchor-id="society-for-multidisciplinary-and-fundamental-research---semf">Society for multidisciplinary and fundamental research - SEMF</h2>
+<p>(www.semf.org.es)[www.semf.org.es]</p>
+<section id="thoughts-of-a-gentlewoman" class="level6">
+<h6 class="anchored" data-anchor-id="thoughts-of-a-gentlewoman">Thoughts of a Gentlewoman</h6>
+<blockquote class="blockquote">
+<p>mvtta.github.io (currently under work)</p>
+</blockquote>
+</section>
+<section id="poetry" class="level6">
+<h6 class="anchored" data-anchor-id="poetry">Poetry</h6>
+<blockquote class="blockquote">
+<p>marianas.life (currently under work)</p>
+</blockquote>
+</section>
+<section id="constructions-w-todos" class="level6">
+<h6 class="anchored" data-anchor-id="constructions-w-todos">Constructions w/ Todos</h6>
+<p><a href="https://youtu.be/PcYyy3SopGg?si=RPLXKK46cF2AiO7l">Stone Technology</a></p>
+</section>
+<section id="short-film-w-todos" class="level6">
+<h6 class="anchored" data-anchor-id="short-film-w-todos">Short film w/ Todos</h6>
+<p><a href="https://youtu.be/Yv6VzXbFyrY?si=kETFDWPazqoCifnT">Short film: An ode to metamorphic stone</a></p>
+</section>
+<section id="making-jewellery-in-japan-w-ide-san-fred" class="level6">
+<h6 class="anchored" data-anchor-id="making-jewellery-in-japan-w-ide-san-fred">Making Jewellery in Japan w/ Ide San &amp; Fred</h6>
+<p><a href="https://youtu.be/dV8szcNGzgo?si=EDN8EaxEI3Ll4q3f">Mini Doc “The Jewel”</a></p>
+</section>
+</section>
+<section id="rd" class="level2">
+<h2 class="anchored" data-anchor-id="rd">R&amp;D</h2>
+<section id="nokia" class="level4">
+<h4 class="anchored" data-anchor-id="nokia">Nokia</h4>
+</section>
+<section id="applied-rd-cloud-computing" class="level4">
+<h4 class="anchored" data-anchor-id="applied-rd-cloud-computing">Applied R&amp;D Cloud Computing</h4>
+<p>(POC &amp; Product)[https://www.nokia.com/industries/cloud-and-digital-infrastructure/] #### R&amp;D 5G Mobile Networks Layer 1 (L1)[https://www.nokia.com/newsroom/nokia-to-open-new-5g-and-6g-research-and-development-center-in-portugal/]</p>
+</section>
+</section>
+<section id="service" class="level2">
+<h2 class="anchored" data-anchor-id="service">SERVICE</h2>
+<section id="katefriends---greyhound-rescue-rehabilitation" class="level4">
+<h4 class="anchored" data-anchor-id="katefriends---greyhound-rescue-rehabilitation">Katefriends - Greyhound Rescue &amp; Rehabilitation</h4>
+<p>(Katefriends)[http://katefriends.org/]</p>
+</section>
+<section id="a-avó-veio-trabalhar-grandma-came-to-work" class="level4">
+<h4 class="anchored" data-anchor-id="a-avó-veio-trabalhar-grandma-came-to-work">A Avó Veio Trabalhar (Grandma Came to Work)</h4>
+<p>(Grandmas at work)[https://www.fermenta.org/aboutus/project/]</p>
+<p><code>Sincerely, M</code></p>
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1750546800000" data-listing-file-modified-sort="1752506947682" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1439">
-<div class="thumbnail">
-<p><a href="../../../posts/notes/boundaries/boundaries-4-revision.html" class="no-external"></a></p><a href="../../../posts/notes/boundaries/boundaries-4-revision.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-</a><p><a href="../../../posts/notes/boundaries/boundaries-4-revision.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../../posts/notes/boundaries/boundaries-4-revision.html" class="no-external">Philosophical Boundaries IV: Sheaf-Theoretic Co-Constitution</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../../posts/notes/boundaries/boundaries-4-revision.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../../../posts/notes/boundaries/boundaries-4-revision.html" class="no-external">This paper contains a few revisions on the boundary relatare avan-propos and formalism attempts, derived from new insights related to identity-as-process, replacing hierarchical axioms with sheaf-theoretic coherence and structured cospans. We then re-attempt to address some paradoxes treated in the previous papers “On Boundaries” by treating boundaries as <em>contextual sections</em> rather than absolute separators, formalizing how entities co-constitute one another through asymmetric interaction patterns. Empirical validations experiments are re-designed to include temporal attractors and relational scaling. </a>
-</div>
-</div>
-<div class="metadata">
-<a href="../../../posts/notes/boundaries/boundaries-4-revision.html" class="no-external">
-<div class="listing-date">
-Jun 22, 2025
-</div>
-<div class="listing-reading-time">
-8 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1750374000000" data-listing-file-modified-sort="1752506527084" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2063">
-<div class="thumbnail">
-<p><a href="../../../posts/notes/boundaries/boundaries-2-math.html" class="no-external"></a></p><a href="../../../posts/notes/boundaries/boundaries-2-math.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-</a><p><a href="../../../posts/notes/boundaries/boundaries-2-math.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../../posts/notes/boundaries/boundaries-2-math.html" class="no-external">Philosophical Boundaries II: Formalising Interfaces</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../../posts/notes/boundaries/boundaries-2-math.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../../../posts/notes/boundaries/boundaries-2-math.html" class="no-external">This article explores the possible formalism for understanding how boundaries operate across scales. </a>
-</div>
-</div>
-<div class="metadata">
-<a href="../../../posts/notes/boundaries/boundaries-2-math.html" class="no-external">
-<div class="listing-date">
-Jun 20, 2025
-</div>
-<div class="listing-reading-time">
-11 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1750374000000" data-listing-file-modified-sort="1752506646303" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1784">
-<div class="thumbnail">
-<p><a href="../../../posts/notes/boundaries/philosofical-bounderies.html" class="no-external"></a></p><a href="../../../posts/notes/boundaries/philosofical-bounderies.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-</a><p><a href="../../../posts/notes/boundaries/philosofical-bounderies.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../../posts/notes/boundaries/philosofical-bounderies.html" class="no-external">Philosophical Boundaries: Avant-Propos</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../../posts/notes/boundaries/philosofical-bounderies.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../../../posts/notes/boundaries/philosofical-bounderies.html" class="no-external">This article explores the concept of boundaries, where I venture into depths of the role of boundaries and hierarchies in selves, and nature. </a>
-</div>
-</div>
-<div class="metadata">
-<a href="../../../posts/notes/boundaries/philosofical-bounderies.html" class="no-external">
-<div class="listing-date">
-Jun 20, 2025
-</div>
-<div class="listing-reading-time">
-9 min
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -697,19 +630,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p><a href="mailto:mvtta@proton.me">email</a></p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-<p>mvtta | 2025</p>
-</div>
-  </div>
-</footer>
 
 
 

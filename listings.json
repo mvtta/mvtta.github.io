@@ -1,36 +1,8 @@
 [
   {
-    "listing": "/posts/notes/relations/index.html",
+    "listing": "/index.html",
     "items": [
-      "/posts/notes/relations/relational-formalised.html",
-      "/posts/notes/relations/relational-view.html"
-    ]
-  },
-  {
-    "listing": "/posts/notes/boundaries/index.html",
-    "items": [
-      "/posts/notes/boundaries/boundaries-4-revision.html",
-      "/posts/notes/boundaries/boundaries-2-math.html",
-      "/posts/notes/boundaries/philosofical-bounderies.html"
-    ]
-  },
-  {
-    "listing": "/posts/notes/index.html",
-    "items": [
-      "/posts/notes/selves/identity-2.html",
-      "/posts/notes/boundaries/boundaries-4-revision.html",
-      "/posts/notes/boundaries/boundaries-2-math.html",
-      "/posts/notes/boundaries/philosofical-bounderies.html",
-      "/posts/notes/relations/relational-formalised.html",
-      "/posts/notes/relations/relational-view.html",
-      "/posts/notes/selves/identity-1.html"
-    ]
-  },
-  {
-    "listing": "/posts/notes/selves/index.html",
-    "items": [
-      "/posts/notes/selves/identity-2.html",
-      "/posts/notes/selves/identity-1.html"
+      "/posts/Resume/resume.html"
     ]
   }
 ]

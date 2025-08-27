@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>/ -</title>
+<title>/ - home</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -66,12 +68,70 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -89,12 +149,28 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./posts/dialogues/"> 
-<span class="menu-text">dialogues</span></a>
+    <a class="nav-link" href="./posts/Agency"> 
+<span class="menu-text">Agency</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about-me.html"> 
-<span class="menu-text">about</span></a>
+    <a class="nav-link" href="./posts/Articles"> 
+<span class="menu-text">Articles</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./posts/Experiments"> 
+<span class="menu-text">Experiments</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./posts/Notebooks"> 
+<span class="menu-text">Notebooks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./posts/Thoughts"> 
+<span class="menu-text">Thoughts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resource-tree.qmd"> 
+<span class="menu-text">Resource-Tree</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -107,31 +183,71 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-
-
-
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-10">
-      <h1 class="display-4 text-center"></h1>
-      
-      <div class="text-center my-4">
-        <p></p>
-        <a href="https://i.pinimg.com/736x/cc/a3/3e/cca33ea76613e929969a0d090fe22bb7.jpg" target="_blank">
-          <img src="https://i.pinimg.com/736x/cc/a3/3e/cca33ea76613e929969a0d090fe22bb7.jpg" alt="Image" class="img-fluid" style="width: 70%;">
-        </a>
-      </div>
-    </div>
-  </div>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">home</h1>
 </div>
 
 
 
-</main> <!-- /main -->
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="hello" class="level3">
+<h3 class="anchored" data-anchor-id="hello">Hello,</h3>
+<p><strong>Agency</strong>: A series of articles and notes stemming from the central question “What is Agency?”. <strong>Articles</strong>: * <strong>Meaning</strong>: A dedicated series to the question “What is meaning?”.<br>
+* <strong>Intelligence</strong>: Thinking about Intelligence from an AI/ML perspective, some informal reviews on latest developments.<br>
+* <strong>Other</strong>: Articles &amp; writings on other topics with a different tone. <strong>Experiments</strong>: Some computational experiments. <strong>Notebooks</strong>: Explanations and technical notes <strong>Thoughts</strong>: Short entries with unstructured and loose thoughts. <strong>Resource Tree</strong>: Pointers and pins, an index to my current mind map of ideas and references. The purpose is dynamic, as I use the tree of information and links to share as a conversation propeller and contextual mapping to enrich dialogs.</p>
+<p>Contact me @ <a href="mailto:mvtta@proton.me">email</a></p>
+
+
+
+</section>
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1756323353010" data-listing-reading-time-sort="1" data-listing-word-count-sort="101">
+<div class="thumbnail">
+<p><a href="./posts/Resume/resume.html" class="no-external"></a></p><a href="./posts/Resume/resume.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/Resume/resume.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/Resume/resume.html" class="no-external">VALDETARO, M</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/Resume/resume.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/Resume/resume.html" class="no-external">Lisboa, Portugal | mvtta@proton.me |</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./posts/Resume/resume.html" class="no-external"></a></p><a href="./posts/Resume/resume.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -542,19 +658,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p><a href="mailto:mvtta@proton.me">email</a></p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-<p>mvtta | 2025</p>
-</div>
-  </div>
-</footer>
 
 
 

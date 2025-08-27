@@ -1,36 +1,149 @@
 /* css styles */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskerville:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskerville:wght@100;400;500&display=swap');
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 25vh; /* Adjust as needed */
+}
+
+.img-fluid {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffd700; /* Optional: highlight tooltip text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: #222;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 8px 12px;
+  position: absolute;
+  z-index: 10;
+  bottom: 125%; /* Position above the text */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.95em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Show the tooltip text when hovering */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 /* unvisited link */
 a:link {
     color: rgb(145, 134, 134) !important;
   }
+
   /* mouse over link */
-  a:hover {
-    background-color: rgba(251, 0, 255, 0.633) !important;
+a:hover {
+    color: rgba(251, 0, 255, 0.633) !important;
 }
   
 .navbar-title {
     color: rgb(255, 255, 255);
+    font-family: Inter, sans-serif !important;
 }
+
+/* Ensure all navigation elements use Inter font */
+.navbar-nav .nav-link,
+.navbar-nav .nav-item,
+.navbar .nav-link,
+.navbar .nav-item,
+nav .nav-link,
+nav .nav-item {
+    font-family: Inter, sans-serif !important;
+}
+
+.sidebar nav
+{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: Inter, sans-serif !important;
+    font-weight: 300;
+}
+.sidebar .nav-link {
+    color: rgb(255, 255, 255);
+    font-family: Inter, sans-serif !important;
+    font-weight: 300;
+}
+
+.sidebar .nav-link:hover {
+    color: rgb(255, 255, 255);
+}
+
+.sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+    border-left: 1px solid #ffffff;
+    color:  rgb(251, 0, 255) !important;
+    background-color: #5c5c5c00;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    color: var(--bs-dropdown-link-hover-color);
+    background-color: #ffffff00 !important;
+}
+
 * {
-    font-family: Inter, sans-serif;
     font-weight: 400;
-    background-color: black;   
+    font-size: medium;
+    color:#d4d4d4;
+    background-color: rgba(0, 0, 0, 0);   
+}
+
+code,
+pre,
+.sourceCode,
+.hljs,
+.highlight,
+code *,
+pre *,
+.sourceCode *,
+.hljs *,
+.highlight * {
+    font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace !important;
 }
 .nav-item {
     font-size:30px;
     color:rgb(42, 38, 40) !important;
+    font-family: Inter, sans-serif !important;
 }
+
 .nav-link {
     font-size: large;
-    font-family: Inter, sans-serif;
+    font-family: Inter, sans-serif !important;
     font-weight: 200;
-    color: #5c5c5c !important;
+    color: #cbcaca !important;
     border-right: 0px;
 }
+
+.dropdown-menu {
+    background-color: #000000 !important; 
+    color: rgb(255, 255, 255);
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+}
+
 h1.title{
+    font-family: Inter, serif;
     text-align: center !important;
     font-style: italic !important;
     font-size: large !important;
@@ -38,9 +151,11 @@ h1.title{
     color: #5c5c5c !important;
 }
 .h2{
+    font-family: Inter, serif;
     font-size: large;
     font-style: italic !important;
-    font-weight: 20;
+    font-weight: 200;
+    color:rgb(216, 216, 216);
 }
 .anchored{
     font-size: large;
@@ -54,5 +169,155 @@ h1.title{
     color: #5c5c5c  !important;
 }
 .p{
-    color:white;
+    color:#d4d4d4;
+    font-size: small;
+    font-weight: 400;
+    font-family: Baskerville, serif;
+}
+
+/* Table of Contents styling */
+nav[role=doc-toc] {
+    padding: 20px;
+    z-index: 1020;
+    margin-right: 20px;  /* Add right margin */
+    margin-top: 20px;    /* Add top margin */
+}
+
+/* Style the TOC items */
+nav[role=doc-toc] ul {
+    padding-left: 15px;
+    list-style-type: none;
+}
+
+nav[role=doc-toc] li {
+    margin: 8px 0;
+    font-size: small;
+}
+
+nav[role=doc-toc] a {
+    font-family: Inter;
+    text-decoration: none;
+    color: #5c5c5c !important;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+#quarto-content {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  height: calc(100vh - 65px); /* Subtract footer height */
+  max-height: calc(100vh - 65px);
+}
+
+main {
+  padding-bottom: 20px;
+  max-width: 100%;
+}
+
+/* Fixed pinned footer - minimal design */
+footer.footer {
+  position: fixed !important;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 45px;
+  padding: 10px 20px;
+  z-index: 1000;
+  border-top: 1px solid rgba(200, 200, 200, 0.1);
+  background-color: #000000;
+  text-emphasis-color: #d4d4d47c;
+}
+
+footer p {
+  font-family: Inter, sans-serif !important;
+  font-weight: 400;
+  color: #d4d4d461 !important;
+  font-size: small;
+  text-align: center;
+}
+
+
+/* Mobile-specific styles for better readability */
+@media (max-width: 768px) {
+  html, body {
+    height: 100vh;
+    height: -webkit-fill-available; /* iOS Safari fix */
+    overflow-x: hidden;
+  }
+  
+  #quarto-content {
+    height: calc(100vh - 65px);
+    height: calc(-webkit-fill-available - 65px); /* iOS Safari fix */
+    overflow-y: auto;
+  }
+  
+  * {
+    font-weight: 500;
+    font-size: medium;
+  }
+  
+  p, .p {
+    font-family: Inter, sans-serif !important;
+    font-weight: 500;
+    font-size: medium;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+  }
+  
+  .sidebar .nav-link {
+    font-weight: 500;
+  }
+  
+  footer.footer {
+    height: 45px;
+    padding: 8px 15px;
+  }
+}
+
+/* Fix for math fractions rendering */
+.mjx-math {
+  color: inherit !important;
+  background: transparent !important;
+}
+
+.mjx-chtml .mjx-frac {
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+}
+
+.mjx-numerator, .mjx-denominator {
+  display: block !important;
+  text-align: center !important;
+  background: transparent !important;
+}
+
+.mjx-line {
+  display: block !important;
+  height: 1px !important;
+  background-color: currentColor !important;
+  border: none !important;
+  margin: 2px 0 !important;
+}
+
+/* Make math font match the rest of the document */
+.mjx-char {
+  font-weight: 400 !important;
+  color: #d4d4d4 !important;
 }

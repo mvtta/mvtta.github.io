@@ -61,7 +61,7 @@ a:hover {
   
 .navbar-title {
     color: rgb(255, 255, 255);
-    font-family: Baskerville, serif !important;
+    font-family: Inter, sans-serif !important;
 }
 
 /* Ensure all navigation elements use Inter font */
@@ -103,7 +103,7 @@ nav .nav-item {
 }
 
 * {
-    font-weight: 300;
+    font-weight: 400;
     font-size: medium;
     color:#d4d4d4;
     background-color: rgba(0, 0, 0, 0);   

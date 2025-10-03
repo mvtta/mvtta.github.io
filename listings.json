@@ -1,8 +1,18 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/posts/reports/index.html",
     "items": [
-      "/posts/Resume/resume.html"
+      "/posts/reports/fib/index.qmd/index.html",
+      "/posts/reports/oscillator/index.html"
+    ]
+  },
+  {
+    "listing": "/posts/experiments/index.html",
+    "items": [
+      "/posts/experiments/fib/index.html",
+      "/posts/experiments/osci/index.html",
+      "/posts/experiments/phase/index.html",
+      "/posts/experiments/stokes-haley/index.html"
     ]
   }
 ]

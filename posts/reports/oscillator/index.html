@@ -121,11 +121,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../posts/dialogues/"> 
-<span class="menu-text">dialogues</span></a>
+    <a class="nav-link" href="../../../posts/reports/.*"> 
+<span class="menu-text">reports</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../posts/experiments/"> 
+    <a class="nav-link" href="../../../posts/experiments/.*"> 
 <span class="menu-text">experiments</span></a>
   </li>  
 </ul>
@@ -260,7 +260,7 @@ F(t)\;=\;\sum_k A_k\,\varphi\!\left(\frac{t-s_k}{\tau_d}\right),
 <section id="notes" class="level4" data-number="0.6.1">
 <h4 data-number="0.6.1" class="anchored" data-anchor-id="notes"><span class="header-section-number">0.6.1</span> notes</h4>
 <p>The object is the damped, driven harmonic oscillator <span class="math display">\[ \ddot{x}(t)+\gamma\,\dot{x}(t)+\omega_0^2 x(t)=F(t) \]</span>, where <span class="math display">\[F(t)\]</span> is a sum of fixed‑shape pulses arriving with semiperiodic timing as in the Dirac‑comb model of deviations under jitter and renewal randomness. The goal is to compute reproducible static figures for five protocols by scripting the same pulse and oscillator logic used in the interactive page and saving PNGs for the article. Quarto will then embed the generated files so non‑specialists can see “before and after” snapshots of the object’s behaviour without running widgets during reading.</p>
-<div id="358e7059" class="cell" data-message="false" data-execution_count="1">
+<div id="d9c173c0" class="cell" data-message="false" data-execution_count="1">
 <div class="cell-output cell-output-display" data-execution_count="1">
 <pre><code>['figures/habituation_(1.3_hz_periodic).png',
  'figures/sensitization_(sweep_0.6→1.0_hz).png',
@@ -274,7 +274,7 @@ F(t)\;=\;\sum_k A_k\,\varphi\!\left(\frac{t-s_k}{\tau_d}\right),
 <section id="figures-for-the-report" class="level3" data-number="0.7">
 <h3 data-number="0.7" class="anchored" data-anchor-id="figures-for-the-report"><span class="header-section-number">0.7</span> Figures for the report</h3>
 <p>Each panel shows the same object under a different stimulus protocol, linking a clear, non‑technical description to a precise, reproducible signal model based on semiperiodic pulses and their spectral signatures as developed in the Dirac‑comb analysis <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>. For complete parity with the live demo you can regenerate the static figures after adjusting <span class="math inline">\(\omega_0\)</span> (e.g.&nbsp;set <span class="math inline">\(\omega_0=2\pi\)</span> for the anticipation snapshot) or introduce a small nonzero jitter to visualize harmonic mass damping; these do not change any qualitative conclusions.</p>
-<div id="31b763ad" class="cell" data-execution_count="2">
+<div id="543f4527" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display cell-output-markdown">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">

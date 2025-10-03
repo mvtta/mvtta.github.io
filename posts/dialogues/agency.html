@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.555">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Mariana Emauz Valdetaro">
+<meta name="dcterms.date" content="2023-05-15">
+
+<title>/ - Evolving Agency</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">/</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts/dialogues/"> 
+<span class="menu-text">dialogues</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts/experiments/"> 
+<span class="menu-text">experiments</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction-motivation" id="toc-introduction-motivation" class="nav-link active" data-scroll-target="#introduction-motivation"><span class="header-section-number">1</span> Introduction &amp; Motivation</a>
+  <ul>
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background"><span class="header-section-number">1.1</span> Background</a>
+  <ul>
+  <li><a href="#interactions-and-relational-foundations" id="toc-interactions-and-relational-foundations" class="nav-link" data-scroll-target="#interactions-and-relational-foundations"><span class="header-section-number">1.1.1</span> Interactions and Relational Foundations</a></li>
+  <li><a href="#computational-and-predictive-applications" id="toc-computational-and-predictive-applications" class="nav-link" data-scroll-target="#computational-and-predictive-applications"><span class="header-section-number">1.1.2</span> Computational and Predictive Applications</a></li>
+  <li><a href="#agent-definition-and-pathways-of-action" id="toc-agent-definition-and-pathways-of-action" class="nav-link" data-scroll-target="#agent-definition-and-pathways-of-action"><span class="header-section-number">1.1.3</span> Agent Definition and Pathways of Action</a></li>
+  <li><a href="#materials-substrate" id="toc-materials-substrate" class="nav-link" data-scroll-target="#materials-substrate"><span class="header-section-number">1.1.4</span> Materials &amp; Substrate</a></li>
+  <li><a href="#animating-substrate-multiplicity" id="toc-animating-substrate-multiplicity" class="nav-link" data-scroll-target="#animating-substrate-multiplicity"><span class="header-section-number">1.1.5</span> Animating substrate-multiplicity</a></li>
+  <li><a href="#causation-and-time" id="toc-causation-and-time" class="nav-link" data-scroll-target="#causation-and-time"><span class="header-section-number">1.1.6</span> Causation and time</a></li>
+  <li><a href="#senses-and-agency" id="toc-senses-and-agency" class="nav-link" data-scroll-target="#senses-and-agency"><span class="header-section-number">1.1.7</span> Senses and agency</a></li>
+  <li><a href="#energy-and-relationships" id="toc-energy-and-relationships" class="nav-link" data-scroll-target="#energy-and-relationships"><span class="header-section-number">1.1.8</span> Energy and relationships</a></li>
+  <li><a href="#the-form-of-flux" id="toc-the-form-of-flux" class="nav-link" data-scroll-target="#the-form-of-flux"><span class="header-section-number">1.1.9</span> The form of flux</a>
+  <ul>
+  <li><a href="#high-level" id="toc-high-level" class="nav-link" data-scroll-target="#high-level"><span class="header-section-number">1.1.9.1</span> High-level</a></li>
+  <li><a href="#low-level-view" id="toc-low-level-view" class="nav-link" data-scroll-target="#low-level-view"><span class="header-section-number">1.1.9.2</span> Low-level view</a>
+  <ul>
+  <li><a href="#notation-notes" id="toc-notation-notes" class="nav-link" data-scroll-target="#notation-notes"><span class="header-section-number">1.1.9.2.1</span> Notation notes</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#toward-first-principles" id="toc-toward-first-principles" class="nav-link" data-scroll-target="#toward-first-principles"><span class="header-section-number">1.2</span> Toward first principles</a>
+  <ul>
+  <li><a href="#agency-requires-energy" id="toc-agency-requires-energy" class="nav-link" data-scroll-target="#agency-requires-energy"><span class="header-section-number">1.2.1</span> Agency requires energy</a></li>
+  <li><a href="#nonzero-flux-is-necessary-for-agency" id="toc-nonzero-flux-is-necessary-for-agency" class="nav-link" data-scroll-target="#nonzero-flux-is-necessary-for-agency"><span class="header-section-number">1.2.2</span> Nonzero Flux Is Necessary for Agency</a></li>
+  <li><a href="#sufficiency-through-directed-flux-and-encoded-landscapes" id="toc-sufficiency-through-directed-flux-and-encoded-landscapes" class="nav-link" data-scroll-target="#sufficiency-through-directed-flux-and-encoded-landscapes"><span class="header-section-number">1.2.3</span> Sufficiency Through Directed Flux and Encoded Landscapes</a></li>
+  <li><a href="#agents-do-work.-action-will-be-there.-differential-potential" id="toc-agents-do-work.-action-will-be-there.-differential-potential" class="nav-link" data-scroll-target="#agents-do-work.-action-will-be-there.-differential-potential"><span class="header-section-number">1.2.4</span> Agents do work. Action will be there. (Differential Potential)</a></li>
+  <li><a href="#agency-is-the-substrate-of-agents-who-destribute-actions-scaling-local-to-global" id="toc-agency-is-the-substrate-of-agents-who-destribute-actions-scaling-local-to-global" class="nav-link" data-scroll-target="#agency-is-the-substrate-of-agents-who-destribute-actions-scaling-local-to-global"><span class="header-section-number">1.2.5</span> Agency is the substrate of Agents who destribute actions scaling local to global</a></li>
+  <li><a href="#it-is-configured-by-very-simple-rules-or-allowed-by-said-simple-configuration." id="toc-it-is-configured-by-very-simple-rules-or-allowed-by-said-simple-configuration." class="nav-link" data-scroll-target="#it-is-configured-by-very-simple-rules-or-allowed-by-said-simple-configuration."><span class="header-section-number">1.2.6</span> It is configured by very simple rules, or allowed by said simple configuration.</a></li>
+  <li><a href="#all-definitions-point-to-the-same-thing." id="toc-all-definitions-point-to-the-same-thing." class="nav-link" data-scroll-target="#all-definitions-point-to-the-same-thing."><span class="header-section-number">1.2.7</span> All definitions point to the same thing.</a></li>
+  <li><a href="#agency-as-a-technology-for-causation.-agents-as-the-efficient-means-to-and-for-causes." id="toc-agency-as-a-technology-for-causation.-agents-as-the-efficient-means-to-and-for-causes." class="nav-link" data-scroll-target="#agency-as-a-technology-for-causation.-agents-as-the-efficient-means-to-and-for-causes."><span class="header-section-number">1.2.8</span> Agency as a technology for causation. Agents as the efficient means to, and for causes.</a></li>
+  <li><a href="#agency-as-a-substrate-or-property-of-any-substrate-non-discriminating-between-arrangement-domain." id="toc-agency-as-a-substrate-or-property-of-any-substrate-non-discriminating-between-arrangement-domain." class="nav-link" data-scroll-target="#agency-as-a-substrate-or-property-of-any-substrate-non-discriminating-between-arrangement-domain."><span class="header-section-number">1.2.9</span> Agency as a substrate (Or property of any substrate) non-discriminating between arrangement domain.</a></li>
+  <li><a href="#agential-potential-as-substrate-dependant-range-of-affectation-agents-have-given-by-their-morphology-part-whole-relationships-and-environment." id="toc-agential-potential-as-substrate-dependant-range-of-affectation-agents-have-given-by-their-morphology-part-whole-relationships-and-environment." class="nav-link" data-scroll-target="#agential-potential-as-substrate-dependant-range-of-affectation-agents-have-given-by-their-morphology-part-whole-relationships-and-environment."><span class="header-section-number">1.2.10</span> <em>Agential-Potential</em> as substrate-dependant range of <em>affectation</em> agents have, given by their morphology, part whole relationships, and environment.</a></li>
+  <li><a href="#agency-as-cognitive-technology-distribution-system-carried-by-agents." id="toc-agency-as-cognitive-technology-distribution-system-carried-by-agents." class="nav-link" data-scroll-target="#agency-as-cognitive-technology-distribution-system-carried-by-agents."><span class="header-section-number">1.2.11</span> Agency as cognitive technology distribution system, carried by agents.</a></li>
+  </ul></li>
+  <li><a href="#questions-answered" id="toc-questions-answered" class="nav-link" data-scroll-target="#questions-answered"><span class="header-section-number">1.3</span> Questions Answered</a></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">1.4</span> Discussion</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="agency.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Evolving Agency</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mariana Emauz Valdetaro </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">15 May 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Abstract</div>
+    <p>This is a brief account of a project which started back in 2020, which has been developed under some considerable scope modifications due to the board scope and a multi-conventional history which could not have been left unaddressed. The vast and complex philosophical takes, spanning cultures, accompanying the history of Humans and human thought. Confronted with Darwin’s <em>agential materials</em> <em>non-biological agential systems, and synthetic agents</em>. Additionally, the pressing necessity to model systems, driving the development of simulations for agents, from chemical to urban scenarios, now adjoint with policies and principal-agent regulations for trading and economics purposes. These are rather tangible in practice, and their quantitative and direct impact is configured by the quality of current interpretations of this term. It’s worth mentioning that we do not have a general expression for computing agency, neither one that abstracts agents from substrates, while keeping track of their relationships. Concerning approaches, Agent Based Models, (ABM) in which agents are defined within a substrate usually do not transfer into other spaces thus are confined to the model settings. Other approaches, such as System Based Models (SBM) also find significant challenges in generalising inter-agent outside configuration, or with different parameters. As if it wasn’t testing enough, agency sits at the intersection of some of the most profound questions one can ask about the universe, life, and ones place in it. Any practical approach must deal with, (or neglect) the tangents implicit in pursuit of general principles driving agency. The <em>almost</em> bottomless philosophical roots, match the far-reaching discussions about free will, causality, and consciousness, carrying applied echoes in everyday affairs, where agency seems to point to the capacity for action and influence without any information on its limitations or range. Is it limited to the living? Or could agency be something broader, a propensity, or property of systems that act and interact, amplifying motivation, regardless of the agent’s nature? Due to the known spatio-temporal dimensions of the orders in which things <em>get</em> organised, after exploring the challenges, the semantics and the polysemic nature of the term <strong>agency</strong> this project halted due to insufficient empirical adequacy and conceptual ground to support the principles sought in scope. However, a preliminary assessment of possible operable and verifiable hypothesis is laid. A risk surely. Accompanying it, some draft translations into a category-like approach as an attempt to identify <em>agential breadcrumbs</em>, and the bonding forces at play, in what is found certainly an overreaching exercise. It aimed to find the exact moment where agency sprouted. Is advanced that it failed, yet a possible contribution is in showing that when addressing agency as such, instead of a philosophical quest, there’s room for a technological interpretation of agency.</p>
+  </div>
+</div>
+
+
+</header>
+
+
+<section id="introduction-motivation" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction &amp; Motivation</h1>
+<p>This is a brief account of a project which started back in 2020, which has been developed under some considerable scope modifications due to the board scope and a multi-conventional disciplinary history, which could not have been left unaddressed. The intricate, practical, and philosophical foundations span cultures, scopes, and are accompanied by the chronicles of a maturing human thought.</p>
+<p>This investigation was motivated by four converging necessities:</p>
+<ol type="1">
+<li>First, Darwin’s <em>agential materials</em> intertwining with the multi-scale competency architectures proposal, from where cellular, tissue, and organisms levels demonstrate degrees of problem-solving capabilities. These experimental results and the conceptual framework cementing the experimental design, poses a direct challenge to conventional explanations of biology where environmental and genetic factors must explain organismic behaviour (Levin 2019; Noble 2006). As such, measuring degrees of competency across scales becomes somewhat more tangible, even if by approximation, which seems of relevance if one aims relate adequately and at scale.</li>
+<li>Second, given the above, accommodating agency beyond the current exclusivity of human, and market-based contexts (Russell and Norvig 2020; Floridi et al.&nbsp;2019) may have immediate reflection on how diverse systems are interfaced.</li>
+<li>Reframing agency as an ubiquitous phenomena, where agents of all kinds, have the capacity to act, affect, be affected, and produce effects on the environment, may contribute to advancements on complexity, chaos, and emergence theories.</li>
+<li>Lastly, the fourth, addressing “What is agency”, from a contemporary stance, means granting the broad range of agency definitions, the status of conceptual pointers, with diverse material instantiation affecting different kinds of entities within interlinked substrates. From a bottom-up perspective, these pointers appear to reference a shared reference, as “pointing to” a category or class of phenomena. While the computational and polysemic analysis tool developed in scope of this project does not appear of scientific significance, further improvements on its limitations (cleaner data set, or structurally coherent groups of sentences) could improve its results, and the viability of the methodology.</li>
+</ol>
+<section id="background" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="background"><span class="header-section-number">1.1</span> Background</h2>
+<section id="interactions-and-relational-foundations" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="interactions-and-relational-foundations"><span class="header-section-number">1.1.1</span> Interactions and Relational Foundations</h3>
+<p>The quest to understand agency, starting from the capacities to act, influence, and interact within structured spaces, requests abstraction while preserving concrete relational links. The challenge echoes William James’s radical empiricism, which insisted that relations are as fundamental as the entities they connect (James 1912), and finds contemporary expression in Karen Barad’s agential realism, where “relata do not pre-exist relations; rather, relata-within-phenomena emerge through specific intra-actions” (Barad 2007, 139). The interactive nature of nature itself, contradicts any stance where agency is posed as a property of some isolated entity.</p>
+<p>A sound counter-argument given the above, stems from the very same relational primacy, where then, at the microscale agency comparable to the process where gases which comprise particles undergo elastic collisions, conserving total kinetic energy, resulting in a macroscopic pressure, which is given statistically and not <em>agentially</em>. Sound as it may seem, this is exactly the problem one finds without a clear definition of agency, because this statistical effect points exactly to something larger than the individual trajectories of the particles in motion. The transition from individual particle behaviour to collective properties occurs through ensemble averaging, where Maxwell-Boltzmann distributions describe velocity probabilities in thermal equilibrium (Maxwell, “Illustrations of the Dynamical Theory of Gases,” 1860). When entertaining this counterfactual, it is also sound to say, that as no single particle carries pressure, the behaviour is of collective domain, happening via relational exchanges, where the capacity to act, of the acting, may not be reduced to properties of their own, but as distributed and allowed consequence. Thermodynamic approaches to modelling agents trace back to Lars Onsager’s reciprocal relations in irreversible thermodynamics, later developed by Ilya Prigogine into dissipate structure theory (Onsager, “Reciprocal Relations in Irreversible Processes,” 1931; Prigogine, From Being to Becoming, 1980). Contemporary applications include maximum entropy principle models of ecological communities (Harte, Maximum Entropy and Ecology, 2011) and thermodynamic modelling of neural networks where free energy minimization drives learning and adaptation (Friston, “The Free-Energy Principle: A Unified Brain Theory?,” 2010).</p>
+<p>This traverse from collisions, thermodynamics and into computational models of agency, related to selection models in which agents are heat engines coupled to thermal baths and apply game-theoretic strategies (max-power vs.&nbsp;max-efficiency) (Babajanyan S. G. et al 2022). In those, competition for infinite (e.g., sunlight among plants) or finite (e.g., ATP pathways in cells) resources shape efficiencies and power, which evoke the prisoner’s dilemma, Stackelberg and Nash equilibria dynamics, and making heads or tails of “What is agency” is stifled by ambiguity.</p>
+<p>The take away is that agency has an interactive and multi-scale nature, happens in the in between, both in configured relationships within structured environments, at scale-spaces transition, relating previous and subsequent levels of organisation.</p>
+</section>
+<section id="computational-and-predictive-applications" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="computational-and-predictive-applications"><span class="header-section-number">1.1.2</span> Computational and Predictive Applications</h3>
+<p>Some multi-domain analogues attempts like the Five Domains Model in animal welfare extending agency to non-human actors, inferring subjective experiences via discrete states akin to ABM representations, thus broadening the concept of agency beyond whatever is meant by <em>rational deliberation</em>, however, maintaining the systems or the inclusion of a new variable is an effective hurdle. Scalability challenges arise from the inherent computational complexity of these approaches, with obvious example in the the NP-complete problem for any multi-agent coordination systems analogus to the Five Domains Model (Garey and Johnson, Computers and Intractability, 1979).</p>
+<p>Of promise, but still in development are mathematical approaches that treat relations as structure, finding expression through differential geometry and topology. Modelling a connected space scoping all possible interactions (Spivak, Differential Geometry, 1979), from the above mentioned <em>relations as structure</em> idea, raction-diffusion systems are subject of reinterpretation. In RD systems, where spatial patterns of coupled processes show how local interactions produce global order through nonlinear dynamics (Murray, Mathematical Biology, 2002) where relating options are of type: cooperative, competitive, parasitic, mutualistic, and neutral. For each, distinct energy exchange patterns, and stability conditions (May, Stability and Complexity in Model Ecosystems, 1973), loop back to Levin’s work on cellular networks through which cognitive glue, allows for this coupling to process information, and where decision making is local, yet globally harmonious, without gene tampering(<span class="citation" data-cites="levin2019computational">(<a href="#ref-levin2019computational" role="doc-biblioref">Michael Levin 2019</a>)</span>; <span class="citation" data-cites="levin2021bioelectric">(<a href="#ref-levin2021bioelectric" role="doc-biblioref">Michael Levin 2021</a>)</span>)</p>
+<p>As such, agency as a shared reference “points at” relations that create energy currencies, where the capacity of processes to process varies, yet expresses under a single <em>umbrella</em>, forces, bonds, compositions, catalysis, scaling from molecular mechanisms to organisms and population behavior, all the mechanisms which currently the available models of agency (and agents) cannot integrate without extensive parametrization.</p>
+</section>
+<section id="agent-definition-and-pathways-of-action" class="level3" data-number="1.1.3">
+<h3 data-number="1.1.3" class="anchored" data-anchor-id="agent-definition-and-pathways-of-action"><span class="header-section-number">1.1.3</span> Agent Definition and Pathways of Action</h3>
+<p>Agents manifest as entities capable of affecting and being affected; producing effects while remaining susceptible to environmental influence. Following Henri Bergson’s insight that “to act is to take one’s place in the universal becoming” (Bergson, Matter and Memory, 1896/2004, 196), agents draw directed paths between antecedent and consequent states of events through configured spaces wherein both agent and environment are structured to enable mutual interaction and transformation.</p>
+<p>Chemical agents demonstrate such pathways through catalytic processes where enzymes lower activation barriers, creating <strong>directed</strong> reaction pathways that would otherwise be thermodynamically unfavorable (Michaelis and Menten, “Die Kinetik der Invertinwirkung,” 1913). Intercellular protein transfer through membrane nanotubes illustrates biological pathway formation: immune cells establish tunneling connections that facilitate selective organelle exchange, then enabling distributed cellular computation beyond individual cell boundaries (Rustom et al., “Nanotubular Highways for Intercellular Organelle Transport,” 2004). Here, paths or pathways, find again expression in <em>robotic</em> agents compute path planning algorithms that navigate configuration spaces while avoiding obstacles (Latombe, Robot Motion Planning, 1991), or whatever goal one may have. Paths as processes does not represent a novel proposal, in fact, path-integrals relate tho stochastic processes in the same measure that these relate to brownian motion, ultimately rendered by some geometric interpretation, where change in space and time is computed in one direction, where then the sum of all parts, (spatio-temporal…) is the process of path-making. Paths as entities then echoes as Whitehead’s “actual entities” achieving definiteness through their relational “prehensions” given an environment, where whatever unfolds does so through a temporal becoming (Whitehead, Process and Reality, 1929, 23-24). Seeing agents as those who <em>draw paths</em> between <em>before</em> and <em>after</em> states has an obvious advantage, the mystery of <em>“more than the sum of the parts”</em> is resolvable by adding temporal parts to spatial ones, moreover, the process of summing up those parts, implies other temporal and spatial parts, namely of the medium where action happens and the <em>targets</em> (interacts) of said action. What remains of awe is that this orchestration is configured in such a manner that paths are possible everywhere.</p>
+</section>
+<section id="materials-substrate" class="level3" data-number="1.1.4">
+<h3 data-number="1.1.4" class="anchored" data-anchor-id="materials-substrate"><span class="header-section-number">1.1.4</span> Materials &amp; Substrate</h3>
+<p>Material itself represents organized energy patterns, as demonstrated by Einstein’s mass-energy equivalence E=mc² and quantum field theory where particles arise as excitations in underlying fields (Einstein, “Does the Inertia of a Body Depend upon its Energy Content?,” 1905; Quantum Field Theory texts by Peskin and Schroeder, 1995). Metasurfaces and engineered media manipulate electromagnetic wave propagation through subwavelength structures, creating artificial materials with properties not found in nature (Yu and Capasso, “Flat Optics with Designer Metasurfaces,” 2014). These developments suggest that substrate properties themselves can be designed and modified, supporting substrate-independence principles. Substrate-independence theory, while not explicitly formalized as a unified framework, finds support across multiple domains. In biology, Dennis Noble’s systems biology demonstrates how cardiac rhythms arise through ion channel interactions that can be modeled independently of specific molecular implementations (Noble, The Music of Life, 2006). In computation, Turing completeness shows how any sufficiently complex computational system can simulate any other, regardless of physical substrate (Turing, “On Computable Numbers,” 1936). In physics, gauge theories reveal how fundamental forces manifest through symmetry principles that transcend particular field configurations (Yang and Mills, “Conservation of Isotopic Spin and Isotopic Gauge Invariance,” 1954). By seeing energy patterns as configurations of spaces and relations, remaining is the juxtaposition of a substate-dependancy and independancy, the first as manifestation through domain-specific configuration, and the lader, some kind of invariance connecting domains.</p>
+</section>
+<section id="animating-substrate-multiplicity" class="level3" data-number="1.1.5">
+<h3 data-number="1.1.5" class="anchored" data-anchor-id="animating-substrate-multiplicity"><span class="header-section-number">1.1.5</span> Animating substrate-multiplicity</h3>
+<p>It is said that agents must be “structurally coupled” with their environments through ongoing sensorimotor interaction (Varela et al., The Embodied Mind, 1991, 173). This autopoetic structural coupling, allows for self-making through continuous interaction and integrations of the feedback loops involved in homeostatic and autopoetic cycles. This does not contrast with the path-drawing proposal. Now, with TAME, the orders in which these cycles happen locally create a fabric of dynamic fixed points electrifying a grid like landscape which functions as substrate for higher-level ones, while simultaneously, forging a causal implication if none exists without it. In creating nested hierarchies motor proteins like kinesin that draw paths along microtubules (Vale and Milligan, “The Way Things Move: Looking Under the Hood of Molecular Motor Proteins,” 2000), quorum sensing (Miller and Bassler, “Quorum Sensing in Bacteria,” 2001) distributing local policies, one must ask if at their scale, the space between the paths is as wide as the one found in swarms, or apartment buildings. If emotional states are conveyed via predictive processing mechanisms that evaluate environmental changes and action outcomes, thus serving as motivational systems narrowing perceptual range towards a guided attention process (Bach 2009; Bach Dayan 2017), the internal paths towards external ones, the internalisation of external ones, and networks of any kind, requires discernibility of identities, meaning that the nodes of the network must be differentiable akin to “make a difference” (Latour, 2005), and the same conceptual principle is found in latent spaces, or better put, higher-dimensional vector spaces where geometric paths (or shapes! paths are spaces too) for example how some language models manipulate symbols from one substrate to another (Mikolov, 2013).</p>
+</section>
+<section id="causation-and-time" class="level3" data-number="1.1.6">
+<h3 data-number="1.1.6" class="anchored" data-anchor-id="causation-and-time"><span class="header-section-number">1.1.6</span> Causation and time</h3>
+<p>Questions of agency necessarily invoke causation and temporality, themes tracing back to pre-Socratic philosophy. Anaximander’s apeiron (boundless) represents the inexhaustible source from which all determinate beings arise and to which they return, prefiguring contemporary thermodynamic principles of energy conservation and transformation where the first law establishes energy’s invariance across transformations (Kirk et al., The Presocratic Philosophers, 1983, 117). His principle of cosmic justice; where “things pay penalty and retribution to each other for their injustice according to the assessment of time” (Anaximander DK 12 B1); anticipates modern understanding of irreversible processes and entropy increase described by the second law of thermodynamics.</p>
+<p>Anaximenes’ concept of air (aer) as the fundamental substance that undergoes rarefaction and condensation to produce all natural phenomena parallels contemporary understanding of phase transitions and critical phenomena in statistical mechanics (Anaximenes DK 13 A5; Stanley, Introduction to Phase Transitions and Critical Phenomena, 1971). Heraclitean flux philosophy, emphasizing that “everything flows and nothing abides,” finds expression in modern physics where temporal becoming represents fundamental reality rather than mere appearance (Heraclitus DK 22 B30; Prigogine and Stengers, Order Out of Chaos, 1984). Aristotle’s efficient causation as “the primary source of change” (Physics 194b29-32) established conceptual frameworks continuing to inform debates about agential causation in complex systems (Aristotle, The Complete Works, 1984).</p>
+</section>
+<section id="senses-and-agency" class="level3" data-number="1.1.7">
+<h3 data-number="1.1.7" class="anchored" data-anchor-id="senses-and-agency"><span class="header-section-number">1.1.7</span> Senses and agency</h3>
+<p>The phenomenological tradition, where an analysis of temporal consciousness, internal time and circadian rhythms (Husserl, 1905/1991?) internal, compositional, or ar architecture that senses, then point to a scaffolding from where closure, coupling, and the path drawn to discernible but identic spaces blur the notion of withing the world and of the world. The conventional sense of agency found in psychiatry, and then again surprisingly in neuroscience, as a post-hoc rationalisation of unconscious processes (Libet, 1985; Wegner, The Illusion of Conscious Will, 2002?), conflict with the proposed range of path-drawing something has given its spatial and temporal parts, which as seen so far happen directed in space and time with a propensity of some nature towards increased connectivity and thus growth through form. Consciousness is at the present moment, as it is wise to tackle one big question at the time, yet sensing gives sensible bridge between agency and the means of without ingressing into these other debates. It is known that electromagnetic fields permeate space and carry information through wave propagation at light speed, enabling wireless communication and remote sensing (Maxwell, 1873). The electromagnetic spectrum spans from radio waves to gamma rays, with biological systems making used of portions of this spectrum for navigation, communication, and energy harvesting (Johnsen and Lohmann, “The Physics and Neurobiology of Magnetoreception,” 2005). This to say that currently it is widely accepted that trees, plants, and insects leverage from the em field to chose from the types of interactions available the optimal one, for example, nectar production in flowers is expensive, and while producing it has clear gains for reproduction not all insects are great pollinators. Flowers such as (fetch citation) chose the amount based in the hum produced but the visitor, and while this can be attributed to evolution alone, studies show that for human-made em perturbations immediate reaction obtained by both the pollinators and plants challenging the evolutionary driver theory. This on the fly adaptation towards preservation, questions the phenomenological experience as some prior underlying of agential mechanisms, given that a many scales, agents are naturally given information processing senses, through electromagnetic, chemical, and mechanical signaling systems, drawing those paths, with wider or narrower ranges for an effective purpose.</p>
+</section>
+<section id="energy-and-relationships" class="level3" data-number="1.1.8">
+<h3 data-number="1.1.8" class="anchored" data-anchor-id="energy-and-relationships"><span class="header-section-number">1.1.8</span> Energy and relationships</h3>
+<p>It is equally mesmerising that for every exchange energy is required. However, the exchange may not require (a lot) mass. Fusion leads to the formation of heavier elements from lighter ones, contributing to the abundance of elements in the universe. Yet one should note that fusion is in principle more expensive than fission, meaning that it takes more energy to start a fusion process compared to fission. Fusion involves combining light nuclei (like hydrogen isotopes) to form heavier nuclei, which requires overcoming significant electrostatic repulsion between positively charged nuclei. In contrast, fission involves splitting heavy nuclei (like uranium or plutonium) and typically releases energy more readily once initiated, as it exploits the binding energy of the nucleus (Verberck, 2016). Fusion reactions release significantly more energy per reaction compared to fission. For instance, the fusion of deuterium and tritium can release about 17.6 MeV of energy, while typical fission reactions release around 200 MeV. Fusion is the dominant process in stars, including our Sun, where hydrogen nuclei combine to form helium, releasing vast amounts of energy.</p>
+<p>The energy released from fusion is significantly higher per reaction compared to fission, making it a more efficient process for energy production in stellar environments. Fusion leads to the formation of heavier elements from lighter ones, contributing to the abundance of elements in the universe. The fusion of hydrogen into helium and subsequently into heavier elements (up to iron!) is a fundamental process in stellar nucleosynthesis. This process not only generates energy but also creates the building blocks for planets and life, indicating a propensity for structure creation rather than destruction. In sum, could this be a propensity for efficiency of energy-production, such as in stars, or the creation of stable elements, and so forth?</p>
+<p>If the previous statements are of empirical adequacy, then energy takes precedence over mass, and thus matter, at least ontologically speaking. The problem is that it is also said that matter is energy, but bounded. In QCD, gluons exhibit a propensity to stick, yet everything occurs in an (almost) massless space. Transitioning from QCD to QED necessitates a specific number of exchange paths for mass to become relevant. Is there a specific number of exchange paths to be computed to go from QED to the elements?</p>
+<p>Quantum Chromodynamics (QCD) and Quantum Electrodynamics (QED) provides a foundational understanding of the energy-mass relationship in the universe, particularly as it pertains to nuclear processes such as fusion and fission. QCD describes the strong interactions that bind quarks and gluons within protons and neutrons, while QED governs the electromagnetic interactions that influence atomic structure and energy levels. Here, gluons, tend to stick, which in turn is said to make hadrons, The mass of these particles is influenced by the strong force, which is described by QCD. When transitioning to QED, the electromagnetic interactions become significant, particularly in how they affect the mass and stability of hadrons The path from finite to infinite volume, at least given hadronic obversables, From the invention of finite-volume technology to access physical observables by Martin Luscher over three decades ago to date, this field has grown in scope and complexity, enabling studies of scattering amplitudes and reaction rates, as well as spectroscopy of excited states of quantum chromodynamics (QCD) and resonances. Further, LQCD studies are augmented with the inclusion of quantum electrodynamics (QED), and subtleties related to the finite volume of systems in presence of QED have been understood and largely controlled. (2018, Z. Davoudi)</p>
+<p>The Higgs mechanism is of relevance here as it concedes explanatory power to how particles acquire mass through their interactions with the Higgs field. The fucntionality of the ideas is that when particles interact with the Higgs field, they acquire mass, while on the other hand, those that do not interact remain massless.</p>
+<p>Another The Higgs mechanism involves a process called <em>spontaneous symmetry breaking</em>. In the early universe, the Higgs field had a symmetric state with zero vacuum expectation value. As the universe cooled, the Higgs field settled into a non-zero value, breaking the symmetry and allowing particles to gain mass through their interactions with this field. For example, when an electron interacts with the Higgs field, it acquires mass proportional to the strength of its coupling to the field.</p>
+<p>Here, a photon, already a significant constructed path from the interactions above, is unphased, meaning, unlike a gluon, will not care to stick to itself as much as it seems made to explore, alone. Here, a photon is the emblem of unconstrained propagation: as the gauge boson of an Abelian field, it does not self‑confine at tree level, so electromagnetic flux explores spacetime along null geodesics and mediates long‑range coupling without necessary formation of strings.</p>
+<p>Operationally, neutrinos are the archetypal flux that transports information, energy, and conserved charges across otherwise disconnected regions, so in the language of coupling and paths is as if their long‑range, weakly interacting channel linked local nuclear processes to global preferred patterns. It is said that in the early universe, neutrino decoupling at <span class="math inline">\(T ≈ MeV\)</span> imprints the radiation energy density, affecting the universe expansion rate, and then damps small‑scale matter power, thus the cosmic neutrino background as a long‑mean‑free‑path carrier of constraints that couple microphysics to structure formation.</p>
+<p>A neutrino, is almost massless yet not entirely so. Flavor oscillations imply distinct mass eigenstates, and weak interactions give neutrinos enormous mean free paths. (be more detailed lady and add citations)</p>
+<p>Stars write “fusion paths”, likely due to the high temperature and density supply at the Coulomb‑barrier activation energy, where fluxes of baryon number, photons, and neutrinos couple local nuclear events into a global power‑producing, structure‑forming engine. This <em>engine</em> that drives nucleosynthesis and builds the elemental alphabet for chemistry, seems efficient with a purpose, as the “path of maximal binding per constraint,” is consistent with thermodynamic means (second law) globally with configured local decreases via the open‑system created in the process. Could this be a reflection of an intrinsic goal towards growth?</p>
+<p>Fusion not only generates energy but also facilitates the synthesis of elements necessary for the formation of stars, planets, and ultimately life. This propensity for structure creation over destruction, in informal terms, in observations that systems tend to evolve towards states of higher <em>entropy and complexity</em> (not providing a definition yet but i should) (Kuteev, 2020). The flux of nuclear reactions in stars forge progressively heavier nuclei, charting a path across the nuclear landscape that maximizes binding energy per nucleon up to iron, channelling the available gravitational and thermal energy into the synthesis of complex, stable elements. The branching points (e.g., triple-alpha, CNO cycles, s- and r-processes) resemble some kind of attractor for the nucleosynthetic flux, where pathways that stabilize stellar interiors also enable diversity. It seems then possible to place stars and cells connected by this preference, as the consequence for building and maintaining structure (stable nuclei and steady ATP supply). Again, it is not ground breaking neither shocking that stability is sought while mechanism fot newness seem to happens through context‑dependent branching, as in symmetry breaking directed by action. Here before and after states should the be homologous and homotopic coherent, moreover, the mechanism could be more general than once though, and of combinatorial properties at each scale</p>
+<ol type="1">
+<li>Stellar path: maximise <span class="math inline">\(B-&gt;A\)</span> subject to reaction network and environmental constraints, that follow fluxes that increase binding until the iron peak halts further exergonic fusion.</li>
+<li>Metabolic path: maximise ATP yield subject to redox and <span class="math inline">\(\Delta{p}\)</span> constraints, following fluxes that convert <span class="math inline">\(\sum {\Delta G_{\text{redox}}}\)</span> into <span class="math inline">\(\Delta{p}\)</span> and thence into <span class="math inline">\(\mathrm{ATP}\)</span> via ATP synthase.</li>
+</ol>
+<p>In this context, fusion acting as a catalyst for growth and fission serving as a mechanism for energy release and recycling of matter. Moreover, coupling selects feasible trajectories so that many local steps produce a global preferred pattern in both starts and cells, from where an agency-energy grounded interpretation, where flux as an expression of “order through directed fluctuation” (Prigogine and Stengers, Order Out of Chaos, 1984, 177), could surely please Anaximenes doctrine of change, where change as an entity drawing paths; paths that amount to its growth and form, where differentiation and integration are possible, and thus an equivalence of the means to traverse and the traversed are then weaved into a single expression such as <span class="math inline">\(E=mc^2\)</span>.</p>
+</section>
+<section id="the-form-of-flux" class="level3" data-number="1.1.9">
+<h3 data-number="1.1.9" class="anchored" data-anchor-id="the-form-of-flux"><span class="header-section-number">1.1.9</span> The form of flux</h3>
+<section id="high-level" class="level4" data-number="1.1.9.1">
+<h4 data-number="1.1.9.1" class="anchored" data-anchor-id="high-level"><span class="header-section-number">1.1.9.1</span> High-level</h4>
+<p>Category theory offers a semantic formalism to tie parts and wholes with the processes that turn the former into the lader. (Mac Lane, Categories for the Working Mathematician, 1971; Awodey, Category Theory, 2010). Thus, of may design categories where substrates function as categorical spaces where objects represent states (parts and wholes) and morphisms represent mererological transformations. Then functors are maps between category <em>spaces</em> into coherent multi-step processes. Spaces here is used informally, just to build up for example a bilogist’s intuition in categorical terms. It is possible of course for a geometric interpretation of paths of transfomation as spaces. (see uv, and all the ct heroes) (Spivak, Category Theory for the Sciences, 2014).</p>
+<p><img src="figures/thing_fig1.png" class="img-fluid" alt="Figure 1: Example diagram"> <img src="figures/thing_fig2.png" class="img-fluid" width="394" alt="Figure 2: Example diagram"></p>
+<p>One may advance a typology of energy exchanges which include: thermal energy transfer through conduction, convection, and radiation. Aditionally, chemical potential energy stored in molecular bonds, when released through reactions, and electrical energy flowing through charge gradients, or mechanical energy in organized motion, all qualify as a types of exchange, just wither at different scales, or at specific scale-spaces. For a quick example of asscociated interaction types, one may find that:</p>
+<p>Strategic types</p>
+<p>a) cooperative interactions where agents mutually benefit</p>
+<p>b) competitive interactions where agents vie for limited resources</p>
+<p>c) parasitic interactions where one agent benefits at another’s expense</p>
+<p>d) mutual interactions where agents provide reciprocal services</p>
+<p>e) and neutral interactions where agents neither help nor harm each other</p>
+<p>(May, Stability and Complexity in Model Ecosystems, 1973).</p>
+<p>Exchanges types</p>
+<p>1. conduction</p>
+<p>2. convection</p>
+<p>3. radiation</p>
+<p>4. storing</p>
+<p>5. release</p>
+<p>Could be conceptually paired as:</p>
+<blockquote class="blockquote">
+<p>Strategic Exchanges (Strategy + Exchange types) 1. -&gt; e): Neutral interactions: Conduction occurs without affecting the state of the materials involved, similar to neutral interactions where agents neither help nor harm each other. 2. -&gt; a): Cooperative interactions: Convection can enhance the efficiency of energy transfer, akin to cooperative interactions where agents mutually benefit from shared resources. 3. -&gt; b): Competitive interactions: Radiation can be seen as a competitive mechanism where entities vie for energy, similar to competitive interactions for limited resources. 4. -&gt; d): Mutualistic interactions: The storing of energy can be likened to mutualistic interactions where both parties benefit from the energy stored, such as plants storing energy from sunlight. 5. -&gt; c): Parasitic interactions: The release of energy, especially in chemical reactions, can be compared to parasitic interactions where one agent benefits at the expense of another.</p>
+</blockquote>
+<p>Before any adventure through the differential energy potentials in question, one knows that these drive generally, some kind of directed transformations, in turn connecting biological metabolism, computation, and social exchange through shared energetic principles then akin to the observable irreversibility of processes from a fixed temporal orientation perspective (Prigogine, Introduction to Thermodynamics of Irreversible Processes, 1967).</p>
+<p>The opportunity here is instead of thinking in term of <em>categories</em> one may think of these exchanges as somewhat <em>homotopy</em> coherence data. This data, belongs then to paths of transformation with topological properties which could look like <em>flux</em> fingerprints of scale-spaces.</p>
+<p>For context, Homotopy coherence refers to the idea that structures in a topological space may be transformed into one another through continuous deformations. These transformatio however would maintain their essential properties. This is why if applied to different energy exchanges, these can be represented as paths in a topological space, where each path corresponds to a specific transformation or interaction. When posing agency as a capacity to act and draw paths between points in space, homotopy coherence offers a way to relate transformations of agents in different contexts, such as biological organisms or computational processes, with the purpose of viewing them as coherent paths, from a larger perspective, or within a larger framework. Aditionally, if taken further, and pose agency, transformation paths, and energy within a common setting, each energy transformation can be represented as a path in a scale-space, where the coherence of these paths reflects the shared energetic principles that govern the interactions between different entities.</p>
+<p>Later, while this is a preliminary idea, the previously conceptually pairs in <em>Strategic Exchanges</em> could also grant a the modeller some implicit insights as they offer the possibility of a distinction withing the weaving of exchanges as each exchange is self-informing of the <em>strategy</em> associated.</p>
+</section>
+<section id="low-level-view" class="level4" data-number="1.1.9.2">
+<h4 data-number="1.1.9.2" class="anchored" data-anchor-id="low-level-view"><span class="header-section-number">1.1.9.2</span> Low-level view</h4>
+<section id="notation-notes" class="level5" data-number="1.1.9.2.1">
+<h5 data-number="1.1.9.2.1" class="anchored" data-anchor-id="notation-notes"><span class="header-section-number">1.1.9.2.1</span> Notation notes</h5>
+<ul>
+<li><span class="math inline">\(\mathcal{S}\)</span>: configuration space (substrate)</li>
+<li><span class="math inline">\(Thing_{A}\)</span>: entity of type <span class="math inline">\(A\)</span> with agency property</li>
+<li><span class="math inline">\(p_{a}\)</span>: agency property as a dependent type <span class="math inline">\(p_{a}: Thing_{A}\to \mathrm{Type}\)</span></li>
+<li><span class="math inline">\(\mathcal{P}\)</span>: agent–path (proof‑object) inhabiting a path type</li>
+<li><span class="math inline">\(Hom_{\mathcal{C}}(x,y)\)</span>: type of morphisms/paths between states <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> in category <span class="math inline">\(\mathcal{C}\)</span></li>
+<li><span class="math inline">\(\mathcal{E}: \mathcal{S}\to \mathbb{R}\)</span>: energy function on configurations</li>
+<li><span class="math inline">\(\Delta\mathcal{E}(p) := \mathcal{E}(\mathrm{tgt}(p)) - \mathcal{E}(\mathrm{src}(p))\)</span>: energy change along path <span class="math inline">\(p\)</span></li>
+<li><span class="math inline">\(Flux(Thing_{A}) := \sum\nolimits_{p:\,Thing_{A}^{core}\to Thing_{A}^{op}} [\,\Delta\mathcal{E}(p) &gt; 0\,]\)</span>: type of energetically admissible paths (a <span class="math inline">\(\Sigma\)</span>-type carrying the proof of amplification)</li>
+<li><span class="math inline">\(\mathcal{E}_{total}(Thing_{A}) := \displaystyle \int_{t_{1}}^{t_{2}} \int_{\mathrm{path}(t)} \mathcal{E}(x,t)\,dx\,dt\)</span>: mereological energy sum over time and along the agent‑path</li>
+</ul>
+<p>When posing agency as minimally as a capacity to act, it entails a latent possibility to draw a path from point <span class="math inline">\(x\)</span> to point <span class="math inline">\(y\)</span>. If <span class="math inline">\(Thing_A\)</span> has agency, under the premise that in this case, all <span class="math inline">\(Things_A\)</span> have agency, then <span class="math inline">\(Thing A\)</span> at point <span class="math inline">\(x\)</span> and <span class="math inline">\(Thing A\)</span> at point <span class="math inline">\(y\)</span>, are the same thing, just at different points in space, and in a given interval of time, such as <span class="math inline">\([t1, t2]\)</span>. Here, if <span class="math inline">\(Thing A\)</span> has agency, and agency is the capacity to draw a path between points <span class="math inline">\(x,y\)</span>, and the path <span class="math inline">\(path: x → y\)</span> is possible via the path connectedness configuration of the space <span class="math inline">\(S\)</span>, <em>hosting</em> <span class="math inline">\(Thing A\)</span>, and the the points <span class="math inline">\(x,y\)</span>.</p>
+<p>If agency is a property <span class="math inline">\(p_a\)</span> of <span class="math inline">\(Thing_A\)</span>, then <span class="math inline">\(∀ Thing_A\)</span> there is a property <span class="math inline">\(p_a\)</span> that moves <span class="math inline">\(Thing_A\)</span> along a path <span class="math inline">\(path: x → y\)</span> in the interval <span class="math inline">\([t1, t2]\)</span>, in such path-connected space <span class="math inline">\(S\)</span>. As such, <span class="math inline">\(Thing_A_x\)</span> and <span class="math inline">\(Thing_A_y\)</span>, meaning at the extremities of the path-points of <span class="math inline">\(path: x → y\)</span>, are equivalent, even under the change in time and position.</p>
+<p>Thus, a preliminary definition goes as follows: Definition : (Agent-path and agency).</p>
+<p>Assume a context <span class="math inline">\(\Gamma\)</span> with</p>
+<p><span class="math display">\[
+\Gamma \vdash Thing_{A} : \mathrm{TYPE}
+\qquad\text{and}\qquad
+\Gamma \vdash p_{a} : Thing_{A} \to \mathrm{Type}.
+\]</span></p>
+<p>However, for <span class="math inline">\(Thing_A\)</span> to be true, one must prove <span class="math inline">\(∃ Thing_A\)</span> in the first place, constructively. Here things get interesting, as one may not merely be postulated <span class="math inline">\(Thing_A\)</span> to exist, thus <span class="math inline">\(path: x → y\)</span> becomes the proof object in the constructive sense, of <span class="math inline">\(∃ Thing_A\)</span>, and <span class="math inline">\(p_a\)</span> of <span class="math inline">\(Thing_A\)</span>.</p>
+<p>A path‑agent is a term</p>
+<p><span class="math display">\[
+\Gamma \vdash \mathcal{P} : \bigl(x^{core} \to_{Thing_{A}} y\bigr)
+\]</span></p>
+<p>with</p>
+<p><span class="math display">\[
+\Gamma \vdash x^{core} : Thing_{A}
+\qquad\text{and}\qquad
+\Gamma \vdash y : Thing_{A},
+\]</span></p>
+<p>From this perspective agency becomes a demonstrable construction of <span class="math inline">\(Thing_A\)</span>, and <span class="math inline">\(p_a\)</span> of <span class="math inline">\(Thing_A\)</span> is a proof of persistence, given by type whose inhabitants are the actual constructions of <span class="math inline">\(Thing_A\)</span>. The property <span class="math inline">\(p_a\)</span> becomes a dependent type that varies with the specific path capabilities of each constructed <span class="math inline">\(Thing_A\)</span>, which are then dependant of the configuration properties of the connected space <span class="math inline">\(S\)</span>.</p>
+<p>Agent Definition via Path–Agents Definition 2.1 (Agent and Agency Property)</p>
+<p>Let <span class="math display">\[
+\Gamma\vdash Thing_{A}:\mathrm{TYPE},\quad \Gamma\vdash p_{a}:\,Thing_{A}\to\mathrm{Type}
+\]</span></p>
+<p>An inhabitant <span class="math display">\[
+Γ⊢P:(xcore→ThingAy)\Gamma\vdash \mathcal{P}:(x^{core}\to_{Thing_{A}}y)Γ⊢P:(xcore→ThingAy)
+\]</span> is a path‐agent, where <span class="math display">\[
+Γ⊢xcore:ThingA,Γ⊢y:ThingA.\Gamma\vdash x^{core}:Thing_{A},\quad \Gamma\vdash y:Thing_{A}.Γ⊢xcore:ThingA,Γ⊢y:ThingA.
+\]</span></p>
+<p>Lemma 2.2 (Reflexivity) From identity type in HoTT, <span class="math display">\[
+Γ⊢reflx:x≡x:IdThingA(x,x).\Gamma\vdash \mathrm{refl}_{x} : x \equiv x : Id_{Thing_{A}}(x,x).Γ⊢reflx:x≡x:IdThingA(x,x).
+\]</span></p>
+<p>Where, informally, <span class="math inline">\(Thing_A^{core}\)</span> stands for an <em>initial state</em>, and <span class="math inline">\(Thing_A^{op}\)</span> the possible <em>state</em> withing all the space states. With the reflexive path-agent:</p>
+<p><span class="math display">\[
+\text{refl}_x : x^{\text{op}} \to_Thing_A  
+\]</span></p>
+<p>One could say that it establishes a somehwat minimal-agency definition as the means for path-traversing an angent-path has the capacity for. Relating space and time as relevant in context:</p>
+<p><span class="math display">\[
+(Thing_A_x \simeq Thing_A_y) \simeq (Thing_A_{t_1} = Thing_A_{t_2})
+\]</span></p>
+<p>Where the spatial transformation (moving from <span class="math inline">\(x\)</span> to <span class="math inline">\(y\)</span>) corresponds to temporal persistence of <span class="math inline">\(Thing_A\)</span> (across time interval <span class="math inline">\([t_1, t_2]\)</span>).</p>
+<p>Thus the relation of agency with a angent-path (path-structure), is one of the mode of traversing the path, whence, becoming. If <span class="math inline">\(Hom_C\)</span> is the path-space form <span class="math inline">\(Thing_A_x -&gt; Thing_A_y\)</span>, and <span class="math inline">\(p_a(Thing_A)\)</span> takes <span class="math inline">\(Thing_A\)</span> givent it’s capacity to, from state <span class="math inline">\(Thing_A_x -&gt; Thing_A_y\)</span>, then:</p>
+<p><span class="math display">\[
+Hom_C(Thing_A_x,Thing_A_y) : Type
+\]</span></p>
+<p><span class="math display">\[
+Hom_C ≃ p_a(Thing_A) ≃ path: (Thing_A_x -&gt; Thing_A_y)
+\]</span></p>
+<p>In HoTT, flux-fingerprints mentioned yearlier as a hypothesis, become higher-dimensional path structures, where:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Thing_A_x:</span> Thing_A^core</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Thing_A_y:</span> Thing_A^core <span class="at">-</span><span class="op">&gt;</span> Thing_A^op</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="math display">\[
+Flux(Thing_A) ≃ Hom_C
+\]</span></p>
+<p>due to:</p>
+<p><span class="math display">\[
+\frac{Γ ⊢ Thing_A : \text{TYPE} \quad Γ ⊢ x^c : Thing_A^{core}}{Γ ⊢ \text{refl}_x : x^{op} →_Thing_A x}
+\]</span></p>
+<p>as this reflexivity creates a path from <span class="math inline">\(Thing_A\)</span> to itself, in another instance of space and time, behaving like the standard identity morphism while using invertible terms from <span class="math inline">\(Thing_A^{core}\)</span> as the foundation, given by</p>
+<pre class="{bash}"><code>(rodin 2024, eq 33)
+     Γ ⊢ A : TYPE
+     Γ, x^c : Thing_A^core ⊢ Θ(x^c) : TYPE  
+     Γ, x^c : Thing_A^core, y : Thing_A, t : x^op →_Thing_A y, θ : Θ(x^c) ⊢ C(t,θ) : TYPE
+     Γ, x^c : Thing_A^core, θ : Θ(x^c) ⊢ f(x) : C(refl_x, θ)
+     ──────────────────────────────────────────────────────────────────
+     Γ, x^c : Thing_A^core, y : Thing_A, t : x^op →_Thing_A y, θ : Θ(x^c) ⊢ J^R_t(f,t,θ) : C(t,θ)</code></pre>
+<p>As for agency as a proof-object and persistence allowance of an agent, in this case a path:</p>
+<pre class="{bash}"><code>Γ ⊢ p : x^op →_Thing_A y    Γ ⊢ agency_p : Hom_C(Thing_A_x, Thing_A_y)
+───────────────────────────────────────────────────────────────────────
+Γ ⊢ persist(p, agency_p) : Thing_A_{t_1} = Thing_A_{t_2}</code></pre>
+<p>Interestingly, in this context, agency points to a meta-linguistic phenomena that constructs the identity of things, while remaining “invisible”. Conceptually agency as a proof existence is interesting, yet for the purpose of quantifying degrees of agency is too abstract. Yet, given the ontological precedence seen above <span class="math inline">\(mass -&gt; energy\)</span>, as a hypothesis that energy precedes mass and that energy exchanges happen favouring fusion on average, the preference of a space is analogous to a configured constrained of the space where fusion happens forwards in time requiring more energy than fission, but the mereological sum of the temporal and spatial parts of <span class="math inline">\(Thing_A_x and Thing_A_y\)</span> should in principle yield an energy exchange where conservation happened towards an increasing change of amplification.</p>
+<p>What would happen if the above is equated in measurable energy differentials?</p>
+<p>Let <span class="math inline">\(\mathcal{E}: S \to \mathbb{R}\)</span> be an energy function over configuration space. Then:</p>
+<p><span class="math display">\[
+Flux(Thing_A) \simeq \Sigma(p: Thing_A^{core} \to Thing_A^{op}). [\Delta\mathcal{E}(p) &gt; 0]
+\]</span></p>
+<p>where <span class="math inline">\(\Delta\mathcal{E}(p) = \mathcal{E}(tgt(p)) - \mathcal{E}(src(p))\)</span> represents the energy amplification along the path. The persistence rule becomes energy-constrained:</p>
+<p>Energy‐Constrained Persistence Definition 3.1 (Flux and Persistence) Let <span class="math display">\[
+ΔE(p)&gt;0\Delta\mathcal{E}(p)&gt;0ΔE(p)&gt;0
+\]</span> be a predicate in context Γ.</p>
+<p>Define</p>
+<p><span class="math display">\[
+Flux(ThingA)  =  ∑p: ThingAcore→ThingAop[ΔE(p)&gt;0].Flux(Thing_{A}) \;=\;\sum_{p:\,Thing_{A}^{core}\to Thing_{A}^{op}}[\Delta\mathcal{E}(p)&gt;0].
+\]</span> <span class="math display">\[
+Flux(ThingA)=p:ThingAcore→ThingAop∑[ΔE(p)&gt;0].
+\]</span> The persistence constructor <span class="math display">\[
+Γ⊢p:xop→ThingAy,Γ⊢ΔE(p)&gt;0Γ⊢persist(p): IdThingA(x,y)\frac {% \Gamma\vdash p:x^{op}\to_{Thing_{A}}y,\quad \Gamma\vdash \Delta\mathcal{E}(p)&gt;0 } {\Gamma\vdash \mathsf{persist}(p):\,Id_{Thing_{A}}(x,y)}Γ⊢persist(p):IdThingA(x,y)Γ⊢p:xop→ThingAy,Γ⊢ΔE(p)&gt;0
+\]</span> requires strictly positive energy amplification.</p>
+<p>A proposal surges as a mereological sum of temporal and spatial parts could then be expressed in terms of energy: <span class="math display">\[
+\mathcal{E}_{total}(Thing_A) = \int_{t_1}^{t_2} \int_{\text{path}(t)} \mathcal{E}(x,t) \, dx \, dt
+\]</span></p>
+<p>with the constraint that:</p>
+<p><span class="math display">\[
+{E}_{total}(Thing_A_{t_2})\geq\mathcal{E}_{total}(Thing_A_{t_1})
+\]</span></p>
+<p>here, the instance of energy amplification of the agent-path competency agrees with conservation, and yields towards a sense of agency, as a transient phenomena.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="toward-first-principles" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="toward-first-principles"><span class="header-section-number">1.2</span> Toward first principles</h2>
+<p>Many have wandered in the very same arguments laid out so far. The driving change, the cause of adaptability, and the invisible direction of action with or without recognised volition, have been developed as the foundations of physics, where one can interpret as substrate-specific implementations of one phenomena. Yet what exactly is meant by this? We’ve seen that traversing a path is not the same as the path, and that in this context, a path is drawn by an agents capacity for action, in this context agency. The path an agent can draw is the space between two spatio-temporal points, which once drawn, represent the agents trajectory in bceoming. We set as well that the capacity for is not an implication of such, meaning that without agency, an agent wont traverse the path. Thus, first we equated agency as a property of an agent. With this formulation, agency became the proof-object of the the agents identity and the carrier of an agent along the path of becoming itself. The path-agent depends on the configuration of the space, and the inhabitants of the proof-object are then the space, the agent, and it’s property agency. Agency then puts in effect the agent’s capacity for action and in a natural scenario this action performed in a substrate, may of may not affect the substrate, yet this possibility must be equated in context.</p>
+<section id="agency-requires-energy" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="agency-requires-energy"><span class="header-section-number">1.2.1</span> Agency requires energy</h3>
+<p>A system interacting with another without any transfer of energy is generally considered impossible. Interactions between systems, <em>or things</em>, typically imply some form of energy exchange, whether it is kinetic, potential, thermal, or another form of energy. Directly addressing the ubiqutous appearence of agency identified in the background section (number to be inserted), all manifestations of agency require energy exchange to transition from potential to actual states.</p>
+<p>Towards the first principle of angency, the postulate that agency is the realisability of a function, held by a contruction, and through it, the following:</p>
+<p><span class="math display">\[
+f:Potential⟶Actual
+\]</span></p>
+<p>must then be driven by energy exchange.</p>
+<p>In classical mechanics, heat transfer, quantum field interactions, and all thermodynamic processes, energy exchange is the sine qua non of change. Consequently, any instance of agency requires energy exchange to move from potential to actualisation states.</p>
+<p>This seems empirically adequate, as generaly, any structural coupling via thermodynamic gradients, wherein agents and environments become entwined through energy differentials, drives the current continum of <em>presents</em> from “before” and “after” states:</p>
+<p><span class="math inline">\(f:Before⟶After\)</span></p>
+<p>From this hypothesis there are a few options to explore. 1. The first is to test if agents follow the same energetic principles when path-agent constructions are caled. By this is implied molecular, organismics, and organisationals, scales.</p>
+<p>An agent’s action is a relation in space–time, drawing a path that transforms state <em>Before</em> <span class="math inline">\(B\)</span> into <em>After</em> <span class="math inline">\(A\)</span>. Formally, agents instantiate transformations, such that:</p>
+<p><span class="math display">\[
+f:B⟶A
+\]</span></p>
+<p>Instead of having a non-reversible process, one could mimic thhe fusion and fission modalities, and associate a cost to transport, such that for all funtions <span class="math inline">\(f\)</span> necessarily true that these can be executed, thus this execution is a property of <span class="math inline">\(f\)</span>, as in <span class="math inline">\(∀f□P(f)\)</span>. Conversely, there exists an function <span class="math inline">\(f\)</span> such that the direction in which this will be executed <span class="math inline">\(∀f□P(f)\)</span>, as in which sense <span class="math inline">\(f:A-&gt;B\)</span> or <span class="math inline">\(f:B-&gt;A\)</span>, expressed as <span class="math inline">\(Q(f)\)</span>, is a choice implicit <span class="math inline">\(f\)</span>, thus <span class="math inline">\(Q(f)\)</span> as a property, is embedded in P(f), where then <span class="math inline">\(∃x♢Q(x)\)</span> implies a possible <em>biforcation</em> of <span class="math inline">\(f\)</span>, as total reversal of of a system state is usually not-possible, but a new instance of a state given by <span class="math inline">\(f\)</span>, as reversed execution, would yield renewal and not a <em>deletion</em>. As in this context, without energy exchange, a capacity for action remains latent, or static, whereas with it there’s an instant state of <em>amplification</em> expressed as <span class="math inline">\(\Delta\mathcal{E}(p) = \mathcal{E}(P_A(p_a)) - \mathcal{E}(P_B(p_a))\)</span> where <span class="math inline">\(P\)</span> in both instances <span class="math inline">\(P_A\)</span> and <span class="math inline">\(P_B\)</span> are the material efficacy, through which agency manifests as what executes <span class="math inline">\(f:A-&gt;B\)</span>, in this case,</p>
+<p><span class="math display">\[
+Flux(Thing_A) \simeq \Sigma(p: Thing_A^{core} \to Thing_A^{op}). [\Delta\mathcal{E}(p) &gt; 0]
+\]</span></p>
+<p>could possibly allow for the cost of reversible whereas without it, as not in motion and without the capacity for such, only one modality of execution is available.</p>
+</section>
+<section id="nonzero-flux-is-necessary-for-agency" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="nonzero-flux-is-necessary-for-agency"><span class="header-section-number">1.2.2</span> Nonzero Flux Is Necessary for Agency</h3>
+<p>A constructive claim derived from the above goes as follows:</p>
+<p>For any path-agent 𝒫, in space <span class="math inline">\(\mathcal{S}\)</span>, which may undergo its configured execution such as <span class="math inline">\(\mathcal{Hom_C}\)</span>, given by a property <span class="math inline">\(\mathcal{p_a}\)</span>, of <span class="math inline">\(things\)</span> of type <span class="math inline">\(Thing_A\)</span>,</p>
+<p><span class="math display">\[
+\Gamma \vdash ∀P: P_A(P) \qquad \Gamma \vdash P_A(P): x \to y \qquad \Gamma \vdash space: S
+\]</span></p>
+<p>and given that:</p>
+<p><span class="math display">\[
+P_A(P): x \to y  \simeq Hom_C \qquad \text{,} \qquad  Hom_c:Thing_{A_x} \rightarrow Thing_{A_y} \qquad \text{and} \qquad (Thing_{A_x} \simeq Thing_{A_y}) \simeq (Thing_{A_{t_1}} = Thing_{A_{t_2}})
+\]</span></p>
+<p><span class="math display">\[
+f:present⟶future
+\]</span></p>
+<p>expresses,</p>
+<p><span class="math display">\[
+p_a(P):P_{t1}⟶P_{t2}
+\]</span></p>
+<p><span class="math display">\[
+Flux_{(P)} \simeq \Sigma  p_a(P) \qquad , \text{where} \qquad [\Delta\mathcal{E}(p) &gt; 0]
+\]</span></p>
+<p>In the case that</p>
+<p><span class="math display">\[Δℰ(𝒫)=0\]</span></p>
+<p><span class="math display">\[
+Flux_{(P)} \qquad \text{condition} \qquad [\Delta\mathcal{E}(p) &gt; 0]\]</span> is not met, $$</p>
+<p>Nonzero flux is necessary for agency if <span class="math display">\[
+Flux(ThingA)=0Flux(Thing_{A})=0Flux(ThingA)=0
+\]</span> then no inhabitant of <span class="math display">\[
+pa(ThingA)p_{a}(Thing_{A})pa(ThingA)
+\]</span> exists. Proof Sketch: Assume <span class="math inline">\(Γ⊢P:x→y\Gamma\vdash \mathcal{P}:x\to yΓ⊢P:x→y and Γ⊢pa(P)\Gamma\vdash p_{a}(\mathcal{P})Γ⊢pa(P)\)</span> By definition, <span class="math inline">\(pa(P)p_{a}(\mathcal{P})pa(P) requires ΔE(P)&gt;0\Delta\mathcal{E}(\mathcal{P})&gt;0ΔE(P)&gt;0\)</span> If <span class="math display">\[
+Flux=0Flux=0Flux=0, then ΔE(p)≤0\Delta\mathcal{E}(p)\le0ΔE(p)≤0
+\]</span></p>
+<p>for all ppp, contradiction.</p>
+<p>Define <span class="math display">\[
+Etotal(ThingA)=∫t1t2 ⁣∫path(t)E(x,t) dx dt,\mathcal{E}_{total}(Thing_{A}) =\int_{t_{1}}^{t_{2}}\!\int_{\mathrm{path}(t)} \mathcal{E}(x,t)\,dx\,dt,Etotal(ThingA)=∫t1t2∫path(t)E(x,t)dxdt
+\]</span> subject to <span class="math display">\[
+Etotal(t2)  ≥  Etotal(t1),\mathcal{E}_{total}(t_{2})\;\ge\;\mathcal{E}_{total}(t_{1}),Etotal(t2)≥Etotal(t1),
+\]</span></p>
+<p>ensuring energy consistency across temporal parts.</p>
+<p>Proof. The persistence constructor requires three premises:<br>
+Γ ⊢ p : x^op →_Thing_A y,<br>
+Γ ⊢ agency_p : Hom_𝒞(Thing_A_x, Thing_A_y),<br>
+Γ ⊢ amplify_p : Δℰ(p) &gt; 0.<br>
+If Δℰ(p)=0, no term amplify_p can be formed, so persist(p, agency_p) is ill-typed. Hence no identification ThingA_{t1}=ThingA_{t2} can be produced and the equivalence (Thing_A_x ≃ Thing_A_y) ≃ (Thing_A_{t1} = Thing_A_{t2}) fails to inhabit. Therefore, with zero flux, agency is inoperative: paths cannot be executed, and no temporal persistence witness exists. ∎<br>
+Operationally, this is exactly the identity–transport failure in the total space Σ(s:𝒮).E(s): without a witness of amplification, transport along p cannot be assembled, so there is no path-lift that realises sameness-through-becoming.</p>
+</section>
+<section id="sufficiency-through-directed-flux-and-encoded-landscapes" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="sufficiency-through-directed-flux-and-encoded-landscapes"><span class="header-section-number">1.2.3</span> Sufficiency Through Directed Flux and Encoded Landscapes</h3>
+<p>Mere flux <span class="math inline">\(\mathbf J\neq0\)</span> is necessary but not sufficient for purposeful agency. Directed flux requires:</p>
+<ul>
+<li><strong>Gradient Sensitivity:</strong> <span class="math inline">\(\mathbf J\propto\nabla\mu\)</span> so flux aligns with relevant potentials.<br>
+</li>
+<li><strong>Adaptive Coupling:</strong> <span class="math inline">\(L_{\alpha\beta}\)</span> depends on state, enabling modulation of response.<br>
+</li>
+<li><strong>Encoded Information:</strong> The thermodynamic landscape itself encodes “sensing” of gradients.</li>
+</ul>
+<p><strong>Example: ATP Synthase</strong><br>
+The proton‐motive gradient <span class="math display">\[\Delta\mu_{H^+}\]</span> sculpts a spatially varying free-energy landscape across three catalytic sites. A high <span class="math display">\[\Delta\mu_{H^+}\]</span> lowers one site’s energy and raises the next, producing discrete 120° rotor steps. When <span class="math display">\[\Delta\mu_{H^+}=0\]</span>, the landscape flattens (<span class="math display">\[\nabla\!\cdot\!\mathbf J^E=0\]</span> ⇒ <span class="math display">\[J_{H^+}=0\]</span>), halting rotation. Onsager reciprocity (<span class="math display">\[L_{ij}=L_{ji}\]</span>) guarantees reversible operation under inverted gradients, demonstrating that <strong>gradient encoding</strong> suffices for coherent, purposive flux without additional external information.</p>
+<p>This Lagrangian density represents the rate of irreversible work performed per unit volume. The total action over the agent’s spatial domain <span class="math inline">\(V\)</span> and temporal duration <span class="math inline">\(\tau\)</span> is: Nonzero agency corresponds to <span class="math inline">\(A &gt; 0\)</span>, indicating that net work has been performed to effect the state transformation. The specific transformation <span class="math inline">\(f: B \to A\)</span> is realized through the flux integral:</p>
+<p><span class="math display">\[
+\mathcal{L}_{\mathrm{ag}}(\mathbf{r}, t) = \mathbf{J}(\mathbf{r}, t) \cdot \nabla \mu(\mathbf{r}, t) \times I\left[\nabla \mu(\mathbf{r}, t)\right]
+\]</span></p>
+<p>This shows that the agent’s capacity to perform the transformation depends on the kinetic coefficient <span class="math inline">\(L\)</span> (throughput capacity), the potential difference <span class="math inline">\(\mu_A - \mu_B\)</span> (driving force), the path coherence ensuring the flux integral is well-defined.</p>
+<p>This sufficiency through directed flux, as nonzero, information-coupled path is both necessary and sufficient for agency, so that no irreversible state change occurs without flux (<span class="math inline">\(\mathbf{J} = 0 \Rightarrow\)</span> no <span class="math inline">\(B \to A\)</span> transition) and information coupling avoid consider “destructive” scenarios.</p>
+<p>As such, energy exchange provides the <strong>necessary and sufficient conditions</strong> for all other agential phenomena: it enables structural coupling between agents and environments through thermodynamic gradients; it supports autopoietic generative capabilities; it creates the temporal directionality required for purposive action; it operates independently of specific material substrates while maintaining physical realizability; and it scales from molecular interactions to social collectives through shared energetic principles (Maturana and Varela, <em>Autopoiesis and Cognition</em>, 1980; Noble, <em>The Music of Life</em>, 2006; Levin, “Bioelectric Signaling,” 2021).</p>
+<p>Agency manifests through <strong>paths</strong> that are relations in space–time, each requiring energy exchange to transform potential into action. An agent acts as the directed link between “before” and “after” states, realized physically by morphisms <span class="math display">\[f\colon A\to B\]</span> that lack inverses precisely because they transfer energy, entropy or free energy—formalized as</p>
+<p><span class="math display">\[
+\Delta S = S(B) - S(A)\neq0
+\]</span></p>
+<p>whenever <span class="math inline">\(f\)</span> effects irreversible work. These directed, non-invertible transitions ground James’s “relations as fundamental” (James 1912) and Barad’s intra-actions that bring relata-within-phenomena into material being (Barad 2007, 139), by providing the energetic substrate through which every relational path becomes physically possible.</p>
+<p>Across scales and substrates, agency unfolds as energy-rate density</p>
+<p><span class="math display">\[
+\Phi \;=\;\frac{1}{M}\,\sum_\alpha\int_V\mathbf J_\alpha\!\cdot\!\nabla\mu_\alpha\,dV
+\]</span><br>
+that sums all local flux–force products arising from chemical, thermal, mechanical, electrical or informational gradients (Chaisson 2010; Chaisson 2011). Empirically <span class="math display">\[\Phi\]</span> scales as a universal power law</p>
+<p><span class="math display">\[
+\Phi\propto M^b
+\]</span><br>
+with <span class="math inline">\(b\approx-1/4\)</span> in metabolic and cognitive systems (West &amp; Brown 2005), rising toward zero in highly integrated societies and machines (Chaisson 2011; Georgiev 2025). Renormalization-group theory explains how summing local interactions yields fixed-point scaling invariant under coarse-graining (Raju et al.&nbsp;2019).</p>
+<p>Adopting <span class="math inline">\(\Phi\)</span> as the substrate-independent variable of agency we achieve:</p>
+<ul>
+<li>A true scalar <strong>sum of all local energy exchanges</strong> that quantifies the material throughput enabling action.<br>
+</li>
+<li>A <strong>predictive law</strong> of agency’s scaling across organizational levels via <span class="math inline">\(\Phi(M)\)</span>.<br>
+</li>
+<li>A capture of <strong>energy–organization patterns</strong> through a universal power law from cells to civilizations.</li>
+</ul>
+<p>Thus, <span class="math inline">\(\Phi\)</span> provides both first-principles grounding in energy conservation and irreversibility, and a practical metric for how agency intensifies and unfolds across complexity’s hierarchy.</p>
+</section>
+<section id="agents-do-work.-action-will-be-there.-differential-potential" class="level3" data-number="1.2.4">
+<h3 data-number="1.2.4" class="anchored" data-anchor-id="agents-do-work.-action-will-be-there.-differential-potential"><span class="header-section-number">1.2.4</span> Agents do work. Action will be there. (Differential Potential)</h3>
+<p>Energy exchange between systems is driven by an asymmetric potential between the differences of those systems. This asymmetry often refers to differences in energy states, temperature, concentration, or other properties that lead to a net flow of energy from one system to another until equilibrium is reached or a steady state is maintained.</p>
+<p>Asymmetric potential differences drive these interactions through thermodynamic gradients, providing the directional causation essential for agency’s temporal dimension that connects pre-Socratic insights about cosmic justice and temporal becoming (Anaximander DK 12 B1; Heraclitus DK 22 B30) with contemporary understanding of irreversible processes and entropy production (Prigogine and Stengers, Order Out of Chaos, 1984, 177).</p>
+<p><strong>Becoming, as in materialising, designates a class of transformations in which an initially homogeneous or weakly structured substrate undergoes an instability, crosses a critical threshold, and settles into a new configuration that persists after the driving flux subsides.</strong></p>
+<p>This incommensurability between a pass-through exchange is analogous to an enzymatic substrate transition—binding—that imprints symmetry constraints, defect networks, or encoded connectivity serving as a template for future dynamics.</p>
+<p>This <strong>symmetry-breaking principle</strong> is valid across domains. In organic synthesis, formation of asymmetric C–C bonds uses chiral catalysts to bias one transition state over its mirror image, locking in stereochemistry—just as a molecular “choice” parallels the Higgs field selecting one angle in the Mexican-hat potential. In mathematics, symmetry breaking selects one solution from many symmetry-equivalent ones, the system naturally descending into a lower-energy minimum under fluctuations.</p>
+<p>Asymmetric potentials do more than drive flux; they <strong>anchor</strong> the “before” and “after” in irreversible time:</p>
+<ul>
+<li><p><strong>Gradient-Driven Irreversibility:</strong> <span class="math display">\[\Delta\mu\neq0\]</span> imposes <span class="math display">\[\mathbf J\neq0\]</span>, which by the second law yields <span class="math display">\[\Delta S&gt;0\]</span>. Each flux step establishes a temporal arrow, turning potential into actual and marking a one-way transition <span class="math display">\[B\to A\]</span>.</p></li>
+<li><p><strong>Symmetry Breaking and Permanence:</strong> Once a symmetry is broken, whether a chiral center formed or a protein conformation chosen, the system cannot simply invert without expending energy and producing entropy. The asymmetric energy landscape thus encodes <strong>permanent memory</strong> of the transition, cementing the arrow of time.</p></li>
+</ul>
+<p>Generalizing the definition of agent, as something that can interact with something other than itself, one that recognises non-biologic agents, such as states, biological ones such as organisms, collectives such as swarms, and individuals such as people. Henri Atlan’s pioneering work on biological complexity and information theory has profoundly influenced our understanding of scale, development, self-organization and thus agency. Atlan’s principle of “complexity from noise” (le principe de complexité par le bruit) posits that random perturbations or “noise” can facilitate self-organization in biological systems, rather than simply disrupting them. This principle aligns with our concept of Potential, where interactions and interfacing enable entities to evolve and adapt within their environments. Atlan’s challenge to the reductionist paradigm in molecular biology, emphasizing the importance of emergent properties and the role of information in facilitating meaning and interpretative dynamics, resonates with our framework’s approach.</p>
+<p>Recent experimental evidence reveals fundamental asymmetries in thermal processes where heating occurs faster than cooling, challenging symmetric expectations and demonstrating how energy flow creates intrinsic temporal directionality (Chétrite et al., “Fast Heating and Slow Cooling,” 2020). These asymmetries extend to molecular systems where hydration free energy differences show nonlinear synergistic effects; replacing sequential CH₃ groups with NH₂ yields -10 kJ/mol then -65 kJ/mol energy changes, illustrating how molecular components create asymmetric energy landscapes that drive specific transformations (Freire et al., “Hydration Free Energies,” 2021).</p>
+<p>Generalizing the definition of agent—to include non-biologic states, organisms, swarms, and individuals—aligns with Henri Atlan’s principle of <strong>“complexity from noise”</strong>: random perturbations facilitate self-organization in open systems rather than merely disrupting them. This elevates <strong>noise</strong> from mere disorder to the <strong>symmetry-breaking seed</strong> that structures agency. Noise does not contradict information; instead, it <strong>biases</strong> which information pathways become reinforced, creating the precise boundary conditions for potential gradients and templated transitions.</p>
+<p>To integrate <strong>action</strong> with our energy‐exchange first principles, we begin by defining a <strong>generalized action functional</strong> that subsumes all local flux–force interactions into a single variational object. Let the <strong>Lagrangian density</strong> at each point in space–time be the <strong>power density</strong> (rate of energy exchange per volume)<br>
+<span class="math display">\[
+\mathcal{L}(\mathbf r,t)\;=\;\sum_\alpha \mathbf J_\alpha(\mathbf r,t)\!\cdot\!\nabla\mu_\alpha(\mathbf r,t)\,,
+\]</span><br>
+where each channel <span class="math inline">\(\alpha\)</span> (chemical, thermal, mechanical, electrical, informational) contributes additively. The <strong>total action</strong> over a time interval <span class="math inline">\([0,\tau]\)</span> and volume <span class="math inline">\(V\)</span> is then<br>
+<span class="math display">\[
+A \;=\;\int_{0}^{\tau}\!\!\int_{V}\!\mathcal{L}(\mathbf r,t)\,d^3r\,dt\;=\;\sum_\alpha\int_{0}^{\tau}\!\!\int_{V}\!\mathbf J_\alpha\!\cdot\!\nabla\mu_\alpha\,d^3r\,dt.
+\]</span><br>
+This definition directly ties <strong>action</strong> to <strong>differential potential</strong>: each term <span class="math display">\[\mathbf J_\alpha\!\cdot\!\nabla\mu_\alpha\]</span> is exactly the scalar power driving irreversible transformations and entropy production <span class="math display">\[\Delta S\neq0\]</span>.</p>
+<p>From this <strong>first principle</strong>, that <strong>agency is sustained by nonzero action</strong>—we derive two substrate-independent scalar metrics:</p>
+<ol type="1">
+<li><p><strong>Energy-Rate Density (Φ):</strong><br>
+<span class="math display">\[
+\Phi \;=\;\frac{1}{M}\frac{dA}{dt}
+\;=\;\frac{1}{M}\sum_\alpha\int_{V}\!\mathbf J_\alpha\!\cdot\!\nabla\mu_\alpha\,d^3r,
+\]</span><br>
+which sums all local power densities per unit mass and obeys <span class="math inline">\(\Phi\propto M^b\)</span>, predicting organization levels via the power-law exponent <span class="math inline">\(b\)</span>.</p></li>
+<li><p><strong>Average Action Efficiency (AAE):</strong><br>
+<span class="math display">\[
+\mathrm{AAE}\;=\;\frac{N_{\rm events}}{A}
+\;=\;\frac{\sum_i1}{\sum_\alpha\int_0^\tau\!\!\int_V\mathbf J_\alpha\!\cdot\!\nabla\mu_\alpha\,d^3r\,dt},
+\]</span><br>
+which quantifies how effectively systems convert free-energy gradients into realized action. Under the <strong>Stochastic-Dissipative Least Action Principle</strong>, self-organization drives AAE upward, reflecting an attractor in action-space.</p></li>
+</ol>
+<p>In phase-space terms, <span class="math inline">\(A\)</span> is the <strong>integral</strong> of the <strong>phase-space agency density</strong> <span class="math inline">\(\mathcal{L}\)</span>, and variations <span class="math inline">\(\delta A=0\)</span> (or <span class="math display">\[\delta A\]</span> extremal) yield the <strong>most probable agential pathways</strong> the substrate-independent generalization of the principle of least action across physical, biological, and synthetic systems. Under the <strong>Stochastic-Dissipative Least Action Principle</strong>, self-organization increases AAE, reflecting an attractor in action-space where noise-driven symmetry breaking guides systems toward more efficient energy utilization patterns.</p>
+</section>
+<section id="agency-is-the-substrate-of-agents-who-destribute-actions-scaling-local-to-global" class="level3" data-number="1.2.5">
+<h3 data-number="1.2.5" class="anchored" data-anchor-id="agency-is-the-substrate-of-agents-who-destribute-actions-scaling-local-to-global"><span class="header-section-number">1.2.5</span> Agency is the substrate of Agents who destribute actions scaling local to global</h3>
+<p>Here we are going to talk about configuring spaces, fields, higher category theory, and metasurfaces. Biology &amp; Chemistry offer some examples of agency across different levels of organization that are closely related with substrate. From the chemical agency of molecules forming bonds to the simple-&gt;complex decision-making capabilities of organisms exhibited in experimental work. Entering a knowledge era where empirical evidence and theoretical thesis are approximating each other, and biological systems demonstrating a spectrum of agential behaviors, compound with Darwin’s thesis of agential materials, challenging our preconceptions about the requirements for conscious intent in goal attainment behaviour. As seen in earlier principles,</p>
+</section>
+<section id="it-is-configured-by-very-simple-rules-or-allowed-by-said-simple-configuration." class="level3" data-number="1.2.6">
+<h3 data-number="1.2.6" class="anchored" data-anchor-id="it-is-configured-by-very-simple-rules-or-allowed-by-said-simple-configuration."><span class="header-section-number">1.2.6</span> It is configured by very simple rules, or allowed by said simple configuration.</h3>
+<p>Providing yet another perspective, computer science research by the development models of autonomous agents and studying emergent behaviors in complex systems, these fields offer insights into how agency might arise from simple rules and interactions. (Wolfram &amp; Levin)</p>
+</section>
+<section id="all-definitions-point-to-the-same-thing." class="level3" data-number="1.2.7">
+<h3 data-number="1.2.7" class="anchored" data-anchor-id="all-definitions-point-to-the-same-thing."><span class="header-section-number">1.2.7</span> All definitions point to the same thing.</h3>
+<p>I wondered if it would be possible to, in this diversity meaning, to develop a well-delimited, all-encompassing concept that is neither reductive nor subject to meaning loss of agency, while having in sight a post-pluralist symbolic attribution perspective. Given the size of the corpus, through an experimental approach using computational tools to approach the semantic aspects of the terminology, by constructively assembling meaning by its scattered embeddings, and relationship vectors. The goal was to test for either a deeper insight in diversity which could aid filling a gap in the current literature, and initiate a series of possible methods, which may be applied to other polysemous terms. Moreover, testing this method for a constructive deduction of meaning, opens a post-disciplinary opportunity for inquiring overloaded terms, which I hope in turn inspire others to be creative towards the premise of sense-making given the current information state of affairs we live in, where reduction while quite appealing presents us the trade-off of mechanical forgetfulness through reduction. A convenient inconvenience that for the effects of full disclosure and integrity, I must reveal as a sub-motivation for this tangent. When reduction of meaning happens, is it a lapse, a reflection of necessity? If through noise blending should we concern ourselves with developing approaches to scan noise for value? How does this evaluate this cross-contextual and multi-source relationships of symbols, when computational semiotics may be disregarded by some computer scientists, and how to evolve beyond traditional token classification with LLM’s and use current technologies to serve our purpose in analysing polysemous terms? The experiment done was amusing but far from being formalised theoretically. While not leaning too much on its results, we still have more than ground to attempt a re-definition. Many before me have been scoping and defining agency, and perhaps you may find it strange that I would dare to think I have some notable contribution to make, or bring some newness to the topic. Perhaps you are right, there will be nothing notably new in this essay in terms of ideas, the approach however it’s somewhat unconventional. Regardles I strongly argue that *at the very bottom of all the 200+ definition analysed, when stripped down to their processes** energy exchange is implied and so is the already implementation of agency as a physical process.</p>
+</section>
+<section id="agency-as-a-technology-for-causation.-agents-as-the-efficient-means-to-and-for-causes." class="level3" data-number="1.2.8">
+<h3 data-number="1.2.8" class="anchored" data-anchor-id="agency-as-a-technology-for-causation.-agents-as-the-efficient-means-to-and-for-causes."><span class="header-section-number">1.2.8</span> Agency as a technology for causation. Agents as the efficient means to, and for causes.</h3>
+<p>Grappling with the forces that drive change, we venture onto these depths not by intellectual vanity but as a response to empirical discoveries across multiple inquiry domains, and by the necessity and usefulness of answering this question, which could make of senseless things into something else. This transition yields to what Alfred North Whitehead termed a philosophy of organism, where reality is constituted by processes “all the way down” rather than by static substances that happen to interact. Almost as if materialism could be challenged not by discourse alone but by logic. Instead of treating processes as modifications that happen to things, for a reason that is unknown to us, equating that things may be “transient patterns” which at scale produce a coherent effect, a stability, seems to be better aligned with evidence than the other way around. The very fact that we can bundle material together implies the necessity of a deeper explanation, if material, some of it agential, could not relate, would it be agential at all, or all material that relates is agential? In our increasingly interconnected world, the need for a general theory of agency has never been more pressing. As we navigate complex systems, from ecosystems to economies, from social networks to artificial intelligence, we find ourselves grappling with the fundamental question of understanding, predicting and distinguishing how entities interact, influence, and evolve within their substrates, making new substrates. Nested processes where faster dynamics enable slower dynamics while slower dynamics constrain faster dynamics. Protein turnover rates within regenerating planarian tissues are actively modulated by bioelectric fields that coordinate morphogenetic outcomes. Planarian regenerative capacity reflects evolutionary processes that have shaped developmental genetic networks over geological timescales, creating temporal nesting where each organizational level both constrains and enables other levels. The nesting is not hierarchical but recursive. Higher-scale patterns constrain lower-scale affects, while lower-scale affects enable higher-scale patterns. This recursive causation creates scalar coupling, where the coordination of affecting across scales through boundary-mediated interactions. The question of course is why?</p>
+</section>
+<section id="agency-as-a-substrate-or-property-of-any-substrate-non-discriminating-between-arrangement-domain." class="level3" data-number="1.2.9">
+<h3 data-number="1.2.9" class="anchored" data-anchor-id="agency-as-a-substrate-or-property-of-any-substrate-non-discriminating-between-arrangement-domain."><span class="header-section-number">1.2.9</span> Agency as a substrate (Or property of any substrate) non-discriminating between arrangement domain.</h3>
+<p>Biochemistry is rather rich of examples where agential behaviour, from the chemical gradient as agents when molecules bonds, to the simple and quite complex decision-making distributed capabilities of organisms exhibited in experimental work. Empirical evidence and theoretical frameworks are approximating each other, converging to an old idea, one pointing at materials, challenging preconceptions about the requirements for agential, intelligent, and conscious potentials. This co-constitution, agent-agency, things-other-things, substance-substrate, demonstrates that the <em>universality</em> has sufficient manifestations not to fall in exaggeration. It is not that everything “has” agency as a property, but that everything exists through patterns of affecting and being affected, pointing to a fundamental dynamic through which things relate, persist, transform and carry all of these as potential. In turn, a substrate, a thing, an idea, seem to be able to be more or less agentic, thus in question is how do we evaluate the conditions and spectrum of its manifestation to clearly draw its axioms? Moreover, we can additionally ask which constitutions and configurations of a systems allow for more or less agential potential. Lastly, as interactions can be seen as transformation maps, perhaps a higher order mathematical framework, one that keeps track of these transformations by reference of relation, that across scales is expressed coherently, this would be of great benefit.</p>
+</section>
+<section id="agential-potential-as-substrate-dependant-range-of-affectation-agents-have-given-by-their-morphology-part-whole-relationships-and-environment." class="level3" data-number="1.2.10">
+<h3 data-number="1.2.10" class="anchored" data-anchor-id="agential-potential-as-substrate-dependant-range-of-affectation-agents-have-given-by-their-morphology-part-whole-relationships-and-environment."><span class="header-section-number">1.2.10</span> <em>Agential-Potential</em> as substrate-dependant range of <em>affectation</em> agents have, given by their morphology, part whole relationships, and environment.</h3>
+<p>Morphology, the form, structure, or pattern of a thing, constrains and enables agency. A protein’s three-dimensional structure determines what it can bind to and what reactions it can catalyze. A cell’s membrane architecture determines what can enter and exit. An institution’s organizational structure determines how it can exercise power and influence. Morphology creates what we term <strong>agential potential</strong>: the space of possible affects a thing can have or receive. This potential includes both positive and negative capacities, the ability to enhance or diminish, to attract or repel, to facilitate or inhibit. Agential potential is not static but changes as morphology changes through interaction with the environment. The concept of agential potential parallels potential energy in physics but extends beyond mechanical systems to encompass all forms of affecting and being affected. Just as potential energy represents the capacity for change based on position or configuration, agential potential represents the capacity for relational change based on morphological configuration. We relate to energy transfers and trajectories, with action and potential in physics, but we halted our study because we were using things and objects instead of systems. As I dislike systems language in general, I required proper terms to explain or understand the ranks, nestedness and interconnection of said morphologies. How does anything come to be.</p>
+</section>
+<section id="agency-as-cognitive-technology-distribution-system-carried-by-agents." class="level3" data-number="1.2.11">
+<h3 data-number="1.2.11" class="anchored" data-anchor-id="agency-as-cognitive-technology-distribution-system-carried-by-agents."><span class="header-section-number">1.2.11</span> Agency as cognitive technology distribution system, carried by agents.</h3>
+<p>Mapping Atlan’s concepts, connected the idea of “Long Distance Communication in Development” and “Bioelectrical Networks” is seems intimately related with the nature of interactions that separate a self from an environment. Signalling, at diverse scales of biological organization, regardless of the ‘intentionality’ debate, suggests that a ‘privileged’ or unifying function relates orders of organization. <img src="figures/communication.png" class="img-fluid" alt="communication-scheme"> Since Shanon’s Information Theory shares some terms with Thermodynamics, but does not directly correlate to biological systems, I found it extremely interesting how Atlan explored extensively this liminal space between Biology, Physics and Computation through an Information Theory Lens. Moreover, Michael Levin seems to approach the same premise that configuration is self informing of the set of capabilities available in principle, a problem-solving system has given it’s problem space. He even adds this concept of Morphogenesis, where a body B contained in body A it’s both a part of A as the origin of A, from a bottom-up approach of this multi-level architecture. Are morphologies cogs in this distributive system?</p>
+<p>In regards to competency expression, we may be still tied to the limitations our own competencies allow us to observe, however it also offers the possibility through this framing to develop new means to expand our competencies, the same way we’ve developed tools to <em>see</em> beyond the <em>spectrum of visible light</em>. In this context, the hypothesis of an <em>interdisciplinary and meta-entity Turing test</em> could assess intelligence through a lens that transcends anthropomorphic mimicry. Traditional Turing tests focus on linguistic <em>deception</em>: <strong>“Can a machine imitate human conversation?”</strong> Yet this approach, while historically pivotal, needs some adjustments to address a competency-based intelligence understanding. A meta-entity Turing test would instead evaluate how systems recognize and interact with intelligence across domains, and allow <strong>competency mapping</strong> of problem-solving in physical, transcriptional, or abstract spaces (e.g., optimizing metabolic pathways, or negotiating ethical dilemmas). When slime molds exhibit problem-solving competency through gradient navigation and resource optimization<span class="citation" data-cites="reid2012">(<a href="#ref-reid2012" role="doc-biblioref">Reid et al. 2012</a>)</span>, and systems like [[AlphaFold demonstrate competency in protein-folding spaces<span class="citation" data-cites="jumper2024">(<a href="#ref-jumper2024" role="doc-biblioref">Jumper et al. 2024</a>)</span>previously considered exclusive to evolutionary processes challenging traditional notions of problem-solving and adaptability in temporal scales<span class="citation" data-cites="levin2024">(<a href="#ref-levin2024" role="doc-biblioref">Michael Levin and Martyniuk 2024</a>)</span>, while the later have been said <em>“aware but not conscious”</em><span class="citation" data-cites="wang2023self">(<a href="#ref-wang2023self" role="doc-biblioref">Wang 2023</a>)</span>, where does the first one stand?</p>
+<p>Proposed by Joscha Bach in his 2007 thesis <strong>“Principles of Synthetic Intelligence PSI: An Architecture of Motivated Cognition”</strong> building on Dietrich Dörner’s <em>Psi theory</em>, it offers a grounded approach towards the creation of <em>affective</em> technologies, while at the same time attempting to understand it. Touching on enactive theories of agency<span class="citation" data-cites="dejesus2018">(<a href="#ref-dejesus2018" role="doc-biblioref">De Jesus 2018</a>)</span>, where intelligence, autonomy, behaviour, purpose, and teleology<span class="citation" data-cites="rosenblueth1943">(<a href="#ref-rosenblueth1943" role="doc-biblioref">Rosenblueth, Wiener, and Bigelow 1943</a>)</span>, are not only implemented but effectively explained by mechanisms based on survival and reward processed adapting over time to serve the embodied, however constraining the same to adequate responses in novel and sudden uncertain environments, impliying that the eboddied must remain autonomous and aware to adapt more effectivly challenging the very same processes that are no longer serving theit purpose. When combining computational and biological views, a <em>technological approach to mind everywhere, TAME</em> <span class="citation" data-cites="levin2021">(<a href="#ref-levin2021" role="doc-biblioref">M. Levin 2021</a>)</span>, gives us experimentally varied demonstration supply of how the embodied spectrum of Diverse Intelligences, manifest appropriately to their problem space. All of these challenge the embodied convention of a self, making the embodiment the navigating configuration for something else to survive. Exactly because when associated, embodied motivated cognition <span class="citation" data-cites="bach2009">(<a href="#ref-bach2009" role="doc-biblioref">Bach 2009</a>)</span>, and the computational boundaries of a “self” <span class="citation" data-cites="levin2019">(<a href="#ref-levin2019" role="doc-biblioref">M. Levin 2019</a>)</span>, support that while architectures may vary, the process and subject of relating, and where internal and external states interplay creating diminishing or augmented competency-state chains, agency and <em>“intelligence seem intimately connected by the category of inputs, throughput, and outputs og agents, via interaction-based products of things and their environment.”</em></p>
+<p>To simply support the above, bare in mind that the agency-intelligence bundle is not a conflation neither a categorical error. It is a pointer where it is undistinguishable at some scales to discern between intelligent behavior such as goal directness, and energy-based decisions, and the principle of least action, or just physics in general. Similarly, it is undistinguishable the mechanistic and explainable nature of precesses and their <em>cogs</em>.</p>
+</section>
+</section>
+<section id="questions-answered" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="questions-answered"><span class="header-section-number">1.3</span> Questions Answered</h2>
+<ul>
+<li>Question 1: Agency, is it substrate dependent? No, Agency is the substrate.</li>
+<li>Question 2: Agents, what would allow for more or less agency? Agent configuration.</li>
+<li>Question 3: Is it a property or a configuration? Several, is a configuration set allowing for optimal agentic potential throughput.</li>
+<li>Question 4: If it manifests by interactions, can we quantify their exchanges? It seams reasonable, in principle, however, for now, we need to know its <em>baseband</em>.</li>
+<li>Question 5: Scale, is there a pattern on how it manifests within problem spaces? If energy exchange is a scale invariant pattern, scale dependant phenomena should yeild at a pattern per order of said interactions. he entire categorical structure with all functors and natural transformations.</li>
+</ul>
+</section>
+<section id="discussion" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="discussion"><span class="header-section-number">1.4</span> Discussion</h2>
+<p>These challenges are compounded by the complexity tha nature of the term across different scales and systems. At each level, or at each domain, scale-variant system interactions, make up all the laws yet known to us. In physics, we grapple with the improbable and bizarre behaviour of quantum mechanics, which has it’s own implications, such as agency, in matters concerning causality. In biology, we are faced with novel interpretations upon the principles driving goal-directed behavior, from where living systems, and their parts seem simultaneously parts and wholes. From there, minds and the distribution of competency across a systems, yields at a new frontier where psychology and physiology and neuroscience blur in distinction, as cellular and multicellular agents are conditioned under the same pavlovian premisses to exert a desired outcome. Astonishingly, both top-down and bottom-up control mechanisms, regulatory networks and adaptive feedback-loops, point to a paradigm-shift where agential potential is at least seen at these two instances: singular and plural, and yet regardless of configuration, morphology and problem space, it is then at best defined by a gluing-process that starts not at the individual level but before. At the very central question why and how come that everything we observe has more or less availability to interact?</p>
+<dl>
+<dt>An unpopular take on consciousness and intelligence is that those ideas, shall remain short on an explanation concerning the configuration of the ultimate substrate that allows for interactions in the first place. This not to say they shouldn’t be pursed, the contrary, as all evidence shall equally remain of essence, yet from a fundamental perspective, the mystery of why agency seems to closely related yet so easily attributed as a quality but elusive to quantify. Quantifying agency would allow for optimal conditioning, novel and engineered implementations of agent, as would finding a general approach to describe categories of interactions, making them more of less agential, and possibly a <em>taxonomy</em> of <em>agential potentials</em> across the observable world which ethics seems to require.</dt>
+<dd>
+<p>Jacob Lurie Higher Topos Theory (2009, PUP) — full draft on arXiv</p>
+</dd>
+<dd>
+<p>Homotopy Type Theory: Univalent Foundations (2013) — free PDF</p>
+</dd>
+<dd>
+<p>Tom Leinster Higher Operads, Higher Categories (2004) — CUP draft</p>
+</dd>
+<dd>
+<p>Harvard PDF edition of Higher Topos Theory</p>
+</dd>
+<dd>
+<p>Edelsbrunner &amp; Harer “Persistent Homology — A Survey” (2008)</p>
+</dd>
+<dd>
+<p>Edelsbrunner et al.&nbsp;“Persistent Homology” in Handbook of Discrete &amp; Comp. Geometry (2017)</p>
+</dd>
+<dd>
+<p>Achille Varzi “Basic Problems of Mereotopology” (1998)</p>
+</dd>
+<dd>
+<p>Barry Smith “Mereotopology: A Theory of Parts &amp; Boundaries” (1996)</p>
+</dd>
+</dl>
+
+
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bach2009" class="csl-entry" role="listitem">
+Bach, J. 2009. <em>Principles of Synthetic Intelligence PSI: An Architecture of Motivated Cognition</em>. Oxford University Press.
+</div>
+<div id="ref-dejesus2018" class="csl-entry" role="listitem">
+De Jesus, P. 2018. <span>“Thinking Through Enactive Agency: Sense-Making, Bio-Semiosis and the Ontologies of Organismic Worlds.”</span> <em>Phenomenology and Cognitive Sciences</em> 17: 861–87. <a href="https://doi.org/10.1007/s11097-018-9562-2">https://doi.org/10.1007/s11097-018-9562-2</a>.
+</div>
+<div id="ref-jumper2024" class="csl-entry" role="listitem">
+Jumper, John M. et al. 2024. <span>“Accurate Structure Prediction of Biomolecular Interactions with AlphaFold 3.”</span> <em>Nature</em> 614 (7949): 1–12. <a href="https://doi.org/10.1038/s41586-024-01425-0">https://doi.org/10.1038/s41586-024-01425-0</a>.
+</div>
+<div id="ref-levin2019" class="csl-entry" role="listitem">
+Levin, M. 2019. <span>“The Computational Boundary of a "Self": Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition.”</span> <em>Frontiers in Psychology</em> 10: 2688.
+</div>
+<div id="ref-levin2021" class="csl-entry" role="listitem">
+———. 2021. <span>“Technological Approach to Mind Everywhere: An Experimentally-Grounded Framework for Understanding Diverse Bodies and Minds.”</span> <em>Frontiers in Systems Neuroscience</em> 15: 732372.
+</div>
+<div id="ref-levin2019computational" class="csl-entry" role="listitem">
+Levin, Michael. 2019. <span>“The Computational Boundary of a ’Self’: Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition.”</span> <em>Frontiers in Psychology</em> 10: 2688.
+</div>
+<div id="ref-levin2021bioelectric" class="csl-entry" role="listitem">
+———. 2021. <span>“Bioelectric Signaling: Reprogrammable Circuits Underlying Embryogenesis, Regeneration, and Cancer.”</span> <em>Current Opinion in Genetics &amp; Development</em> 69: 52–61.
+</div>
+<div id="ref-levin2024" class="csl-entry" role="listitem">
+Levin, Michael, and Christopher J. Martyniuk. 2024. <span>“The Bioelectric Code: An Ancient Computational Medium for Dynamic Control of Growth and Form.”</span> <em>BioSystems</em> 164: 76–93. <a href="https://doi.org/10.1016/j.biosystems.2017.08.009">https://doi.org/10.1016/j.biosystems.2017.08.009</a>.
+</div>
+<div id="ref-reid2012" class="csl-entry" role="listitem">
+Reid, C. R., T. Latty, A. Dussutour, and M. Beekman. 2012. <span>“Slime Mold Uses Externalized Spatial <span>‘Memory’</span> to Navigate in Complex Environments.”</span> <em>Proceedings of the National Academy of Sciences</em> 109 (43): 17490–94. <a href="https://doi.org/10.1073/pnas.1215037109">https://doi.org/10.1073/pnas.1215037109</a>.
+</div>
+<div id="ref-rosenblueth1943" class="csl-entry" role="listitem">
+Rosenblueth, Arturo, Norbert Wiener, and Julian Bigelow. 1943. <span>“Behavior, Purpose and Teleology.”</span> <em>Philosophy of Science</em> 10 (1): 18–24. <a href="https://doi.org/10.1086/286788">https://doi.org/10.1086/286788</a>.
+</div>
+<div id="ref-wang2023self" class="csl-entry" role="listitem">
+Wang, Jinchang. 2023. <span>“Self-Awareness, a Singularity of AI.”</span> <em>Philosophy Study</em> 13 (2): 68–77. <a href="https://doi.org/10.17265/2159-5313/2023.02.003">https://doi.org/10.17265/2159-5313/2023.02.003</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><a href="mailto:mvtta@proton.me">contact</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Valdetaro M, 2025</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

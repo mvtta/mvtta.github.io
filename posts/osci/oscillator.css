@@ -1,0 +1,121 @@
+#enhanced-oscillator-container {
+  font-family: 'Courier New', monospace;
+  background: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 1650px;
+}
+
+#enhanced-controls {
+  background: #000000;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.control-group {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.button-grid {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+label {
+  color: #00ff41;
+  min-width: 90px;
+  font-weight: bold;
+}
+
+input[type="range"] {
+  flex: 1;
+  height: 8px;
+  background: #333;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #00ff41;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #00ff41;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+button, .stim-btn {
+  background: #00ff41;
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+button:hover, .stim-btn:hover {
+  background: #00cc33;
+}
+
+#reset-btn, .reset-btn {
+  background: #ff4444;
+  color: white;
+}
+
+#reset-btn:hover, .reset-btn:hover {
+  background: #cc3333;
+}
+
+span {
+  color: #ffffff;
+  font-weight: normal;
+  min-width: 40px;
+}
+
+#enhanced-canvas {
+  background: #000;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+#enhanced-status {
+  margin-top: 15px;
+  padding: 10px;
+  background: #000000;
+  border-radius: 5px;
+  display: flex;
+  gap: 20px;
+}
+
+#behaviour-display, #intelligence-metrics {
+  color: #00ff41;
+  font-size: 14px;
+  line-height: 1.5;
+  flex: 1;
+}
+
+#enhanced-controls h3 {
+  color: #00ff41;
+  margin: 0 0 10px 0;
+}

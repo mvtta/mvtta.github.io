@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mvtta.github.io/posts/Resume/resume.html</loc>
-    <lastmod>2025-08-27T20:11:15.560Z</lastmod>
+    <loc>https://mvtta.github.io/posts/reports/oscillator/index.html</loc>
+    <lastmod>2025-10-03T14:04:08.923Z</lastmod>
   </url>
   <url>
-    <loc>https://mvtta.github.io/about-me.html</loc>
-    <lastmod>2025-08-27T19:48:39.581Z</lastmod>
+    <loc>https://mvtta.github.io/posts/experiments/stokes-haley/index.html</loc>
+    <lastmod>2025-10-03T17:31:44.322Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/posts/experiments/osci/index.html</loc>
+    <lastmod>2025-10-03T13:11:21.521Z</lastmod>
   </url>
   <url>
     <loc>https://mvtta.github.io/index.html</loc>
     <lastmod>2025-08-27T19:41:55.364Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/posts/experiments/fib/index.html</loc>
+    <lastmod>2025-10-03T17:05:42.126Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/posts/experiments/phase/index.html</loc>
+    <lastmod>2025-10-03T11:30:25.582Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvtta.github.io/posts/reports/fib/index.qmd/index.html</loc>
+    <lastmod>2025-10-03T15:41:18.678Z</lastmod>
   </url>
 </urlset>

@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.555">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="mlmv">
+<meta name="dcterms.date" content="2025-10-03">
+
+<title>/ - mathematical objects in their spaces 1</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">/</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts/dialogues/"> 
+<span class="menu-text">dialogues</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts/experiments/"> 
+<span class="menu-text">experiments</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#alignment-with-the-interactive-experiment" id="toc-alignment-with-the-interactive-experiment" class="nav-link active" data-scroll-target="#alignment-with-the-interactive-experiment"><span class="header-section-number">0.0.1</span> Alignment with the interactive experiment</a></li>
+  <li><a href="#the-object-and-its-world" id="toc-the-object-and-its-world" class="nav-link" data-scroll-target="#the-object-and-its-world"><span class="header-section-number">0.1</span> The object and its world</a></li>
+  <li><a href="#nontechnical-analogy" id="toc-nontechnical-analogy" class="nav-link" data-scroll-target="#nontechnical-analogy"><span class="header-section-number">0.2</span> Non‑technical analogy</a></li>
+  <li><a href="#behavior-1-habituation-repeated-identical-frequency" id="toc-behavior-1-habituation-repeated-identical-frequency" class="nav-link" data-scroll-target="#behavior-1-habituation-repeated-identical-frequency"><span class="header-section-number">0.3</span> Behavior 1: Habituation (repeated identical frequency)</a></li>
+  <li><a href="#behavior-2-sensitization-sweep-toward-resonance" id="toc-behavior-2-sensitization-sweep-toward-resonance" class="nav-link" data-scroll-target="#behavior-2-sensitization-sweep-toward-resonance"><span class="header-section-number">0.4</span> Behavior 2: Sensitization (sweep toward resonance)</a></li>
+  <li><a href="#behavior-3-anticipation-predictable-oscillation-around-resonance" id="toc-behavior-3-anticipation-predictable-oscillation-around-resonance" class="nav-link" data-scroll-target="#behavior-3-anticipation-predictable-oscillation-around-resonance"><span class="header-section-number">0.5</span> Behavior 3: Anticipation (predictable oscillation around resonance)</a></li>
+  <li><a href="#behavior-4-associative-conditioning-pair-then-test" id="toc-behavior-4-associative-conditioning-pair-then-test" class="nav-link" data-scroll-target="#behavior-4-associative-conditioning-pair-then-test"><span class="header-section-number">0.6</span> Behavior 4: Associative conditioning (pair, then test)</a></li>
+  <li><a href="#behavior-5-delayed-gratification-cycle-poor-and-good-conditions" id="toc-behavior-5-delayed-gratification-cycle-poor-and-good-conditions" class="nav-link" data-scroll-target="#behavior-5-delayed-gratification-cycle-poor-and-good-conditions"><span class="header-section-number">0.7</span> Behavior 5: Delayed gratification (cycle poor and good conditions)</a></li>
+  <li><a href="#why-one-object-is-enough" id="toc-why-one-object-is-enough" class="nav-link" data-scroll-target="#why-one-object-is-enough"><span class="header-section-number">0.8</span> Why one object is enough</a></li>
+  <li><a href="#how-to-present-this-to-nonspecialists" id="toc-how-to-present-this-to-nonspecialists" class="nav-link" data-scroll-target="#how-to-present-this-to-nonspecialists"><span class="header-section-number">0.9</span> How to present this to non‑specialists</a></li>
+  <li><a href="#notes-on-math-and-citations" id="toc-notes-on-math-and-citations" class="nav-link" data-scroll-target="#notes-on-math-and-citations"><span class="header-section-number">0.10</span> Notes on math and citations</a></li>
+  <li><a href="#figures-for-the-report" id="toc-figures-for-the-report" class="nav-link" data-scroll-target="#figures-for-the-report"><span class="header-section-number">0.11</span> Figures for the report</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">0.12</span> References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">mathematical objects in their spaces 1</h1>
+<p class="subtitle lead">behavioural experiment analysis: habituation, sensitization, anticipation, associative conditioning, and delayed gratification</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>mlmv </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 3, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This is damped-driven harmonic oscillator. This mathematical object lives in its phase-space. When interacted with, let’s say, a semiperiodic‑pulse, which deviates the object from a spectral Dirac comb.</p>
+<p>The aim is to demonstrate that a mathematical object is not a static, zero‑intelligence entity, but a responsive process whose behavior changes systematically as its input structure changes <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>.</p>
+<section id="alignment-with-the-interactive-experiment" class="level4" data-number="0.0.1">
+<h4 data-number="0.0.1" class="anchored" data-anchor-id="alignment-with-the-interactive-experiment"><span class="header-section-number">0.0.1</span> Alignment with the interactive experiment</h4>
+<p>The companion interactive page (the “experiments/osci” page with sliders and live plots) implements exactly the same mathematical object and pulse construction with these direct control correspondences:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 21%">
+<col style="width: 13%">
+<col style="width: 9%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>UI Control (slider / toggle)</th>
+<th>Symbol here</th>
+<th>Meaning</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>γ (damp)</td>
+<td><span class="math inline">\(\gamma\)</span></td>
+<td>linear damping coefficient</td>
+<td>Same numeric value.</td>
+</tr>
+<tr class="even">
+<td>ω₀ (rad/s)</td>
+<td><span class="math inline">\(\omega_0\)</span></td>
+<td>natural angular frequency</td>
+<td>Natural frequency in Hz is <span class="math inline">\(f_0=\omega_0/(2\pi)\)</span>. Static report sets <span class="math inline">\(\omega_0=2\pi\)</span> (so <span class="math inline">\(f_0=1\)</span> Hz); interactive default <span class="math inline">\(\omega_0=1\)</span> rad/s (<span class="math inline">\(f_0\approx0.159\)</span> Hz). Adjust ω₀ slider to <span class="math inline">\(\approx 6.283\)</span> for 1 Hz behavior.</td>
+</tr>
+<tr class="odd">
+<td>τ_d</td>
+<td><span class="math inline">\(\tau_d\)</span></td>
+<td>pulse duration scaling</td>
+<td>Identical.</td>
+</tr>
+<tr class="even">
+<td>⟨w⟩ base (period)</td>
+<td><span class="math inline">\(\langle w \rangle\)</span></td>
+<td>mean inter‑pulse interval (s)</td>
+<td>Instantaneous pulse frequency <span class="math inline">\(f=1/\langle w \rangle\)</span>. Modes overwrite this while active.</td>
+</tr>
+<tr class="odd">
+<td>jitter</td>
+<td>(jitter)</td>
+<td>Gaussian timing jitter std (s)</td>
+<td>Small jitter damps higher comb lines; static snapshots mostly use 0 except implicit sweep logic.</td>
+</tr>
+<tr class="even">
+<td>⟨A⟩</td>
+<td><span class="math inline">\(\mathbb{E}[A]\)</span></td>
+<td>mean amplitude (Exponential case)</td>
+<td>Forecast uses the implied mean for expected future pulses.</td>
+</tr>
+<tr class="odd">
+<td>Arms</td>
+<td>(arms)</td>
+<td>Laplace scale (sym/asym cases)</td>
+<td>Arms / <span class="math inline">\(\sqrt{2}\)</span> used as Laplace <span class="math inline">\(b\)</span>.</td>
+</tr>
+<tr class="even">
+<td>λ asym</td>
+<td><span class="math inline">\(\lambda\)</span></td>
+<td>asymmetry parameter for skew Laplace</td>
+<td>When active in “Laplace(asym λ)”.</td>
+</tr>
+<tr class="odd">
+<td>dt</td>
+<td><span class="math inline">\(dt\)</span></td>
+<td>integration &amp; sampling step</td>
+<td>Same.</td>
+</tr>
+<tr class="even">
+<td>history s</td>
+<td>window</td>
+<td>visible trailing time window</td>
+<td>Drives ring buffer length.</td>
+</tr>
+<tr class="odd">
+<td>future s</td>
+<td>forecast horizon</td>
+<td>forward numerical projection length</td>
+<td>Only affects forecast trace.</td>
+</tr>
+<tr class="even">
+<td>pulse shape</td>
+<td><span class="math inline">\(\varphi\)</span></td>
+<td>kernel shape (Lorentzian / Exponential)</td>
+<td>Matches formulas below.</td>
+</tr>
+<tr class="odd">
+<td>amplitude law</td>
+<td>amplitude distribution</td>
+<td>distribution of <span class="math inline">\(A_k\)</span></td>
+<td>Exponential(+), Laplace(0‑mean), Laplace(asym λ).</td>
+</tr>
+<tr class="even">
+<td>mode (scheduler)</td>
+<td>protocol</td>
+<td>automatic timing program</td>
+<td>Maps 1:1 to the five behaviors.</td>
+</tr>
+<tr class="odd">
+<td>auto pulses (checkbox)</td>
+<td>enable renewal</td>
+<td>if unchecked only manual triggers</td>
+<td>Modes need it enabled to advance automatically.</td>
+</tr>
+<tr class="even">
+<td>spec every N / spec window s</td>
+<td>PSD update cadence / window</td>
+<td>controls live PSD(F), PSD(x), and ACF(x) buffers</td>
+<td>Report figures use a fixed 10 s PSD window.</td>
+</tr>
+<tr class="odd">
+<td>forecast (checkbox)</td>
+<td>forecast on/off</td>
+<td>toggles expected future <span class="math inline">\(x(t)\)</span> trace</td>
+<td>Not used in static snapshots.</td>
+</tr>
+</tbody>
+</table>
+<p>The live spectrum panel adds ACF(x) in addition to PSD(F) and PSD(x); the static report shows only the PSDs for clarity, but the autocorrelation is entirely consistent with the same sampled <span class="math inline">\(x(t)\)</span> segment.</p>
+<p>Mode behaviors in the interactive demo loop indefinitely; the static snapshots simulate a single pass (e.g.&nbsp;one linear sweep 0.6→1.0 Hz for sensitization). This difference only affects how long features persist—not the qualitative interpretation.</p>
+<p>Anticipation mode in the interactive version wobbles the pulse frequency around the <em>current</em> <span class="math inline">\(f_0=\omega_0/(2\pi)\)</span> by ±0.2 Hz (capped below at 0.2 Hz total to avoid degeneracy). To reproduce the report’s 1.0±0.2 Hz wobble interactively, set ω₀ ≈ 6.283 (so <span class="math inline">\(f_0=1\)</span> Hz) before selecting the Anticipation mode.</p>
+<p>All five protocol definitions in the scheduler modify only the mean inter‑arrival time (period) schedule; amplitudes, jitter, and pulse shape remain under user control, exactly mirroring the principled “semiperiodic timing only” manipulations described in the theory sections below.</p>
+</section>
+<section id="the-object-and-its-world" class="level3" data-number="0.1">
+<h3 data-number="0.1" class="anchored" data-anchor-id="the-object-and-its-world"><span class="header-section-number">0.1</span> The object and its world</h3>
+<p>The object is governed by the differential equation <span class="math display">\[
+\ddot{x}(t)+\gamma\,\dot{x}(t)+\omega_0^2 x(t)=F(t),
+\]</span> where <span class="math display">\[\gamma&gt;0\]</span> controls damping, <span class="math display">\[\omega_0&gt;0\]</span> sets the natural oscillation rate, and <span class="math display">\[F(t)\]</span> is the external stimulus injected into the object’s world. The stimulus <span class="math display">\[F(t)\]</span> is built as a sum of pulses with fixed shape <span class="math display">\[\varphi\]</span> and times <span class="math display">\[s_k\]</span>,[2] <span class="math display">\[
+F(t)\;=\;\sum_k A_k\,\varphi\!\left(\frac{t-s_k}{\tau_d}\right),
+\]</span></p>
+<p>where amplitudes <span class="math display">\[A_k\]</span> follow a chosen distribution and <span class="math display">\[\tau_d&gt;0\]</span> sets pulse duration, exactly the construction used to model semiperiodic fluctuations and their spectra in the Dirac‑comb framework. In that framework, strictly periodic arrivals create a comb of spectral lines at <span class="math display">\[f_n=n/\langle w\rangle\]</span>, small jitter damps line mass by a known envelope without broadening, and renewal‑type randomness replaces lines by broadened lobes that trend toward the pulse spectrum, giving principled “levers” to shape behavior without ad‑hoc rules <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>.</p>
+</section>
+<section id="nontechnical-analogy" class="level3" data-number="0.2">
+<h3 data-number="0.2" class="anchored" data-anchor-id="nontechnical-analogy"><span class="header-section-number">0.2</span> Non‑technical analogy</h3>
+<ul>
+<li>Think of <span class="math display">\[F(t)\]</span> as a rhythmic tapper that can tap perfectly on the beat, wobble slightly around the beat, or vary its spacing according to a recipe, while the oscillator <span class="math display">\[x(t)\]</span> is a resonant object that responds differently depending on when and how hard the taps arrive <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>.</li>
+<li>Perfectly regular taps produce bright, sharp “notes” in the frequency picture; a little timing fuzziness softens the higher “overtones” without changing where they sit; and truly variable spacing smears notes into broader bands, all of which is visible in the object’s motion as louder/softer, earlier/later, or more/less focused response patterns <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>.</li>
+</ul>
+</section>
+<section id="behavior-1-habituation-repeated-identical-frequency" class="level3" data-number="0.3">
+<h3 data-number="0.3" class="anchored" data-anchor-id="behavior-1-habituation-repeated-identical-frequency"><span class="header-section-number">0.3</span> Behavior 1: Habituation (repeated identical frequency)</h3>
+<ul>
+<li>Stimulus: keep the pulse timing perfectly regular at a fixed frequency, e.g., 1.3 Hz, with nonzero‑mean amplitudes so the input retains a visible comb in its spectrum <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>.</li>
+<li>What the object does: its motion <span class="math display">\[x(t)\]</span> starts strong and then settles into a smaller, steady rhythm—the mathematical version of “getting used to” a repeated stimulus, which here is simply the transient giving way to steady state under damping while the input spectrum stays the same <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>.</li>
+<li>Why this is principled: periodic arrivals create spectral lines at fixed places independent of the object, and damping enforces a stable long‑run amplitude, so decreasing response over time occurs even though the stimulus is unchanged, which operationalizes habituation without adding new rules <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/habituation_(1.3_hz_periodic).png" class="img-fluid figure-img"></p>
+<figcaption>Habituation (1.3 Hz periodic): strictly periodic pulses drive a transient that decays to steady state; PSD(F) shows a stable comb and PSD(x) concentrates near resonance.</figcaption>
+</figure>
+</div>
+</section>
+<section id="behavior-2-sensitization-sweep-toward-resonance" class="level3" data-number="0.4">
+<h3 data-number="0.4" class="anchored" data-anchor-id="behavior-2-sensitization-sweep-toward-resonance"><span class="header-section-number">0.4</span> Behavior 2: Sensitization (sweep toward resonance)</h3>
+<ul>
+<li>Stimulus: slowly change (and in the interactive demo: <em>continuously and cyclically repeat</em>) the pulse timing so a comb line drifts toward the object’s natural rate <span class="math display">\[f_0=\omega_0/(2\pi)\]</span>, keeping jitter small so lines remain sharp in the input <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>.</li>
+<li>What the object does: the closer a line gets to <span class="math display">\[f_0\]</span>, the more strongly the object responds, showing a clear and growing amplitude even though the input’s line is just sliding in place, which looks like paying more “attention” to what helps it ring <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>.</li>
+<li>Why this is principled: line positions are set by timing alone, while amplification is set by the object’s transfer function, so the attention‑like rise reflects resonance physics, not extra intelligence grafted on top <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/sensitization_(sweep_0.6→1.0_hz).png" class="img-fluid figure-img"></p>
+<figcaption>Sensitization (sweep 0.6→1.0 Hz): a comb line approaches resonance producing a rising response amplitude and PSD(x) growth near f0.</figcaption>
+</figure>
+</div>
+</section>
+<section id="behavior-3-anticipation-predictable-oscillation-around-resonance" class="level3" data-number="0.5">
+<h3 data-number="0.5" class="anchored" data-anchor-id="behavior-3-anticipation-predictable-oscillation-around-resonance"><span class="header-section-number">0.5</span> Behavior 3: Anticipation (predictable oscillation around resonance)</h3>
+<ul>
+<li>Stimulus: make the pulse timing wiggle predictably around the natural rate so a comb line passes in and out of the resonant neighborhood each cycle. (Interactive: wobble amplitude fixed at ±0.2 Hz around the then‑current <span class="math inline">\(f_0\)</span>; set ω₀≈2π to match the 1.0±0.2 Hz wording here.) <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span></li>
+<li>What the object does: its motion shows a smooth change in phase—sometimes leading and sometimes lagging the stimulus—as the line crosses resonance, which reads as anticipating the “good” windows when the taps will do the most work <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>.</li>
+<li>Why this is principled: the object’s phase relative to frequency is built into its mathematics, so predictable timing yields predictable phase shifts without changing the input spectrum’s structure, which is exactly what the semiperiodic‑pulse theory separates out <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/anticipation_(1.0±0.2_hz_wobble).png" class="img-fluid figure-img"></p>
+<figcaption>Anticipation (1.0±0.2 Hz wobble): predictable frequency wobble causes systematic phase lead/lag and alternating amplification around resonance.</figcaption>
+</figure>
+</div>
+</section>
+<section id="behavior-4-associative-conditioning-pair-then-test" class="level3" data-number="0.6">
+<h3 data-number="0.6" class="anchored" data-anchor-id="behavior-4-associative-conditioning-pair-then-test"><span class="header-section-number">0.6</span> Behavior 4: Associative conditioning (pair, then test)</h3>
+<ul>
+<li>Stimulus: alternate two regular timings (for example 1.0 and 1.6 Hz) for a while, then switch to only one of them and observe the motion with a sliding frequency view. (Interactive: 8 s pairing phase with a flip every 1.25 s, then 8 s test at 1.6 Hz, cycling.) <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span></li>
+<li>What the object does: even after the switch, the display shows a fading echo of the removed timing for a short while and the motion rings down at that rate, which looks like a phantom association with a stimulus that is no longer present <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>.</li>
+<li>Why this is principled: the input’s lines are determined by timing, and residuals in the display come from the sliding window and the object’s finite ring‑down, so the apparent memory is a faithful artifact of how signals persist and are estimated rather than made‑up “intelligence” <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/associative_conditioning_(1.0↔1.6_hz_→_1.6_hz).png" class="img-fluid figure-img"></p>
+<figcaption>Associative conditioning (1.0↔︎1.6 Hz → 1.6 Hz): alternating dual lines then single line leaves a fading residual at the removed frequency in x(t) and PSD(x).</figcaption>
+</figure>
+</div>
+</section>
+<section id="behavior-5-delayed-gratification-cycle-poor-and-good-conditions" class="level3" data-number="0.7">
+<h3 data-number="0.7" class="anchored" data-anchor-id="behavior-5-delayed-gratification-cycle-poor-and-good-conditions"><span class="header-section-number">0.7</span> Behavior 5: Delayed gratification (cycle poor and good conditions)</h3>
+<ul>
+<li>Stimulus: alternate off‑resonant tapping for a longer stretch and near‑resonant tapping for a shorter stretch in a repeating cycle (interactive: 4 s at 0.5 Hz then 2 s at 1.0 Hz) <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>.</li>
+<li>What the object does: it stays quiet during the poor segment but grows quickly when the good segment begins, then subsides, which looks like holding back and then capitalizing when conditions turn favorable, matching the intuition of saving effort for the moments that count <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>.</li>
+<li>Why this is principled: the input spectrum encodes when energy can couple well to the object, and the object’s dynamics ensure that energy appears most when lines align, giving a natural version of strategic timing without any extra decision layer <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/delayed_gratification_(0.5_hz×4s_→_1.0_hz×2s).png" class="img-fluid figure-img"></p>
+<figcaption>Delayed gratification (0.5 Hz×4s → 1.0 Hz×2s): cycling off- and near-resonant segments yields suppressed response then rapid growth during favorable windows.</figcaption>
+</figure>
+</div>
+</section>
+<section id="why-one-object-is-enough" class="level3" data-number="0.8">
+<h3 data-number="0.8" class="anchored" data-anchor-id="why-one-object-is-enough"><span class="header-section-number">0.8</span> Why one object is enough</h3>
+<p>All five behaviors arise by varying only how a line sits relative to resonance and how strictly timing is periodic, without changing the object’s equation or adding intelligence modules, which illustrates that a mathematical process can display rich, context‑dependent behavior purely from its lawful structure and the structure of its inputs. The semiperiodic‑pulse model cleanly separates what belongs to timing (line positions and their damping or broadening) from what belongs to pulse shape (spectral envelope) and what belongs to the object (gain and phase), so each behavior is reproducible and explainable in simple terms <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>.</p>
+</section>
+<section id="how-to-present-this-to-nonspecialists" class="level3" data-number="0.9">
+<h3 data-number="0.9" class="anchored" data-anchor-id="how-to-present-this-to-nonspecialists"><span class="header-section-number">0.9</span> How to present this to non‑specialists</h3>
+<ul>
+<li>Use a single slider labeled “beat” to set the tapping rate, and a single knob labeled “natural rate” to set the object’s favorite rhythm, then show how loudness and lag change as the two line up or separate, which is the key to understanding attention and anticipation here <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>.</li>
+<li>Provide a play‑pause button, a “trigger tap now” button, and small presets called “steady beat,” “approach favorite,” “wobble around favorite,” “pair then single,” and “bad‑then‑good cycle,” so viewers can run each behavior as a story with the same object.</li>
+<li>Include a small frequency strip with vertical tick marks at the tap line(s) and a highlight at the natural rate, which is enough to show where the magic comes from without going into formulae, and cite the semiperiodic‑pulse results as the scientific spine behind the scenes <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>.</li>
+</ul>
+</section>
+<section id="notes-on-math-and-citations" class="level3" data-number="0.10">
+<h3 data-number="0.10" class="anchored" data-anchor-id="notes-on-math-and-citations"><span class="header-section-number">0.10</span> Notes on math and citations</h3>
+<p>Equations render with MathJax in Quarto HTML, and citations here are provided via the inline <code>references:</code> metadata (no external BibTeX file). If deeper interactivity is desired, Quarto supports client‑side approaches for sliders and animated displays that require no server, which is ideal for sharing with non‑specialists in a robust way.</p>
+<p>Here is a drop‑in .qmd that generates five static “snapshot” figures of the same mathematical object under the five behavioral protocols and inserts them into the article, so the interactive page and the report stay consistent and self‑contained. Each snapshot shows x(t), F(t), PSD(F), and PSD(x) in one 2×2 panel, using only standard Python libraries to avoid extra rendering dependencies in Quarto HTML builds.[1][2][3][4]</p>
+<p>The object is the damped, driven harmonic oscillator <span class="math display">\[ \ddot{x}(t)+\gamma\,\dot{x}(t)+\omega_0^2 x(t)=F(t) \]</span>, where <span class="math display">\[F(t)\]</span> is a sum of fixed‑shape pulses arriving with semiperiodic timing as in the Dirac‑comb model of deviations under jitter and renewal randomness. The goal is to compute reproducible static figures for five protocols by scripting the same pulse and oscillator logic used in the interactive page and saving PNGs for the article. Quarto will then embed the generated files so non‑specialists can see “before and after” snapshots of the object’s behavior without running widgets during reading.[2][3][4][1]</p>
+<div id="69fb057c" class="cell" data-message="false" data-execution_count="1">
+<div class="cell-output cell-output-display" data-execution_count="1">
+<pre><code>['figures/habituation_(1.3_hz_periodic).png',
+ 'figures/sensitization_(sweep_0.6→1.0_hz).png',
+ 'figures/anticipation_(1.0±0.2_hz_wobble).png',
+ 'figures/associative_conditioning_(1.0↔1.6_hz_→_1.6_hz).png',
+ 'figures/delayed_gratification_(0.5_hz×4s_→_1.0_hz×2s).png']</code></pre>
+</div>
+</div>
+</section>
+<section id="figures-for-the-report" class="level3" data-number="0.11">
+<h3 data-number="0.11" class="anchored" data-anchor-id="figures-for-the-report"><span class="header-section-number">0.11</span> Figures for the report</h3>
+<p>Each panel shows the same object under a different stimulus protocol, linking a clear, non‑technical description to a precise, reproducible signal model based on semiperiodic pulses and their spectral signatures as developed in the Dirac‑comb analysis <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span>. For complete parity with the live demo you can regenerate the static figures after adjusting <span class="math inline">\(\omega_0\)</span> (e.g.&nbsp;set <span class="math inline">\(\omega_0=2\pi\)</span> for the anticipation snapshot) or introduce a small nonzero jitter to visualize harmonic mass damping; these do not change any qualitative conclusions.</p>
+<div id="d137fc9c" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display cell-output-markdown">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/habituation_(1.3_hz_periodic).png" class="img-fluid figure-img"></p>
+<figcaption>Habituation (1.3 Hz periodic)</figcaption>
+</figure>
+</div>
+<p>Strictly periodic pulses at 1.3 Hz produce a stable comb in PSD(F), while the object’s response decays from transient to steady amplitude, operationalizing “getting used to” a repeated stimulus via damping. [web:273][web:274]</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/sensitization_(sweep_0.6→1.0_hz).png" class="img-fluid figure-img"></p>
+<figcaption>Sensitization (sweep 0.6→1.0 Hz)</figcaption>
+</figure>
+</div>
+<p>A comb line sliding toward the natural rate f0 causes steadily growing response in x(t) and increased PSD(x) power at alignment, illustrating attention‑like amplification near resonance. [web:273][web:274]</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/anticipation_(1.0±0.2_hz_wobble).png" class="img-fluid figure-img"></p>
+<figcaption>Anticipation (1.0±0.2 Hz wobble)</figcaption>
+</figure>
+</div>
+<p>Predictable line motion around resonance yields smooth lead‑lag phase shifts in x(t), which appear as anticipating windows of high coupling without changing the input’s comb structure. [web:273][web:274]</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/associative_conditioning_(1.0↔1.6_hz_→_1.6_hz).png" class="img-fluid figure-img"></p>
+<figcaption>Associative conditioning (1.0↔︎1.6 Hz → 1.6 Hz)</figcaption>
+</figure>
+</div>
+<p>Pairing two lines then switching to one leaves fading residual energy at the removed line in sliding PSD and ring‑down in x(t), a principled, linear “phantom” association. [web:273][web:274]</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/delayed_gratification_(0.5_hz×4s_→_1.0_hz×2s).png" class="img-fluid figure-img"></p>
+<figcaption>Delayed gratification (0.5 Hz×4s → 1.0 Hz×2s)</figcaption>
+</figure>
+</div>
+<p>Cycling poor and good alignment suppresses response in off‑segments and reinforces it in near‑resonant windows, mimicking strategic timing through transfer‑function alignment. [web:273][web:274]</p>
+</div>
+</div>
+<ul>
+<li>Deviations from spectral Dirac comb due to semiperiodic pulses <span class="citation" data-cites="theodorsen2025">[@theodorsen2025]</span> as the theoretical spine for line placement, jitter‑induced harmonic‑mass damping, and renewal‑induced broadening used in these figures.</li>
+<li>Quarto guidance on interactive/HTML authoring and citations (project documentation) supports static rendering of figures here and optional hosting of interactive controls on companion pages.</li>
+</ul>
+</section>
+<section id="references" class="level3" data-number="0.12">
+<h3 data-number="0.12" class="anchored" data-anchor-id="references"><span class="header-section-number">0.12</span> References</h3>
+<!-- Generated automatically from the references: metadata via cited @id tags above -->
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><a href="mailto:mvtta@proton.me">contact</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Valdetaro M, 2025</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

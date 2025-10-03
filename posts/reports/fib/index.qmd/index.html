@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="mlmv">
+<meta name="dcterms.date" content="2025-10-03">
 
-<title>/</title>
+<title>/ - mathematical objects in their spaces 3</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,9 +68,39 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../../styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -78,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../../index.html">
     <span class="navbar-title">/</span>
     </a>
   </div>
@@ -89,11 +121,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/dialogues/"> 
+    <a class="nav-link" href="../../../../posts/dialogues/"> 
 <span class="menu-text">dialogues</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/experiments/"> 
+    <a class="nav-link" href="../../../../posts/experiments/"> 
 <span class="menu-text">experiments</span></a>
   </li>  
 </ul>
@@ -112,107 +144,78 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#valdetaro-m" id="toc-valdetaro-m" class="nav-link active" data-scroll-target="#valdetaro-m">VALDETARO, M</a>
-  <ul>
-  <li><a href="#about-explorer" id="toc-about-explorer" class="nav-link" data-scroll-target="#about-explorer">About: <em>Explorer</em></a></li>
-  <li><a href="#society-for-multidisciplinary-and-fundamental-research---semf" id="toc-society-for-multidisciplinary-and-fundamental-research---semf" class="nav-link" data-scroll-target="#society-for-multidisciplinary-and-fundamental-research---semf">Society for multidisciplinary and fundamental research - SEMF</a></li>
-  <li><a href="#rd" id="toc-rd" class="nav-link" data-scroll-target="#rd">R&amp;D</a>
-  <ul>
-  <li><a href="#nokia" id="toc-nokia" class="nav-link" data-scroll-target="#nokia">Nokia</a>
-  <ul>
-  <li><a href="#applied-rd-cloud-networks" id="toc-applied-rd-cloud-networks" class="nav-link" data-scroll-target="#applied-rd-cloud-networks">Applied R&amp;D Cloud &amp; Networks</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#writings" id="toc-writings" class="nav-link" data-scroll-target="#writings">Writings</a>
-  <ul>
-  <li><a href="#thoughts-of-a-gentlewoman" id="toc-thoughts-of-a-gentlewoman" class="nav-link" data-scroll-target="#thoughts-of-a-gentlewoman">Thoughts of a Gentlewoman</a></li>
-  <li><a href="#poetry" id="toc-poetry" class="nav-link" data-scroll-target="#poetry">Poetry</a></li>
-  </ul></li>
-  <li><a href="#animating" id="toc-animating" class="nav-link" data-scroll-target="#animating">Animating</a>
-  <ul>
-  <li><a href="#constructions-w-todos" id="toc-constructions-w-todos" class="nav-link" data-scroll-target="#constructions-w-todos">Constructions w/ Todos</a></li>
-  <li><a href="#short-film-w-todos" id="toc-short-film-w-todos" class="nav-link" data-scroll-target="#short-film-w-todos">Short film w/ Todos</a></li>
-  <li><a href="#making-jewellery-in-japan" id="toc-making-jewellery-in-japan" class="nav-link" data-scroll-target="#making-jewellery-in-japan">Making Jewellery in Japan</a></li>
-  </ul></li>
-  <li><a href="#in-service-of" id="toc-in-service-of" class="nav-link" data-scroll-target="#in-service-of">In service of</a>
-  <ul>
-  <li><a href="#katefriends---greyhound-rescue-rehabilitation" id="toc-katefriends---greyhound-rescue-rehabilitation" class="nav-link" data-scroll-target="#katefriends---greyhound-rescue-rehabilitation">Katefriends - Greyhound Rescue &amp; Rehabilitation</a></li>
-  <li><a href="#a-avó-veio-trabalhar-grandma-came-to-work" id="toc-a-avó-veio-trabalhar-grandma-came-to-work" class="nav-link" data-scroll-target="#a-avó-veio-trabalhar-grandma-came-to-work">A Avó Veio Trabalhar (Grandma Came to Work)</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#object-and-space" id="toc-object-and-space" class="nav-link active" data-scroll-target="#object-and-space"><span class="header-section-number">0.1</span> Object and space</a></li>
+  <li><a href="#behaviors-of-the-object" id="toc-behaviors-of-the-object" class="nav-link" data-scroll-target="#behaviors-of-the-object"><span class="header-section-number">0.2</span> Behaviors of the object</a></li>
+  <li><a href="#observables-and-what-to-expect-on-screen" id="toc-observables-and-what-to-expect-on-screen" class="nav-link" data-scroll-target="#observables-and-what-to-expect-on-screen"><span class="header-section-number">0.3</span> Observables and what to expect on screen</a></li>
+  <li><a href="#implementation-note-for-reproducibility" id="toc-implementation-note-for-reproducibility" class="nav-link" data-scroll-target="#implementation-note-for-reproducibility"><span class="header-section-number">0.4</span> Implementation note (for reproducibility)</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">0.5</span> References</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">mathematical objects in their spaces 3</h1>
+<p class="subtitle lead">behavioural experiment analysis: habituation, sensitization, anticipation, associative conditioning, and delayed gratification</p>
+</div>
 
 
 
-<section id="valdetaro-m" class="level1">
-<h1>VALDETARO, M</h1>
-<p>Lisboa, Portugal | mvtta@proton.me |</p>
-<section id="about-explorer" class="level5">
-<h5 class="anchored" data-anchor-id="about-explorer">About: <em>Explorer</em></h5>
-</section>
-<section id="society-for-multidisciplinary-and-fundamental-research---semf" class="level2">
-<h2 class="anchored" data-anchor-id="society-for-multidisciplinary-and-fundamental-research---semf">Society for multidisciplinary and fundamental research - SEMF</h2>
-<p><a href="www.semf.org.es">www.semf.org.es</a></p>
-</section>
-<section id="rd" class="level2">
-<h2 class="anchored" data-anchor-id="rd">R&amp;D</h2>
-<section id="nokia" class="level3">
-<h3 class="anchored" data-anchor-id="nokia">Nokia</h3>
-<section id="applied-rd-cloud-networks" class="level4">
-<h4 class="anchored" data-anchor-id="applied-rd-cloud-networks">Applied R&amp;D Cloud &amp; Networks</h4>
-<p><a href="https://www.nokia.com/industries/cloud-and-digital-infrastructure/">POC &amp; Product</a> #### R&amp;D 5G Mobile Networks | Layer 1 Downlink <a href="https://www.nokia.com/newsroom/nokia-to-open-new-5g-and-6g-research-and-development-center-in-portugal/">L1</a></p>
-</section>
-</section>
-</section>
-<section id="writings" class="level2">
-<h2 class="anchored" data-anchor-id="writings">Writings</h2>
-<section id="thoughts-of-a-gentlewoman" class="level6">
-<h6 class="anchored" data-anchor-id="thoughts-of-a-gentlewoman">Thoughts of a Gentlewoman</h6>
-<blockquote class="blockquote">
-<p>mvtta.github.io (currently under work)</p>
-</blockquote>
-</section>
-<section id="poetry" class="level6">
-<h6 class="anchored" data-anchor-id="poetry">Poetry</h6>
-<blockquote class="blockquote">
-<p>marianas.life (currently under work)</p>
-</blockquote>
-</section>
-</section>
-<section id="animating" class="level2">
-<h2 class="anchored" data-anchor-id="animating">Animating</h2>
-<section id="constructions-w-todos" class="level6">
-<h6 class="anchored" data-anchor-id="constructions-w-todos">Constructions w/ Todos</h6>
-<p><a href="https://youtu.be/PcYyy3SopGg?si=RPLXKK46cF2AiO7l">Stone Technology</a></p>
-</section>
-<section id="short-film-w-todos" class="level6">
-<h6 class="anchored" data-anchor-id="short-film-w-todos">Short film w/ Todos</h6>
-<p><a href="https://youtu.be/Yv6VzXbFyrY?si=kETFDWPazqoCifnT">Short film: An ode to metamorphic stone</a></p>
-</section>
-<section id="making-jewellery-in-japan" class="level6">
-<h6 class="anchored" data-anchor-id="making-jewellery-in-japan">Making Jewellery in Japan</h6>
-<p><a href="https://youtu.be/dV8szcNGzgo?si=EDN8EaxEI3Ll4q3f">Mini Doc “The Jewel”</a></p>
-</section>
-</section>
-<section id="in-service-of" class="level2">
-<h2 class="anchored" data-anchor-id="in-service-of">In service of</h2>
-<section id="katefriends---greyhound-rescue-rehabilitation" class="level4">
-<h4 class="anchored" data-anchor-id="katefriends---greyhound-rescue-rehabilitation">Katefriends - Greyhound Rescue &amp; Rehabilitation</h4>
-<p><a href="http://katefriends.org/">Katefriends</a></p>
-</section>
-<section id="a-avó-veio-trabalhar-grandma-came-to-work" class="level4">
-<h4 class="anchored" data-anchor-id="a-avó-veio-trabalhar-grandma-came-to-work">A Avó Veio Trabalhar (Grandma Came to Work)</h4>
-<p><a href="https://www.fermenta.org/aboutus/project/">Grandmas at work</a></p>
-<p><code>Sincerely, M</code></p>
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>mlmv </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 3, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<p>In its native space, the continuum fib seems to have the five behaviors (habituation, sensitization, anticipation, associative recall, delayed gratification) and these are expressed by a adaptive steering. The continuous Fibonacci function drives a single 3D golden helix body that moves on a horn‑like habitat; by changing only a small external schedule and one adaptive gain, the same object exhibits habituation, sensitization, anticipation, associative recall, and delayed gratification. The construction rests on continuous Binet calculus for smooth evolution and on published Fibonacci/Lucas helices for the 3D geometry, ensuring mathematical coherence and interpretability for non‑specialists and experts alike.</p>
+<section id="object-and-space" class="level3" data-number="0.1">
+<h3 data-number="0.1" class="anchored" data-anchor-id="object-and-space"><span class="header-section-number">0.1</span> Object and space</h3>
+<p>The object is the time‑continuous Fibonacci function defined from the Binet calculus <span class="math inline">\(F(t)=\frac{\phi^{t}-(-\phi^{-1})^{t}}{\phi+\phi^{-1}}\)</span> with <span class="math inline">\(\phi=(1+\sqrt{5})/2\)</span>, so <span class="math inline">\(F(n)=F_n\)</span> for integers and the same law extends to all real <span class="math inline">\(t\)</span> for smooth motion on a curve. The space for a 3D Fibonacci helix habitat is built from a center line with radius <span class="math inline">\(R(t)\)</span> and pitch <span class="math inline">\(p\)</span> and a thin shrinking tube <em>shofar</em>. Graça has shown that Fibonacci/Lucas helices admit explicit parameterisations with constant pitch, which justifies a true 3D helical space rather than a flat 2D spiral. For coordinates, the centerline is <span class="math inline">\(x(t)=R(t)\cos\theta(t)\)</span>, <span class="math inline">\(y(t)=R(t)\sin\theta(t)\)</span>, <span class="math inline">\(z(t)=p\,t\)</span> with radius <span class="math inline">\(R(t)=R_0\,F(t)/F(1)\)</span> (or <span class="math inline">\(R_0\phi^{t-1}\)</span> as a geometric variant) and a golden turning step <span class="math inline">\(\Delta\theta_\star=2\pi(1-1/\phi)\)</span> that sets the canonical angular advance per unit time.</p>
+<p>A steering variable <span class="math inline">\(\theta(t)\)</span> evolves under a controlled angular rate <span class="math inline">\(\dot\theta(t)=\Delta\theta_{\mathrm{base}}(t)+u(t)\)</span>, where <span class="math inline">\(\Delta\theta_{\mathrm{base}}(t)\)</span> is a mode‑dependent schedule and <span class="math inline">\(u(t)\)</span> is a small corrective input computed from the current alignment error <span class="math inline">\(e(t)=\mathrm{wrap}(\theta(t)-t\,\Delta\theta_\star)\)</span>. Feedback <span class="math inline">\(u(t)=-g(t)\,e(t)-d\,\dot e(t)\)</span> with a fixed derivative coefficient <span class="math inline">\(d&gt;0\)</span> for damping and an adaptive gain <span class="math inline">\(g(t)\ge0\)</span> that changes slowly to express habituation, sensitization, and recall within the same law for the same body. Plasticity: $ g(t)=e(t)-g(t)+(t) $, where <span class="math inline">\(\alpha&gt;0\)</span> increases gain when the body is well aligned with the golden turn, <span class="math inline">\(\beta&gt;0\)</span> enforces slow decay (habituation), and <span class="math inline">\(\mathrm{pair}(t)\)</span> is a temporary pairing input used only during associative training intervals; this single scalar adaptation suffices to realize all five behaviors without changing the object’s equations of motion.</p>
 </section>
+<section id="behaviors-of-the-object" class="level3" data-number="0.2">
+<h3 data-number="0.2" class="anchored" data-anchor-id="behaviors-of-the-object"><span class="header-section-number">0.2</span> Behaviors of the object</h3>
+<p>Habituation can be seen as <span class="math inline">\(\Delta\theta_{\mathrm{base}}(t)=\Delta\theta_\star+\varepsilon\sin(2\pi t/T)\)</span> with small <span class="math inline">\(\varepsilon\)</span>; the repeated disturbance decays in effective influence as <span class="math inline">\(g(t)\)</span> relaxes and the phase error <span class="math inline">\(e(t)\)</span> converges back toward zero, visible as decreasing corrective effort at the same stimulus strength. Sensitisation <span class="math inline">\(\Delta\theta_{\mathrm{base}}(t)=\Delta\theta_\star+\delta e^{-t/\tau}\)</span> so the base turn drifts toward the golden value. As alignment improves, <span class="math inline">\(\alpha\cos e(t)\)</span> keeps <span class="math inline">\(g(t)\)</span> elevated and the object reacts more strongly, causing faster error reduction near the target and a visibly steeper improvement in alignment and packing along the helix. Anticipation is given by <span class="math inline">\(\Delta\theta_{\mathrm{base}}(t)=\Delta\theta_\star+\eta\sin(\omega t)\)</span> with small <span class="math inline">\(\eta\)</span>; the derivative term <span class="math inline">\(-d\dot e\)</span> and the positive gain bias produce a phase lead so the head stays near the best angular window, which should give near‑constant alignment despite periodic driving. Associative recall is given by train with <span class="math inline">\(\mathrm{pair}(t)=\gamma&gt;0\)</span> while <span class="math inline">\(\Delta\theta_{\mathrm{base}}(t)=\Delta\theta_\star\)</span> for <span class="math inline">\(t\in[0,T_{\mathrm{pair}}]\)</span>, then remove both pairing and the golden base; <span class="math inline">\(g(t)\)</span> remains elevated briefly and decays at rate <span class="math inline">\(\beta\)</span>, so the object maintains improved alignment after the cue is gone, a clean mathematical memory ring‑down within the same law. The delayed gratification cycle <span class="math inline">\(\Delta\theta_{\mathrm{base}}(t)\)</span> between poor and golden windows, or equivalently modulate <span class="math inline">\(\alpha\)</span> so learning occurs only in good windows; the body spends energy <span class="math inline">\(E(t)=\langle u^2\rangle\)</span> primarily when progress is possible and idles otherwise, which is visible as growth of spatial uniformity during good windows and conservation during poor windows.</p>
 </section>
+<section id="observables-and-what-to-expect-on-screen" class="level3" data-number="0.3">
+<h3 data-number="0.3" class="anchored" data-anchor-id="observables-and-what-to-expect-on-screen"><span class="header-section-number">0.3</span> Observables and what to expect on screen</h3>
+<p>Alignment <span class="math inline">\(A(t)=\cos e(t)\in[-1,1]\)</span> is printed live; values near <span class="math inline">\(1\)</span> indicate the head is steering on the golden turn, with small oscillations in anticipation and a monotone recovery in habituation. Sider for gain <span class="math inline">\(g(t)\)</span> rises in sensitisation and during paired training, decays in habituation, and persists transiently in recall, making the internal “attention” state of the same body legible without any mode‑specific equations. For the uniformity slider, a coefficient‑of‑variation of nearest‑neighbor distances along the body’s recent path provides a geometric packing score <span class="math inline">\(U(t)\)</span>, which improves sharply when <span class="math inline">\(\Delta\theta\)</span> is golden and slowly otherwise, highlighting delayed‑gratification patterns when windows alternate. For ernergy, the running mean of <span class="math inline">\(u(t)^2\)</span> shows effort allocation; it damps in habituation, concentrates near target alignment in sensitization, and redistributes between poor/good windows in delayed scenarios, all with the same object and the same controls.</p>
+</section>
+<section id="implementation-note-for-reproducibility" class="level3" data-number="0.4">
+<h3 data-number="0.4" class="anchored" data-anchor-id="implementation-note-for-reproducibility"><span class="header-section-number">0.4</span> Implementation note (for reproducibility)</h3>
+<p>The simulation renders a thin mesh tube (“shofar hull”) around the centerline <span class="math inline">\(x(t)=R(t)\cos\theta(t)\)</span>, <span class="math inline">\(y(t)=R(t)\sin\theta(t)\)</span>, <span class="math inline">\(z(t)=p\,t\)</span> with <span class="math inline">\(R(t)=R_0F(t)/F(1)\)</span>, and advances the single steering state <span class="math inline">\(\theta\)</span> by <span class="math inline">\(\dot\theta=\Delta\theta_{\mathrm{base}}(t)-g(t)e(t)-d\dot e(t)\)</span> while adapting <span class="math inline">\(g\)</span> via <span class="math inline">\(\dot g=\alpha\cos e-\beta g+\mathrm{pair}(t)\)</span>, so all five behaviors arise from the same state variables under different externally scheduled <span class="math inline">\(\Delta\theta_{\mathrm{base}}(t)\)</span> and <span class="math inline">\(\mathrm{pair}(t)\)</span> functions.</p>
+</section>
+<section id="references" class="level3" data-number="0.5">
+<h3 data-number="0.5" class="anchored" data-anchor-id="references"><span class="header-section-number">0.5</span> References</h3>
+<ul>
+<li>Pashaev, O.K., Nalci, S. “Golden quantum oscillator and Binet–Fibonacci calculus” (continuous Fibonacci/Binet; golden bases), which supports using <span class="math inline">\(F(t)\)</span> for smooth evolution with <span class="math inline">\(F(n)=F_n\)</span> at integer times.</li>
+<li>Graça, M.M. “Construction of helices from Lucas and Fibonacci sequences” (parametric 3D Fibonacci/Lucas helices; constant pitch), which supports using a true 3D helical habitat and a horn‑like tube around the centerline for a coherent space.</li>
+<li>Golden ratio background and ratio convergence <span class="math inline">\(F_{n+1}/F_n \to \phi\)</span>, which establishes the constants used in the helix and turn schedule.</li>
+<li>Minkowski embeddings for number fields (context for separating 2D field geometry from the 3D helix habitat so spaces are not mixed in one scene), which motivates using helix space for dynamics and Minkowski space for planar expositions elsewhere.</li>
+</ul>
+<p>(https://arxiv.org/abs/1707.09581) (https://arxiv.org/pdf/1107.4389.pdf) (https://www.themathdoctors.org/the-golden-ratio-and-fibonacci/) (http://math.uchicago.edu/~may/REU2012/REUPapers/Comeaux.pdf)</p>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -297,7 +300,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/mvtta\.github\.io\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -643,4 +646,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

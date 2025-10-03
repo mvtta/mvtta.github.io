@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.555">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>/ - mathematical objects in their spaces 2</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="oscillator.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">/</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../posts/dialogues/"> 
+<span class="menu-text">dialogues</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../posts/experiments/"> 
+<span class="menu-text">experiments</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#oscillator-in-phase-space" id="toc-oscillator-in-phase-space" class="nav-link active" data-scroll-target="#oscillator-in-phase-space">Oscillator in Phase-Space</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">mathematical objects in their spaces 2</h1>
+<p class="subtitle lead">harmonic oscillator in phase-space: interact via pulses</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="oscillator-in-phase-space" class="level2">
+<h2 class="anchored" data-anchor-id="oscillator-in-phase-space">Oscillator in Phase-Space</h2>
+<style>
+  .eo-panel { font-family: monospace; color:#d9d9d9; background:#000; border:1px solid #222; padding:8px 10px; margin-bottom:8px; display:flex; flex-wrap:wrap; gap:12px; align-items:flex-start; }
+  .eo-row { display:flex; gap:6px; flex-wrap:wrap; align-items:center; }
+  .eo-btn { background:#111; color:#8ff55a; border:1px solid #2d2d2d; padding:4px 10px; cursor:pointer; font-size:13px; }
+  .eo-btn:hover { background:#1d1d1d; }
+  .eo-slider-wrap { display:flex; flex-direction:column; width:140px; }
+  .eo-slider-wrap label { font-size:11px; letter-spacing:0.5px; }
+  .eo-slider-wrap input[type=range] { width:100%; background:#182018; accent-color:#14c95a; }
+  .eo-select { background:#111; color:#eee; border:1px solid #333; font-size:12px; padding:2px 4px; }
+  .eo-status-line { font-size:12px; margin-top:4px; }
+  #enhancedCanvas { border:1px solid #181818; }
+  .eo-legend-chip { width:12px; height:8px; display:inline-block; margin-right:4px; }
+  #enhanced-oscillator-container { position:relative; }
+  .eo-floating { position:absolute; bottom:14px; right:18px; background:#111; color:#ffdf5a; border:1px solid #333; padding:6px 14px; font-size:13px; cursor:pointer; }
+  .eo-floating:hover { background:#1e1e1e; }
+</style>
+<div id="enhanced-oscillator-container">
+  <div class="eo-panel" id="eo-panel">
+    <div class="eo-row">
+      <button class="eo-btn" id="eo-play">▶ play</button>
+      <button class="eo-btn" id="eo-reset">reset</button>
+      <button class="eo-btn" id="eo-trigger">pulse</button>
+      <select id="eo-force-type" class="eo-select" title="force type">
+        <option value="none">none</option>
+        <option value="impulse">impulse</option>
+        <option value="sustained">sustain</option>
+        <option value="periodic">periodic</option>
+      </select>
+      <label style="font-size:12px;color:#ccc;display:flex;align-items:center;gap:4px;">
+        <input type="checkbox" id="eo-auto" checked="" style="margin:0;"> auto
+      </label>
+    </div>
+    <div class="eo-row" id="eo-sliders"></div>
+    <div class="eo-row">
+      <div class="eo-status-line" id="eo-status">t=0.00 x=0.000 v=0.000</div>
+      <div class="eo-status-line"><span class="eo-legend-chip" style="background:#00ff41"></span>pos <span class="eo-legend-chip" style="background:#ff6b6b"></span>vel <span class="eo-legend-chip" style="background:#ffd93d"></span>force</div>
+    </div>
+  </div>
+  <canvas id="enhancedCanvas" width="1600" height="900"></canvas>
+  <button class="eo-floating" id="eo-trigger-bottom" title="trigger pulse">pulse</button>
+</div>
+
+<script>
+// Enhanced Oscillator with Intelligent Behaviors
+class EnhancedOscillator {
+  constructor() {
+    // Physical parameters
+    this.omega0 = 1.0;  // Natural frequency
+    this.gamma = 0.1;   // Damping coefficient
+    this.t = 0;
+    this.dt = 0.02;
+    
+    // State variables
+    this.x = 1.0;
+    this.v = 0.0;
+    
+    // External force parameters
+    this.forceType = 'none';
+    this.forceStrength = 0.5;
+    this.lastForceTime = 0;
+    this.forceActive = false;
+    
+    // Intelligence and memory systems
+    this.stimulusHistory = [];
+    this.responseHistory = [];
+    this.memoryDecayRate = 0.02;
+    this.adaptationRate = 0.05;
+    this.sensitizationThreshold = 0.3;
+    this.habituationThreshold = 0.1;
+  // Manual pulse accumulator (decays over time)
+  this.manualPulse = 0.0;
+    
+    // Behavioral state
+    this.baselineResponse = 1.0;
+    this.currentSensitivity = 1.0;
+    this.habituationLevel = 0.0;
+    this.sensitizationLevel = 0.0;
+    this.energyLevel = 1.0;
+    this.fatigueLevel = 0.0;
+    
+    // Enhanced behaviors
+    this.behaviouralModifications = 1.0;
+    this.rawStimulusForce = 0.0;
+    this.phantomForce = 0.0;
+    this.lastStimulus = 0;
+    this.anticipatoryResponse = 0.0;
+    
+    // History tracking for analysis
+    this.history = {
+      time: [],
+      position: [],
+      velocity: [],
+      energy: [],
+      force: [],
+      totalForce: [],
+      sensitivity: [],
+      habituation: [],
+      sensitization: [],
+      intelligence: []
+    };
+    
+    this.maxHistoryLength = 1000;
+  }
+  
+  // Apply external force based on current settings
+  applyForce() {
+  // Capture current manual pulse before decay so full amplitude is applied this frame
+  const manualPart = this.manualPulse;
+  let autoForce = 0;
+    const autoEnabled = (typeof enhancedAutoEnabled === 'undefined') ? true : enhancedAutoEnabled;
+    if (autoEnabled) {
+      switch (this.forceType) {
+        case 'impulse':
+          if (this.t - this.lastForceTime > 3.0 && Math.sin(this.t * 2) > 0.99) {
+            autoForce = this.forceStrength * 2;
+            this.lastForceTime = this.t;
+          }
+          break;
+        case 'sustained':
+          autoForce = this.forceStrength;
+          break;
+        case 'periodic':
+          autoForce = this.forceStrength * Math.sin(this.t * 0.8);
+          break;
+        default:
+          autoForce = 0;
+      }
+    }
+  this.rawStimulusForce = autoForce + manualPart;
+  // Now decay manual pulse (slower so it's visible) after applying
+  this.manualPulse *= 0.97;
+  }
+  
+  // Update intelligent behavioral responses
+  updateIntelligentBehavior() {
+    // Detect significant stimuli
+    const stimulusIntensity = Math.abs(this.rawStimulusForce);
+    
+    if (stimulusIntensity > 0.01) {
+      this.stimulusHistory.push({
+        time: this.t,
+        intensity: stimulusIntensity,
+        response: Math.abs(this.v)
+      });
+      
+      // Update habituation (decreased response to repeated stimuli)
+      if (stimulusIntensity < this.habituationThreshold) {
+        this.habituationLevel = Math.min(0.8, this.habituationLevel + 0.01);
+      }
+      
+      // Update sensitization (increased response to strong stimuli)
+      if (stimulusIntensity > this.sensitizationThreshold) {
+        this.sensitizationLevel = Math.min(0.6, this.sensitizationLevel + 0.02);
+        this.energyLevel = Math.min(1.5, this.energyLevel + 0.05);
+      }
+    }
+    
+    // Decay habituation and sensitization over time
+    this.habituationLevel *= (1 - this.memoryDecayRate);
+    this.sensitizationLevel *= (1 - this.memoryDecayRate);
+    
+    // Generate phantom responses (memory-based oscillations)
+    this.updatePhantomResponses();
+    
+    // Calculate overall behavioral modification
+    this.behaviouralModifications = this.baselineResponse * 
+      (1 - this.habituationLevel * 0.7 + this.sensitizationLevel * 0.5) *
+      (0.8 + 0.4 * this.energyLevel);
+    
+    // Clean old history
+    if (this.stimulusHistory.length > 50) {
+      this.stimulusHistory.shift();
+    }
+  }
+  
+  // Generate phantom responses based on stimulus patterns
+  updatePhantomResponses() {
+    this.phantomForce = 0;
+    
+    if (this.stimulusHistory.length > 2) {
+      // Look for patterns in recent stimuli
+      const recentStimuli = this.stimulusHistory.slice(-5);
+      const avgInterval = this.calculateAverageInterval(recentStimuli);
+      
+      if (avgInterval > 0 && avgInterval < 5.0) {
+        // Generate anticipatory response based on learned pattern
+        const timeSinceLastStimulus = this.t - this.lastStimulus;
+        const expectedNextStimulus = avgInterval;
+        
+        if (Math.abs(timeSinceLastStimulus - expectedNextStimulus) < 0.5) {
+          this.phantomForce = 0.2 * this.forceStrength * 
+            Math.exp(-Math.pow(timeSinceLastStimulus - expectedNextStimulus, 2) / 0.5);
+        }
+      }
+    }
+    
+    // Add spontaneous micro-oscillations based on energy level
+    if (this.energyLevel > 1.1) {
+      this.phantomForce += 0.05 * Math.sin(this.t * 3.7) * this.energyLevel;
+    }
+  }
+  
+  calculateAverageInterval(stimuli) {
+    if (stimuli.length < 2) return 0;
+    
+    let totalInterval = 0;
+    for (let i = 1; i < stimuli.length; i++) {
+      totalInterval += stimuli[i].time - stimuli[i-1].time;
+    }
+    
+    return totalInterval / (stimuli.length - 1);
+  }
+  
+  // Update energy and fatigue based on activity
+  updateEnergyDynamics() {
+    const currentActivity = Math.abs(this.v) + Math.abs(this.rawStimulusForce);
+    
+    // Energy consumption based on activity
+    if (currentActivity > 0.5) {
+      this.fatigueLevel = Math.min(0.8, this.fatigueLevel + 0.005);
+      this.energyLevel = Math.max(0.3, this.energyLevel - 0.002);
+    } else {
+      // Recovery during low activity
+      this.fatigueLevel = Math.max(0, this.fatigueLevel - 0.002);
+      this.energyLevel = Math.min(1.0, this.energyLevel + 0.001);
+    }
+  }
+  
+  // Calculate intelligence score based on adaptive behaviors
+  calculateIntelligenceScore() {
+    let score = 0.5; // Base score
+    
+    // Reward adaptive responses
+    if (this.habituationLevel > 0.1) score += 0.2; // Shows habituation
+    if (this.sensitizationLevel > 0.1) score += 0.2; // Shows sensitization
+    if (Math.abs(this.phantomForce) > 0.01) score += 0.3; // Shows anticipation
+    
+    // Consider energy management
+    if (this.energyLevel > 0.7 && this.fatigueLevel < 0.3) score += 0.1;
+    
+    // Reward pattern recognition (phantom responses)
+    if (this.stimulusHistory.length > 3) {
+      const patternStrength = Math.abs(this.phantomForce) / Math.max(0.01, this.forceStrength);
+      score += Math.min(0.2, patternStrength);
+    }
+    
+    return Math.min(1.0, score);
+  }
+  
+  // Main physics integration
+  updatePhysics() {
+    // Apply external forces
+    this.applyForce();
+    
+    // Update intelligent behaviors
+    this.updateIntelligentBehavior();
+    this.updateEnergyDynamics();
+    
+    // Record current stimulus
+    if (Math.abs(this.rawStimulusForce) > 0.01) {
+      this.lastStimulus = this.t;
+    }
+    
+    // Calculate total force (including intelligent modifications)
+    const totalForce = (this.rawStimulusForce * this.behaviouralModifications) + this.phantomForce;
+    
+    // Damped harmonic oscillator equation with intelligent force
+    const acceleration = -this.gamma * this.v - this.omega0 * this.omega0 * this.x + totalForce;
+    
+    // Verlet integration for better stability
+    this.v += acceleration * this.dt;
+    this.x += this.v * this.dt;
+    
+    // Energy calculation
+    const kineticEnergy = 0.5 * this.v * this.v;
+    const potentialEnergy = 0.5 * this.omega0 * this.omega0 * this.x * this.x;
+    const totalEnergy = kineticEnergy + potentialEnergy;
+    
+    // Intelligence score
+    const intelligenceScore = this.calculateIntelligenceScore();
+    
+    // Update time
+    this.t += this.dt;
+    
+    // Store history
+    this.history.time.push(this.t);
+    this.history.position.push(this.x);
+    this.history.velocity.push(this.v);
+    this.history.energy.push(totalEnergy);
+    this.history.force.push(this.rawStimulusForce);
+    this.history.totalForce.push(totalForce);
+    this.history.sensitivity.push(this.currentSensitivity);
+    this.history.habituation.push(this.habituationLevel);
+    this.history.sensitization.push(this.sensitizationLevel);
+    this.history.intelligence.push(intelligenceScore);
+    
+    // Limit history length
+    Object.keys(this.history).forEach(key => {
+      if (this.history[key].length > this.maxHistoryLength) {
+        this.history[key].shift();
+      }
+    });
+    
+    return { x: this.x, v: this.v, totalForce };
+  }
+  
+  reset() {
+    this.t = 0;
+    this.x = 1.0;
+    this.v = 0.0;
+    this.forceActive = false;
+    this.lastForceTime = 0;
+    
+    // Reset intelligent behaviors
+    this.stimulusHistory = [];
+    this.responseHistory = [];
+    this.habituationLevel = 0.0;
+    this.sensitizationLevel = 0.0;
+    this.energyLevel = 1.0;
+    this.fatigueLevel = 0.0;
+    this.behaviouralModifications = 1.0;
+    this.phantomForce = 0.0;
+    this.lastStimulus = 0;
+  this.manualPulse = 0.0;
+    
+    // Clear history
+    Object.keys(this.history).forEach(key => {
+      this.history[key] = [];
+    });
+  }
+  
+  setFrequency(freq) {
+    this.omega0 = freq;
+  }
+  
+  setDamping(damp) {
+    this.gamma = damp;
+  }
+  
+  setForceType(type) {
+    this.forceType = type;
+  }
+  
+  setForceStrength(strength) {
+    this.forceStrength = strength;
+  }
+}
+
+// Global variables for enhanced oscillator
+let enhancedOscillator = new EnhancedOscillator();
+let enhancedCanvas, enhancedCtx;
+let enhancedIsPlaying = false;
+let enhancedAnimationId;
+let phaseTrail = [];
+let enhancedAutoEnabled = true; // auto pulses enabled by default
+// Smoothed phase-space scaling (avoid jittery jumps)
+let phaseScaleX = 0.8; // current smoothed half-extent for x (position)
+let phaseScaleV = 0.8; // current smoothed half-extent for v (velocity)
+const phaseScaleMin = 0.3;
+const phaseExpandPad = 1.05;    // padding when expanding
+const phaseLerpGrow = 0.25;     // interpolation factor when growing scale
+const phaseLerpShrink = 0.06;   // interpolation factor when shrinking scale
+
+function initAnimation() {
+  enhancedCanvas = document.getElementById('enhancedCanvas');
+  enhancedCtx = enhancedCanvas.getContext('2d');
+  
+  drawEnhancedFrame();
+  setupEnhancedControls();
+  
+  requestAnimationFrame(function animate() {
+    animateEnhanced();
+    enhancedAnimationId = requestAnimationFrame(animate);
+  });
+}
+
+function animateEnhanced() {
+  if (enhancedIsPlaying) {
+    const result = enhancedOscillator.updatePhysics();
+    phaseTrail.push({ x: result.x, v: result.v, force: result.totalForce });
+    if (phaseTrail.length > 500) {  // Longer trail for better visualization
+      phaseTrail.shift();
+    }
+  }
+  
+  drawEnhancedFrame();
+  updateEnhancedStatus();
+}
+
+function drawEnhancedFrame() {
+  // Global black background
+  enhancedCtx.fillStyle = '#000000';
+  enhancedCtx.fillRect(0, 0, enhancedCanvas.width, enhancedCanvas.height);
+
+  const margin = 40;
+  // Simplified layout: Phase space top, combined time-series bottom (no energy/state frames)
+  const phaseRect = { x: margin, y: margin, w: 1200, h: 520 };
+  const timeSeriesRect = { x: margin, y: phaseRect.y + phaseRect.h + margin, w: 1200, h: 260 };
+
+  // Time window & data
+  const timeWindow = 20;
+  const currentTime = enhancedOscillator.t;
+  const startIdx = Math.max(0, enhancedOscillator.history.time.length - Math.floor(timeWindow / enhancedOscillator.dt));
+  const timeData = enhancedOscillator.history.time.slice(startIdx);
+  const positionData = enhancedOscillator.history.position.slice(startIdx);
+  const velocityData = enhancedOscillator.history.velocity.slice(startIdx);
+  // Plot raw external (auto + manual) stimulus separately so pulses are visible
+  const forceData = enhancedOscillator.history.force.slice(startIdx);
+  const energyData = enhancedOscillator.history.energy.slice(startIdx);
+
+  // Dynamic y scaling across all three series
+  const combined = positionData.concat(velocityData).concat(forceData);
+  let maxAbs = 1;
+  if (combined.length) {
+    maxAbs = Math.max(0.5, Math.min(5, combined.reduce((m, v) => Math.max(m, Math.abs(v)), 0)))*1.1;
+  }
+  const yMin = -maxAbs;
+  const yMax = maxAbs;
+
+  // Phase space (top)
+  drawEnhancedPhaseSpace(phaseRect.x, phaseRect.y, phaseRect.w, phaseRect.h);
+
+  // Combined time-series (position, velocity, force) beneath
+  drawEnhancedPlot(timeData, positionData, timeSeriesRect.x, timeSeriesRect.y, timeSeriesRect.w, timeSeriesRect.h,
+    currentTime - timeWindow, currentTime, yMin, yMax, "Position / Velocity / Force", '#00ff41');
+  drawEnhancedPlot(timeData, velocityData, timeSeriesRect.x, timeSeriesRect.y, timeSeriesRect.w, timeSeriesRect.h,
+    currentTime - timeWindow, currentTime, yMin, yMax, "", '#ff6b6b', true);
+  drawEnhancedPlot(timeData, forceData, timeSeriesRect.x, timeSeriesRect.y, timeSeriesRect.w, timeSeriesRect.h,
+    currentTime - timeWindow, currentTime, yMin, yMax, "", '#ffd93d', true);
+
+  // Legend
+  const legendItems = [
+    { label: 'Position', color: '#00ff41' },
+    { label: 'Velocity', color: '#ff6b6b' },
+    { label: 'Stimulus Force', color: '#ffd93d' }
+  ];
+  let lx = timeSeriesRect.x + 10;
+  const ly = timeSeriesRect.y + 30;
+  enhancedCtx.font = '12px Courier New';
+  legendItems.forEach(item => {
+    enhancedCtx.fillStyle = item.color;
+    enhancedCtx.fillRect(lx, ly, 14, 8);
+    enhancedCtx.fillStyle = '#cccccc';
+    enhancedCtx.fillText(item.label, lx + 20, ly + 8);
+    lx += 120;
+  });
+
+  // (Removed energy & metrics frames per request)
+}
+
+function drawEnhancedPlot(xData, yData, x, y, w, h, xMin, xMax, yMin, yMax, title, color, overlay = false) {
+  if (!overlay) {
+    // Background black
+    enhancedCtx.fillStyle = '#000000';
+    enhancedCtx.fillRect(x, y, w, h);
+    
+    // Border
+    enhancedCtx.strokeStyle = '#444';
+    enhancedCtx.lineWidth = 1;
+    enhancedCtx.strokeRect(x, y, w, h);
+    
+    // Title
+    enhancedCtx.fillStyle = '#00ff41';
+    enhancedCtx.font = '14px Courier New';
+    enhancedCtx.fillText(title, x + 5, y + 20);
+    
+    // Grid
+    enhancedCtx.strokeStyle = '#333';
+    enhancedCtx.lineWidth = 0.5;
+    
+    // Vertical grid lines
+    for (let i = 1; i < 5; i++) {
+      const gridX = x + (i * w / 5);
+      enhancedCtx.beginPath();
+      enhancedCtx.moveTo(gridX, y);
+      enhancedCtx.lineTo(gridX, y + h);
+      enhancedCtx.stroke();
+    }
+    
+    // Horizontal grid lines
+    for (let i = 1; i < 4; i++) {
+      const gridY = y + (i * h / 4);
+      enhancedCtx.beginPath();
+      enhancedCtx.moveTo(x, gridY);
+      enhancedCtx.lineTo(x + w, gridY);
+      enhancedCtx.stroke();
+    }
+    
+    // Axes
+    enhancedCtx.strokeStyle = '#666';
+    enhancedCtx.lineWidth = 1;
+    
+    // Zero line (if within range)
+    if (yMin <= 0 && yMax >= 0) {
+      const zeroY = y + h - ((0 - yMin) / (yMax - yMin)) * h;
+      enhancedCtx.beginPath();
+      enhancedCtx.moveTo(x, zeroY);
+      enhancedCtx.lineTo(x + w, zeroY);
+      enhancedCtx.stroke();
+    }
+  }
+  
+  // Plot data
+  if (xData.length > 1 && yData.length > 1) {
+    // Clip to plotting region so drawing never escapes the frame
+    enhancedCtx.save();
+    enhancedCtx.beginPath();
+    enhancedCtx.rect(x, y, w, h);
+    enhancedCtx.clip();
+  enhancedCtx.strokeStyle = color;
+  // Thicken force (stimulus) line for visibility
+  enhancedCtx.lineWidth = (overlay && color === '#ffd93d') ? 3 : 2;
+    enhancedCtx.beginPath();
+    
+    let first = true;
+    for (let i = 0; i < Math.min(xData.length, yData.length); i++) {
+      if (xData[i] >= xMin && xData[i] <= xMax) {
+        const plotX = x + ((xData[i] - xMin) / (xMax - xMin)) * w;
+        const plotY = y + h - ((yData[i] - yMin) / (yMax - yMin)) * h;
+        // Clamp Y inside box (safety in case of extreme values)
+        const clampedY = Math.max(y, Math.min(y + h, plotY));
+        if (first) {
+          enhancedCtx.moveTo(plotX, clampedY);
+          first = false;
+        } else {
+          enhancedCtx.lineTo(plotX, clampedY);
+        }
+      }
+    }
+    enhancedCtx.stroke();
+    enhancedCtx.restore();
+  }
+}
+
+function drawEnhancedPhaseSpace(x, y, w, h) {
+  // Background (black)
+  enhancedCtx.fillStyle = '#000000';
+  enhancedCtx.fillRect(x, y, w, h);
+  
+  // Border
+  enhancedCtx.strokeStyle = '#444';
+  enhancedCtx.lineWidth = 1;
+  enhancedCtx.strokeRect(x, y, w, h);
+  
+  // Title
+  enhancedCtx.fillStyle = '#00ff41';
+  enhancedCtx.font = '14px Courier New';
+  enhancedCtx.fillText("Phase Space (x vs v)", x + 5, y + 20);
+  
+  // Grid
+  enhancedCtx.strokeStyle = '#333';
+  enhancedCtx.lineWidth = 0.5;
+  
+  // Grid lines
+  for (let i = 1; i < 6; i++) {
+    // Vertical
+    const gridX = x + (i * w / 6);
+    enhancedCtx.beginPath();
+    enhancedCtx.moveTo(gridX, y);
+    enhancedCtx.lineTo(gridX, y + h);
+    enhancedCtx.stroke();
+    
+    // Horizontal  
+    const gridY = y + (i * h / 6);
+    enhancedCtx.beginPath();
+    enhancedCtx.moveTo(x, gridY);
+    enhancedCtx.lineTo(x + w, gridY);
+    enhancedCtx.stroke();
+  }
+  
+  // Center axes
+  enhancedCtx.strokeStyle = '#666';
+  enhancedCtx.lineWidth = 1;
+  
+  // X-axis (velocity = 0)
+  enhancedCtx.beginPath();
+  enhancedCtx.moveTo(x, y + h/2);
+  enhancedCtx.lineTo(x + w, y + h/2);
+  enhancedCtx.stroke();
+  
+  // Y-axis (position = 0)
+  enhancedCtx.beginPath();
+  enhancedCtx.moveTo(x + w/2, y);
+  enhancedCtx.lineTo(x + w/2, y + h);
+  enhancedCtx.stroke();
+  
+  // Compute instantaneous maxima
+  let instMaxX = phaseScaleMin;
+  let instMaxV = phaseScaleMin;
+  for (let i = 0; i < phaseTrail.length; i++) {
+    const pt = phaseTrail[i];
+    if (!pt) continue;
+    if (Math.abs(pt.x) > instMaxX) instMaxX = Math.abs(pt.x);
+    if (Math.abs(pt.v) > instMaxV) instMaxV = Math.abs(pt.v);
+  }
+  // Target with padding
+  const targetX = Math.max(phaseScaleMin, instMaxX * phaseExpandPad);
+  const targetV = Math.max(phaseScaleMin, instMaxV * phaseExpandPad);
+  // Helper lerp
+  const lerp = (a,b,t)=> a + (b-a)*t;
+  // Grow faster, shrink slower
+  phaseScaleX = (targetX > phaseScaleX) ? lerp(phaseScaleX, targetX, phaseLerpGrow)
+                                        : lerp(phaseScaleX, targetX, phaseLerpShrink);
+  phaseScaleV = (targetV > phaseScaleV) ? lerp(phaseScaleV, targetV, phaseLerpGrow)
+                                        : lerp(phaseScaleV, targetV, phaseLerpShrink);
+  const maxAbsX = phaseScaleX;
+  const maxAbsV = phaseScaleV;
+
+  // Draw colorful trajectory with fading trail and force-based colors
+  if (phaseTrail.length > 1) {
+  // Clip trajectory strictly within phase space box
+  enhancedCtx.save();
+  enhancedCtx.beginPath();
+  enhancedCtx.rect(x, y, w, h);
+  enhancedCtx.clip();
+    // Draw trail with fading effect and force-based colors
+    for (let i = 1; i < phaseTrail.length; i++) {
+      const progress = i / phaseTrail.length;
+      const alpha = Math.pow(progress, 0.5); // Gradual fading
+      
+      // Get force magnitude for color coding (from stored trail data or fallback)
+      const forceMagnitude = Math.abs(phaseTrail[i].force || 0);
+      
+      // Color based on force: blue (low) -> green (medium) -> red (high)
+      let red, green, blue;
+      if (forceMagnitude < 0.5) {
+        // Blue to cyan range for low force
+        red = 100;
+        green = 150 + Math.floor(forceMagnitude * 200);
+        blue = 255;
+      } else if (forceMagnitude < 1.5) {
+        // Green to yellow range for medium force
+        red = Math.floor((forceMagnitude - 0.5) * 255);
+        green = 255;
+        blue = 100;
+      } else {
+        // Red to bright red for high force
+        red = 255;
+        green = Math.max(0, 100 - Math.floor((forceMagnitude - 1.5) * 100));
+        blue = 100;
+      }
+      
+      // Scale to fill most of the phase space
+  let x1 = x + w/2 + (phaseTrail[i-1].x / maxAbsX) * (w/2);
+  let y1 = y + h/2 - (phaseTrail[i-1].v / maxAbsV) * (h/2);
+  let x2 = x + w/2 + (phaseTrail[i].x / maxAbsX) * (w/2);
+  let y2 = y + h/2 - (phaseTrail[i].v / maxAbsV) * (h/2);
+  // Clamp to bounds to avoid disappearing beyond edges
+  x1 = Math.max(x, Math.min(x + w, x1));
+  x2 = Math.max(x, Math.min(x + w, x2));
+  y1 = Math.max(y, Math.min(y + h, y1));
+  y2 = Math.max(y, Math.min(y + h, y2));
+      
+      // Draw trail segment with varying thickness and color
+      enhancedCtx.strokeStyle = `rgba(${red}, ${green}, ${blue}, ${alpha})`;
+      enhancedCtx.lineWidth = 2 + 6 * alpha; // Varying thickness (2-8px)
+      enhancedCtx.lineCap = 'round';
+      enhancedCtx.beginPath();
+      enhancedCtx.moveTo(x1, y1);
+      enhancedCtx.lineTo(x2, y2);
+      enhancedCtx.stroke();
+    }
+    
+    // Draw current position as a bright pulsing dot
+    if (phaseTrail.length > 0) {
+      const current = phaseTrail[phaseTrail.length - 1];
+  let currentX = x + w/2 + (current.x / maxAbsX) * w/2;
+  let currentY = y + h/2 - (current.v / maxAbsV) * h/2;
+  currentX = Math.max(x, Math.min(x + w, currentX));
+  currentY = Math.max(y, Math.min(y + h, currentY));
+      
+      // Pulsing effect
+      const pulse = 4 + 3 * Math.sin(Date.now() * 0.008);
+      
+      // Outer glow
+      enhancedCtx.fillStyle = 'rgba(255, 255, 255, 0.6)';
+      enhancedCtx.beginPath();
+      enhancedCtx.arc(currentX, currentY, pulse + 3, 0, 2 * Math.PI);
+      enhancedCtx.fill();
+      
+      // Inner bright dot
+      enhancedCtx.fillStyle = '#ffffff';
+      enhancedCtx.beginPath();
+      enhancedCtx.arc(currentX, currentY, pulse, 0, 2 * Math.PI);
+      enhancedCtx.fill();
+    }
+  enhancedCtx.restore();
+  }
+}
+
+function drawIntelligenceMetrics(x, y, w, h) {
+  // Background
+  enhancedCtx.fillStyle = '#1a1a2e';
+  enhancedCtx.fillRect(x, y, w, h);
+  
+  // Border
+  enhancedCtx.strokeStyle = '#444';
+  enhancedCtx.lineWidth = 1;
+  enhancedCtx.strokeRect(x, y, w, h);
+  
+  // Title
+  enhancedCtx.fillStyle = '#00ff41';
+  enhancedCtx.font = '14px Courier New';
+  enhancedCtx.fillText("state", x + 5, y + 20);
+  
+  // Metrics text
+  enhancedCtx.fillStyle = '#00ff41';
+  enhancedCtx.font = '11px Courier New';
+  
+  const osc = enhancedOscillator;
+  let textY = y + 45;
+  const lineHeight = 14;
+  
+  enhancedCtx.fillText(`time: ${osc.t.toFixed(1)}s`, x + 5, textY);
+  textY += lineHeight;
+  enhancedCtx.fillText(`energy: ${(osc.history.energy[osc.history.energy.length-1] || 0).toFixed(3)}`, x + 5, textY);
+  textY += lineHeight;
+  enhancedCtx.fillText(`habituation: ${osc.habituationLevel.toFixed(3)}`, x + 5, textY);
+  textY += lineHeight;
+  enhancedCtx.fillText(`sensitization: ${osc.sensitizationLevel.toFixed(3)}`, x + 5, textY);
+  textY += lineHeight;
+  enhancedCtx.fillText(`phantom force: ${osc.phantomForce.toFixed(3)}`, x + 5, textY);
+  textY += lineHeight;
+  enhancedCtx.fillText(`energy level: ${osc.energyLevel.toFixed(3)}`, x + 5, textY);
+  textY += lineHeight;
+  enhancedCtx.fillText(`fatigue: ${osc.fatigueLevel.toFixed(3)}`, x + 5, textY);
+  textY += lineHeight;
+  enhancedCtx.fillText(`intelligence: ${osc.calculateIntelligenceScore().toFixed(3)}`, x + 5, textY);
+  textY += lineHeight;
+  enhancedCtx.fillText(`stimuli: ${osc.stimulusHistory.length}`, x + 5, textY);
+}
+
+function updateStatus() {
+  // This function can be used for any additional status updates if needed
+}
+
+function updateEnhancedStatus() {
+  const status = document.getElementById('eo-status');
+  if (status) {
+    const energy = enhancedOscillator.history.energy[enhancedOscillator.history.energy.length-1] || 0;
+    status.textContent = `t=${enhancedOscillator.t.toFixed(2)} x=${enhancedOscillator.x.toFixed(3)} v=${enhancedOscillator.v.toFixed(3)} E=${energy.toFixed(3)}`;
+  }
+}
+
+function setupControls() {
+  // Legacy function - kept for compatibility
+}
+
+function setupEnhancedControls() {
+  const defs = [
+    { id:'omega0', label:'ω₀', min:0.2, max:3, step:0.01, value:1.0, handler: v=>enhancedOscillator.setFrequency(v) },
+    { id:'gamma', label:'γ', min:0, max:1, step:0.01, value:0.1, handler: v=>enhancedOscillator.setDamping(v) },
+    { id:'force', label:'F', min:0, max:2, step:0.05, value:0.5, handler: v=>enhancedOscillator.setForceStrength(v) }
+  ];
+  const row = document.getElementById('eo-sliders');
+  if(row){
+    defs.forEach(d=>{
+      const wrap=document.createElement('div'); wrap.className='eo-slider-wrap';
+      const lab=document.createElement('label'); lab.textContent=`${d.label} : ${d.value}`;
+      const rng=document.createElement('input'); rng.type='range'; Object.assign(rng,{min:d.min,max:d.max,step:d.step,value:d.value});
+      rng.addEventListener('input',()=>{ const val=parseFloat(rng.value); lab.textContent=`${d.label} : ${rng.value}`; d.handler(val); });
+      wrap.append(lab,rng); row.appendChild(wrap);
+    });
+  }
+  const playBtn=document.getElementById('eo-play');
+  const resetBtn=document.getElementById('eo-reset');
+  const triggerBtn=document.getElementById('eo-trigger');
+  const triggerBtnBottom=document.getElementById('eo-trigger-bottom');
+  const forceSel=document.getElementById('eo-force-type');
+  if(playBtn) playBtn.addEventListener('click',()=>{ enhancedIsPlaying=!enhancedIsPlaying; playBtn.textContent= enhancedIsPlaying? '⏸ pause':'▶ play'; });
+  if(resetBtn) resetBtn.addEventListener('click',()=>{ enhancedOscillator.reset(); phaseTrail=[]; enhancedIsPlaying=false; if(playBtn) playBtn.textContent='▶ play'; });
+    function triggerPulse(){
+      // Increase manual pulse; scaled so multiple clicks accumulate
+      enhancedOscillator.manualPulse += enhancedOscillator.forceStrength * 2.0;
+    }
+  if(triggerBtn) triggerBtn.addEventListener('click',triggerPulse);
+  if(triggerBtnBottom) triggerBtnBottom.addEventListener('click',triggerPulse);
+  if(forceSel) forceSel.addEventListener('change',()=> enhancedOscillator.setForceType(forceSel.value));
+  const autoChk = document.getElementById('eo-auto');
+  if(autoChk) autoChk.addEventListener('change',()=> { enhancedAutoEnabled = autoChk.checked; });
+}
+
+// Initialize when page loads
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initAnimation);
+} else {
+  initAnimation();
+}
+</script>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/mvtta\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><a href="mailto:mvtta@proton.me">contact</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Valdetaro M, 2025</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
